@@ -1,0 +1,77 @@
+name: Update RSS
+
+on:
+  workflow_dispatch:
+  schedule:
+    # GitHub Actions schedule cannot be generated dynamically at workflow
+    # runtime. Change this value together with config.yaml, or use the
+    # repository variable SCHEDULE_CRON.
+    - cron: "0 * * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Fetch RSS
+        run: python scripts/fetch_rss.py
+
+      - name: Deploy to configured repository
+        env:
+          DEPLOY_REPO: ${{ vars.DEPLOY_REPO }}
+          DEPLOY_BRANCH: ${{ vars.DEPLOY_BRANCH }}
+          DEPLOY_PATH: ${{ vars.DEPLOY_PATH }}
+          DEPLOY_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+
+          REPO="${DEPLOY_REPO:-${GITHUB_REPOSITORY}}"
+          BRANCH="${DEPLOY_BRANCH:-gh-pages}"
+          PATH_IN_REPO="${DEPLOY_PATH:-/}"
+
+          if [ "$REPO" = "$GITHUB_REPOSITORY" ]; then
+            TARGET_TOKEN="$GH_TOKEN"
+          else
+            TARGET_TOKEN="$DEPLOY_TOKEN"
+          fi
+
+          if [ -z "$TARGET_TOKEN" ]; then
+            echo "No deployment token available."
+            exit 1
+          fi
+
+          rm -rf /tmp/deploy
+          git clone --depth 1 --branch "$BRANCH" \
+            "https://x-access-token:${TARGET_TOKEN}@github.com/${REPO}.git" \
+            /tmp/deploy
+
+          DEST="/tmp/deploy/${PATH_IN_REPO#/}"
+          mkdir -p "$DEST"
+
+          cp -R site/. "$DEST/"
+
+          cd /tmp/deploy
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .
+          if git diff --cached --quiet; then
+            echo "No changes."
+          else
+            git commit -m "Update RSS news"
+            git push origin "$BRANCH"
+          fi

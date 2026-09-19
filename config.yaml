@@ -1,0 +1,116 @@
+site:
+  title: "My News Radar"
+  description: "A personal RSS news radar"
+  language: "zh-CN"
+  timezone: "Asia/Taipei"
+  base_url: ""
+
+schedule:
+  interval: "1h"
+  timezone: "Asia/Taipei"
+
+storage:
+  max_articles: 5000
+  retention_days: 300
+  state_file: "data/feed_state.json"
+
+features:
+  deduplicate: true
+  search: true
+
+feeds:
+  - name: Hacker News
+    url: "https://news.ycombinator.com/rss"
+    category: 技术
+    enabled: false
+    refresh: "1h"
+
+  - name: 太隐
+    url: "https://wangyurui.com//feed"
+    category: 人文思想
+    enabled: true
+    refresh: "1h"
+
+  - name: 极客洞察
+    url: "https://api.newshacker.me/rss"
+    category: 技术
+    enabled: true
+    refresh: "1h"
+
+  - name: 心的道理
+    url: "https://stephenleng.com/cn/rss"
+    category: 人文思想
+    enabled: true
+    refresh: "1h"
+
+  - name: So!azy
+    url: "https://blog.solazy.me/feed/"
+    category: 生活随笔
+    enabled: true
+    refresh: "1h"
+
+  - name: 潮流周刊
+    url: "https://stephenleng.com/cn/rss"
+    category: 技术
+    enabled: true
+    refresh: "1h"
+
+  - name: 虹线
+    url: "https://1q43.blog/feed"
+    category: 人文思想
+    enabled: true
+    refresh: "1h"
+
+  - name: 極客死亡計劃
+    url: "https://www.geedea.pro/index.xml"
+    category: 技术
+    enabled: true
+    refresh: "1h"
+
+  - name: Prologue序章
+    url: "https://prologue.dev/rss"
+    category: 经济社科
+    enabled: true
+    refresh: "1h"
+
+  - name: 创造力溢出
+    url: "https://quaily.com/goldengrape/feed/atom"
+    category: 人文思想
+    enabled: true
+    refresh: "1h"
+
+  - name: 莫比乌斯
+    url: "https://onojyun.com/feed/"
+    category: 人文思想
+    enabled: true
+    refresh: "1h"
+
+  - name: 于淼
+    url: "https://yufree.cn/cn/index.xml"
+    category: 人文思想
+    enabled: true
+    refresh: "1h"
+
+  - name: 写点儿长文
+    url: "https://medium.com/feed/@prjcowork"
+    category: 人文思想
+    enabled: true
+    refresh: "1h"
+
+  - name: 波士頓書評
+    url: "https://bostonreviewofbooks.substack.com/feed"
+    category: 人文思想
+    enabled: true
+    refresh: "1h"
+
+  - name: Frank笔记
+    url: "https://frank2019.me/rss.xml"
+    category: 生活随笔
+    enabled: true
+    refresh: "1h"
+  # 示例：
+  # - name: Example News
+  #   url: "https://example.com/feed.xml"
+  #   category: world
+  #   enabled: true
+  #   refresh: "1h"

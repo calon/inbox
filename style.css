@@ -1,0 +1,36 @@
+/* Small utility layer for a Pure.css-like restrained layout.
+   Most styling is intentionally handled by Tailwind utility classes. */
+
+html {
+  color-scheme: light;
+}
+
+body {
+  min-width: 320px;
+}
+
+.pure-input {
+  border-radius: 2px;
+  min-height: 2.5rem;
+}
+
+.article-title {
+  line-height: 1.45;
+}
+
+.article-summary {
+  line-height: 1.65;
+}
+
+.article-row:hover {
+  background: #fafafa;
+}
+
+@media (min-width: 640px) {
+  .article-row {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+}

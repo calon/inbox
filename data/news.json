@@ -1,5 +1,85 @@
 [
   {
+    "id": "0126fd4423ea28a1cee34d6c",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "🤔 Git 通过重做 packfile 直接跑在对象存储上",
+    "summary": "原标题： 《You can run Git on object storage if you re-make packfiles》 评分: 131 | 作者: evacchi 💭 改改 packfile，S3 就不算随机读地狱了？ 🎯 讨论背景 这篇文章承接了 Cursor 博客 “Git At Any Scale” 的讨论，核心是在解释为什么 Git 的 packfile（Git 用来打包对象的存储格式）在大仓库里会产生很多非连续读取。作者主张重做 packfile，让 Git 直接落到 object storage（如 S3）上，而不是继续依赖传统 filesystem。评论区把这个思路和很多现成尝试放在一起讨论：静态 HTTP 服务器、GitSocial（把仓库生成静态站点并挂到 bucket 的项目）、ZeroFS（面向 Git workload 的文件系统层）、pggit（把 Git 存进 PostgreSQL 的项目）等。争论的焦点主要是，Git 的 delta chain 和随机读是不是天生不适合 object storage，以及“重新排布 packfile”到底能解决多少根本问题。 📌 讨论焦点 已有实现与可落地方案 不少评论指出，这个方向并不是空想，Git 早就能通过 `git update-server-info ` 配合静态 HTTP 服务暴露仓库数据。有人举出 GitSocial（把仓库生成静态站点并挂到 bucket 的项目）、git-remote-s3（把 `git remote ` 直接映射到 S3 bucket 的工具）、ZeroFS（面向 Git workload 的文件系统层）、git-snap-fs 和 pggit（把 Git 存进 PostgreSQL 的项目）等，说明把 Git 放到 object storage、数据库或其他后端上都有现成尝试。也有人提到可以先用 proxy 包住现有 forge，再逐步切到 object storage 后端，这样迁移路径更平滑。整体上，这一派更关心“能不能用、怎么接入”，而不是只盯着理论上的不可能。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11] packfile 随机读与 delta 链成本 另一派把焦点放在 Git 的 packfile 结构本身：对象经常通过 delta 依赖链还原，读取一个对象往往要跳来跳去，导致大量 range requests。有人直接指出，Git 并不使用 sparse files，真实问题是小而散的随机读会让 S3 这类 object storage 既慢又贵。评论里还解释了默认 GC 会形成很长的 delta chain，因此作者把 packfile 重新组织成更像列式布局，被看作是解决扇出式 fetch 的关键。也有人对把 delta objects 拆开存表示怀疑，但没有否认 delta 编码才是核心痛点。 [来源1] [来源2] [来源3] [来源4] 重复投稿与站内吐槽 讨论区也有不少元评论。有人怀疑同一主题在 3 天内出现 4 次，是不是 marketing spam；别人则认为更像是不同读者独立看到后顺手投稿。还有人提到 HN 对重复帖的处理机制：如果早先那帖没起量，后来的重复帖反而可能成为真正的主线程。顺带有人吐槽页面字体难看，但也有人反驳字体其实可读，可能只是系统字体配置不同。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] 更激进的分发/哈希设想 评论还把话题往更远处推：有人设想把 whole-file hashes 换成 Merkle Patricia tree（用于把内容组织成可递归验证的哈希树），再叠加类似 BitTorrent 的分发协议，顺便获得更强的 deduplication。有人立刻想到 GitTorrent（一个早期的 Git 分布式传输实验），说明“把 Git 做成内容网络”并不是新点子。也有人提到 BLAKE3（一个快速哈希算法，内置 tree-hash 机制）以及 `After Git At Any Scale ` 之后冒出的 walgit、micelio 等相关项目，显示这个方向一直有人在反复试验。 [来源1] [来源2] [来源3] [来源4] 📚 术语解释 packfile: Git 用来把多个对象打包存放的文件格式，查找对象时常要配合索引和 delta 还原。 delta chain: 对象通过多层差分依赖前一个基准对象形成的链，链越长，读取越容易变成多跳访问。 range requests: HTTP 的分段读取方式，只取文件中指定字节范围，常用于按需",
+    "url": "https://newshacker.me/story?id=49730069",
+    "published": "2026-09-19T22:04:52Z"
+  },
+  {
+    "id": "12f1b887b8d630437907e7a6",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "😬 Android 待机抓包：Pixel 8 每小时 348 次请求，GrapheneOS 仅 12 次",
+    "summary": "原标题： 《I captured 72 hours of idle Android packets behind pfSense》 评分: 25 | 作者: youngmanyk 💭 待机都在疯狂报到，这叫哪门子隐私手机？ 🎯 讨论背景 帖子是在 pfSense（开源防火墙/路由器系统）后面抓取一台闲置 Android 手机 72 小时的网络包，试图量化它不操作时到底还会向外发多少请求。原帖给出对比：stock Android 16、关闭 location/usage diagnostics、GrapheneOS、以及带 Sandboxed Google Play services 的 GrapheneOS，借此讨论 Google/Alphabet 相关后台连接是否属于正常 check-in、定位探测还是隐私风险。评论区进一步把焦点放到 ASN 15169、checkin.gstatic.com、Wi‑Fi BSSID 这类会让手机“知道你在哪儿”的端点上，同时提醒仅凭 packet 数量无法判断 payload 是否真的泄露。整场讨论其实是在争论 Android 生态默认联网有多“吵”，以及第三方 ROM 能否在保留通知和兼容性的同时把这些后台通信压下去。 📌 讨论焦点 待机 Android 仍在频繁回连 帖子核心是对一台闲置 stock Android 16 手机做 72 小时 packet capture：平均每小时约 348.4 次请求，其中关掉 location 和 usage diagnostics 后仍有约 194.2 次，目标里出现 Alphabet ASN 15169 和 checkin.gstatic.com。评论者把这解读为手机在待机时仍持续向 Google/Alphabet 回连，甚至带有定位相关的 Wi‑Fi BSSID 盘点意味。也有人追问流量是否会随时间下降、加入 voice assistant 或社交应用后会不会更吵，以及开启 airplane mode 是否能彻底停掉这些连接。 [来源1] [来源2] [来源3] GrapheneOS / Sandboxed Play Services 明显减流 另一条主线是 GrapheneOS（一个注重隐私与安全的 Android 衍生系统）及其 Sandboxed Google Play services 对流量的削减效果。评论指出，启用沙箱化 Play services 后空闲请求量可从数百次/小时降到约 12 次，而纯 GrapheneOS 甚至测到 0；但这也带出一个实用问题：这些服务默认 battery usage 不是 unrestricted，可能被 Doze 等机制压制，从而影响通知恢复。有人继续追问 LineageOS（另一款流行的第三方 Android ROM）会表现如何，以及阻断 checkin.gstatic.com 是否会带来副作用。 [来源1] [来源2] 只看包数不够，方法和证据都被质疑 不少评论并不接受“包很多 = 隐私泄露严重”这种推断，认为真正关键是包里传了什么，而不是总数有多大。有人明确追问是否做了 TLS interception，以及这些内容到底是“可能发送”还是“已经发送”，并提醒 SNI、企业网络背景流量和普通系统检查都可能被误读成监控。还有人批评文章写法像 AI-generated slop、CSV 数据只有少量记录且字段错位，顶部那个“How DeGoogled Are You”组件也和主实验无关。 [来源1] [来源2] [来源3] [来源4] 并非新发现，大家在找横向对比 也有评论把这件事放到更长的历史里看：类似的 Android 待机抓包实验据说十年前就有人做过，说明这类争议并不新。有人因此想看 iOS 的同类数据，或者希望扩展到不同使用场景、不同 ROM，比较手机在空闲时到底向谁、为啥发包。还有人直接怀疑结果是借用了旧实验或 YouTube 里的老话题，认为“新发现”成分有限。 [来源1] [来源2] [来源3] [来源4] 📚 术语解释 pfSense: 开源防火墙/路由器系统，常用于做网络隔离、流量监控和抓包。 GrapheneOS: 一个以隐私和安全为目标的 Android 开源衍生系统。 Sandboxed Google Play services: 把 Google Play services 放进受限沙箱运行，尽量保留兼容性同时减少系统级权限。 checkin.gstatic.com: Google 常见的设备 check-in/状态同步端点。 BSSID: Wi‑Fi 接入点的唯一标识，常被用于定位或三角测量。 Doze: Android 的省电和后台限制机制，会压制应用后台活动。 A",
+    "url": "https://newshacker.me/story?id=49769694",
+    "published": "2026-09-19T21:59:53Z"
+  },
+  {
+    "id": "4894c0061408f639ec0897cf",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "😬 1970《UFO》：复古太空美学、性别争议与 X-COM 灵感",
+    "summary": "原标题： 《UFO Series Home Page: &quot;UFO&quot; TV Series from 1970》 评分: 23 | 作者: DropDead 💭 穿着短裙开未来，就算进步了吗？ 🎯 讨论背景 《UFO》是 Gerry Anderson（英国科幻电视制作人）在 1970 年推出的真人科幻剧，讲的是地球防御组织对抗外星威胁。它以微缩模型、未来感制服、迷幻/放克配乐和高度风格化的片头闻名，和他早期的《Thunderbirds》一样重视模型特效。评论里提到，《Space:1999》（1970 年代英国科幻剧）最初甚至被构想成它的续作，而《UFO: Enemy Unknown》（1994 年策略游戏，后来以 X-COM 闻名）也被认为受其影响。今天重看时，观众一边欣赏它的复古太空美学和制作巧思，一边也会强烈感受到当年的性别刻板印象与 male gaze。 📌 讨论焦点 复古风格与制作美学 很多评论把这部剧当成“把未来拍得很有品味”的代表：配乐、片头剪辑、制服、车辆和微缩模型都被反复称赞。有人觉得它像“8 岁小孩用玩具搭出来的科幻世界”，但正因为这种夸张而统一的设计，反而形成了强烈辨识度。还有人直接把它和后来的流行审美联系起来，认为《Austin Powers》那套复古未来主义气质明显借鉴了它。即使只看片头，几位评论者也认为已经值回票价。 [来源1] [来源2] [来源3] [来源4] 性别表达与时代争议 讨论里最尖锐的一条线，是这部剧今天重看会显得非常 sexist、misogynistic，尤其是女性服装、办公室互动和“male gaze”味道很重。也有人反驳说，这种呈现放在 60s/70s 的电视语境里并不算特别离谱，而且剧中并非没有女性担任权威职位，男角色同样穿着紧身衣物。还有评论补充，紫色假发、可拆卸腿套、鱼网衫等造型并不只是卖弄性感，也带有“模块化未来服装”的设计意图。整体上，大家更像是在争论：它究竟是在迎合时代偏见，还是在用夸张造型反过来调侃观众。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] 剧情的沉重代价与家庭悲剧 虽然外表很 camp，但不少人强调这剧其实很阴郁，核心是主角为了职责不断牺牲家庭。评论提到有的集数直接写到他必须在任务和儿子的生命之间做选择，或者因为工作导致婚姻崩溃。有人甚至认为整部剧是在展示一个男人被自己的职位慢慢掏空，最后只剩工作本身。像“SURVIVAL”这类集数则因为荒凉、互助和结局冲击力，被记得非常久。 [来源1] [来源2] [来源3] 怀旧回看与个人记忆 不少人是隔了很多年重新看这部剧，反应很分裂：小时候觉得新奇、帅气，长大后却会被其中的性别刻板印象吓退。也有人只是因为主题曲、月球基地设定和某位演员而着迷，甚至对 Michael Billington 比主角更有好感。评论里还出现了个人记忆：从童年电视重播，到后来买了盒装却因不适感把它放回书架。整体情绪很像“我曾经很爱它，但现在必须带着时代滤镜重看”。 [来源1] [来源2] [来源3] [来源4] 作品关联与后续影响 有评论指出，《Space:1999》最初其实是打算作为《UFO》的续作，设定在十年后的扩展 Moonbase 上，后来才放弃了这个连接。另一条线索则把它和 1994 年游戏《UFO: Enemy Unknown》联系起来，认为这部剧可能影响了后来被称为 X-COM 的游戏系列。这样一来，《UFO》就不只是单独的老剧，而是连到英国科幻电视和后世游戏文化的一环。它的影响更多体现在审美、设定和气质传承上，而不只是剧情本身。 [来源1] [来源2] 📚 术语解释 male gaze: 从男性欲望视角呈现角色和身体的方式，常用于批评影视中的性别凝视。 Gerry Anderson: 英国科幻电视制作人，制作过《UFO》《Space:1999》等作品，以模型特效和未来主义设计著称。 Thunderbirds-style miniatures: 用微缩模型、玩具级布景和特效拍摄动作场面的风格，强调手工感和机械感。 Space:1999: 1970 年代英国科幻剧，最初与《UFO》有续作设想，后来发展成独立作品。 X-COM / UFO: Enemy Unknown: 1994 年的策略游戏，《UFO: Enemy Unknown》后来成为 X-COM 系列的开端，可能受《UFO》影响。 类别： Science | Web | UFO (1970 TV series) | Michael Billington | Space: 1999 | Ed Straker",
+    "url": "https://newshacker.me/story?id=49754194",
+    "published": "2026-09-19T21:49:50Z"
+  },
+  {
+    "id": "f5afc1b0425d575db8dd2fd9",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "🛠️ SDCC：老牌 8 位 MCU 免费 C 编译器，bug 多但仍活跃",
+    "summary": "原标题： 《SDCC – Small Device C Compiler》 评分: 121 | 作者: lioeters 💭 SDCC 的优化，是在编译还是在抽签发牌？ 🎯 讨论背景 SDCC（Small Device C Compiler）是面向 8051、PIC、Z80、STM8、6502 等老牌 8 位架构的开源 C 编译器，长期活跃在 SourceForge（老牌开源项目托管站点）上。这个线程之所以热闹，是因为很多人都在回忆早年用它替代昂贵商业编译器的经历，尤其是给 PIC16 之类芯片写代码时。评论还把话题扩展到 Microchip 的 XC compiler（现在已免费但不是 FOSS）、Mikroe 编译器，以及 llvm-mos（面向 MOS 6502 的 LLVM 后端）等替代方案。最后讨论落到 MCU 选型上：有些人更看重 STM32、ESP32、RP2350、nRF 的性价比和 gcc 支持，另一些人则强调 PIC/AVR 在 DAC、Comparator、ADC 这类混合信号需求里仍然更合适。 📌 讨论焦点 老 8 位 MCU 情怀 不少人把 SDCC 当成早年接触微控制器时的入门工具：用它给 PIC16 写 C，比手写 assembly 轻松太多。有人提到它覆盖了 8051、PIC、STM8 等一堆老架构，对没有预算买商业编译器的学生和爱好者尤其重要。也有人回忆起为 PICSTART Plus 买硬件却买不起 Hitech-C 许可，说明这类免费编译器曾经是现实需求而不是情怀玩具。整体语气很怀旧，但也承认它在老芯片生态里确实填过空白。 [来源1] [来源2] [来源3] [来源4] 8051 上的 bug 与 workaround 围绕 8051 的评价最尖锐：有人直接说它是“能用但 bug 很多”的最好 OSS 编译器。具体问题包括 peephole optimizer 误删 jump target、全局 uint16 累加后读出垃圾内存、以及把真正用于控制引脚的空循环优化掉。还有人指出 SDCC 早年确实忽略了 volatile，这类问题会让简单的 blink LED 程序看起来像随机失效。结论不是完全不能用，而是要经常读 assembly、写 workaround，甚至接受编译器坑比代码本身还难排查。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] 后端差异：z80/STM8 更顺手 也有明显更正面的声音，认为 SDCC 在某些后端上比 8051 体验好很多。有人说它在 z80 lineage processors 上表现非常好，给 Game Boy 的 C 代码几乎没遇到编译器 bug。另一个例子是 STM8：能正常工作，但 array access 的优化不够理想。这个分歧说明 SDCC 的口碑很大程度取决于具体架构，而不是单纯看编译器本身好不好。 [来源1] [来源2] [来源3] 替代编译器与现代芯片选择 评论里还顺带比较了其他编译器和芯片路线。Microchip 的 XC compiler 现在已取消授权限制，变成免费但非 FOSS；Mikroe 也提供覆盖 PIC10/PIC12 的 C、BASIC、Pascal 编译器。对于 6502，还有 llvm-mos 和 Oscar64 这类更偏优化的选择。讨论后来转向 MCU 选型：有人建议 STM32、ESP32、RP2350 或 nRF，但也有人反驳说这些芯片常缺少真正好用的 DAC、Comparator、ADC，而 PIC/AVR 在混合信号和 4-20mA 这类场景仍有不可替代性。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] SourceForge 的老项目气质 有人好奇 SDCC 会不会是 SourceForge 上最后还在积极维护的项目之一。回复里列出了 qBittorrent、CrystalDiskInfo、OpenOCD、KeePass、Ventoy、Apache OpenOffice 等仍然托管在那里的项目，说明 SourceForge 还没死，只是给人一种很老派的观感。评论还提到，即使项目主页不在 SourceForge，很多页面和发布节奏仍带着 vintage / old school 的味道。这个话题本质上是在聊老开源基础设施和老软件项目的历史感。 [来源1] [来源2] [来源3] LLM 生成 8051 编译器 一个很抢眼的插曲是，有人让 LLM 直接生成一个 8051 C compiler，因为觉得 SDCC 的输出不够优化。声称只用了大约 1.5 小时，新编译器就把目标程序编到 SDCC 的约 60% 体积，还通过了测试",
+    "url": "https://newshacker.me/story?id=49762744",
+    "published": "2026-09-19T21:40:26Z"
+  },
+  {
+    "id": "c5bc13ff2719fdc022cc0f41",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "🤨 Laya 争议：Jev 开源版、营销与先发之争",
+    "summary": "原标题： 《Laya the open source version of Jev》 评分: 920 | 作者: nandakishor_ml 💭 把旧分类器换个包装就能叫前沿突破？ 🎯 讨论背景 这场讨论围绕 Typesafe AI（Jev 背后的公司）和一个名为 Laya 的开源项目展开。Jev 被包装成“System One”式的通用分类/决策模型，主打 zero-shot、低延迟、可校准概率和“不会 hallucinate”，但它是闭源产品并伴随大量营销话术。Laya 作者则声称自己更早在 arXiv（学术论文预印本网站）和 Reddit 上发布过相关思路，并把实现开源到 HuggingFace（开源模型社区）和 GitHub，结果引发了关于 prior art、是否同一技术、以及 fine-tuning 与 zero-shot 差异的大量争论。评论里频繁提到 BERT、RAG（retrieval-augmented generation，检索增强生成）、prompt injection 和 structured outputs，本质是在讨论：一个分类器到底是老技术的新包装，还是确实把旧方法做成了更可用的产品。 📌 讨论焦点 营销与分发 很多评论认为，Jev 的走红首先靠的是营销和品牌，而不是单纯技术本身。有人指出，产品页上的“System One”“can&#039;t hallucinate”“two years in stealth”这类话术，比一篇技术味很重的 Reddit/arXiv 标题更容易被外行理解和传播。也有人强调，产品不只是模型权重，还包括 landing page、docs、API、support 和 social proof，这些都属于 execution 的一部分。甚至有人认为，这篇讨论本身也在帮 Laya 做品牌。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] 先发与前作争议 另一条主线是 prior art 和归属问题：不少人认为 Laya 或相关论文更早公开，Typesafe 只是把类似思路包装成了产品。也有人反驳说，两者解决的问题并不完全一样，Laya 更像面向特定业务的系统，而 Jev 更像通用分类器。评论里还提到 GLiNER、embeddings、RAG、orchestrator 等更早工作，质疑“breakthrough”是否只是重新命名。因为 Jev 是闭源的，外界只能靠网页文案和发布稿猜测内部实现，这也让是否独立发现或借鉴难以判断。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] zero-shot vs fine-tuning 在技术层面，争论集中在 zero-shot 和 fine-tuning 的差别。支持者强调，这类方案的价值在于不用为每个新任务花一周做数据集、训练和部署，而是可以直接拿来做分类、路由和排序。反对者则认为，Laya 本质还是 fine-tuned 的 BERT/ModernBERT，一旦要为每个任务做训练，它就离 Jev 的卖点很远。还有人指出，Laya 的 context window 只有 512–1024 tokens，和 Jev 号称的更长上下文与更强泛化相比差距明显。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11] [来源12] [来源13] “不会 hallucinate”的边界 “can&#039;t hallucinate” 是最容易吵起来的点。有人认为这只是把输出变成单次分类或结构化选择，错误的概率分布、误选标签、错配 tool call 依然可能发生，把它叫成“不会 hallucinate”有点偷换概念。另一些人则觉得，和把 frontier LLM 塞进 constrained output 再反复采样相比，Jev 这类非自回归结构确实能切掉一整类迭代生成错误。也有人强调，若再配合 schema、校验和 prompt injection 防护，这种设计在很多业务里确实更稳。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11] [来源12] [来源13] [来源14] 证据与评估可信度 不少评论并不买账，直接质疑论文、demo 和 benchmark 的可信度。有人指出存在 target leakage、输入字段里夹带 outcome，甚至整篇帖子像 AI 生成的 slop。也有人说，如果没有代码、权重和技术报告，",
+    "url": "https://newshacker.me/story?id=49765348",
+    "published": "2026-09-19T21:35:24Z"
+  },
+  {
+    "id": "c2d4fc86cb08239a43ab8dcb",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "⚖️ 互联网审查测量：平台删帖和国家封锁都算吗",
+    "summary": "原标题： 《Measure internet censorship. Contribute to the largest open dataset》 评分: 21 | 作者: Bluestein 💭 只测国家封锁，不算删帖限流，这叫测审查吗？ 🎯 讨论背景 这是一个通过用户运行 NDT（Network Diagnostic Test，一种网络诊断/测速测试）来收集数据、进而绘制互联网审查图景的开放项目。评论区把焦点从“国家是否封锁网站”扩展到“平台是否删帖、限流、封禁或阻断分享”，认为这类平台内治理往往才是最普遍、最难量化的审查形式。也有人提醒，测速和网络测量工具本身会暴露基础设施信息，所以在某些国家会被限制；类似 RIPE Atlas（一个分布式互联网测量平台）这样的项目也常被拿来作类比。整体争论反映的是：审查不只存在于防火墙，也存在于社交平台的内容控制和测量数据可见性之中。 📌 讨论焦点 平台内审查是否应纳入 不少评论认为，真正大规模、最难被看见的审查往往发生在平台内部，而不是国家级封锁。有人举出 Reddit 的删除式处理、Twitter 曾对 NYPost 文章的分享限制，以及 Facebook、Instagram、YouTube 对特定政治内容的封禁，认为这些都会塑造可见言论边界。也有人指出，如果把这类平台治理排除在外，所谓“审查测量”就会遗漏最核心的一层。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] 平台治理并非完全可无条件放开 另一派则认为，把所有 moderation 都直接叫成 censorship 会让概念失去区分度。评论里提到，连 4chan 这种以宽松著称的站点也必须做 moderation，否则很快就会被 spam、CSAM、piracy 和其他法律风险淹没，最后变得不可用。这个观点承认内容治理确实存在，但强调它更多是运营与合规需要，而不总是政治性压制。 [来源1] [来源2] [来源3] 国家审查与平台审查都重要 有评论把讨论拉回到国家级 censorship，认为在 Iran 之类的环境里，审查的压迫感远比大多数民主国家更直接、更全面。与此同时，也有人强调，社交媒体公司的 block、suppress、封禁同样普遍，若不纳入测量，就像统计战争伤亡却故意忽略前线。这个视角的核心是：平台审查和国家审查不是二选一，而是应当一起被观察。 [来源1] [来源2] 网络测量工具的双重用途 围绕 NDT 这类工具的评论则提醒，测量本身也可能带来风险。有人认为测速和诊断服务会暴露网络拓扑、性能和连通性，因此在某些国家会被限制，甚至被视为可辅助攻击建模的工具。反对者则把这种说法归为 security by obscurity，认为隐藏数据不是解决方案。 [来源1] [来源2] 项目认知度与采纳存疑 也有评论纯粹从产品传播角度质疑这个项目是否真有人安装、是否足够有名。评论者表示自己是第一次听说这个工具，也不认识它的合作伙伴，因此对数据覆盖和样本来源产生怀疑。这个疑问不直接否定项目目标，但暗示“最大开放数据集”是否真能拿到足够广泛的真实用户数据，仍是个问题。 [来源1] 📚 术语解释 NDT: Network Diagnostic Test，一种网络诊断/测速测试，也可用于收集连通性与性能数据。 platform moderation: 平台对内容进行删除、封禁、降权、过滤等治理动作；在这场讨论里，它常被视为广义审查。 类别： Security | Systems | Policy | Release | Guide | OONI | internet censorship | network measurement | open dataset | platform moderation | Reddit | 4chan",
+    "url": "https://newshacker.me/story?id=49769676",
+    "published": "2026-09-19T21:29:57Z"
+  },
+  {
+    "id": "b49cca35999213e79ed6427f",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "🎛️ Suzanne Ciani《Buchla Cookbook》引发模块合成器、VCV Rack 与 Eurorack 讨论",
+    "summary": "原标题： 《Suzanne Ciani&#039;s Buchla Cookbook》 评分: 27 | 作者: stuart78 💭 没有 patch save/recall，算什么生产力？ 🎯 讨论背景 这篇讨论围绕 Suzanne Ciani（美国电子音乐先驱）和 Buchla（Don Buchla 设计的西海岸模块合成器体系）的《Cookbook》展开，内容很快从书本本身扩展到模块合成器的学习门槛。评论者把 VCV Rack（一个软件模块合成器环境）和 Bespoke Synth（一个开源的软件 modular 工具）当作低成本入门方案，也提到 Tiptop Audio（模块合成器厂商）把 Buchla 经典模块做成 Eurorack（标准化模块合成器规格）版本。讨论的核心其实是 modular synth 的体验：它既代表高度开放的声音探索，也意味着接线、调试和不断重构 patch 的麻烦。为了兼顾创作和效率，有人提出用较小的硬件系统、传统 hardware synth，或把模块音色录成 multisample，再交给 DAW（数字音频工作站）继续处理。 📌 讨论焦点 软件模块降低门槛 不少评论把软件 modular 视为认识这套玩法的最好入口，因为它几乎没有实体硬件的成本和空间压力。Bespoke Synth 被说成比 VCV Rack 更容易上手，而 VCV Rack 本身也被形容为很适合随手乱接、快速试错。还有人直接指出，这类工具虽然只是硬件模块的仿真，但已经足够提供很接近的 modular 体验。 [来源1] [来源2] [来源3] 线缆与即兴本身就是乐趣 另一派认为，patch cable 和反复重接线不是负担，而是 modular synth 的核心乐趣。只要脑中能建立 voltage flow 或 signal flow 的模型，线缆就会变成一种创作材料，而不是阻碍。评论里还强调，现场频繁 hot-swap 连接、临场重构 patch、靠 happy accidents 生成意外结果，正是这类系统最有吸引力的地方。 [来源1] [来源2] [来源3] 实体入门方案与 Buchla/Eurorack 有些回复直接给出更现实的硬件入门建议。Tiptop Audio 与 Buchla 的合作被看作把经典 Buchla 模块做成 Eurorack 版本的机会，适合想体验这一路线的人。另一个常见建议是用 Make Noise 的 Strega、0-Coast、0-Ctrl 拼出所谓 dark easel，再配一个 Korg NTS-2 之类的示波器/调音工具，形成一个比较便宜但足够有特色的小系统。 [来源1] [来源2] 实用性与工作流折中 很多评论都在比较 modular 的开放性和实际制作效率。大家普遍承认，DAW 在“business”意义上更高效，但 modular 更适合探索未知声音，因为它不要求你一开始就知道结果。真正的痛点是没有 patch save/recall，所以有人选择折中：先用硬件 modular 做音色，再用 MIDI 驱动并把输出录进 Elektron Tonverk 这类设备做 multisample。 [来源1] [来源2] 并非人人适合模块合成 也有评论明确表示，modular 虽然很酷，但并不适合所有人。有人把它比作游泳池：当别人帮你处理维护和杂务时很棒，但如果你自己要面对全部折腾，兴趣会被迅速消耗。另一些人则觉得，若只是想玩声音而不想处理复杂接线，信号流更固定的传统 hardware synth 反而更适合。 [来源1] [来源2] 📚 术语解释 Buchla: Don Buchla 设计的经典模块合成器体系，Suzanne Ciani 也以使用它而著名。 modular synth: 由多个独立模块通过 patch cable 连接起来的合成器系统，信号路径可自由重构。 Eurorack: 一种标准化的模块合成器规格，模块尺寸、供电和安装方式相对统一。 VCV Rack: 一个软件模块合成器环境，用虚拟模块和连线模拟硬件 modular。 patch save/recall: 保存并恢复合成器 patch 的能力；很多硬件 modular 缺少这一点。 DAW: Digital Audio Workstation，用于录音、编曲、编辑和混音的软件。 multisample: 按不同音高或力度录制的一组 sample，便于更自然地演奏和复用音色。 类别： Hardware | Product | Guide | Suzanne Ciani | Buchla | Buchla Cookbook | Orpheus Instituut | modular synthesizer ",
+    "url": "https://newshacker.me/story?id=49735010",
+    "published": "2026-09-19T21:20:03Z"
+  },
+  {
+    "id": "741c95ce2ba4b7477393770d",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "🤖 Brood War Bench：用《星际争霸》测 LLM 策略与实时决策",
+    "summary": "原标题： 《Brood War Bench》 评分: 41 | 作者: benswerd 💭 连母巢之战都打不赢，通用智能在哪儿呢？ 🎯 讨论背景 《星际争霸：母巢之战》（StarCraft: Brood War）是一款经典实时战略游戏，这个帖子讨论的是把它做成一个评测环境，让 LLM/agent 在真实对局中测试策略、操作和长期规划能力。评论里提到的实现方式主要依赖 BW-API（Brood War 的编程接口），并且尽量只提供最小化的命令和观察权限，以免评测失真。有人把它类比到 GoBench（一个用 9 ×9 Go 测试模型策略能力的基准），认为这类游戏比传统 benchmark 更能衡量规划、资源分配和局势判断。讨论也延伸到 DeepMind 在《星际争霸 II》上的成果、天梯上的现成 bot，以及能否通过 replay files（对局回放文件）和官方 parser 做进一步学习。 📌 讨论焦点 策略型 benchmark 的价值 评论者普遍认为，把《星际争霸：母巢之战》做成 benchmark 很有意义，因为它不只是单步答题，而是要同时处理长期规划、战术应对、资源分配和多线协调。有人还把它和 GoBench 类比，认为策略类任务更容易拉开不同模型之间的真实能力差距。相较于许多只考单点技巧的 benchmark，这类实时战略游戏更能暴露模型是否真的具备连续决策能力。 [来源1] [来源2] 评测 harness 与信息接口细节 有评论追问 agent 到底看到了什么、能用什么工具，以及是不是在真实实时条件下操作，还是被切成了离散时间片。作者回应说，这次主要用 Claude Code、Codex、Grok Build，原因很大程度上是成本；游戏侧则只给了最小化的 BW-API 命令与观察接口，尽量保持公平。后续还有人建议做成 best-of-5、让 agent 从前局中学习，或者让快慢两个模型协作，甚至办成 tournament。 [来源1] [来源2] [来源3] [来源4] [来源5] 现有游戏 AI 水平与未来预期 讨论里有人直接把这个 benchmark 放到 StarCraft AI 的历史脉络中，提到 DeepMind 早就做出了能击败职业玩家的《星际争霸 II》系统。也有人说现在已经有 bot 在 ladder 上横扫对手，说明自动化玩家的上限可能比很多人想象得高。与此同时，另一条回复甚至预测 LLM 很快会超过那种系统，整体语气既兴奋又带点夸张。 [来源1] [来源2] [来源3] 回放数据与模仿学习 一部分评论关注能否解析 Brood War replay files，把人类对局作为学习素材。有人提到《星际争霸 II》已经有 Blizzard 官方 parser/replayer 可用，暗示类似工具在 Brood War 上也许并不难做。还有人进一步想到，模型是否会从网上大量的战术讨论和 meme 中学到“流行打法”，甚至复现那些被玩家调侃的策略。 [来源1] [来源2] [来源3] [来源4] 老玩家社群与怀旧 除了技术讨论，还有人借题回忆起当年在网吧玩 StarCraft 的年代，以及由此结识的跨国朋友。评论里描述了从青少年时期一起打游戏，到如今大家分别成了老师、程序员、律师、油井工人等不同职业的人，仍然保持联系。这个分支把帖子从单纯的 benchmark 讨论，拉回到 StarCraft 作为一代人共同经历的文化记忆。 [来源1] [来源2] 📚 术语解释 harness: 连接 agent 与游戏环境的评测框架，负责控制输入、输出和运行流程。 BW-API: 《StarCraft: Brood War》的编程接口，用来向游戏发命令并读取观察信息。 replay files: 对局回放文件，可用于复盘、分析或作为模仿学习的数据来源。 Elo anchors: 用已知强度的对手或模型作为基准，把胜负结果换算成相对能力分数的方法。 类别： AI | Programming | Release | Review | StarCraft: Brood War | LLMs | BW-API | agents",
+    "url": "https://newshacker.me/story?id=49766966",
+    "published": "2026-09-19T20:49:58Z"
+  },
+  {
     "id": "0b70e1a9e4db05781fe66457",
     "source": "极客洞察",
     "source_title": "News Hacker | 极客洞察",
@@ -180,16 +260,6 @@
     "published": "2026-09-19T15:40:44Z"
   },
   {
-    "id": "c5bc13ff2719fdc022cc0f41",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "😒 Laya 开源复刻 Jev：prior art 与营销争议",
-    "summary": "原标题： 《Laya the open source version of Jev》 评分: 358 | 作者: nandakishor_ml 💭 把旧论文加上闭源营销，就真算前沿突破吗？ 🎯 讨论背景 这场讨论围绕 Jev 和 Laya 两个做结构化分类、概率输出的系统展开：Jev 是 Typesafe AI（一个创业团队）推出的闭源产品，Laya 则是社区做的开源版本。评论者把它和 BERT（经典 Transformer 编码器）、zero-shot NLI、GLiNER 等更早的 NLP 工作联系起来，争论它到底是新架构、旧思想产品化，还是单纯换了包装。帖子里还反复提到一篇 arXiv（论文预印本平台）论文、Hugging Face（开源模型托管平台）上的模型，以及 PyPI（Python 包索引）包，说明这条路线已经有公开实现和工具链。另一条线索是应用场景：有人把它看作能替代部分 LLM 调用的轻量分类器，也有人质疑其上下文长度、multimodal 能力和评测覆盖面。 📌 讨论焦点 营销话术与闭源争议 很多评论把矛头指向 Jev 发布时的包装方式，而不是模型本身。大家反复提到 breakthrough、System One thinking model、can&#039;t hallucinate、two years in stealth 这类措辞，认为这更像是把已有工作重新包装成革命性产品。有人觉得作者对闭源和缺乏前作致谢的不满可以理解，但也有人强调研究被产品化、被 VC 放大本来就是另一条赛道，不能按学术规范要求创业公司。整体情绪是：技术也许不差，但宣传显得过头。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] prior art 与归属之争 讨论的核心之一是 Laya、Jev 和更早论文/项目之间到底谁先谁后。有人指出 Laya 本身有更早的 arXiv 论文、Hugging Face 模型和 PyPI 包，甚至还有 GitHub 实现，因此很难说只是临时跟风。另一派则认为，学术成果被工业界拿去做产品是正常路径，独立发现同一想法也很常见，不必直接上升到抄袭。争议真正卡在“谁先公开、谁先讲清楚、谁先把它卖出去”。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11] 技术本质：更像大号分类器 不少人认为 Jev/Laya 的本质仍是 BERT 体系的升级版分类器，而不是全新的智能架构。评论里频繁拿 BERT、ModernBERT、GLiNER、zero-shot NLI 来对比，结论大多是：更多数据、更大参数、更顺手的接口，带来的是工程收益，不是范式突变。也有人质疑 RL 的叙事是否站得住，因为如果下一步动作并没有真正被改变，那就更像普通分类而不是决策系统。几条评论都要求更广泛的 benchmark，再决定要不要叫它 breakthrough。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11] [来源12] 实际价值：更快、更便宜、更可控 支持者强调，这类系统在生产环境里的吸引力主要是成本、速度和一致性。有人说它比通用 LLM 方案便宜很多、快很多，尤其适合路由、ticket 分类、销售分流、概率报告这类边界清晰的任务。也有人认为，把高频简单任务交给轻量模型，再把少数复杂案例升级给更大的模型，会比把所有请求都丢给 LLM 更实用。对这些人来说，Jev 不是“最聪明”，而是“最够用”。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11] 边界与落地限制 另一批评论集中讨论它的能力边界。有人指出当前上下文长度明显短于 Jev，且系统暂时不支持 multimodal，因此遇到截图、复杂上下文或强依赖图像的场景就会吃力。也有人怀疑评测是否足够严谨，尤其是概率校准、结构化输出和 prompt injection 风险能否真正控制住。大体判断是：它适合受约束的文本流水线，但离通用推理系统还很远。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] 社区复刻与工具化 帖子很快引出一串开源复刻和封装工具，说明这条路线的复现门槛并不高。评论里有人直接贴出 GitHub 服务、PyPI 包 hallunox、openjev、以及 Excel/LibreOffice Calc 插件，甚至还有 OpenRouter 和 Vercel AI Gateway 的接入讨论。对一些人来说，这反而说明核心思路",
-    "url": "https://newshacker.me/story?id=49765348",
-    "published": "2026-09-19T15:35:06Z"
-  },
-  {
     "id": "af4160f187c3820f70ddf357",
     "source": "极客洞察",
     "source_title": "News Hacker | 极客洞察",
@@ -288,26 +358,6 @@
     "summary": "原标题： 《Apple M6 Pro Achieves the Highest Single-Core CPU Score in Geekbench 7》 评分: 21 | 作者: gainsurier 💭 还没发布就替苹果先写高性能宣传稿了吧？ 🎯 讨论背景 Apple 的 M-series 芯片是 Mac 上的自研 SoC（系统级芯片），每一代发布前后都常被 Geekbench 7（一个常见 CPU 基准测试）跑分“提前曝光”。Geekbench 的结果会进入公开数据库，所以如果内部员工、评测样机或提前流出的机器跑过测试，型号、核心数和分数都可能被外界看到。评论里提到的 M6 Pro 还处在未正式发布的阶段，因此大家一边讨论真假，一边追问它是不是确有其机、是否会跳过某些产品线直接进入 M7 时代。争论的核心不只是性能本身，还包括 Apple 一贯的高价、营销节奏，以及“单核第一”到底算不算真正有新闻价值。 📌 讨论焦点 泄露来源与真实性 不少人先质疑这条分数从哪来，因为 Apple 还没有正式公布 M6 Pro。有人解释说这类结果常来自内部流出：员工手里有提前拿到的机器，跑完 Geekbench 后数据会被上传到公开数据库。也有人补充，M-series 芯片在正式发布前后被泄露跑分并不罕见，但对“泄露”还是“评测样机”这一点，讨论里出现了分歧。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] M6 Pro 规格与路线图 有评论直接根据 18 个 CPU cores 对比 M6 的 12 个 cores，判断这次更像是 M6 Pro，而不是基础版 M6。相关评论还提到，外界早有传闻称 Apple 可能跳过 M6 Pro/Max，把重心放到 M7 代，所以这次跑分如果属实会显得更不寻常。另一条观点则指出，Apple 芯片在单线程测试里经常压过 Ryzen 等竞品，因此高分本身并不意外。 [来源1] [来源2] “单核第一”是否真有新闻价值 有评论质疑标题到底是在说“所有 CPU 里最高”，还是只是在 M 系列内部领先；如果只是前者的宣传口径，那更像是把下一代比上一代强当成新闻。即便真的是全平台第一，也有人认为 Apple 一直擅长单线程性能，这类结果更像是延续既有趋势，而不是足以惊讶的突破。整体语气是对“最高单核分数”这种说法带着明显的怀疑。 [来源1] [来源2] 价格与苹果营销焦虑 也有人把重点放到价格上，认为如今性能/价格比越来越重要，光看跑分已经不够。另有评论用“卖肾”梗调侃 Apple 粉丝的购买热情，并把这种预热解读为一种面向早期买家的营销。还有人从 iPhone 18 发布期的预购相关文章暴增，猜测媒体和 Apple 端都可能在为预期销量紧张。 [来源1] [来源2] [来源3] 📚 术语解释 Geekbench 7: 常用的 CPU 基准测试工具，用来比较不同设备的单核和多核性能。 M-series / M 系列: Apple 用于 Mac 的自研芯片系列，包含 M1、M2、M3、M4 等代际。 单核性能: 衡量 CPU 单个核心执行速度的指标，常用于反映日常响应和很多轻负载任务表现。 Geekbench DB: Geekbench 的公开结果数据库，跑分结果上传后可能被外界检索到并用于泄露新硬件信息。 类别： Hardware | Business | Review | Apple | M6 Pro | Geekbench 7 | M6 | single-core | CPU | MacRumors",
     "url": "https://newshacker.me/story?id=49763883",
     "published": "2026-09-19T09:20:01Z"
-  },
-  {
-    "id": "0126fd4423ea28a1cee34d6c",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "🤨 重做 packfile 让 Git 直跑 object storage",
-    "summary": "原标题： 《You can run Git on object storage if you re-make packfiles》 评分: 30 | 作者: evacchi 💭 把 packfile 改一改，就算没人做过的创新了？ 🎯 讨论背景 这篇讨论围绕一篇主张重做 Git packfile 组织方式、从而让 Git 仓库直接跑在 object storage 上的文章。Git 仓库传统上依赖 filesystem 来保存对象和 packfile，所以很多托管平台也要保留本地盘或网络盘。评论区补充说，Git 其实早就能通过 dumb HTTP 以静态文件方式提供访问，只是这种方式在效率上不占优。讨论还牵涉到 GitLab（代码托管平台）、Forgejo 和 Gitea（自托管代码托管平台）、Cloudflare Durable Objects（边缘持久对象存储/计算），以及 walgit、Micelio 这类相近项目。 📌 讨论焦点 营销嫌疑/重复投稿 有人怀疑这更像营销或垃圾宣传，而不是一次正常的技术分享。理由是同一主题在很短时间内被反复投稿，显得像在刷曝光。连站点本身也被吐槽排版和字体很差，进一步削弱了可信度。 [来源1] [来源2] 对象存储需求与既有方案 支持者认为，把 Git 仓库放到 object storage 上很有吸引力，因为很多代码托管平台仍然离不开 filesystem 来存仓库。有人明确希望看到真正的纯 object storage 方案，而不是仍然绕回本地盘或别的折中层。反方则指出，这类思路并不新，Git 早就能通过 dumb HTTP 以静态文件方式提供访问，只是效率并不理想。 [来源1] [来源2] [来源3] 类似项目很多，DIY 也不少 评论里列出了多种相近实现，说明这个方向并不是孤例，而是反复有人尝试。除了 Cursor 的 Git At Any Scale 相关讨论外，还有人提到 walgit-elixir、walgit、Micelio 等项目。也有人说自己做了一个版本并运行在 agentgit.co 上，但站点文案被认为像 Claude 生成的，读起来很费劲。 [来源1] [来源2] [来源3] packfile/delta 设计的现实约束 有评论直接反对把 delta object 重新组织得过于“干净”，认为 delta encoding 本来就不是随便设计出来的。Git 的 packfile 之所以会把 base object 和 delta 组织成特定结构，是为了兼顾空间和读取效率。把 delta 独立化看似优雅，但可能会让读取对象时付出更高的重建成本。 [来源1] 更激进的分发想象 还有人顺着这个思路继续往前想，提出可以把整套方案推进到更强的内容寻址和分发协议。比如用 Merkle Patricia tree hash 替代现有的整文件 hash，再叠加类似 BitTorrent 的分发方式，以获得更强的去重和传播能力。这个观点更像是在把 Git 视为通用内容分发层，而不只是版本控制工具。 [来源1] 📚 术语解释 packfile: Git 用来把多个 object 打包并压缩到一起的文件格式，常用于传输和节省空间。 delta encoding: 只保存相对基对象的差异，读取时再把差异应用回去恢复完整内容。 object storage: 以 object 为单位存取数据的存储方式，常见于 S3 这类服务，适合海量静态数据。 类别： Systems | Programming | Guide | Git | packfiles | object storage | Tigris Data",
-    "url": "https://newshacker.me/story?id=49730069",
-    "published": "2026-09-19T08:49:48Z"
-  },
-  {
-    "id": "f5afc1b0425d575db8dd2fd9",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "😅 SDCC：8051/STM8 开源 C 编译器能用但 Bug 多，PIC 支持有限",
-    "summary": "原标题： 《SDCC – Small Device C Compiler》 评分: 20 | 作者: lioeters 💭 SDCC 这是编译器，还是踩雷抽奖机啊？ 🎯 讨论背景 SDCC（Small Device C Compiler，一个面向小型嵌入式芯片的开源 C 编译器）主要服务于 8051、PIC、STM8 这类资源紧张的 MCU 平台。这个话题的核心，是大家在比较“老旧但便宜”的芯片生态与“更新但工具链更成熟”的芯片生态：前者依赖 SDCC 这类免费工具，后者则常有更完善的 GCC 工具链和更好的性能/功耗表现。评论里提到的 PIC10/PIC12、STM32、ESP32、RP2350、nRF 都是在不同年代很常见的嵌入式路线，它们代表了从传统 8 位到更现代的替代方案。Dallas Semiconductor（早期嵌入式芯片厂商）和 Microchip（收购 Atmel 后接手 AVR 生态的半导体公司）则提供了这场讨论的历史背景。 📌 讨论焦点 免费开源，但属于“够用型”工具 不少评论把 SDCC 看成 8051 生态里最好用的 OSS 编译器之一，核心价值就是“免费且能干活”。有人明确说它很 buggy，但在预算有限或只需要完成小项目时，免费这一点就足以抵消不少缺点。也有人补充说自己在 8051 和 STM8 上用得还算顺手，说明它在某些场景里确实可以稳定落地。整体语气不是吹捧，而是把它当作一个务实、但不精致的工具。 [来源1] [来源2] [来源3] 真实 Bug 与优化坑 讨论里有多个具体故障案例，最典型的是全局 uint16 变量相加后会在若干次运算后读到垃圾内存。另一个老用户回忆，早年用 SDCC 做 PIC16 时，连最简单的 blink LED 都会表现得像随机故障，后来才发现编译器把看似“空”的循环优化掉了，而这些循环其实在驱动输出引脚。也有人指出，类似问题并不只发生在 SDCC，GCC 在 Cortex-M 上也可能因为优化过头而把明显在做事的循环删掉。评论还提醒，某些现象未必是编译器 bug，也可能是忘了用 `volatile `，或者 `volatile ` 没被正确处理。 [来源1] [来源2] [来源3] [来源4] [来源5] PIC 支持不足与现代替代方案 有人喜欢 SDCC 覆盖多种 MCU 的能力，但也抱怨它对 PIC10、PIC12 这类 8 位 PIC 的支持不够。替代方案里，Mikroe 编译器被提到能同时覆盖 C、BASIC、Pascal，算是更完整的商业选择。另一条评论则更直接：老 PIC 编译器长期不够标准化，而如今很多新芯片有免费的 gcc 工具链、更合理的功耗和 32 位浮点支持，整体性价比更高。STM32、ESP32、RP2350、nRF 被视为更省心的现代路线，PIC 只剩少数特定场景还有价值。 [来源1] [来源2] [来源3] 用 LLM 直接生成更好的 8051 编译器 有评论提到，自己因为不满意 SDCC 的输出优化，直接让 LLM 生成了一个 8051 C compiler。结果在短时间内就能正确编译项目，生成代码体积只有 SDCC 的 60% 左右。后续再经过几轮修改，它还通过了 SDCC 的测试套件，并改进了 soft float 优化。这个例子把讨论从“老编译器够不够用”推进到“是否可以用 AI 直接补齐工具链短板”。 [来源1] 老 8051 生态的怀旧感 有评论顺手提到通过这篇内容认识了 Dallas Semiconductor，并表达了对“Silicon Prairie”时代轶事的喜爱。这个侧面说明，讨论不只是围绕编译器性能，还牵涉到老一代半导体厂商和经典嵌入式平台的历史记忆。对一些人来说，SDCC 关联的是一整套旧 MCU 文化，而不只是一个编译器名字。 [来源1] 📚 术语解释 SDCC: Small Device C Compiler，一个面向小型嵌入式芯片的开源 C 编译器，常用于 8051、PIC、STM8 等平台。 8051: 经典的 8 位 MCU 架构，历史很久，但至今仍在大量旧设备和低成本嵌入式项目中出现。 PIC: Microchip 旗下的一系列 MCU，覆盖从超小型 8 位芯片到更高性能型号。 MCU: Microcontroller Unit，微控制器，通常集成 CPU、存储器和外设，用于嵌入式设备。 GCC: GNU Compiler Collection，常见的开源编译器工具链，很多现代嵌入式平台都有对应支持。 volatile: C 语言关键字，用来告诉编译器变量可能被外部因素改变，避免错误优化。 类别： Programming | Hardware | Systems | Review | Releas",
-    "url": "https://newshacker.me/story?id=49762744",
-    "published": "2026-09-19T06:25:08Z"
   },
   {
     "id": "e1600736eda855891cdad5f3",
@@ -450,56 +500,6 @@
     "published": "2026-09-18T21:24:58Z"
   },
   {
-    "id": "3db09cfe1d365fcb6f8f22c1",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "🤔 Zed 推 Delta 替代 PR：AI 聊天、CI 与隐私争议",
-    "summary": "原标题： 《Replacing Pull Requests with Delta》 评分: 128 | 作者: vquemener 💭 把 AI 聊天搬进仓库就算替代 PR 了吗？ 🎯 讨论背景 这场讨论围绕 Zed（一个协作式代码编辑器）推出的 Delta/DeltaDB（用于把代码变更、线程和上下文一起保存的系统）。它的叙事是“software is made between commits”，认为真正重要的不只是最终 diff，还包括 AI coding agent 和人类在开发过程中的决策轨迹。很多评论默认当前编码正在变成与 Claude（常见的 coding agent）之类的 agent 协作，因此传统 PR 里靠作者口述或长描述补上下文的方式越来越吃力。争议点在于，这种把过程记录直接交给审阅者的方案，是在减少信息损失，还是在把原本就冗长的开发噪声制度化。Zed 还被顺带拿来比较其编辑器稳定性、文件同步、以及和 jj（Jujutsu，一个新式 Git 工作流工具）这类工具的关系。 📌 讨论焦点 质疑：这更像共享过程记录，不像 PR 替代品 不少评论认为 Delta 并没有真正替代 PR，只是把代码变更和 AI 对话历史一起暴露出来。即使能追到最初的 prompt 或中间思路，审阅者最后还是得自己读代码，理解实现是否正确，所以这更像更高级的 git blame 或共享日志。有人甚至认为只看最终版 PR 反而更好，因为不会被开发过程中的半成品想法干扰。对这类人来说，Zed 还没有触到 GitHub / PR 真正令人头痛的核心问题。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] 支持：在 agentic coding 时代能缩短反馈循环 支持者把它看成 agentic coding 时代的自然演进。很多决策已经在 Claude 等 coding agent 里发生，传统 PR 只剩下结果，审阅者若能直接进入线程，就能更快追问关键 tradeoff，而不用等作者再转述一遍。有人把这类流程类比为 pair programming / mob programming：多人在同一上下文里协作，最后直接合并，反馈回路更短。也有人认为对某些团队，早点发现问题、把工作切成可测试的小块，确实比老式 PR 更有效。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] 认知负担：不想读整串 agent 聊天 反对者最大的情绪是信息过载。大家已经要消化自己和 agent 的长对话，不想再去读同事几十上百条消息、不断重试和修补的过程。很多人更想要的是一份经过压缩的 written artifact：说明最终改了什么、为什么改、关键取舍是什么，而不是把全部过程原样留给审阅者。这个观点并不是否认上下文重要，而是认为上下文应该被整理，而不是直接倾倒出来。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] CI / merge gating / 规模化合并控制 关于合并控制，很多人怀疑 Delta 能否真正承担 PR 的门禁职责。评论里反复提到 CI、merge gating、fast-forward merge 和 merge queue，核心担忧是：到底谁来强制检查通过，LLM 还是 git remote 规则。有人觉得如果把判断交给 agent，就失去了版本控制系统应该提供的确定性。对已有复杂合并流程、多人审批和 RBAC 的大组织来说，这种线程式合并未必能无缝落地。 [来源1] [来源2] [来源3] [来源4] [来源5] 隐私、锁定与产品实现门槛 另一大阻力来自产品实现本身，而不是理念。有人不愿意把代码和对话上传到 Zed 的 server-hosted DeltaDB，也不接受只能通过自家 editor/agent harness 使用，甚至删除数据还得走邮件流程。再加上 Zed 已经被吐槽过 file sync、大仓库卡顿、Intel Mac 支持和基础编辑功能问题，很多人对它作为关键工作流底座并不放心。对这些人来说，这不是抽象的未来工作方式，而是一个锁定强、可靠性还不够的 beta 工具。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] 新版本控制模型与相关工具类比 也有人把 Delta 放进更宽的版本控制实验里看，而不是只盯着 PR 替代。有人把它类比为 jj（Jujutsu，一个新式 Git 工作流工具）或文档版本控制，强调数据库化地保存变更理由和上下文，会比从 snapshot 反推更有信息。还有人觉得如果它足够轻量、不过度规定",
-    "url": "https://newshacker.me/story?id=49727245",
-    "published": "2026-09-18T21:00:41Z"
-  },
-  {
-    "id": "f336c1659b4da970c6c3a2c7",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "🤔 Ax-check：给网站做 AI agent 友好度评分",
-    "summary": "原标题： 《Show HN: Ax-check.com – Can agents use your product?》 评分: 23 | 作者: 0x63_Problems 💭 先把 agent 请进门，再怪它乱抓数据？ 🎯 讨论背景 Ax-check.com 是一个用来评估网站是否“适合 AI agent 使用”的 Show HN 项目，重点看 agent 能否顺利发现、浏览并操作产品页面。评论里默认它会先读首页，再尝试推断价格页、/llms.txt 等关键入口，所以站点结构会直接影响评分结果。整场讨论围绕一个新问题展开：当 agent 逐渐像搜索引擎一样成为用户入口时，产品应该主动迎合，还是尽量防止被自动化访问。讨论还牵涉到 Model Context Protocol（MCP，一种让 agent 调用工具的协议）、agentic onboarding（让 agent 自主完成注册和使用的流程）以及如何在开放性与滥用防护之间做权衡。 📌 讨论焦点 Agent 可发现性争议 一部分人把这类工具理解成面向 AI agent 的 SEO：既然 agents 正在变成新的搜索入口，网站就应该更容易被它们找到和使用。支持者认为这对商业产品很关键，因为用户越来越可能通过自己的 personal/subscription agent 来接触服务。反对者则更在意“让站点对 agents 不可见”，担心它会带来额外抓取、更多请求和资源消耗。讨论的核心不是单纯是否反爬，而是到底要把 agent 看成流量入口还是负担。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] 收益预期与 hype 质疑 有人指出，越来越多 CTO 已经把“AI agent friendly”当成采购条件，甚至会要求产品带上 AI skills、MCP Servers 之类的接入方式。另一边也有人用实际经验反驳：即使把产品做到 ax-check 满分，投入也未必带来传说中的 10x 增长。还有人把 AI 带来的收益类比为长期只有很有限的生产率提升，提醒不要把宣传口径当成现实结果。这个分歧说明大家并不否认趋势，但对商业回报非常谨慎。 [来源1] [来源2] [来源3] 站点扫描假设与 URL 支持 不少反馈集中在这个评分工具的扫描假设上：它默认从主页判断下一步该去哪里，这对单一产品站点可能有效，但对多产品站点或目录型站点就很容易失真。有人抱怨它要求整个 domain，而自己真正想测的只是某个目录下的内容。也有人拿首页和 pricing page 的例子开玩笑，说明当前导航识别并不总是靠谱。作者回应里提到它会寻找 /llms.txt 等线索，但也承认需要更好地支持深层 URL 和不同站点结构。 [来源1] [来源2] [来源3] [来源4] [来源5] 自动化 onboarding 与身份验证 评论把问题推进到更难的环节：如果让 agent 完全自动完成 onboarding，而没有人工身份确认，单靠 rate limiting 似乎很难真正挡住滥用。有人认为不同产品风险不同，不能一刀切地设计同一种流程。建议方案包括像 Cloudflare 那样允许 ephemeral accounts，或者先给出模拟/静态账户，之后再由真人认领。还有人认为这其实只是 free tier 的另一种延伸，重点在于先让 agent 开始用，再逐步转成人工账户。 [来源1] [来源2] 生态升温与试用心态 也有人把这类工具看成近期突然升温的一个方向，提到 Mintlify 也推出过类似产品，暗示 coding agents 相关需求正在快速增加。另有评论表示会把它接到自己的 MCP 上试试，说明它已经被视作可接入工作流的实用工具。最后还有人直接让 Claude 去把自己的网站评分打成零分，显出一种“既当 benchmark 又可被反向测试”的玩笑气氛。整体上，这组评论既反映了热度上升，也保留了明显的调侃和实验心态。 [来源1] [来源2] [来源3] 📚 术语解释 MCP（Model Context Protocol）: 一种让 AI agent 通过统一接口调用外部工具、数据和动作的协议。 rate limiting: 限制请求频率的机制，用来控制滥用、保护服务并降低成本。 类别： AI | Web | Security | Show HN | Release | ax-check.com | agents | AI | MCP",
-    "url": "https://newshacker.me/story?id=49744416",
-    "published": "2026-09-18T20:50:36Z"
-  },
-  {
-    "id": "211c8d9a81e412579482404a",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "⚠️ 朝鲜核试后多年小震：因果争议与核地工联想",
-    "summary": "原标题： 《North Korean nuclear test sets off years of earthquakes – Science – AAAS》 评分: 131 | 作者: rbanffy 💭 没证明因果就先写成科学定论了？ 🎯 讨论背景 这篇 Science/AAAS（美国科学促进会旗下的 Science 期刊）文章讨论的是朝鲜丰溪里（Punggye-ri，朝鲜地下核试验场）核试后，附近是否出现了持续多年的小震群。评论里有人引用补充材料，指出统计到的多是震级低于 2.0 的微震，数量接近千次，因此争议焦点之一是这些事件到底有多“可感知”，又是否足以算作真正的危险。讨论同时被拉到更大的背景里：Oklahoma fracking、荷兰 Groningen（天然气田）、美国地下核工程设想、以及历史上的核政策争论。因为主题横跨地震学、诱发地震、核武器史和地缘政治，评论很快分成了科学证据、风险判断、工程可行性和核威慑伦理几条线。 📌 讨论焦点 标题与因果证据被质疑 不少评论认为文章把相关性写成了因果，标题比正文更像“惊悚版”科学报道。有人引用补充材料和相关论文里的数字，指出统计到的多是 M &lt;2 的微震，数量虽多但单次能量很小，连 USGS 对 M2 的能量换算都说明它远谈不上灾难级别。另一些人追问，如何把核试触发的事件和本来就存在的背景地震区分开来，尤其是面对长时间滞后的情况时。 [来源1] [来源2] [来源3] [来源4] 人类活动诱发地震并不稀奇 讨论很快把北韩核试放进更大的“诱发地震”框架里，认为这类现象并不只发生在核试场。评论举了 Oklahoma fracking、荷兰 Groningen 气田、California 的石油开采、中央谷地地面沉降、采矿，以及苏联用核爆封堵漏油井等例子，说明地下抽采、注水或爆破都会改变应力场。这个视角的重点不是给核试洗白，而是强调地下工程和地层平衡之间本来就存在危险耦合。 [来源1] [来源2] [来源3] [来源4] 小震是否真能替大震泄压 一派认为，既然地层中的能量迟早会释放，成千上万次小震总比一次大震好，而且地震震级是对数尺度，很多 M2–M3 的总能量仍远低于一次大震。反对者则指出，断层系统远比单一弹簧复杂，局部卸压可能把应力转移到别处，反而诱发更大的失败。火灾、anvil、avalanche 爆破这些类比被反复拿来比较，但结论大多落在“系统太复杂，不能想当然”上。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11] [来源12] 核 geoengineering 与法律风险 有人顺势联想到 Project Plowshare 和 tectonic weapon，把核爆当成工程工具或故意扰动断层的设想。更多回复认为这在现实中几乎不可操作：污染空气和含水层、矿权争议、长期封存责任以及海量诉讼都会把项目拖死。连保险、监管和政治责任都指向同一个结论——物理上也许能想象，法律上却像一片地雷阵。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] 核威慑、北韩与历史双标 后半段评论滑向核威慑和历史道德争论，有人主张小国在面对大国胁迫时会想要防御性核武器，也有人强调核扩散只会让疯狂领导人更容易把冲突推向失控。围绕日本 1945 年投降、MAGIC 截获、Supreme War Council 分裂，以及“原子弹是否真的是唯一出路”展开了长篇争论，并被拿来类比今天的俄罗斯、乌克兰和美国的核威胁。还有人指出西方国家自己的核试早已停止，却总把报道聚焦在 North Korea，这种双重标准也被拿来批评。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11] [来源12] [来源13] [来源14] 📚 术语解释 induced seismicity（诱发地震）: 由采矿、fracking、注水或爆破等人类活动改变地下应力而引发的地震。 对数震级: 地震震级是对数尺度，一级差距对应的能量差非常大，所以很多小震未必等于一次大震。 Project Plowshare: 美国冷战时期研究“和平利用核爆”的计划，后来因环境和政治风险而终止。 tectonic weapon: 把断层、地震或板块活动当作武器来利用的设想，现实中高度争议且几乎不可控。 类别： Science | Incident | nuclear test | earthquakes | North Korea | AAAS",
-    "url": "https://newshacker.me/story?id=49755160",
-    "published": "2026-09-18T19:40:38Z"
-  },
-  {
-    "id": "1643a577b474496a972cb4f5",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "😠 微软高管：AI 抓取是人类史上最大劳动盗窃",
-    "summary": "原标题： 《Microsoft exec called AI scraping &#039;the largest theft of labor in human history&#039;》 评分: 795 | 作者: pluc 💭 你家爬虫不叫偷，别人训练就成抢劫？ 🎯 讨论背景 这条新闻围绕微软（Microsoft）高管把 AI scraping 形容为人类历史上最大的劳动盗窃，争论很快从道德评价转向 copyright、fair use 和规模效应。背景里，OpenAI（AI 公司）、Anthropic（AI 公司）等被指用网页、GitHub（代码托管平台）代码、付费内容和书籍训练 LLM（Large Language Model，大语言模型），其中还牵涉到 destructive scanning（扫描后销毁纸书）的争议。评论者不断把 LLM 训练和 Google Search（谷歌搜索引擎）、Bing（微软搜索引擎）以及图书馆作对比，争论索引和学习与复制和替代之间的界线。另一条主线是 distillation（蒸馏）和 open weights（公开权重）会不会让训练收益、知识权利和竞争规则被重新分配。 📌 讨论焦点 规模化训练被视为劳动盗用 一派认为问题不在于个人学习，而在于机器可以把海量作品一次性吸收，并把原本属于创作者的市场需求替换掉。评论里反复提到网页被反复抓取、书籍被扫描后销毁、以及内容没有得到 consent 或 compensation，认为这已经超出普通阅读或引用。很多人把它描述成把人类劳动成果打包进私有模型，再卖回给公众。也有人强调，这会直接压低创作者未来收入，甚至让职业本身消失，因此不能和人类学习类比。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] 训练不等于偷窃，偏向 fair use 另一派强调，学习、检索和复制传播是不同层次的行为，LLM 训练本质上更像从大量材料中学习，而不是把原作搬走。有人指出 copyright 主要保护 expression，不保护 ideas，模型输出通常是变形后的知识，不是原文复制。还有人拿 Google Search、图书馆和公开网页作对比，认为只要没有逐字复写，训练更接近 fair use 或研究过程。反对者则提醒，公开可访问并不等于可以无限制商用。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] 许可、税收与 open weights 方案 不少评论并不主张彻底禁掉 AI，而是主张给训练建立清晰的收费和授权机制。有人提议默认 mechanical royalty、按 revenue 抽成、强制披露训练数据和权重，甚至要求商业模型必须放出 open weights。也有人认为，如果训练数据来自受版权保护作品，输出和衍生物就该附带 royalty 或 attribution；若完全开放，则应让公众和公共机构共享收益。核心想法是把现在的先抓再说，改成可协商、可追踪的分配规则。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] 大公司双标与监管失灵 许多评论把焦点放在 Microsoft、Google、Meta 等大厂的双重标准上：一边要求别人尊重 IP、DMCA 和 license，一边自己大规模抓取、训练、再商业化。评论者认为，普通人抓一点数据会被罚、被告，企业把同样甚至更大规模的行为自动化后却能拿到 IPO、订单和监管豁免。还有人指出，监管机构和法院往往更愿意维护现状，而真正决定结果的是 lobbying、bribes 和权力，而不是抽象原则。这个角度把争议描述成富人定规则、穷人挨打。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] AI 正在破坏互联网生态和就业 另一组评论担心的不是版权条文本身，而是 AI 对整个内容生态的外部性。有人说网站被机器人反复抓取后成本飙升、流量下降甚至关站，搜索结果被 slop 淹没，StackOverflow、博客和小型站点的知识正在失去原来的入口。也有人提到创作者开始停止公开发帖或转入私密圈子，机构和行业知识在流失，而 AI 公司却用这些内容去卖订阅。再加上水、电、算力和资本开支，很多人认为这是把环境成本和失业风险外包给社会。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] 乐观派：知识民主化与生产力提升 少数评论则把这件事看成知识民主化和生产率提升。支持者说 LLM 让以前需要专家、付费墙或大量检索才能拿到的信息变得更容易使用，甚至能帮助小团队、学生和非营利组织",
-    "url": "https://newshacker.me/story?id=49752056",
-    "published": "2026-09-18T19:30:56Z"
-  },
-  {
-    "id": "0443f5b9e239a2c19adc6295",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "🤔 图论 Graph Sandwich 长期构造终被攻克",
-    "summary": "原标题： 《Mathematicians Build Long-Awaited Graph Sandwich》 评分: 20 | 作者: ibobev 💭 既然最后能取 complement，前面到底卡在哪？ 🎯 讨论背景 这篇讨论围绕一篇 arXiv 预印本展开，主题是图论（离散数学的一个分支）里一个长期悬而未决的 graph sandwich 构造问题：在两层约束之间搭出满足条件的图对象。评论提到的“upper part”和“lower part”暗示该结果涉及分上下两段构造，而难点在于把一侧简单取 complement（补图）并不一定能得到另一侧。另一条支线转向形式化数学：Lean（一个交互式定理证明器）和 mathlib4（Lean 4 的社区数学库）被反复提起，因为有人在问数学论文是否越来越常附带 Lean proof。回复指出这仍不普遍，但 Palomar registry（一个 Lean proof 注册表）等基础设施和 LLM 正在让形式化证明更容易进入主流工作流。 📌 讨论焦点 纯图论，不是 ML 有人看到标题后联想到 distillation、较小的 transformer 或其他 ML 技术，但很快被纠正：这基本是纯粹的 graph theory。讨论者强调它属于 combinatorics 的内部结果，和模型压缩、神经网络结构关系不大。也有人直接表示自己熟悉 ML 侧却看不出连接点，说明标题的比喻很容易把外行带偏。 [来源1] [来源2] [来源3] Lean 证明与数学代码仓库 另一条线集中在 Lean 证明是否已经成了数学论文的标配。回复说，除了少数领域如 HoTT（同伦类型论）外，形式化证明仍然很少见，但情况正在变化。有人提到 Palomar registry（一个 Lean proof 注册表）和 mathlib4（Lean 4 的社区数学库），并指出 LLM 让 Lean proof 更容易生成，所以这类形式化成果正在增加，但远未普及。 [来源1] [来源2] [来源3] [来源4] 补图为何不对称 有评论直接追问：如果上半部分只是下半部分的 complement，为什么还会更难？这个问题指向图论里的一个常见坑——把图取 complement（补图）并不保证你需要的性质会原样保留。换句话说，看似对称的上下两半，往往因为额外约束而不能简单互相翻转，真正的难点就藏在这些不对称条件里。 [来源1] 论文原文与“面包/肉”玩笑 有人贴出 arXiv 链接，表示真正的技术内容在原始论文里，而不是新闻标题。随后又有人开玩笑说这更像是“面包”而不是“肉”，暗示新闻只是包装，论文才是核心。这个小插曲也反映了 HN 上常见的阅读方式：先看科普标题，再回到 preprint 找真正的定义、构造和证明。 [来源1] [来源2] 📚 术语解释 Lean: 一个交互式定理证明器，用来把数学证明形式化为可机器检查的代码。 mathlib4: Lean 4 社区维护的数学库，包含大量已形式化的定义、定理和证明。 complement / 补图: 把图中的边与非边互换得到的图；常用于研究与原图互补的性质，但不一定保留所需约束。 类别： Science | Paper | graph sandwich | graph theory | arXiv:2510.20765 | Quanta Magazine | Lean | LLMs",
-    "url": "https://newshacker.me/story?id=49755095",
-    "published": "2026-09-18T19:25:28Z"
-  },
-  {
     "id": "7dbb074bc5d0271a9494d53a",
     "source": "極客死亡計劃",
     "source_title": "极客死亡计划 ｜ 極客死亡計劃",
@@ -540,20 +540,20 @@
     "published": "2026-09-17T01:30:00Z"
   },
   {
-    "id": "6465fca2bfc5cf0e1a89c881",
-    "source": "潮流周刊",
+    "id": "5ea2f1326c24b6a6c204231d",
+    "source": "心的道理",
     "source_title": "心的道理",
-    "category": "技术",
+    "category": "人文思想",
     "title": "人文学科的阴影与补偿：一种荣格主义的诠释",
     "summary": "在此前的一篇文章中，我讨论了计算机科学专业的从业者跟二次元大有关系的原因，并且我采用的是荣格的理论。实际上，各个学科的从业者都可以反思一下这个学科给自己带来了什么样的阴影。那么，作为人文学科的从业者，我就应该来做一个反思的表率，来看看我们这些人的隐秘的内心世界。再一次声明，这个讨论本质上是启发性的和试探性的，而不是想提出一种我自认为非常确定的理论。 两个方向的阴影和补偿 不过，我马上遭遇的困难是， [&#8230;] 来源",
     "url": "https://stephenleng.com/cn/ren-wen-yin-ying-bu-chang/",
     "published": "2026-09-16T03:53:55Z"
   },
   {
-    "id": "5ea2f1326c24b6a6c204231d",
-    "source": "心的道理",
+    "id": "6465fca2bfc5cf0e1a89c881",
+    "source": "潮流周刊",
     "source_title": "心的道理",
-    "category": "人文思想",
+    "category": "技术",
     "title": "人文学科的阴影与补偿：一种荣格主义的诠释",
     "summary": "在此前的一篇文章中，我讨论了计算机科学专业的从业者跟二次元大有关系的原因，并且我采用的是荣格的理论。实际上，各个学科的从业者都可以反思一下这个学科给自己带来了什么样的阴影。那么，作为人文学科的从业者，我就应该来做一个反思的表率，来看看我们这些人的隐秘的内心世界。再一次声明，这个讨论本质上是启发性的和试探性的，而不是想提出一种我自认为非常确定的理论。 两个方向的阴影和补偿 不过，我马上遭遇的困难是， [&#8230;] 来源",
     "url": "https://stephenleng.com/cn/ren-wen-yin-ying-bu-chang/",
@@ -670,20 +670,20 @@
     "published": "2026-09-13T14:00:00Z"
   },
   {
-    "id": "6b8987fdd62a047314ef209f",
-    "source": "潮流周刊",
+    "id": "b36db238deb53c7f90523cc9",
+    "source": "心的道理",
     "source_title": "心的道理",
-    "category": "技术",
+    "category": "人文思想",
     "title": "晚期资本主义？一种隐秘的历史目的论",
     "summary": "虽然“晚期资本主义”这一术语已经诞生了一百多年，但这一术语在今天看起来是如此时髦，以至于今天许多年轻人如同复读机一样使用它。20世纪20年代，德国学者维尔纳·桑巴特把资本主义分为早期、中期和晚期——他对马克思的研究做出过高度评价，但他本质上不是马克思主义者。一战期间，他成为德国的“文化对阵文明”论拥护者，认为德国是在用自己的高度文化成就对抗英法的物质文明；而在纳粹时期，他又向国家社会主义投桃报李， [&#8230;] 来源",
     "url": "https://stephenleng.com/cn/wan-qi-zi-ben-zhu-yi/",
     "published": "2026-09-13T10:31:16Z"
   },
   {
-    "id": "b36db238deb53c7f90523cc9",
-    "source": "心的道理",
+    "id": "6b8987fdd62a047314ef209f",
+    "source": "潮流周刊",
     "source_title": "心的道理",
-    "category": "人文思想",
+    "category": "技术",
     "title": "晚期资本主义？一种隐秘的历史目的论",
     "summary": "虽然“晚期资本主义”这一术语已经诞生了一百多年，但这一术语在今天看起来是如此时髦，以至于今天许多年轻人如同复读机一样使用它。20世纪20年代，德国学者维尔纳·桑巴特把资本主义分为早期、中期和晚期——他对马克思的研究做出过高度评价，但他本质上不是马克思主义者。一战期间，他成为德国的“文化对阵文明”论拥护者，认为德国是在用自己的高度文化成就对抗英法的物质文明；而在纳粹时期，他又向国家社会主义投桃报李， [&#8230;] 来源",
     "url": "https://stephenleng.com/cn/wan-qi-zi-ben-zhu-yi/",
@@ -810,20 +810,20 @@
     "published": "2026-09-07T15:37:10Z"
   },
   {
-    "id": "81d9d3f32c4a295325521b53",
-    "source": "潮流周刊",
+    "id": "b3773cca645c3243d21e3311",
+    "source": "心的道理",
     "source_title": "心的道理",
-    "category": "技术",
+    "category": "人文思想",
     "title": "谎言秩序中的心理退行与犬儒主义——以俄罗斯公共生活为例",
     "summary": "在此前的一篇文章中，我已经指出，俄罗斯人当下以及过去长期生活在谎言秩序之中。我暂且把“谎言秩序”定义如下：一种将显而易见或被普遍觉察的虚假叙事制度化为社会协作中介与权力统治基石的治理形态。 谎言秩序在帝国时期、苏联时期和当下时期有不同的形态。在苏联时期，一个苏联公民同时需要积极和消极配合谎言，而在普京时代，一个俄罗斯公民往往只需要消极配合谎言。哈维尔在《无权力者的权力》提出了一个著名的例子：一个捷 [&#8230;] 来源",
     "url": "https://stephenleng.com/cn/huang-yan-tui-xing-quan-ru/",
     "published": "2026-09-07T15:08:44Z"
   },
   {
-    "id": "b3773cca645c3243d21e3311",
-    "source": "心的道理",
+    "id": "81d9d3f32c4a295325521b53",
+    "source": "潮流周刊",
     "source_title": "心的道理",
-    "category": "人文思想",
+    "category": "技术",
     "title": "谎言秩序中的心理退行与犬儒主义——以俄罗斯公共生活为例",
     "summary": "在此前的一篇文章中，我已经指出，俄罗斯人当下以及过去长期生活在谎言秩序之中。我暂且把“谎言秩序”定义如下：一种将显而易见或被普遍觉察的虚假叙事制度化为社会协作中介与权力统治基石的治理形态。 谎言秩序在帝国时期、苏联时期和当下时期有不同的形态。在苏联时期，一个苏联公民同时需要积极和消极配合谎言，而在普京时代，一个俄罗斯公民往往只需要消极配合谎言。哈维尔在《无权力者的权力》提出了一个著名的例子：一个捷 [&#8230;] 来源",
     "url": "https://stephenleng.com/cn/huang-yan-tui-xing-quan-ru/",
@@ -880,20 +880,20 @@
     "published": "2026-09-05T17:45:41Z"
   },
   {
-    "id": "eeee3e9f4849cbd7e14d36d5",
-    "source": "潮流周刊",
+    "id": "ddae98b608563c88383780a4",
+    "source": "心的道理",
     "source_title": "心的道理",
-    "category": "技术",
+    "category": "人文思想",
     "title": "谎言秩序：俄罗斯公共生活的荒诞性",
     "summary": "俄罗斯这个民族的公共生活是由谎言所维系的，其民族集体心理已经陷入退行长达几个世纪。帝国时代，沙皇君权神授，体贴爱民；假如哪里出了问题，那一定是贵族和官僚的错误。苏联时代，各种内容空洞关于美好生活的宣传标语与民众排长队买面包的现实景象构成了反讽的对比。而到了当代俄罗斯，谎言不仅处于宏大叙事的层面，而且已经深入到具体事件的层面。 自2022年开战以来，普京政府试图把战争从城市居民的日常生活隔离起来，而 [&#8230;] 来源",
     "url": "https://stephenleng.com/cn/huang-yan-zhi-xu-e-luo-si/",
     "published": "2026-09-05T13:50:48Z"
   },
   {
-    "id": "ddae98b608563c88383780a4",
-    "source": "心的道理",
+    "id": "eeee3e9f4849cbd7e14d36d5",
+    "source": "潮流周刊",
     "source_title": "心的道理",
-    "category": "人文思想",
+    "category": "技术",
     "title": "谎言秩序：俄罗斯公共生活的荒诞性",
     "summary": "俄罗斯这个民族的公共生活是由谎言所维系的，其民族集体心理已经陷入退行长达几个世纪。帝国时代，沙皇君权神授，体贴爱民；假如哪里出了问题，那一定是贵族和官僚的错误。苏联时代，各种内容空洞关于美好生活的宣传标语与民众排长队买面包的现实景象构成了反讽的对比。而到了当代俄罗斯，谎言不仅处于宏大叙事的层面，而且已经深入到具体事件的层面。 自2022年开战以来，普京政府试图把战争从城市居民的日常生活隔离起来，而 [&#8230;] 来源",
     "url": "https://stephenleng.com/cn/huang-yan-zhi-xu-e-luo-si/",
@@ -950,20 +950,20 @@
     "published": "2026-08-27T01:39:25Z"
   },
   {
-    "id": "10abd0b5eb309bb94f385389",
-    "source": "潮流周刊",
+    "id": "08b32525ff24e22cd8418c6d",
+    "source": "心的道理",
     "source_title": "心的道理",
-    "category": "技术",
+    "category": "人文思想",
     "title": "东亚社会里的性别厌恶中的种族性",
     "summary": "在东亚社会，“厌女”和“厌男”不仅是对他人或某个群体的指责，而且也可以是一个群体或个人的自我标榜，而后者是东亚激进性别主义的典型特征。在社交媒体上，我们可以看到一个有着大量粉丝的中文博主堂而皇之地——用文明的标准来说，则是不知羞耻地——并且骄傲地宣告自己厌女或厌男。这些人可能对反方向的性别厌恶常有分析和批判，但对自己施加的性别厌恶却缺少自我分析和反省。 但细究起来，这些宣告自己厌女或厌男的人，表面 [&#8230;] 来源",
     "url": "https://stephenleng.com/cn/dong-ya-xing-bie-yan-wu-zhong-zu/",
     "published": "2026-08-24T05:26:57Z"
   },
   {
-    "id": "08b32525ff24e22cd8418c6d",
-    "source": "心的道理",
+    "id": "10abd0b5eb309bb94f385389",
+    "source": "潮流周刊",
     "source_title": "心的道理",
-    "category": "人文思想",
+    "category": "技术",
     "title": "东亚社会里的性别厌恶中的种族性",
     "summary": "在东亚社会，“厌女”和“厌男”不仅是对他人或某个群体的指责，而且也可以是一个群体或个人的自我标榜，而后者是东亚激进性别主义的典型特征。在社交媒体上，我们可以看到一个有着大量粉丝的中文博主堂而皇之地——用文明的标准来说，则是不知羞耻地——并且骄傲地宣告自己厌女或厌男。这些人可能对反方向的性别厌恶常有分析和批判，但对自己施加的性别厌恶却缺少自我分析和反省。 但细究起来，这些宣告自己厌女或厌男的人，表面 [&#8230;] 来源",
     "url": "https://stephenleng.com/cn/dong-ya-xing-bie-yan-wu-zhong-zu/",
@@ -1010,20 +1010,20 @@
     "published": "2026-08-20T06:03:08Z"
   },
   {
-    "id": "ac7f6d9a5655700ea3e248e6",
-    "source": "潮流周刊",
+    "id": "4d0996a55cea0f02bf1ad08c",
+    "source": "心的道理",
     "source_title": "心的道理",
-    "category": "技术",
+    "category": "人文思想",
     "title": "日常生活中的结构先锋主义：以女权主义和批判性别理论为例",
     "summary": "米兰·昆德拉在《不能承受的生命之轻》中提到：“罪恶的制度并非由罪人建立，而恰恰由那些确信已经找到了通往天堂的唯一道路的积极分子所建立。”这样的例子在今天的日常生活中仍屡见不鲜，只是他们并没有或者尚未成功地改造社会并建立制度。这些人认为存在某种结构性的不公，同时大多数人对这种结构性不公置若罔闻，于是呼吁要大规模改造社会和执行要修正历史错误的政策才能解决这种不公。我把这些人的观念称之为“结构先锋主义” [&#8230;] 来源",
     "url": "https://stephenleng.com/cn/jie-gou-xian-feng-zhu-yi/",
     "published": "2026-08-19T07:36:23Z"
   },
   {
-    "id": "4d0996a55cea0f02bf1ad08c",
-    "source": "心的道理",
+    "id": "ac7f6d9a5655700ea3e248e6",
+    "source": "潮流周刊",
     "source_title": "心的道理",
-    "category": "人文思想",
+    "category": "技术",
     "title": "日常生活中的结构先锋主义：以女权主义和批判性别理论为例",
     "summary": "米兰·昆德拉在《不能承受的生命之轻》中提到：“罪恶的制度并非由罪人建立，而恰恰由那些确信已经找到了通往天堂的唯一道路的积极分子所建立。”这样的例子在今天的日常生活中仍屡见不鲜，只是他们并没有或者尚未成功地改造社会并建立制度。这些人认为存在某种结构性的不公，同时大多数人对这种结构性不公置若罔闻，于是呼吁要大规模改造社会和执行要修正历史错误的政策才能解决这种不公。我把这些人的观念称之为“结构先锋主义” [&#8230;] 来源",
     "url": "https://stephenleng.com/cn/jie-gou-xian-feng-zhu-yi/",
@@ -1170,20 +1170,20 @@
     "published": "2026-08-03T00:00:00Z"
   },
   {
-    "id": "543fdc346887993c429b39e5",
-    "source": "潮流周刊",
+    "id": "84a15ca227e694330b81f334",
+    "source": "心的道理",
     "source_title": "心的道理",
-    "category": "技术",
+    "category": "人文思想",
     "title": "谈谈杭州",
     "summary": "曾经有一位打算去武汉工作的朋友问我对这个城市的观感如何。我沉默了大约五秒钟，然后蹦出“脏乱差”“公交车开得很快”，然后便无话可说了。但就算是这两点，我也是从网络上或从身边人那里道听途说的，而不是来自自己的总结。另一位朋友曾从武汉旅行回杭州，告诉我说，跟杭州相比，杂乱的武汉就像是一个大县城。我在武汉生活过两年多，但是我却无法从自己的经验或记忆得出任何有价值的判断。那段生活仿佛是一片空白。之所以如此， [&#8230;] 来源",
     "url": "https://stephenleng.com/cn/tan-tan-hang-zhou/",
     "published": "2026-07-26T04:11:05Z"
   },
   {
-    "id": "84a15ca227e694330b81f334",
-    "source": "心的道理",
+    "id": "543fdc346887993c429b39e5",
+    "source": "潮流周刊",
     "source_title": "心的道理",
-    "category": "人文思想",
+    "category": "技术",
     "title": "谈谈杭州",
     "summary": "曾经有一位打算去武汉工作的朋友问我对这个城市的观感如何。我沉默了大约五秒钟，然后蹦出“脏乱差”“公交车开得很快”，然后便无话可说了。但就算是这两点，我也是从网络上或从身边人那里道听途说的，而不是来自自己的总结。另一位朋友曾从武汉旅行回杭州，告诉我说，跟杭州相比，杂乱的武汉就像是一个大县城。我在武汉生活过两年多，但是我却无法从自己的经验或记忆得出任何有价值的判断。那段生活仿佛是一片空白。之所以如此， [&#8230;] 来源",
     "url": "https://stephenleng.com/cn/tan-tan-hang-zhou/",
@@ -1410,20 +1410,20 @@
     "published": "2026-06-27T05:09:56Z"
   },
   {
-    "id": "e7ddf1cce5aee6bf2c5953eb",
-    "source": "潮流周刊",
+    "id": "00083a5849ff2ea80d3e8de1",
+    "source": "心的道理",
     "source_title": "心的道理",
-    "category": "技术",
+    "category": "人文思想",
     "title": "论现代英雄：来自好莱坞的一些例子",
     "summary": "“英雄”通常指的是拥有过人的技能和胆识，同时又领导着一群追随者的人。英雄在古代的文学作品中是一个突出的主题，而在现代的文艺作品中，英雄主题不再那么重要，与此同时则是“反英雄”这一主题的崛起。不过，我发现自己还是不太喜欢像沃尔特·怀特（《绝命毒师》）这样的反英雄，而还是更喜欢传统的英雄——而且是由好莱坞打造的一种特定类型的英雄。 这样一种英雄类型，我想到的例子有柯布（《盗梦空间》）、米勒（《拯救大兵 [&#8230;] 来源",
     "url": "https://stephenleng.com/cn/xian-dai-ying-xiong-hao-lai-wu/",
     "published": "2026-06-26T08:37:29Z"
   },
   {
-    "id": "00083a5849ff2ea80d3e8de1",
-    "source": "心的道理",
+    "id": "e7ddf1cce5aee6bf2c5953eb",
+    "source": "潮流周刊",
     "source_title": "心的道理",
-    "category": "人文思想",
+    "category": "技术",
     "title": "论现代英雄：来自好莱坞的一些例子",
     "summary": "“英雄”通常指的是拥有过人的技能和胆识，同时又领导着一群追随者的人。英雄在古代的文学作品中是一个突出的主题，而在现代的文艺作品中，英雄主题不再那么重要，与此同时则是“反英雄”这一主题的崛起。不过，我发现自己还是不太喜欢像沃尔特·怀特（《绝命毒师》）这样的反英雄，而还是更喜欢传统的英雄——而且是由好莱坞打造的一种特定类型的英雄。 这样一种英雄类型，我想到的例子有柯布（《盗梦空间》）、米勒（《拯救大兵 [&#8230;] 来源",
     "url": "https://stephenleng.com/cn/xian-dai-ying-xiong-hao-lai-wu/",
@@ -1460,20 +1460,20 @@
     "published": "2026-06-22T19:59:36Z"
   },
   {
-    "id": "16861f1389db8171e2041472",
-    "source": "潮流周刊",
+    "id": "0fd152c418690dedc74ecd1d",
+    "source": "心的道理",
     "source_title": "心的道理",
-    "category": "技术",
+    "category": "人文思想",
     "title": "一个人每周需要多少闲暇？",
     "summary": "时间是稀缺的——要是一个人更早地且牢固地意识到这个真理，那么可能就会更珍惜自己的时间，并且用在有价值的事情上。在小时候，假如是在寒暑假，我感到时间似乎是无限的，于是大量时间被用于玩乐。而当一个人开始工作后，这样的无限的且无忧无虑的时间感就离开了。 在996这个话语刚刚流行开来时，以及马云公开为996辩护并称之为“福报”时，我当时也是一个996和资本家的反感者，并且在内心中质问为何劳动法没有被贯彻执 [&#8230;] 来源",
     "url": "https://stephenleng.com/cn/xian-xia-duo-shao-xu-yao/",
     "published": "2026-06-22T09:35:04Z"
   },
   {
-    "id": "0fd152c418690dedc74ecd1d",
-    "source": "心的道理",
+    "id": "16861f1389db8171e2041472",
+    "source": "潮流周刊",
     "source_title": "心的道理",
-    "category": "人文思想",
+    "category": "技术",
     "title": "一个人每周需要多少闲暇？",
     "summary": "时间是稀缺的——要是一个人更早地且牢固地意识到这个真理，那么可能就会更珍惜自己的时间，并且用在有价值的事情上。在小时候，假如是在寒暑假，我感到时间似乎是无限的，于是大量时间被用于玩乐。而当一个人开始工作后，这样的无限的且无忧无虑的时间感就离开了。 在996这个话语刚刚流行开来时，以及马云公开为996辩护并称之为“福报”时，我当时也是一个996和资本家的反感者，并且在内心中质问为何劳动法没有被贯彻执 [&#8230;] 来源",
     "url": "https://stephenleng.com/cn/xian-xia-duo-shao-xu-yao/",
@@ -1500,20 +1500,20 @@
     "published": "2026-06-11T13:32:44Z"
   },
   {
-    "id": "6f1d10303b3252662b33a7a4",
-    "source": "潮流周刊",
+    "id": "425294f99ffc96001b04588a",
+    "source": "心的道理",
     "source_title": "心的道理",
-    "category": "技术",
+    "category": "人文思想",
     "title": "拥有一套只属于自己的房屋？放弃这个执念吧",
     "summary": "我曾经住在杭州市的一个高层公寓里。这是一种“双钥匙”房型，进房间外门后，紧邻着就是一个房间的内门，以及一个狭窄的楼梯通往楼上的房间。很多女性在这个公寓楼里养各种宠物，但居然还有人在楼里养人类婴儿。平时或是周末，我下楼路过公寓楼大厅时，时常看到一些父母或爷奶推着婴儿车举行社交活动。在这样的楼里还能带孩子？我感到有点不可思议。曾经我也以为买一个自己的房子是生育的必需品，但目前看来，这显然不是必需品。 [&#8230;] 来源",
     "url": "https://stephenleng.com/cn/mai-fang-zhi-nian/",
     "published": "2026-06-11T02:17:49Z"
   },
   {
-    "id": "425294f99ffc96001b04588a",
-    "source": "心的道理",
+    "id": "6f1d10303b3252662b33a7a4",
+    "source": "潮流周刊",
     "source_title": "心的道理",
-    "category": "人文思想",
+    "category": "技术",
     "title": "拥有一套只属于自己的房屋？放弃这个执念吧",
     "summary": "我曾经住在杭州市的一个高层公寓里。这是一种“双钥匙”房型，进房间外门后，紧邻着就是一个房间的内门，以及一个狭窄的楼梯通往楼上的房间。很多女性在这个公寓楼里养各种宠物，但居然还有人在楼里养人类婴儿。平时或是周末，我下楼路过公寓楼大厅时，时常看到一些父母或爷奶推着婴儿车举行社交活动。在这样的楼里还能带孩子？我感到有点不可思议。曾经我也以为买一个自己的房子是生育的必需品，但目前看来，这显然不是必需品。 [&#8230;] 来源",
     "url": "https://stephenleng.com/cn/mai-fang-zhi-nian/",

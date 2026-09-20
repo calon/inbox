@@ -18,8 +18,10 @@ body {
   line-height: 1.45;
 }
 
-.article-summary {
-  line-height: 1.65;
+.article-body {
+  line-height: 1.8;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
 }
 
 .article-row:hover {

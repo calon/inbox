@@ -57,33 +57,69 @@ function renderArticles() {
 
   empty.classList.add("hidden");
 
-  list.innerHTML = state.filtered.map(article => `
-    <article class="article-row py-5">
-      <div class="mb-1 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-gray-400">
-        <span class="font-medium text-gray-600">${escapeHtml(article.source)}</span>
-        <span>·</span>
-        <span>${escapeHtml(article.category)}</span>
-        <span>·</span>
-        <time datetime="${escapeHtml(article.published || "")}"
-              title="${escapeHtml(formatDate(article.published))}">
-          ${escapeHtml(relativeDate(article.published))}
-        </time>
-      </div>
-      <h2 class="article-title text-base font-medium text-gray-900">
-        <a href="${escapeHtml(article.url)}"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="hover:underline">
-          ${escapeHtml(article.title)}
-        </a>
-      </h2>
-      ${article.summary ? `
-        <p class="article-summary mt-2 max-w-4xl text-sm text-gray-600">
-          ${escapeHtml(article.summary)}
-        </p>
-      ` : ""}
-    </article>
-  `).join("");
+  list.innerHTML = state.filtered.map((article, index) => {
+    const articleId = `article-${index}-${escapeHtml(article.id || "item")}`;
+    return `
+      <article class="article-row py-4" data-article-id="${articleId}">
+        <div class="mb-1 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs text-gray-400">
+          <span class="font-medium text-gray-600">${escapeHtml(article.source)}</span>
+          <span>·</span>
+          <span>${escapeHtml(article.category)}</span>
+          <span>·</span>
+          <time datetime="${escapeHtml(article.published || "")}"
+                title="${escapeHtml(formatDate(article.published))}">
+            ${escapeHtml(relativeDate(article.published))}
+          </time>
+        </div>
+
+        <div class="flex items-start gap-3">
+          <h2 class="article-title min-w-0 flex-1 text-base font-medium text-gray-900">
+            <a href="${escapeHtml(article.url)}"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="hover:underline">
+              ${escapeHtml(article.title)}
+            </a>
+          </h2>
+          ${article.summary ? `
+            <button
+              type="button"
+              class="article-toggle shrink-0 border border-gray-300 px-2 py-1 text-xs text-gray-500 hover:border-gray-500 hover:text-gray-800"
+              aria-expanded="false"
+              aria-controls="${articleId}-content">
+              展开
+            </button>
+          ` : ""}
+        </div>
+
+        ${article.summary ? `
+          <div id="${articleId}-content" class="article-content mt-3 hidden">
+            <div class="article-body max-w-4xl text-sm text-gray-700">
+              ${escapeHtml(article.summary)}
+            </div>
+            <a href="${escapeHtml(article.url)}"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="mt-3 inline-block text-sm text-gray-500 hover:text-gray-900 hover:underline">
+              阅读原文 →
+            </a>
+          </div>
+        ` : ""}
+      </article>
+    `;
+  }).join("");
+
+  list.querySelectorAll(".article-toggle").forEach(button => {
+    button.addEventListener("click", () => {
+      const content = document.getElementById(button.getAttribute("aria-controls"));
+      if (!content) return;
+
+      const expanded = button.getAttribute("aria-expanded") === "true";
+      button.setAttribute("aria-expanded", String(!expanded));
+      button.textContent = expanded ? "展开" : "收起";
+      content.classList.toggle("hidden", expanded);
+    });
+  });
 }
 
 function rebuildFilters() {

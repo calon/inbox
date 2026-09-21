@@ -27,7 +27,7 @@ feeds:
 
   - name: 太隐
     url: "https://wangyurui.com//feed"
-    category: 人文思想
+    category: 思想
     enabled: true
     refresh: "12h"
 
@@ -39,13 +39,13 @@ feeds:
 
   - name: 心的道理
     url: "https://stephenleng.com/cn/rss"
-    category: 人文思想
+    category: 思想
     enabled: true
     refresh: "12h"
 
   - name: So!azy
     url: "https://blog.solazy.me/feed/"
-    category: 生活随笔
+    category: 思想
     enabled: true
     refresh: "12h"
 
@@ -57,7 +57,7 @@ feeds:
 
   - name: 虹线
     url: "https://1q43.blog/feed"
-    category: 人文思想
+    category: 思想
     enabled: true
     refresh: "12h"
 
@@ -75,43 +75,49 @@ feeds:
 
   - name: 创造力溢出
     url: "https://quaily.com/goldengrape/feed/atom"
-    category: 人文思想
+    category: 思想
     enabled: true
     refresh: "12h"
 
   - name: 莫比乌斯
     url: "https://onojyun.com/feed/"
-    category: 人文思想
+    category: 思想
     enabled: true
     refresh: "12h"
 
   - name: 于淼
     url: "https://yufree.cn/cn/index.xml"
-    category: 人文思想
+    category: 思想
     enabled: true
     refresh: "12h"
 
   - name: 写点儿长文
     url: "https://medium.com/feed/@prjcowork"
-    category: 人文思想
+    category: 思想
     enabled: true
     refresh: "12h"
 
-  - name: 波士頓書評
+  - name: 之間書評
     url: "https://bostonreviewofbooks.substack.com/feed"
-    category: 人文思想
+    category: 思想
     enabled: true
     refresh: "12h"
 
   - name: Frank笔记
     url: "https://frank2019.me/rss.xml"
-    category: 生活随笔
+    category: 思想
     enabled: true
     refresh: "12h"
 
-  - name: Buzzing
-    url: "https://www.buzzing.cc/feed.xml"
+  - name: Buzzing News
+    url: "https://news.buzzing.cc/feed.xml"
     category: 新闻
+    enabled: true
+    refresh: "12h"
+
+  - name: Big Think
+    url: "https://bigthink.buzzing.cc/feed.xml"
+    category: 思想
     enabled: true
     refresh: "12h"
 
@@ -123,6 +129,24 @@ feeds:
 
   - name: 新京报书评周刊
     url: "http://feedmaker.kindle4rss.com/feeds/ibookreview.weixin.xml"
+    category: 新闻
+    enabled: true
+    refresh: "12h"
+
+  - name: 汉洋滔天
+    url: "https://hanyang.wtf/feed"
+    category: 思想
+    enabled: true
+    refresh: "12h"
+
+  - name: 徒步的骑手
+    url: "https://caminodetexas.substack.com/feed"
+    category: 思想
+    enabled: true
+    refresh: "12h"
+
+  - name: 水瓶纪元
+    url: "https://aquarianhq.substack.com/feed"
     category: 新闻
     enabled: true
     refresh: "12h"

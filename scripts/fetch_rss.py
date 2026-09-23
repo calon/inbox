@@ -77,20 +77,8 @@ def clean_html(value: str | None) -> str:
         return ""
     value = re.sub(r"<script\b[^>]*>.*?</script>", " ", value, flags=re.I | re.S)
     value = re.sub(r"<style\b[^>]*>.*?</style>", " ", value, flags=re.I | re.S)
-    # Preserve paragraph/block boundaries so the frontend can display RSS
-    # summaries as readable multi-line content instead of one long paragraph.
-    value = re.sub(r"<br\s*/?>", "\n", value, flags=re.I)
-    value = re.sub(
-        r"</?(?:p|div|section|article|blockquote|li|h[1-6]|pre|ul|ol)[^>]*>",
-        "\n",
-        value,
-        flags=re.I,
-    )
     value = re.sub(r"<[^>]+>", " ", value)
-    value = re.sub(r"[ \t]+", " ", value)
-    value = re.sub(r"\n[ \t]+", "\n", value)
-    value = re.sub(r"\n{3,}", "\n\n", value)
-    return value.strip()
+    return re.sub(r"\s+", " ", value).strip()
 
 def article_id(source: str, entry: Any) -> str:
     guid = entry.get("id") or entry.get("guid") or entry.get("link") or entry.get("title")
@@ -298,6 +286,15 @@ def main() -> int:
     save_json(SITE_DATA / "sources.json", sources)
     save_json(SITE_DATA / "update.json", update)
     save_json(state_path, state)
+
+    # config.yaml is the single source of truth for public site metadata.
+    site_cfg = cfg.get("site", {})
+    save_json(ROOT / "site" / "config-public.json", {
+        "site": {
+            "title": site_cfg.get("title", "RSS News Radar"),
+            "description": site_cfg.get("description", ""),
+        }
+    })
 
     print(json.dumps(update, ensure_ascii=False, indent=2))
     return 0

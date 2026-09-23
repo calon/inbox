@@ -111,8 +111,8 @@ feeds:
 
   - name: Buzzing News
     url: "https://news.buzzing.cc/feed.xml"
-    category: 新闻
-    enabled: true
+    category: 新闻汇总
+    enabled: false
     refresh: "12h"
 
   - name: Big Think
@@ -148,6 +148,30 @@ feeds:
   - name: 水瓶纪元
     url: "https://aquarianhq.substack.com/feed"
     category: 新闻
+    enabled: true
+    refresh: "12h"
+
+  - name: est の 输入输出
+    url: "http://feeds.feedburner.com/initiative"
+    category: 技术
+    enabled: true
+    refresh: "12h"
+
+  - name: 椒盐豆豉
+    url: "https://blog.douchi.space/index.xml"
+    category: 生活
+    enabled: true
+    refresh: "12h"
+
+  - name: Pseudoyu
+    url: "https://www.pseudoyu.com/zh/index.xml"
+    category: 生活
+    enabled: true
+    refresh: "12h"
+
+  - name: SUiTHiNK
+    url: "https://suithink.me/atom"
+    category: 生活
     enabled: true
     refresh: "12h"
 

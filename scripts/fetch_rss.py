@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import hashlib
+import html
 import json
 import os
 import re
@@ -73,12 +74,30 @@ def save_json(path: Path, data: Any) -> None:
     tmp.replace(path)
 
 def clean_html(value: str | None) -> str:
+    """Convert RSS HTML to readable plain text while preserving paragraphs/line breaks."""
     if not value:
         return ""
-    value = re.sub(r"<script\b[^>]*>.*?</script>", " ", value, flags=re.I | re.S)
-    value = re.sub(r"<style\b[^>]*>.*?</style>", " ", value, flags=re.I | re.S)
-    value = re.sub(r"<[^>]+>", " ", value)
-    return re.sub(r"\s+", " ", value).strip()
+
+    value = html.unescape(str(value))
+    value = re.sub(r"<script\b[^>]*>.*?</script>", "", value, flags=re.I | re.S)
+    value = re.sub(r"<style\b[^>]*>.*?</style>", "", value, flags=re.I | re.S)
+
+    # Preserve the structure commonly used by RSS descriptions before removing tags.
+    value = re.sub(r"<\s*br\s*/?\s*>", "\n", value, flags=re.I)
+    value = re.sub(r"<\s*/\s*(p|div|section|article|h[1-6]|li|blockquote|pre)\s*>", "\n", value, flags=re.I)
+    value = re.sub(r"<\s*(p|div|section|article|h[1-6]|li|blockquote|pre)\b[^>]*>", "", value, flags=re.I)
+    value = re.sub(r"<[^>]+>", "", value)
+
+    # Normalize whitespace within each line, but do not collapse paragraph breaks.
+    lines = []
+    for line in value.replace("\r\n", "\n").replace("\r", "\n").split("\n"):
+        line = re.sub(r"[ \t\f\v]+", " ", line).strip()
+        lines.append(line)
+
+    # Keep intentional blank lines, while avoiding excessive empty space.
+    text = "\n".join(lines)
+    text = re.sub(r"\n{3,}", "\n\n", text)
+    return text.strip()
 
 def article_id(source: str, entry: Any) -> str:
     guid = entry.get("id") or entry.get("guid") or entry.get("link") or entry.get("title")
@@ -291,7 +310,7 @@ def main() -> int:
     site_cfg = cfg.get("site", {})
     save_json(ROOT / "site" / "config-public.json", {
         "site": {
-            "title": site_cfg.get("title", ""),
+            "title": site_cfg.get("title", "RSS News Radar"),
             "description": site_cfg.get("description", ""),
         }
     })

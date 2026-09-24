@@ -310,7 +310,7 @@ def main() -> int:
     site_cfg = cfg.get("site", {})
     save_json(ROOT / "site" / "config-public.json", {
         "site": {
-            "title": site_cfg.get("title", "RSS News Radar"),
+            "title": site_cfg.get("title", ""),
             "description": site_cfg.get("description", ""),
         }
     })

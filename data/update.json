@@ -1,9 +1,9 @@
 {
-  "updated": "2026-10-12T11:22:42Z",
+  "updated": "2026-10-12T22:37:52Z",
   "feeds": 29,
   "success": 24,
   "failed": 3,
   "skipped": 2,
-  "articles": 762,
+  "articles": 626,
   "retention_days": 300
 }

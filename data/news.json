@@ -1,13 +1,1383 @@
 [
   {
+    "id": "5fe9435b833068618363758d",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "奢侈品开始担心AI泡沫",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906636.html?f=rss",
+    "published": "2026-11-18T12:13:18Z"
+  },
+  {
+    "id": "c363b2c927b0bdf2264b1360",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "林妹妹配孙悟空，网友到底在嗑什么？",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906635.html?f=rss",
+    "published": "2026-11-18T12:11:04Z"
+  },
+  {
+    "id": "b896d06da432f12128b3a2fc",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "战魔田默｜微信帮腾讯赢了上一场战争，下一场胜利靠什么赢？",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906633.html?f=rss",
+    "published": "2026-11-18T12:10:02Z"
+  },
+  {
+    "id": "f3aecbd8b4f6c7a94606a020",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "战魔田默｜腾讯半年净赚1141亿，为什么喊出“生死存亡”？",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906631.html?f=rss",
+    "published": "2026-11-18T12:06:10Z"
+  },
+  {
+    "id": "ca676d11380b77459c33eae8",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "南京新百的“以色列养老梦”醒了",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906628.html?f=rss",
+    "published": "2026-11-18T11:43:39Z"
+  },
+  {
+    "id": "4993a153ed2b3739ee7b80fa",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "腾讯，想说爱你不容易",
+    "summary": "也许AI情就是这样，轰轰烈烈",
+    "url": "https://www.huxiu.com/article/4906622.html?f=rss",
+    "published": "2026-11-18T11:41:44Z"
+  },
+  {
+    "id": "ce3d93b71356a89e0c3aeb96",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "月下载720万，“巴西版GTA”新登总榜第一：竞速+送外卖玩法的零买量爆发",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906627.html?f=rss",
+    "published": "2026-11-18T11:38:15Z"
+  },
+  {
+    "id": "d26dbf0a1a7405aacc8f9357",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "三家知名房企，拉响面值退市警报",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906621.html?f=rss",
+    "published": "2026-11-18T11:24:58Z"
+  },
+  {
+    "id": "c436881dc1222a51ab668117",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "⚠️ 法国逼 Quad9 封锁盗播域名退出：DNS 中立与互联网碎片化之争",
+    "summary": "原标题：《Quad9's withdrawal from France: A canary in the coal mine》\n评分: 634 | 作者: subset\n💭 为保住一场足球直播，先拆掉全球互联网？\n🎯 讨论背景\nQuad9（提供免费、注重隐私与安全过滤的公共 DNS resolver 的瑞士非营利组织）因法国法院要求其封锁涉嫌盗播体育赛事的域名而停止在法国提供服务。争议背景是法国近年允许面向体育直播盗版的动态封锁令，转播权利人希望 ISP 和公共 DNS resolver 迅速阻断域名及镜像站点；评论特别关联到 beIN Sports（卡塔尔媒体集团旗下体育转播商）的版权维权。反对者认为 DNS 是全网通用的地址解析层，国家级封锁会引入错误解析、规避竞赛和跨境服务撤离，并为更广泛审查铺路。支持更强管制者则认为，在跨国主机、注册商和 CDN 难以追责时，基础设施不能永久以中立为由回避网络伤害与版权侵权。\n📌 讨论焦点\nDNS 不应充当版权执法层\n多数观点认为 DNS 的功能只是把域名解析到网络地址，类似地图、地址簿或投递地址，而不是发布、托管或传输盗版内容。将解析器当作责任主体，会把执法压力从真正的侵权源头、主机商或账户经营者转嫁给通用基础设施。评论者指出，封锁道路、地图导航或邮递服务或许会增加犯罪摩擦，却会造成远超收益的附带损害；反对 DNS 封锁不等于支持盗版。也有人补充，若由运营商在内部网络调整 DNS 是另一回事，但要求公共递归解析器按各国命令返回失真的结果，会破坏全球名称系统的可信性。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n版权保护的需求与替代路径之争\n支持监管的一方认为，DNS 服务商虽非内容源头，仍是让用户抵达违法服务链条的一环；当境外主机商、域名注册商或 CDN 不配合时，法院自然会向链条上游施压。他们主张不能仅以“技术中立”免责，互联网企业应在获知明确侵权后采取合理减害措施。反对者则指出，本案核心是体育转播权利人寻求实时 DNS blocking，尤其是足球直播；跨境司法管辖令源头追责困难，但这不足以证明扭曲 DNS 合理。另一派将盗版回潮归因于内容平台分裂、地域限制、涨价和“只许可不拥有”，认为更便利、价格公平且可真正拥有的正版服务，或集体许可等补偿制度，比扩大封锁更有效。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n封锁将催化审查与 Splinternet\n大量评论担心版权、儿童保护或国家安全会成为扩张网络审查的易用理由，今天的盗播名单会逐渐变成政治、文化和言论过滤。Quad9 的退出被视为警讯：若欧盟把法国作为先例，各国相互冲突的封锁义务会迫使服务商按地域切割服务，形成不可信且碎片化的 Splinternet。也有评论认为全球自由互联网本就始终受国家主权、Great Firewall、出口管制和本地网络传统限制，而非刚刚走向分裂。少数人反驳“绝对中立”理想，认为互联网已是全民基础环境，应该像道路一样有准入规则；但批评者认为这种看似可绕过的 DNS 过滤，实际会主要限制普通人并制造不断扩权的滑坡。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n法国政策、权利人游说与企业立场的质疑\n评论把法国的强硬做法与体育版权利益集团联系起来，特别提及 beIN Sports、巴黎圣日耳曼及卡塔尔资本相关的转播权益，并认为技术知识不足的立法者容易接受行业游说。法国本地观点还将其放在 HADOPI、私人复制税和数据流量征税提案的延续中，认为“文化例外”叙事长期放大了权利人影响力。与此同时，一些人批评 Cloudflare 一边反对 DNS 封锁，一边为被指涉盗版的网站提供 CDN 等服务，因而没有足够道德信誉；也有人要求其像 Quad9 一样明确承诺在不利裁决后撤出。另有评论认为欧洲监管并非纯粹审查，而是对平台权力集中和长期未解决的网络伤害的笨拙反弹，不过这种方式可能削弱竞争力和开放性。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n📚 术语解释\nDNS（Domain Name System）: 把人类可读的域名解析为 IP 地址的分布式命名系统；公共 resolver 是用户查询这一映射时使用的解析服务。\nDNSSEC: DNS 的数字签名验证扩展，用于让客户端或解析器验证 DNS 记录未被篡改，但实际验证是否启用及由谁验证仍是关键。\nDoH（DNS over HTTPS）: 将 DNS 查询封装进 HTTPS 的加密协议，使查询更难被本地网络观察或篡改，也可能绕开地域性 DNS 干预。\nSplinternet: 指互联网因国家法律、审查、平台规则和网络边界而被切割成彼此不完全互通、内容不同的区",
+    "url": "https://newshacker.me/story?id=50538994",
+    "published": "2026-11-18T11:19:29Z"
+  },
+  {
+    "id": "5b948b7844cd3056711fb2c1",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "大疆扛不住了，罕见涨价10%，又悄悄造起电池？",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906619.html?f=rss",
+    "published": "2026-11-18T11:15:06Z"
+  },
+  {
+    "id": "f0aea9afc5cacf86ce13e02a",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "腾讯也做不到“不可能三角”：传统业务增长，AI业务突破，现金净流入",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906618.html?f=rss",
+    "published": "2026-11-18T11:11:08Z"
+  },
+  {
+    "id": "e0c0d42cccdd1e433a0a66a5",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "“砸锅卖铁也要参加，”这场全国足球赛，让家长看到自闭症孩子另一种可能",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906616.html?f=rss",
+    "published": "2026-11-18T11:03:08Z"
+  },
+  {
+    "id": "c192ea702d051d1e20ee5bc1",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "老黄，英伟达与Anthropic IPO：伟大上市or生不逢时？",
+    "summary": "实则“史上最大”略显噱头",
+    "url": "https://www.huxiu.com/article/4906568.html?f=rss",
+    "published": "2026-11-18T11:00:18Z"
+  },
+  {
+    "id": "aff4ae9eca59040a5bdddb6e",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "先后接回断腿、断臂，中国医生到底有多强？",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906613.html?f=rss",
+    "published": "2026-11-18T11:00:16Z"
+  },
+  {
+    "id": "294dd0cb8e6ce92ce32abd0e",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "Claude Code新模式来了，不换模型，Token消耗最高砍掉77%",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906614.html?f=rss",
+    "published": "2026-11-18T10:59:21Z"
+  },
+  {
+    "id": "5358531857821c159e5c4817",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "你没听说过的设备公司，正在批量出现",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906611.html?f=rss",
+    "published": "2026-11-18T10:56:20Z"
+  },
+  {
+    "id": "d3b07a1fdb6af26e87e8c2f0",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "😠 IRS 与 TreasuryDirect 改用 ID.me：Login.gov、隐私与可达性之争",
+    "summary": "原标题：《ID.me terms required for IRS sign-in》\n评分: 369 | 作者: DeepLogin\n💭 交税取债券前，先把脸和隐私卖给承包商？\n🎯 讨论背景\nID.me（商业身份认证服务）被 IRS 和 TreasuryDirect（美国财政部面向个人的国债账户平台）用于登录或身份核验；TreasuryDirect 也是购买 I Bonds（与通胀挂钩的美国储蓄债券）的唯一渠道。评论称 IRS 在约 2021—2022 年间引入 ID.me，以应对退税身份欺诈；而 Login.gov（美国联邦政府运营的统一登录服务）过去因未达到 NIST（美国国家标准与技术研究院）IAL2 身份保证要求而难以替代。IRS 现已支持 Login.gov，但部分流程仍可能要求经 Socure（第三方数字身份核验公司）提交证件和人脸信息；白宫在 2026 年的政策则要求适用的面向公众联邦网站在两年内采用 Login.gov。争议的关键是，纸质报税和纸质账户操作仍可进行却缓慢不便，线上便利则以更严格的设备、通信号码和生物识别条件为代价。\n📌 讨论焦点\n反对将政府身份认证外包给私企\n许多人反对为了登录 IRS 或管理国债，向商业公司提交身份证件、自拍照及其他 PII，认为公民不应为使用政府服务而被迫接受营利中介的条款。批评者尤其担忧 ID.me 的商业背景、.me 域名及数据可能被营销或进一步利用，即使这些担忧未必都有直接证据，也反映出对数据保管责任的根本不信任。有人指出政府本已运营 Login.gov，却仍为 ID.me 支付巨额合同费用，且条款据称对政府雇员存在例外。也有人因此提前亏损卖出 I Bonds，或直接拒绝注册，宁愿失去在线服务。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n无智能手机者的可达性与纸质后备渠道\n评论中的核心案例是使用大按键 dumbphone、没有摄像头且不熟悉技术的退休者；即使 ID.me 可通过视频通话作为替代，现实上仍可能无法自行完成流程。Login.gov 被指出可在邮局进行线下核验，但不同机构的支持情况、可接受证件及客服说明并不一致，有人称 IRS 流程仍会转向第三方的人脸和证件验证。TreasuryDirect 表示不注册 ID.me 主要是失去在线访问权，仍可用纸质表格办理交易、赎回或经银行认证签名的信件关户。问题在于这些纸质渠道被报告有约十个月的处理延迟，因此并非真正等价的替代方案。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\n反欺诈与 IAL2 合规理由是否成立\n为 ID.me 辩护的一方称，IRS 长期面对规模达数十亿美元的退税身份欺诈，远程开户需要比普通用户名密码更高的身份保证等级。讨论援引 GSA Inspector General 的调查称，Login.gov 曾宣称符合 NIST IAL2，却没有实际的实体或生物特征比对，并向机构收取了不符合该等级的服务费用；这解释了为何当时 ID.me 能满足要求而 Login.gov 不能。反方则指出纸质报税并不总在提交时要求出示身份证，IRS 本可通过邮寄信件核实线上账户，因此把人脸扫描说成唯一安全途径并不自洽。争论的分歧不只在于是否存在欺诈，而在于高保证认证的成本和误拒绝是否应由每位公民承担。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n把电话号码当欺诈信号的隐私与排斥问题\nVoIP、prepaid、可携号转网号码和 PO Box 被金融风控系统视为高风险信号，业内人士称这些类别确实与欺诈率显著相关，但也承认并非完美关联。用户反驳说，Google Voice 等号码是避免营销骚扰、保护隐私或供海外侨民维持美国号码的正当工具，拒绝它们等于把非主流通信选择者挡在公共服务之外。Login.gov 的隐私说明被引述为运营商可能提供用户套餐、账单类型、姓名、地址、IMSI 和 IMEI 等资料，进一步加剧了对运营商数据交易的担忧。批评者将此类统计筛选比作数字化 redlining：即便模型有效，也会把贫困者和重视隐私者产生的 false positive 变成获得政府服务的障碍。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\n流程设计粗糙且增加钓鱼风险\n具体失败案例包括证件地址与水电账单仅差一个门牌数字便无法通过验证，显示自动化规则对真实世界地址并不稳健。有人只得到“去手机下载 ID.me app”这类缺乏官方链接或 QR code 的指示，担心普通用户会搜索并误点伪装广告。另有人称政府网站因加载商业 TLD 下的第三方资源而被隐私拦截器破坏，TreasuryDirect 本身也被批评为陈旧且安全设",
+    "url": "https://newshacker.me/story?id=50540437",
+    "published": "2026-11-18T10:54:51Z"
+  },
+  {
+    "id": "b2c4cec7488bd13680ec6df3",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "⚠️ Codeberg.org 被 clientHold 下线，DNS 注册商单点风险暴露",
+    "summary": "原标题：《Codeberg.org Not Reachable》\n评分: 109 | 作者: hans_castorp\n💭 高可用服务，竟输给注册商一个暂停按钮？\n🎯 讨论背景\nCodeberg e.V.（德国非营利软件协会）运营 Codeberg（基于 Forgejo 开源 Git forge 的代码托管平台），其主要域名 codeberg.org 由 NameSilo（美国域名注册商）注册。该组织称域名突然从账户消失，随后获悉域名被暂停并交由 abuse team 处理；WHOIS 的 clientHold 状态解释了为何 .org 注册局的 DNS 不再发布该名称。Public Interest Registry（.org 顶级域名注册局）和 ICANN（协调域名政策与注册体系的国际组织）构成注册商之上的域名层级，因此服务器高可用并不能消除域名被暂停的风险。Codeberg 曾评估用 codeberg.eu 临时恢复，但多域名认证、SEO 和既有 Git 地址的迁移成本使其放弃这一快速方案。\n📌 讨论焦点\n技术状态显示注册商暂停域名\n技术检查显示，向 .org 权威 DNS 服务器查询 codeberg.org 返回 NXDOMAIN，而 WHOIS 中域名状态为 clientHold 和 clientTransferProhibited。clientHold 会要求注册局不在 DNS 中启用该域名，因此服务即使服务器和 DNS 配置仍在，也会整体无法解析。官方称域名从 NameSilo 账户中消失，随后确认遭暂停并转交 abuse team，但尚未获知最终理由。评论认为注册局和注册商对任何 TLD 都可以执行暂停，常见触发情形包括法律纠纷、欠费或删除流程。\n[来源1] [来源2] [来源3] [来源4] [来源5]\n高可用的现实对策与迁移成本\n短期可通过在 /etc/hosts 写入 IPv4、IPv6 地址继续访问，但这要求用户主动操作，也无法成为面向公众的长期方案。较实际的韧性设计是使用不同注册商、不同 TLD 的多个独立域名，并为每个域名配置真实 DNS 记录而非 CNAME 链接。Codeberg 没有立即启用 codeberg.eu，因为多域名支持、SEO、Two-Factor-Authentication，以及更新大量 Git remotes 和引用的代价过高。有人指出 SSH 用户可在 OpenSSH 配置中设置 HostName，减少改 remote 的需要；但多个备用域名也会让用户更容易信任仿冒域名。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8]\n注册商所在地与法律管辖争论\n评论质疑德国实体为何将重要域名交给美国注册商，认为出现争议时，使用本地或至少欧盟服务商可能更便于沟通和采取法律行动。反方指出 .org 由 Public Interest Registry 管理，注册商所在地未必能改变顶级域名层面的处理机制，争议仍可能遵循 ICANN 流程。讨论也否定了“德国一定更安全”的简单结论：德国虽不受 DMCA 约束，却有法院判例要求注册商对结构性侵权网站承担断连注意义务。核心分歧在于本地服务商能否改善申诉可达性，而非某个国家的注册局是否绝对更宽容。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8]\n去中心化命名能否替代 DNS\n部分人将此次故障视为 DNS 和域名注册商的可滥用单点故障，提出 ENS、Namecoin、GNS、Handshake 等去中心化命名系统作为替代方案。支持者认为域名本质是全球共识问题，只能依赖区块链共识或单一可信机构；去中心化方案可减少注册商单方面封禁。批评者则指出，钱包被盗后 ENS 名称转走可能难以逆转，而传统 DNS 的人工干预至少能帮助被黑用户找回域名。浏览器原生支持不足、普通用户缺乏迁移动机，以及政府和企业不愿放弃现有控制力，也使这些方案难以获得主流采用。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9]\n替代 Git 托管的依赖讽刺\n一些用户本将 Codeberg 视为从 GitHub/Microsoft 迁出的备用 Git forge，此次不可达反而凸显替代平台同样依赖域名基础设施。有人建议自行部署 Forgejo（开源 Git forge），但随即被指出 Forgejo 项目本身托管在 Codeberg，形成颇具讽刺意味的依赖链。围绕 GitHub“嫉妒而社会工程”Codeberg 的说法只是玩笑，反映的是用户对中心化平台和基础设施控制权的焦虑。另有 Reddit 社区被封的线索，但存档显示该社区长期没有活跃内",
+    "url": "https://newshacker.me/story?id=50544261",
+    "published": "2026-11-18T10:49:33Z"
+  },
+  {
+    "id": "d86f6a6dc20e09a3a9658be9",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "保研举报这事，也太窒息了",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906609.html?f=rss",
+    "published": "2026-11-18T10:48:23Z"
+  },
+  {
+    "id": "993a794bf0b8971179a84d7c",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "黄仁勋把英伟达的一切都锁进了未来，除了他自己",
+    "summary": "他要做的是一直把知识传下去，让公司不必依赖任何一个人",
+    "url": "https://www.huxiu.com/article/4906605.html?f=rss",
+    "published": "2026-11-18T10:37:36Z"
+  },
+  {
+    "id": "ebc34d9a90e206ba50e0c50a",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "一光日：写给旅行者1号",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906601.html?f=rss",
+    "published": "2026-11-18T10:25:14Z"
+  },
+  {
+    "id": "4c0916335021bfe4a08b57a5",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "AI公司烧Token，烧出了一门“贷款生意”",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906599.html?f=rss",
+    "published": "2026-11-18T10:22:19Z"
+  },
+  {
+    "id": "a2794f0ca1048de907fb2aff",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "文科生找工作有多难：有人投了100多份简历，还没收到offer",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906598.html?f=rss",
+    "published": "2026-11-18T10:20:54Z"
+  },
+  {
+    "id": "7f1fdbf8b6f2c63556aff01d",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "🕰️ jQuery 4.1 发布：遗产网站仍依赖它，现代前端该不该放手",
+    "summary": "原标题：《jQuery 4.1.0》\n评分: 323 | 作者: petecooper\n💭 原生 API 都长大了，为什么旧网页还离不开这把拐杖？\n🎯 讨论背景\njQuery 是 2006 年出现的 JavaScript DOM 工具库，最初以“Write less, do more”包装 CSS 选择器、事件、动画、AJAX 与跨浏览器差异，尤其缓解了 IE6/IE7 时代的兼容性问题。此次讨论围绕 jQuery 4.1.0 的发布，同时提及面向旧浏览器的 3.8.0 维护版本；jQuery UI（基于 jQuery 的旧式组件库）则是独立且处于 maintenance mode 的项目。原生 Web 平台后来加入了 querySelector、classList、fetch、Promises 等能力，React 等组件框架也改变了 UI 构建方式，因此新项目是否还应加载 jQuery 成为争议焦点。其存量影响力仍主要来自 WordPress（常捆绑该库）、主题插件和难以安全重构的长期运行网站。\n📌 讨论焦点\n庞大存量与遗产维护价值\n不少人认为 jQuery 并未真正过时：引用的统计虽在约 53% 到 64% 网站之间有出入，但都说明它的覆盖面仍远大于许多新框架。WordPress 会捆绑 jQuery，主题、插件及大量老站点继续依赖它；一些大型网站即使主体已改用 React，仍保留早年用 $.ajax 写下的代码。前端重构尤其难以验证，因为 DOM 细节、视觉回归和浏览器兼容性边界会使改造风险高于收益。对在旧代码库中做局部修改、或仍需兼容 IE11 等旧环境的人来说，持续维护比强行淘汰更实际。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n链式 API、集合操作与事件模型的设计遗产\n评论者普遍赞赏 jQuery 把选择器结果统一包装为集合，并让大多数写操作返回 this，从而形成紧凑、可读的 method chaining。它可以把同一操作批量施加于匹配元素，避免原生 DOM 中显式循环和零散的状态处理；相较之下，NodeList 的 API 被认为贫乏且不一致。还有人特别看重其事件模型：任意数据对象都能触发和监听自定义事件，使业务逻辑无需直接绑在多个 DOM 元素上。其可组合性、可在控制台直接试验的文档示例，以及长期可凭记忆写出的 API，被视为后续库设计的范本。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n现代原生 API 与轻量替代方案\n反对在新项目继续引入 jQuery 的观点认为，querySelector、classList、fetch、Promises、Grid 和 Flex 已吸收或替代了它当年解决的大部分浏览器差异。对于只有下拉菜单、幻灯片等轻交互的静态页面，有人倾向直接写 vanilla JS/TypeScript，或选择 htmx、Alpine、Datastar 等更贴近 SSR 和组件式响应模型的工具。依赖最小化也是理由：jQuery 4.0 约为 76.8 kB minified、27.0 kB gzip，且第三方依赖会增加 CVE 与供应链维护面。另一派则认为性能代价要与 React 用于简单页面的开销相比，并指出可读性、维护性以及既有团队技能同样是成本。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n跨浏览器地狱塑造了 jQuery\n许多人回忆 jQuery 兴起时，IE6/IE7、Firefox 的 Gecko 引擎和 Safari 在事件处理、DOM 行为与 AJAX 上存在大量不一致，手写 XMLHttpRequest 十分痛苦。jQuery 通过浏览器兼容层、选择器和 $.ajax，让普通开发者也能方便地给网页添加交互，因此被视为早期 Web 开发的重要基础设施。随着 Chromium 主导浏览器市场、标准 API 普及，原生 JavaScript 已能以 fetch 和 async/await 等方式更好地处理网络请求与流式数据。评论者因此将 jQuery 的今天定位为仍有价值的历史成功品，而非复杂现代 UI 的默认底座。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n便利性背后的静默失败与复杂 UI 局限\n有评论指出，jQuery 对空选择集执行 hide() 等操作时静默 no-op，虽方便编写防御性代码，却可能掩盖因 DOM 改动造成的 selector 错误。复杂交互页面中，选择器会随着功能和 DOM 层次演进而脆弱，维护者可能希望空匹配直接抛异常，以便尽早发现回归。也有人认为 fluent chaining 让读者和解释器都必须依赖文档了解返回值，并不总是更易推理；pi",
+    "url": "https://newshacker.me/story?id=50537156",
+    "published": "2026-11-18T10:19:30Z"
+  },
+  {
+    "id": "f4f624d8747e9b9da537bc0c",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "刚与青岛啤酒达成合作的爱尔兰第二大威士忌酒厂，因燃气费涨价停产了",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906597.html?f=rss",
+    "published": "2026-11-18T10:17:31Z"
+  },
+  {
+    "id": "556f1c053ebd7be84fac469e",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "红果短剧爆火，腾讯来了，京东来了，如今连网易也来了",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906596.html?f=rss",
+    "published": "2026-11-18T10:16:59Z"
+  },
+  {
+    "id": "f2b703c93103a3640977a84d",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "AI漫剧回本率仅1.3%，却生出了稳赚不赔的卖课生意",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906594.html?f=rss",
+    "published": "2026-11-18T10:16:26Z"
+  },
+  {
+    "id": "b060ffe6b58ea057c98da9ca",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "小米的MiMo人才激励考题",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906595.html?f=rss",
+    "published": "2026-11-18T10:13:21Z"
+  },
+  {
+    "id": "0ec8d85d672b4f385779969e",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "“后黄仁勋时代”：英伟达的护城河、资本棋局与AI产业变数",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906590.html?f=rss",
+    "published": "2026-11-18T10:05:08Z"
+  },
+  {
+    "id": "aa3bdfdaa63b99fc15e3ce88",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "花200万折腾的香港身份，烂尾了。中产买到的“退路”，成了最贵的一笔负债……",
+    "summary": "香港身份不是终点，是马拉松起点",
+    "url": "https://www.huxiu.com/article/4905112.html?f=rss",
+    "published": "2026-11-18T10:00:00Z"
+  },
+  {
+    "id": "1af44ee367abf0dac7dd2987",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "⚖️ Talos Linux：Kubernetes 极简运维的便利与无 Shell 排障代价",
+    "summary": "原标题：《Talos Linux》\n评分: 26 | 作者: SweetSoftPillow\n💭 为省维护删掉 Shell，故障时谁来维护？\n🎯 讨论背景\nTalos Linux 是 Sidero Labs 推出的面向 Kubernetes 节点的极简 Linux distribution，强调 immutable（不可变）系统、API 管理和较小攻击面，常用于自托管或 on-premise 集群。讨论中的迁移对象包括 k3s（轻量级 Kubernetes distribution）运行在 Debian 或 Ubuntu 上的传统配置；支持者认为 Talos 统一了节点行为，减少了底层操作系统造成的偶发问题。其不提供常规交互式 Shell 的安全与一致性设计，同时改变了故障处理方式：管理员需借助 talosctl（Talos 命令行管理工具）、调试容器或 serial console 排查。部署选择也关联存储与性能：VM 易于隔离和调度，裸机则可直接利用本地 SAN（存储区域网络）和 NVMe fabric（基于 NVMe 的高速存储网络）。\n📌 讨论焦点\nTalos 的生产实践与支持体验\n多位使用者认为 Talos 在 on-premise 和自托管 Kubernetes 场景中表现可靠，迁移后没有回头。相较于以 Ubuntu 或 Debian 为底座自行搭建集群，它减少了许多难以彻底排除的零散问题。使用者也指出其文件系统布局与 Kubernetes 的常见默认假设略有差异，偶尔需要针对性调整。Sidero 的专业支持被评价很高，提问可直接得到有大规模集群经验的 DevOps 工程师或 Talos 开发团队回复。\n[来源1] [来源2] [来源3] [来源4]\nVM 与裸机部署之争\nTalos 可同时运行在 VirtualBox、VMware 等 hypervisor 的 VM 中，也可部署到 micro PC 等裸机，因此没有唯一的推荐形态。部分观点认为 Kubernetes 节点再套一层 hypervisor 会增加维护对象和故障点，裸机更直接。另一方则强调现代硬件可靠且裸机通常更便宜，低价 VM 的性能并不理想。对于 I/O 敏感数据库，本地 Fibre Channel SAN 或 IBM NVMe SAN 经调优后可比云端软件定义存储快约 10 倍，因此混合云与本地裸机仍有现实价值。\n[来源1] [来源2] [来源3] [来源4] [来源5]\nKubernetes 的维护门槛是否值得\n评论认为 Kubernetes 即使配合 Talos，也未必适合范围有限、扩展需求不高的项目。对于这类服务，一个 load balancer 加少量 Docker Compose 文件往往更耐用：即使放置一年，也容易通过配置快速理解和恢复。该观点的核心不是否定 Kubernetes 的能力，而是质疑其控制面、节点和附加基础设施带来的持续维护负担。裸机支持者同样以“少一层 hypervisor 就少一类故障”为由，强调应控制系统复杂度。\n[来源1] [来源2]\n极简、无 Shell 设计的排障取舍\n有人将 Talos 误认为 unikernel，但纠正意见指出它本质上是仅保留 Kubernetes 运行所需组件、通过管理 API 操作的 Linux distribution，而非 unikernel。其刻意取消常规 Shell 访问能收紧系统边界，却会使 kubelet 失败时的排障变得艰难；有使用者曾长期依赖 serial console 日志定位问题。作为补救，talosctl debug 可启动 Alpine 调试容器、进入 host namespaces，并将宿主机根目录挂载在 /host。该办法据称无需 kubelet 即可工作，但若故障落在 containerd 层面，仍可能无能为力。\n[来源1] [来源2] [来源3] [来源4]\n企业官网观感受到质疑\n尽管产品使用反馈多为正面，官网的企业形象受到尖锐批评。评论者认为，一个提供“talk to us”企业方案且拥有知名客户的厂商，本应配备人工文案与设计能力。其 landing page 的文字和视觉却被形容为带有明显 Claude 式生成痕迹。这反映出产品技术可信度与市场页面专业感之间存在落差。\n[来源1]\n📚 术语解释\nTalos Linux: 面向 Kubernetes 的极简、API 驱动 Linux distribution，减少通用系统组件和交互式管理面，以声明式方式管理节点。\nbare metal（裸机）: 操作系统或 Kubernetes 节点直接运行在物理服务器上，而不是运行于 VM 或 hypervisor 之内。\nkubelet: 运行在每个 Kubern",
+    "url": "https://newshacker.me/story?id=50543343",
+    "published": "2026-11-18T09:59:24Z"
+  },
+  {
+    "id": "6bbbead46fb034374de413f9",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "如果你中了1个亿，敢辞职吗？她替你试过了",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906588.html?f=rss",
+    "published": "2026-11-18T09:58:46Z"
+  },
+  {
+    "id": "b0348e03c7ef754bd387c7ba",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "⚖️ Google AI 摘要令搜索点击降 40% ，便利与开放内容生态冲突",
+    "summary": "原标题：《Google's AI answers reducing search traffic by 40%》\n评分: 376 | 作者: slashdev\n💭 原创站都饿死后，AI 准备拿什么回答？\n🎯 讨论背景\n帖子讨论一篇基于 DataForSEO 跟踪的美国关键词数据的文章：Google 的 AI Overview 出现后，传统自然搜索结果获得的点击约下降 40% ；该关键词样本来自 Google Ads 和 Bing Ads，因而偏向有商业价值的查询。Google 长期通过 Search 为网站导流，同时又经营 AdWords、AdSense 等广告业务；如今它把抓取到的网页信息直接整合成答案，形成被称为“Google Zero”的零点击趋势。争论的关键不是用户是否喜欢快速答案，而是原创评测、地方指南、爱好者资料和可编辑知识库若失去访问、收入与社群成员，未来谁还会持续生产可验证的新信息。讨论也置于更早的背景中：传统搜索早已因 SEO 内容农场、广告堆叠、追踪和 AI spam 而恶化，AI 被同时视为清理工具、流量截留者及下一轮操纵入口。\n📌 讨论焦点\n直接答案优于 SEO 点击农场\n支持者认为，用户真正需要的是答案，而不是在充满 clickbait、弹窗和冗长铺垫的页面中自行提炼信息。查询节目播出时间、赛事频道、产品类别等事实性问题时，AI Overview 能省去访问大量低质 SEO 页面，因而点击减少是合理的产品改进。一些人自己的 Google 使用量已被 ChatGPT、Perplexity 等替代超过 40% ，说明这种行为变化并非仅由 Google 强推造成。也有人认为 Google 若不主动用 AI 改造 Search，其他 LLM 服务会抢走这类需求和广告入口。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n内容创作者失去流量，发现与社区机制被切断\n反对者指出，AI 摘要依赖网站已投入成本生产的资料，却在结果页截留用户，使依赖广告、推荐佣金或访问量的中小站点难以维持。即使真正爱好者仍可能点击来源，泛流量消失也会令托管、编辑和社区运营无法覆盖成本，最终连核心社群也没有可访问的网站。搜索过去还承担让陌生人发现小众兴趣、独立平台和新社区的功能；封闭的 Discord、Facebook Group 或既有大平台不能等价替代这种跨站发现。已有发布者报告两年内自然流量下降超过 80% ，一位柏林生活信息站运营者甚至预计不得不将站点转入维护模式。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\nGoogle 的广告激励与搜索劣化责任\n大量评论认为，SEO 泛滥不应完全归咎于站长和营销者：Google 同时控制搜索分发与广告变现，长期允许广告、内容农场和模糊匹配侵蚀结果质量。用户举例称，即使输入房产中介的精确名称与地区，目标结果也会被无关机构和广告压到数屏之后；搜索语法逐步失效也被视为从检索工具转向广告驱动排序的信号。另一派反驳说，运行全网搜索极其昂贵，Google 有动力打击 SEO，否则用户会转向 Bing 或 DuckDuckGo，且免费产品终究必须有可持续收入。付费搜索服务 Kagi 被作为“搜索本身是产品、而非广告漏斗”的替代模式提出，但其规模和大众付费意愿仍受质疑。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\nAI 答案的准确性、溯源与训练数据危机\n批评者强调，LLM 摘要常会不完整或直接捏造细节，例如把根本没有字母评级的游戏说成可获得 D rank，因此不能取代可核查的原始页面。AI 生成垃圾内容也已污染搜索结果和摘要引用：有人查旧计算器资料时，先遇到抓取爱好者站点数据的页面；当原创站因无回报而停更，模型又会越来越依赖这类垃圾。Wikipedia 被特别提及：AI 大量概括其内容可能减少读者进入页面、参与编辑的机会，且会形成“模型以 Wikipedia 校准、用户再只读模型”的循环权威。也有人认为对简单事实，摘要附带的来源链接足以供谨慎用户复核，且自己反而借此发现更多小众论文和网站。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\nAI 将复制广告化与排名操纵\n评论者普遍不相信 AI 界面会长期无广告：Google 是广告公司，OpenAI 也已尝试在回答中加入广告，未来广告可能伪装成自然、个性化的建议。比传统横幅更隐蔽的风险是，品牌、政治团体或富裕利益方可付费让模型系统性偏向某类产品或叙事，而用户甚至看不到广告文本。原有 SEO 行业也可能转型为 GEO、AEO 或 model poisoning，通过专门网页、训练语料与提示操纵模型推荐；目前这类做法仍被形容接近“占星术”，",
+    "url": "https://newshacker.me/story?id=50540178",
+    "published": "2026-11-18T09:54:33Z"
+  },
+  {
+    "id": "68525b301fae97d1f1f45161",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "英伟达董事会，有多“恨”黄仁勋？",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906586.html?f=rss",
+    "published": "2026-11-18T09:52:02Z"
+  },
+  {
+    "id": "396f0b49a4a5eb917e2910bb",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "🐢 Gemini 4 Carbon：长推理换复杂任务质量，却拖垮日常编码",
+    "summary": "原标题：《Why is Gemini 4 Carbon taking so long?》\n评分: 88 | 作者: deenadz\n💭 为刷 benchmark，简单修复也要等五分钟？\n🎯 讨论背景\nGemini 4 Carbon 被讨论为 Google 的高端推理与编码模型；评论者将其与 Argon、Hydrogen 等 Gemini 产品线版本，以及 Anthropic 的 Claude、OpenAI 的模型对比。所引产品说明被理解为 Carbon 会比 Argon 投入更长的推理时间，这属于 test-time scaling（在运行时增加计算量以换取更高能力）的路线。争议的触发点不仅是慢，还包括 agent/CLI 场景中的长首 token 延迟、超时和任务越界：模型会扩大代码修改范围或持续调用工具，影响开发者的 PR 审查与交互式工作流。与此同时，CursorBench（Cursor 编码工具发布的真实世界编码评测）成绩和复杂任务体验被用来证明，这种高延迟可能确实换来了部分能力收益。\n📌 讨论焦点\n长推理与低吞吐是产品取舍还是工程失误\n多名用户观察到 Carbon 的 token efficiency 很低、tokens-per-second 较慢，首个 token 甚至可能等待超过 5 分钟。有人认为 Google 资金、TPU 算力和广告业务足以补贴 DeepMind，因此更优先追求 frontier quality 而非推理成本；相比之下，Anthropic 和 OpenAI 更依赖出售 inference，必须优化服务效率。另一派认为这不必然是刻意取舍：训练数据、算法和 serving stack 可能不如竞争者成熟，Google 自研 TPU 与对外产品栈也可能增加部署问题。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n复杂任务有价值，简单任务难以纳入工作流\n实际使用者认为 Carbon 在复杂编码任务中能以较温和的方式维持既有架构，并能处理不断追加的需求，不像 Claude 那样大范围重写。针对长而复杂的任务，有测试称其表现优于 Hydrogen，耗时相近但成本约高 50% ，因而适合架构设计和深度 RCA。可是简单任务同样触发长时间思考和高成本，使互动式开发节奏失效；有用户因此改用速度快 5 至 10 倍的 GPT Sol，或认为 Hydrogen 才是 Google 当前较可用的性价比选择。\n[来源1] [来源2] [来源3] [来源4]\n超时、无关扩展与工具调用暴露控制问题\n用户报告 prompt box 出现 500 INTERNAL (TURN_STEPS_EXCEEDED)，只能通过设定 effort budget 或 stopping rule 才能完成任务，说明模型可能在限定步数内无法自行收敛。Carbon 被指会为工单已排除的风险额外加固代码，并对无关问题顺手修改；支持者把这视为细致，反对者则强调软件工程应将核心修复和额外重构拆成不同 PR，以免无关改动引入 regression。另有观察认为它像廉价模型一样过度调用工具，或在权限系统问题上钻进反编译 Go 代码，显示其“持久”有时确实在做深入调查、有时却缺乏任务边界。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8]\n基准导向与真实体验的评价分歧\n有人将 Carbon 的行为归因于 test-time scaling：产品文档暗示它是会思考更久的 Argon 版本，以推理时间换取 frontier benchmark 成绩。支持者指出 CursorBench（Cursor 的真实编码任务评测）中 Carbon 名列前茅，认为长时间推理在高难任务上有技术价值。批评者则认为整个行业为了 coding benchmark、工具调用和技术演示牺牲了普通任务体验，非编程用途的实际进步有限；也有人反驳，软件与数学自动化具备更高杠杆，优先投入这些领域在战略上合理。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n📚 术语解释\ntest-time scaling: 在模型推理阶段投入更多计算、搜索步骤或“思考”时间，以提升复杂题表现，而不是只依赖训练时扩大模型。\ntokens-per-second（TPS）: 模型每秒生成的 token 数；数值越低，持续输出速度越慢。\ntime to first token（TTFT）: 从提交请求到模型返回第一个 token 的等待时间；在 agent 的多次子请求中会被累积放大。\nTURN_STEPS_EXCEEDED: 服务端或产品层给一次请求设置的推理/工具调用步数上限被耗尽，任务在完成前被终止。\n类别：AI |",
+    "url": "https://newshacker.me/story?id=50541790",
+    "published": "2026-11-18T09:49:23Z"
+  },
+  {
+    "id": "2e73bfce15e593926ea1afd9",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "中国游戏厂商，都有一个种田梦",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906574.html?f=rss",
+    "published": "2026-11-18T09:40:38Z"
+  },
+  {
+    "id": "b1d0d2b0d48038ee8c3d9e93",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "黄仁勋的离场与古罗马的保护人制度",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906582.html?f=rss",
+    "published": "2026-11-18T09:26:55Z"
+  },
+  {
+    "id": "9bc09bd9d6d5f9428700d2ec",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "🚩 YC 公司 Standout：30 小时无薪面试后疑擅用 LinkedIn 拉客",
+    "summary": "原标题：《Interviewed at a YC startup, found out they used my LinkedIn without permission》\n评分: 355 | 作者: throwawaysleep\n💭 把求职者当免费销售兼账号傀儡，还叫招聘？\n🎯 讨论背景\n争议对象是 Standout（YC P26，一家声称可由代理代求职者寻找职位并发送外联消息的创业公司）。原文称，候选人在约三天、30 多小时的无薪面试试用中，被要求将个人 LinkedIn 账号连接到该平台；面试后发现账号仍被用于发送连接请求和消息。这里的关键区别是 OAuth（第三方账号授权协议）连接而非明文交出密码，但若授权允许“代表用户行动”，平台仍可能以候选人身份发布内容。评论也将此事置于全球 IT 求职低迷、AI 面试作弊引发招聘加码，以及 YC（Y Combinator 创业孵化器）强调快速增长的文化背景下讨论。\n📌 讨论焦点\n无薪面试被视为系统性剥削\n许多人认为，长达三天、每天约十小时的试用任务，尤其包含销售外联和提供人脉线索，已经不再是合理的能力评估，而是在直接替公司创造业务价值。评论指出，候选人累计完成 10—20 小时工作、交出 50 多条暖线索后，公司甚至可以不断用下一批求职者替代正式雇员。有人以自己遇到的 take-home assignment 为例：任务实际是公司所需功能，追问后对方承认是在借面试获取免费劳动力。恶劣就业市场和求职者的经济压力被认为使这种模式更容易奏效，而非减轻公司的责任。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\nLinkedIn 授权滥用与声誉伤害\n讨论澄清，事件未必涉及交出密码，更可能是候选人通过 LinkedIn API 或 OAuth 流程把账号连接给平台，并授予了代为操作的权限。问题在于，公司在面试结束、沉默三周后仍以候选人身份发送连接请求和消息；这不只是数据访问，还会把 AI 生成的外联垃圾信息和商业推销归到候选人名下。评论者强调，拥有两万多联系人或职业人脉的账号尤其珍贵，一旦被滥用，受损的是账号主人的长期信誉。也有人提醒，授权页面往往权限粒度粗糙，用户习惯为看似无害的功能授予过宽的“代表你行动”权限，因此不能简单归咎于受害者。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n求职权力不对等使拒绝变得困难\n部分评论反驳“直接拒绝即可”的看法：缺钱、就业选择少的人面对招聘方提出的条件，实际很难自由拒绝。招聘流程可能通过筛掉拒绝不合理要求的人，专门留下更容易服从和被利用的候选人；这正是权力不对等的一部分。有人认为，要求连接个人身份账号本身就是危险信号，雇主付薪也不等于拥有员工或候选人的身份。AI 面试、无薪实习和冗长测试被并列为招聘中已相当常见的压榨形式。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n法律责任、监管与平台处置\n大量评论主张这不应只停留在舆论批评，而应咨询律师、报警或提起诉讼，因为未经授权冒用身份发送信息可能涉及欺诈、隐私和计算机滥用问题。英国评论者以当地劳动法为参照称，无薪试工只有在雇主不能从候选人劳动中直接获益、且工作受到监督时才可能合理；数十小时直接产出销售价值很可能越界。也有人提出 GDPR、加州隐私法及美国严厉的网络犯罪法律，认为受害者可能同时拥有民事和刑事救济空间。另有观点希望 LinkedIn 撤销该公司获取 OAuth token 的资格，并要求 YC 调查其投资组合公司。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8]\nYC 的增长文化与产品模式受质疑\n评论将事件放到 YC“增长优先”的创业文化中理解：每周 5—7% 增长等指标可能诱导创始人把伦理、常识和用户同意视为可牺牲成本。有人指出，初创公司追逐的往往不只是利润，而是融资和估值所需的增长指标，因此“growth hacking”容易成为不当行为的包装。被点名的平台本身主打由代理替用户寻找工作、代表用户发送消息，且强调 LinkedIn 推荐或背书；这解释了其需要账号授权的产品逻辑，却无法解释将候选人账号持续用于自身招聘或获客。评论者还怀疑，强制求职者体验该工作流可能是在 dogfooding，并借招聘过程扩大产品使用和销售线索。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\n个人账号与设备的最小授权原则\n评论延伸到更广泛的数字安全经验：无论是维修设备、政府检查还是求职，都不应轻易交出密码或让他人获得完整个人身份的控制权。有人回忆将 MacBook 连同账号密码交给维修店后感到隐私被完全暴露，建议维修前备份并清除设备数据，或至少使用隔离账户",
+    "url": "https://newshacker.me/story?id=50542135",
+    "published": "2026-11-18T09:19:34Z"
+  },
+  {
+    "id": "96e3df71062188dec2f29375",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "你心疼的骑手，演完这场就杀青了",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906578.html?f=rss",
+    "published": "2026-11-18T09:17:34Z"
+  },
+  {
+    "id": "0dd9fd16b086488b1636f4e1",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "来自世界模型的风，吹到AI互动剧了",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906576.html?f=rss",
+    "published": "2026-11-18T09:13:46Z"
+  },
+  {
+    "id": "24048ed5ad73fd86fe64c1ea",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "宗馥莉再掀人事风暴：173名管理人员被免职",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906573.html?f=rss",
+    "published": "2026-11-18T09:11:16Z"
+  },
+  {
+    "id": "113d50dedc03658d58bedc99",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "100亿美元建设热潮，重塑布拉格",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906571.html?f=rss",
+    "published": "2026-11-18T09:09:51Z"
+  },
+  {
+    "id": "141a66c7cf4af2c3d51724e8",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "四年间从资本宠儿到破产重组，自行车生意怎么了",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906570.html?f=rss",
+    "published": "2026-11-18T09:09:23Z"
+  },
+  {
+    "id": "c9d7ace55d6370f2e64f8de7",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "方便面卖不动了，康师傅和统一反而赚更多？",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906569.html?f=rss",
+    "published": "2026-11-18T09:08:34Z"
+  },
+  {
+    "id": "dd4761e23a3736553544218e",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "新跑鞋成了耐克“全村的希望”",
+    "summary": "新款跑得赢库存吗？",
+    "url": "https://www.huxiu.com/article/4906566.html?f=rss",
+    "published": "2026-11-18T09:05:17Z"
+  },
+  {
+    "id": "103be28a2b90c678ddeb530b",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "方圆3公里开20家，近年爆火的网吧，真的赚钱吗？",
+    "summary": "网吧真的是一门好生意吗？",
+    "url": "https://www.huxiu.com/article/4904071.html?f=rss",
+    "published": "2026-11-18T09:00:00Z"
+  },
+  {
+    "id": "aa652c14de7e58e8f7e83ccd",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "腾讯音乐的增长，开始靠买了",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906564.html?f=rss",
+    "published": "2026-11-18T08:58:41Z"
+  },
+  {
+    "id": "7befb463122a5763248e670c",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "“筷子夹飞船”，国内走到哪一步了？",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906565.html?f=rss",
+    "published": "2026-11-18T08:57:32Z"
+  },
+  {
+    "id": "f92178486da84497f981f345",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "谷歌反垄断案背后：当国家安全开始介入美国科技监管",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906560.html?f=rss",
+    "published": "2026-11-18T08:30:59Z"
+  },
+  {
+    "id": "e7abe875969b2530aca5c6e3",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "💾 Phrack 73 发布：老派黑客杂志的漏洞技术、记忆与 AI 质疑",
+    "summary": "原标题：《Phrack 73 Released》\n评分: 364 | 作者: notmine1337\n💭 连 Phrack 都靠 AI 凑稿，地下精神还剩几行？\n🎯 讨论背景\nPhrack（1985 年创刊的地下黑客电子杂志）长期以纯文本形式发布 exploit、系统底层研究、电话网络实验和黑客史料，第 73 期延续了这种技术与文化并置的传统。它在 1990 年代因《Smashing The Stack For Fun And Profit》等文章奠定声望；该文系统化解释 stack smashing（破坏栈内存以劫持控制流的利用技术），深刻影响了后续漏洞利用教育。如今安全研究通常涉及 CVE（公开漏洞标准编号）和 responsible disclosure（先协调厂商修补再披露），所以读者会追问本期 Docker escape 技术是否对应已修复的真实漏洞。讨论同时映照出早期 BBS、拨号调制解调器、2600（美国长期出版的黑客文化杂志）和 DEF CON（大型黑客安全会议）时代的社群记忆，以及对 AI 生成内容进入技术刊物的警惕。\n📌 讨论焦点\n漏洞技术与披露边界\n有人关心本期 Docker escape 内容是否已经经过 responsible disclosure 并获得 CVE 编号，反映出早年“直接放出 exploit”与如今漏洞协调披露之间的落差。回应指出，该文讲的是可用于构造攻击的 exploit primitive，而非针对某个产品的具体漏洞，因此并不存在可报告或分配 CVE 的对象。另有读者提及作者同日发布的 Java4Shell CVE，并声称它可能影响 NSA 和 Apple，显示本期仍与现实世界的高影响安全研究相连。关于 2000 年 SSH1 RCE 的回顾文章，也被视为观察漏洞研究与修补节奏如何加快的材料。\n[来源1] [来源2] [来源3] [来源4]\n经典文章塑造安全知识\n读者把 1996 年第 49 期的《Smashing The Stack For Fun And Profit》视为在线安全杂志的标杆，其讲解的 stack smashing 后来甚至发展成书籍。有人当年读完后将其中方法迁移到其他 processor 和 Unix，说明文章不仅是历史纪念品，也曾直接影响实践。第 69 期对 Adobe Shockwave/Director 内存问题的研究，则让读者理解早期客户端为何能够被构造为 RCE；游戏旧客户端运行 Calculator 的 PoC 被当作直观例子。第 37 期的磁条卡技术文章同样被提及为曾激发大量现实“折腾”的教程，凸显 Phrack 长期兼具深度与可操作性。\n[来源1] [来源2] [来源3] [来源4] [来源5]\n地下网络文化与历史保存\n不少人借第 73 期回忆 2600、CCC、Astalavista、warez、eMule 和早年的 phreaking 工具，这些名称构成了拨号网络时代的地下技术文化坐标。对 blue box、拨号器和 300-baud modem synth 的怀念，不只是复古，也指向电话系统曾是黑客实验重要对象的年代。有人特别肯定“Phrack World History”栏目，认为应保存那些容易被遗忘的事件与人物。围绕 Aleph One、Emmanuel Goldstein 及电视节目《Net Cafe》的讨论，也表明杂志与会议、媒体及长期社群记忆彼此交织。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n不精致的媒介形式与阅读体验\n有观点认为 Phrack 的粗糙、开放形式反而带来更自由的表达环境，相比之下，HN 评论区像履历表般的展示压力会让人不敢发言。理想阅读场景被戏谑地描述为 CRT 上的 80x25 text mode、BIOS 字体和 ANSI 色彩，或用针式打印机和连页纸阅读。虽然有人希望像 2600 一样拥有实体刊物，但 Phrack 已提供 print on demand，且其周年版本曾在多个安全会议以印刷品发布。对于年长读者的屏幕疲劳和偏头痛，讨论还将 E-ink 阅读器、无背光设计及 RLCD 视为比普通屏幕更舒适的替代方案。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n本期文章是否为 AI 生成的争议\n有读者直接批评 MateuZSecurity 的文章是难以阅读的 AI slop，因此对连 Phrack 都可能出现生成式内容感到失望。支持该怀疑的人称将数篇文章交给 Pangram 检测后得到“100% AI”的结果。反方指出自己的人类写作也会被该工具判定为高 AI 概率，因此不信任这种检测，并要求展示可核实的结果。争论进一步提到，若能给出 2019 年以前、",
+    "url": "https://newshacker.me/story?id=50535992",
+    "published": "2026-11-18T08:19:42Z"
+  },
+  {
+    "id": "6644d9a021252abba93489e2",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "“童年的消逝”，带火了哪些生意？",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906557.html?f=rss",
+    "published": "2026-11-18T08:13:33Z"
+  },
+  {
+    "id": "62296f18e017bb2e600bcd11",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "火龙果被中国干成新能源的了？",
+    "summary": "亚洲人一听“龙”，立马玩出花",
+    "url": "https://www.huxiu.com/article/4905961.html?f=rss",
+    "published": "2026-11-18T08:00:00Z"
+  },
+  {
+    "id": "118f01e4f33dbbcaeb8326e3",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "“保健品一哥”又又又翻车，中产却舍不得放手",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906551.html?f=rss",
+    "published": "2026-11-18T07:51:37Z"
+  },
+  {
+    "id": "52e59c985e24e49da2bf4b65",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "山姆恶补“信任课”",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906548.html?f=rss",
+    "published": "2026-11-18T07:43:25Z"
+  },
+  {
+    "id": "6f4f5da85de2021992d308ec",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "🚨 Microsoft ONNX Runtime 及关联仓库突遭下线，疑涉安全事件",
+    "summary": "原标题：《Microsoft's ONNX Runtime has disappeared from GitHub》\n评分: 265 | 作者: nvader\n💭 安全修复靠仓库失踪，依赖方该向谁升级？\n🎯 讨论背景\nONNX（Open Neural Network Exchange，机器学习模型交换格式）由 Microsoft 和 Facebook 等参与推动，而 ONNX Runtime（ORT，执行 ONNX 模型的推理引擎）是 Microsoft 维护的主流实现，常被用于生产环境部署从 Hugging Face（模型托管平台）等处获得的模型。帖子所指的是 Microsoft GitHub 组织中的 `onnxruntime ` 及多个关联仓库突然不可访问，同时 Microsoft Agent Framework（用于构建 AI Agent 的框架）仓库也下线；但官网和 PyPI、Maven Central 等制品发布渠道当时仍在。讨论的安全背景包括一篇关于恶意 ONNX 模型可能利用 ORT 解析缺陷读取本地数据的研究，以及 Agent Framework 的 PyPI 包疑遭入侵的报告，二者是否导致下线尚未证实。事件也暴露了开源依赖的可用性与完整性问题：盲目采用临时 fork 或镜像可能比等待官方说明更危险，因此企业通常以 Artifactory 或 Nexus（内部制品仓库）固定、审核和缓存依赖。\n📌 讨论焦点\n安全事件猜测与官方沉默\n评论者注意到 Microsoft Agent Framework（微软的 AI Agent 开发框架）此前被报告 PyPI 包遭入侵，其 GitHub 仓库也同时离线，因此推测两事可能相关。还有人援引 Phrack 的研究称，ONNX Runtime 可能存在解析器缺陷：恶意 ONNX 模型可诱导运行时读取任意文件路径或内存地址；这使从 Hugging Face 等公共仓库直接下载模型的部署方式存在风险。但这些都只是基于时间关联和公开研究的推断，尚无 Microsoft 官方说明确认下线原因。批评集中在仓库直接消失且不留公告，会迫使用户转向来路不明的 fork，反而扩大风险。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n下线造成构建中断，镜像与 fork 也有风险\n有使用者称，CI/CD 中的 eval pipeline 当天就因仓库消失而失败，且事前没有收到任何预警；一个拥有约 22k stars 的核心依赖突然不可访问，直接影响开发和提交 PR。官网 onnxruntime.ai 以及 PyPI、Maven Central 等发布渠道当时仍可访问，说明主要消失的是 GitHub 源码及多个关联仓库，而不一定是所有二进制包。有人找到 Intel 的 OpenVINO 修改版 fork、SourceForge 镜像和疑似保留原始 commit 的 fork，但也有人警告，仓促下载存档或陌生镜像很可能引入 malware。社区因此主张由持有可信副本的人进行 soft fork，但前提是能验证来源、commit hash 和构建产物。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10]\n依赖治理应避免直接依赖公网\n一部分人将事件视为依赖治理的例证，主张对关键库进行 vendoring，即把已审计的依赖副本纳入自身代码库或受控存储，避免上游仓库突然消失就阻塞构建。另一些人指出，若上游正因安全问题而下线，保留的本地副本也未必安全，不能把可用性策略误当成漏洞修复。企业实践中可用 Nexus、Artifactory 等内部制品仓库隔离 CI/CD 与公网，并对新包设置审批和延迟晋升期。评论者认为这种中间层早已存在，只是其维护成本和企业定价未必符合个人开发者的预期。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8]\nTelemetry 指控被纠正，但透明度仍受质疑\n有人指控 ONNX 会默认外传应用数据，且只能自行编译才能关闭 telemetry；随后多条回复给出了无需重编译的关闭方式。ONNX Runtime 可调用 `onnxruntime.disable_telemetry_events()`，或在加载库前设置 `ORT_DISABLE_TELEMETRY =1 ` 环境变量。讨论还澄清，ONNX 是开放模型交换标准，Microsoft 的 ONNX Runtime 则是该标准的一种实现；二者常被混称，导致对责任主体的表述不准确。即使能关闭，不少维护者此前并不知道存在 telemetry，显示默认行为和退出机制的可见性仍不足。\n[来源1] [来源2]",
+    "url": "https://newshacker.me/story?id=50539610",
+    "published": "2026-11-18T07:24:31Z"
+  },
+  {
+    "id": "98aff371c9bed6964d47d4ac",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "🚨 Java4Shell：OpenJDK AVX-512 Base64 越界写可致定制化 RCE，需尽快升级",
+    "summary": "原标题：《Java4Shell: RCE in OpenJDK when processing Base64》\n评分: 784 | 作者: werrett\n💭 为省几纳秒，何必把 Java 变成 C 漏洞？\n🎯 讨论背景\nJava4Shell 指 Calif（一个安全研究团队）披露的 OpenJDK/HotSpot Base64 解码漏洞，编号讨论中提及为 CVE-2026-114938；其根源是 AVX-512 优化路径中的堆越界写，而非普通 Java Base64 实现本身。研究演示表明，畸形 Base64 尾部可破坏相邻堆对象，但将其稳定升级为 RCE 仍要解决堆布局、网络时序和应用数据流等目标特定问题。它因此不同于 Log4Shell（可广泛远程触发的 Java 日志库漏洞），但企业 Java 服务在云端 x86-64 节点上仍可能满足条件，尤其是采用 HotSpot、G1 和硬件加速 Base64 的部署。运营者可先升级 JDK，或临时关闭 Base64 intrinsics；nginx（常用反向代理）的请求体缓冲也可能打断部分远程 heap grooming 技术。\n📌 讨论焦点\n漏洞范围与触发条件\n讨论认为这不是所有 Java 或所有 Base64 使用场景均可触发的漏洞，而是 HotSpot 的 AVX-512 Base64 decoder 快路径中的 heap out-of-bounds write。典型前提包括 x86-64 主机、特定的 AVX-512 功能位、启用 Base64 intrinsics，以及可编译该路径的 C2/JVMCI；ARM64、较老 CPU 和部分非 HotSpot JVM 通常不受影响。也有人指出 Oracle 列出的受影响版本包含 JRE 8，不能仅凭“Java 17.0.6 以后”这一初步检测规则排除风险。\n[来源1] [来源2] [来源3] [来源4] [来源5]\nRCE 可行但难以像 Log4Shell 那样批量利用\n评论普遍认为从越界写走到稳定 RCE，需要为目标量身构造 decoder route、可控写入、反馈读取路径、heap layout 及触发业务动作，并非一键式 payload。攻击依赖 RTT 和 jitter，远程 heap grooming 的稳定性可能要求攻击者在目标同区域租用 VM，因此更适合有明确目标和资源的攻击者。反对者认为 GC 会移动对象、堆对象排列不可预测，最多可能导致崩溃；但回应指出研究正是通过堆布局控制来降低这种不确定性。\n[来源1] [来源2] [来源3] [来源4] [来源5]\n紧急缓解、补丁与云端部署现实\n最直接的修复建议仍是升级到供应商已发布的修补 JDK；不同发行版的补丁速度不一，Temurin 等第三方发行版一度尚未发布更新。临时缓解可使用 -XX:-UseBASE64Intrinsics 关闭有问题的硬件加速路径；-XX:UseAVX =2 也能禁用 AVX-512，但不适合被统一推送到 ARM JVM。即使当前节点不暴露 AVX-512，Kubernetes node pool、云实例类型和透明迁移都可能造成硬件能力差异，因而许多人主张先统一止血，再精确盘点。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n代理缓冲可降低部分攻击路径，但不是替代修复\n部分攻击 profile 需要将未完整的 request body 及时送入应用，以精确控制释放与堆布局时机。nginx 默认缓冲完整请求体，可能破坏这种 timing，因此位于应用前方的代理可降低部分暴露面。评论同时强调这只是限制条件而非完整防护，尤其 Java 客户端主动连接恶意 TLS 服务时，入站代理无法自动覆盖。\n[来源1] [来源2] [来源3]\n手写 SIMD/JIT 汇编的性能收益与安全债务\n漏洞引发了对 JVM 中手写 assembly、SIMD intrinsic 和 JIT stub 生成代码的担忧：这些代码复杂、审查门槛高，传统“更多眼睛”未必真的能发现问题。支持优化的一方指出向量化 Base64 可从约 1–2GB/s 提升到数十 GB/s，在高吞吐场景确有价值；自动 loop vectorization 又受代码形状和 JIT 编译预算限制。批评者则认为，为文本化二进制数据的解码追求极限性能而引入 memory-safety bug，是典型的复杂性与攻击面失控。\n[来源1] [来源2] [来源3] [来源4] [来源5]\nLLM 会放大攻防能力还是主要制造叙事\n一派担心 LLM 可把漏洞研究、recon、fuzzing 和 exploit 编写模板化，从而缩短定制攻击的开发周期。另一派认为模型擅长生成 glue code",
+    "url": "https://newshacker.me/story?id=50538240",
+    "published": "2026-11-18T07:19:30Z"
+  },
+  {
+    "id": "a0e9d9d5f3dd9c96b16bd132",
+    "source": "Big Think",
+    "source_title": "Big Think",
+    "category": "思想",
+    "title": "“旅行者1号”如何成为首艘抵达1光日处的航天器",
+    "summary": "How Voyager 1 became the first spacecraft to reach one light-day",
+    "url": "https://bigthink.com/starts-with-a-bang/voyager-1-one-light-day/",
+    "published": "2026-11-18T07:18:54Z"
+  },
+  {
+    "id": "5ec23071858a373937f1dde7",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "🛠️ 《Web Browser Engineering》完稿出版：浏览器实现获赞，WASM 定位引争论",
+    "summary": "原标题：《Web Browser Engineering (2021)》\n评分: 152 | 作者: ibobev\n💭 把网页全塞进 100MB WASM，性能就赢了？\n🎯 讨论背景\n《Web Browser Engineering》是一部通过逐步实现简化浏览器来讲解 Web 平台内部机制的教材，覆盖 HTML/CSS 解析、layout、绘制、字体、网络与脚本等浏览器子系统。讨论中的“浏览器比操作系统复杂”源于浏览器既要维护大量 Web 标准兼容性，又要同时处理渲染、安全隔离、媒体、字体和跨平台运行。WebAssembly（WASM，一种供多语言编译到浏览器的字节码格式）通常与 JavaScript 协同运行；它是否应获得更直接的 Web API 能力、乃至成为前端主语言，仍涉及标准化、安全、包体积和可访问性取舍。评论也借 Java Applets、Flash 与 Silverlight（过去的富客户端 Web 插件/运行时）警惕将网页界面封装成不透明客户端二进制包的旧模式。\n📌 讨论焦点\n系统化浏览器教材的完成与价值\n该书从 2019 年开始撰写，至 2024 年底基本完成，并于 2025 年出版；作者强调其内容并非由 AI 生成。读者认为它把浏览器内部的分层呈现得很清楚，尤其解释了为何现代浏览器的复杂度可与甚至超过操作系统相比。还有读者称自己完成学习后，因而开始考虑转入浏览器这一高难度领域工作，说明教程兼具入门路径和职业启发作用。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n从零实现浏览器的工程规模\n一位实践者正自行构建浏览器及其底层 C 库，而不是只拼装现有组件。其已实现多种图像格式读取、HTML/XML 与 CSS 解析、文本及 CSS/SVG 图元栅格化、TTF 字体支持、部分 WASM 和 Regex engine，下一阶段是 layout engine 与 JavaScript engine。即使已有约 30 个库、78 万行代码，仍被认为距离完整浏览器很远，直观显示出浏览器实现涉及渲染、字体、脚本与标准兼容等大量子系统。\n[来源1] [来源2]\nWASM 是否会与 JavaScript 并列\n争议起于书中附录一句推测：WebAssembly 未来可能与 JavaScript 在 Web 上地位相当。批评者认为 WASM 的主要定位是兼容层和关键路径性能工具，受限的 API 访问设计也正是其安全与平台整合的一部分，因此不应暗示其会成为通用 Web 开发语言。作者回应这不是预测或主张，WASM 并未纳入正文，只是在“未覆盖内容”中保留对未来的不确定性；也有人建议删去“co-equal”措辞以避免误读，并指出 Mozilla 的探索文章并不等于 W3C 标准决定。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\nWASM 前端化的可访问性与交付忧虑\n有评论者以讽刺性的 Rust React 替代品为例，担心把客户端界面整体编译为巨大的 WASM blob，会重演 Java Applets、Flash、Silverlight 式封闭富客户端的历史。其担忧不仅是下载体积，例如向所有用户推送 100 MB 文件，也包括 Canvas 驱动界面的可访问性、可发现性和导航体验。反方指出，使用 Rust 或 Swift 编写并编译的前端并不必然只能画 Canvas，仍可渲染为 DOM，因此实现语言与无障碍、搜索可见性之间并非必然绑定。\n[来源1] [来源2]\n域名与书名的巧合\n有人质疑为何“.engineering”能成为顶级域名，认为这种域名显得突兀。回应解释该 TLD 大概原本面向土木等工程公司，但书名的形成反而来自浏览可用 TLD 列表。于是“web.browser.engineering”既成为书的网址，也反过来塑造了书名，体现 Web 项目常由可注册域名影响命名。\n[来源1] [来源2]\n📚 术语解释\nWebAssembly（WASM）: 一种可在浏览器执行的硬件无关字节码格式，常供 Rust、C/C ++ 等语言编译目标使用；讨论焦点是它应作为性能/兼容工具，还是能成为与 JavaScript 并列的 Web 应用平台。\n类别：Web | Programming | Guide | Web Browser Engineering | WebAssembly | JavaScript | Mozilla | Rust | React",
+    "url": "https://newshacker.me/story?id=50537290",
+    "published": "2026-11-18T06:59:25Z"
+  },
+  {
+    "id": "54a6091a1aceaec8aabc9024",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "很多地缘问题将在东南亚汇聚，东盟必须抛弃冷战惯性思维",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906541.html?f=rss",
+    "published": "2026-11-18T06:55:27Z"
+  },
+  {
+    "id": "9effcffd5c211ec48dddbe47",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "放下大模型卷制药，AI巨头打的什么算盘？",
+    "summary": "不是为了永生，而是寻找新的金矿",
+    "url": "https://www.huxiu.com/article/4903669.html?f=rss",
+    "published": "2026-11-18T06:51:51Z"
+  },
+  {
+    "id": "59b0d8141721509cdc0c15e3",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "🔭 罗默借木卫一食的累计相位延迟证明光速有限，科普表述与单程光速引争议",
+    "summary": "原标题：《350 years ago, this man discovered that light has a finite speed》\n评分: 305 | 作者: dxs\n💭 把累计相位延迟写成轨道变慢，科普也能测速吗？\n🎯 讨论背景\nOle R ømer（17 世纪丹麦天文学家）在 1676 年前后比较木卫一 Io（木星最内侧的伽利略卫星）进入或离开木星阴影的预报时刻与实测时刻，发现当地球逐渐远离木星时，食的观测时刻会系统性推迟。他据此推断光从木星传到地球需要时间，首次给出光速有限的天文观测证据；地球—木星距离在相对轨道运动中改变数亿公里，对应约二十多分钟的光行时差。此方法依赖摆钟与恒星位置建立的天文计时，以及 Cassini 的木卫一历表，而不是直接测量一束光跨越行星间距离。讨论也由此连到 special relativity（狭义相对论）中的 c 与异地时钟同步问题：往返光速可测，单程光速的定义则牵涉同步约定。\n📌 讨论焦点\n木卫一观测的真正机制\n讨论者强调，变化的不是木卫一 Io 的真实轨道周期，也不是单次食持续得更久，而是地球上观测到食发生的时刻相对预测表逐渐提前或延后。当地球与木星距离增大，连续多个食的信号传播时间会累积，半年尺度上形成约 22 分钟的相位偏移；距离缩小时则反向累积。把它说成“轨道时间一年内变化 22 分钟”会误导读者，以为卫星本身的轨道动力学发生了大幅变化。更准确的通俗说法应是“表观轨道周期”或“食发生时刻的累计延迟”。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n17 世纪计时精度并非不可逾越\n不少人惊讶于 17 世纪如何比较相隔数月的事件，但关键不是让一只钟连续数月无误差地运行。Huygens 发明的摆钟已在天文台使用，约可做到一天漂移一分钟量级；观测者还能每日依据恒星过中天等天象重新校时。较长的时间间隔可通过计数地球自转日来处理，因此钟只需在单日或数小时内足够稳定。木星远近的传播时差约二十余分钟，远大于经常校准后的短期计时误差。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n单程光速能否测量的相对论争论\n一组讨论把历史测量延伸到“单程光速”问题：往返光速可直接由同一地点的发射和返回计时得到，但相距两地的单程测量需要先同步两只钟。批评者认为，用光同步时钟、或搬运时钟后校正 time dilation，都已隐含关于单程光速或同步方式的约定；不同同步约定可给出不同的单程速度而不改变可观测现象。有人提出 GPS、原子钟和多速度时钟实验可解决问题，但回复指出这正是该哲学与物理定义问题的核心，并非单靠提高仪器精度即可绕开。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\n科普简化、史料与学习资源\n评论者认可漫画和视频能帮助初学者直观理解“木星远、木星近”这一想法，但认为删去累计相位与会合周期框架可能导致关键误解。有人将这种简化与 Millikan oil-drop、Cavendish torsion balance、Foucault rotating mirror 等教科书实验并列，指出真实实验通常依赖大量数据、振荡或拟合，而非一次神奇读数。读者推荐了 3Blue1Brown 与 Terence Tao 的 Cosmic Distance Ladder 视频，以及《Lightspeed》《The Greatest Speed》等科学史资源，用于了解从 Eratosthenes 到现代光速测量的推理链条。还有人指出报道以宗教而非地域标注中东学者、却将 Roger Bacon 标为“English”，在历史人物身份表述上显得不对称。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8]\n从有限光速到相对论的概念边界\n部分评论从罗默的结果联想到现代相对论：c 不仅是高速物体的普通速度，也出现在时空结构、time dilation 和 length contraction 的关系中。对此也有纠正，称“光速时自身经历零时间”或“超光速就是亲身回到过去”容易把不同参考系和理论外推混为一谈。较严谨的说法是，若允许超光速信号，在某些参考系组合下会破坏因果顺序，产生 retrocausality 一类问题；这不等同于像科幻电影那样重新经历过去。\n[来源1] [来源2] [来源3] [来源4] [来源5]\n📚 术语解释\nIo 食的累计相位漂移（cumulative phase shift）: 木卫一绕木星运行的真实周期近似不变，但因地球—木星距离变化，连续观测到的食时刻相对预测不断累积偏移。\n表观轨道周期（apparent orbital period）: 由接收信号的时刻间隔推得的周期",
+    "url": "https://newshacker.me/story?id=50536813",
+    "published": "2026-11-18T06:49:32Z"
+  },
+  {
+    "id": "c568bc91bee3d970b98442b6",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "英伟达事件与中墨双边贸易前景展望",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906539.html?f=rss",
+    "published": "2026-11-18T06:43:11Z"
+  },
+  {
+    "id": "f9d39e757895309636f2ccd0",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "⚙️ 谁来造造机器的机器：美国精密机床断层与中国规模优势",
+    "summary": "原标题：《Who Builds the Machines That Build the Machines?》\n评分: 123 | 作者: gmays\n💭 连造机床的本事都外包，还谈什么制造回流？\n🎯 讨论背景\n文章以“制造机器的机器由谁制造”为线索，讨论美国再工业化的上游瓶颈：机床（制造其他零件和设备的生产装备）、精密部件与工艺人才。文中引述的数据称，美国工厂可生产常规设备，却大量进口五轴加工中心（可多方向联动加工复杂零件的 CNC 设备）、齿轮磨床和重型锻压机等高端装备；这些设备又决定轴承、齿轮、滚珠丝杠和机器人零件能否本土制造。评论将中国优势联系到深圳（中国高度密集的电子与硬件制造集群）的供应链规模和持续订单，也讨论美国是否应以国防等战略行业为突破口。机器人热潮使问题更紧迫，因为 humanoid robot 的关节和传动系统只有在精密设计、可靠工艺及足够产量同时具备时，才可能从实验室样机降至接近汽车的成本。\n📌 讨论焦点\n精密制造的短板在人、工艺与关键部件\n讨论者认为，建设厂房或部署机器人并不等于拥有制造能力；真正稀缺的是精密铸件、滚珠丝杠、导轨、控制系统以及长期积累的工艺知识。美国不少中型齿轮加工机床厂商和熟练精密加工人员已消失，而机床寿命长、二手市场大，使新增替换需求不足，进一步削弱本土供应商的投资意愿。工厂岗位也因低社会地位、初期收入低、轮班辛苦和缺乏保障而难以吸引人才，工程教育同样被批评过度脱离动手实践。仅靠进口关键部件再做最终装配，无法形成完整的工具与模具、重工业能力。\n[来源1] [来源2] [来源3] [来源4]\n中国的优势来自规模、密度与投资激励\n多条评论将差距归因于规模经济：中国持续扩大的产品产量会自然拉动新机床采购，而产业链密集的深圳能让零部件、供应商与工程迭代彼此强化。相比之下，美国资本即使有意投资，也可能因中国工厂回报更高而流向海外；高租金、高利率和高生活成本又进一步抬高本土生产成本。有人认为问题不只是治理能力，而是民主国家短选举周期容易让基础设施和产业计划反复中断。反驳者则指出，民主并非天然不能长期规划，德国曾是例子，但其 BER 机场、Stuttgart 21 和核电政策也显示制度本身不能保证执行质量。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n是否必须全面重建，还是集中于战略领域\n一方认为不必把“再工业化”理解为重造一切：美国仍能制造火箭、卫星、喷气机和导弹，也曾借 Tesla 的生产线与一体化制造方式推进汽车制造创新。由此，有限资源或许应投向本国最有优势、回报最高的领域，而不是把供应链完全当作孤岛重建。另一方强调，财务 ROI 与地缘政治韧性不是同一目标；国防、航空航天和机器人所需的精密设备若依赖进口，会构成战略风险。对 Tesla 的乐观案例也有质疑，批评者认为其产品竞争力及成功很大程度受保护主义影响，而大型压铸设备的来源本身恰说明关键装备并不完全本土化。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\nAI 和机器人不能快速跳过制造生态，互赖也未必稳定\n有人设想用 AI 训练工业机器人操作机床，进而形成“机器造机器”的自我改进循环，但认为从原型到可靠量产仍可能需要十年以上。机器人关节尤其体现了这一难度：小型三相电机、Harmonic drive、传感器、控制器、过载热管理和可回驱性必须在减速比、尺寸、齿轮强度之间联合权衡。也有人主张美国专注 AI 算法、中国专注机器人制造，以贸易缓和维持互补；反对者认为若中国模型和芯片已“足够好”，这种依赖将变得单向，中国未必有动力接受对等合作。较务实的看法是，西方可先以政府预算和风险资本为价格不敏感的国防等垂直领域建立供应基础。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n文章是否为 AI 生成及其研究深度\n部分读者觉得文章措辞和结构像 LLM 生成，或认为它只是表层搜集了谁在组装机器，未充分处理进口铸件、精密丝杠、导轨和控制器对产业政策的约束。另一些人认为文章确实讨论了具体制造细节，且相关系列文章显示其并非只是在泛泛而谈。回应称研究过程使用了 AI 辅助，但写作并非自动生成，目的在于邀请更多行业参与者讨论美国工业未来。争议反映出，工业议题若缺少一手工艺和供应链证据，即使数据丰富也容易被视为“AI Slop”。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n📚 术语解释\nMachine tool（机床）: 用于切削、磨削、锻压或成形其他零件的生产设备；高端机床本身又依赖更精密的部件和工艺。\n规模经济（economies of scale）: 产量增大后，固定成本、供应商配套和经验积累被更多产品分摊，从而降低单位成本并加快迭代。\nHarmonic",
+    "url": "https://newshacker.me/story?id=50535208",
+    "published": "2026-11-18T06:34:35Z"
+  },
+  {
     "id": "684f035803ffb60c9aa6541e",
     "source": "极客洞察",
     "source_title": "News Hacker | 极客洞察",
     "category": "技术",
-    "title": "🤖 Solid 2.0：以异步图和 Agent 友好开发体验推进全栈响应式框架",
-    "summary": "原标题：《Solid 2.0》\n评分: 169 | 作者: pier25\n💭 把好报错包装成 Agent 特供，人类就该感恩吗？\n🎯 讨论背景\nSolid 是一个 JavaScript UI 框架，以细粒度响应式更新和 JSX/TSX 编写体验为特点，常被拿来与 React、Svelte 和 Vue 比较。Solid 2.0 的发布信息突出 async graph（把异步流程接入响应式依赖图）、server RPC（前后端远程调用封装）以及 live/broadcast 等实时同步能力。其“Built to Be Written by Agents”口号源于 AI 编程工具普及：框架希望用明确的类型、诊断和架构模式，让 Agent 更稳定地生成和维护代码。讨论同时触及 Svelte 的编译器和专用工具链、Vue Vapor mode（Vue 的无 Virtual DOM 编译模式），以及 TanStack（前端数据查询和路由工具生态）适配和组件库成熟度等实际采用条件。\n📌 讨论焦点\nAgent 导向不等于抛弃框架\n评论者认为，“Built to Be Written by Agents”所强调的诊断、约束和清晰模式，本来也是人类开发者长期需要的良好 DevEx，而 Agent 只是更无法容忍模糊错误和隐式约定。严格类型、可理解的错误信息与固定架构会同时减少人和 Agent 犯错；Rust 被举为相近例子，但其较慢编译及 cargo lock 也会让并行 Agent 等待。反对“Agent 出现后应直接写裸服务器代码”的观点认为，响应式框架恰好能向 Agent 提供一致的 DOM 更新模型和架构护栏，使产出的代码更可维护。还有人指出，随着上下文窗口、token 成本和复杂度增长，抽象并未失去价值，反而更需要把经验规则编码进框架或编译器。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9]\n异步图与全栈响应式设计获赞\nSolid 2.0 的 async graph 被认为将异步状态纳入既有 signal graph，避免让 async 像 React Hooks 一样形成难以自由调用的“colored functions”。该模型据称还能检测请求 waterfall、错误构造的 effect loop，以及过宽的 fan-in 和 fan-out 依赖图，从状态层面暴露性能和结构问题。评论者也称赞其 server RPC、live 与 broadcast 的整合更自然，比 LiveView 或 htmx/datastar 的使用体验更连贯。对 React 无法条件加载 TTS 的批评则被反驳：可在固定调用的 useState 初始化器中按条件执行加载，说明具体限制仍有实现层面的替代写法。\n[来源1] [来源2] [来源3]\n生态成熟度与迁移阻力\n有人仍将组件库不足视为 Solid 的主要短板，尽管愿意在从零项目中尝试它，并认为其接近“React 本应有的样子”。另一方列出 Vercel UI SDK 的 Solid 支持，以及 Kobalte、Ark UI、Park UI、Solid UI、Shadcn Solid、Corvu 和 Material Design Solid 等，认为生态已不能简单称为匮乏。组件库是否必要也存在分歧：支持者强调跨应用一致的外观和行为，反方认为这本质上是可自行建设的 design system。实际迁移还受配套项目制约，例如有人正在等待 TanStack 的 Solid 2 adapter，表明框架核心发布并不自动解决集成依赖。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\nSvelte、Vue 与 Solid 的工具链和性能取舍\n一些曾押注 Svelte 的开发者回顾，当初被其接近 HTML/CSS 加少量 JavaScript 的表面简洁性和编译器理念吸引，也因厌倦 React 而偏好更陌生的范式。长期使用后，他们发现 Svelte 的语法更像模仿 JavaScript 的专用语言，转而偏好 Solid 的 TS/TSX 直接性。支持者称 Solid 大体沿用标准 TypeScript 工具链，而 Svelte 和 Vue 需要语言服务器及定制插件的长期维护；反方则指出基础 Svelte 项目看起来也只是一个 Vite 配置。性能上，Vue 3.6 的 Vapor mode 被称可与 Solid、Svelte 接近，因此三者的选择正更多取决于功能、生态和个人偏好，而非基准测试。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\n📚 术语解释\nCoding agents（编",
+    "title": "🤖 Solid 2.0：Agent 优先的异步图与通用渲染，换来更大体积？",
+    "summary": "原标题：《Solid 2.0》\n评分: 273 | 作者: pier25\n💭 把文档藏进 skill.md，就算 Agent 友好了？\n🎯 讨论背景\nSolid 是一个采用细粒度响应式更新和 JSX/TSX 的 JavaScript UI 框架，常被拿来与 React、Svelte、Vue 等前端框架比较。Solid 2.0 的发布重点包括 async graph（将异步依赖纳入响应式图）、Server Functions/RPC 风格的服务端调用，以及 universal renderer（可将同一组件模型接到非 DOM 宿主）的能力。发布页以“Built to Be Written by Agents”宣传，背景是编程 Agent 日益参与代码生成，工具开始强调可机器解析的诊断、文档和约束。讨论同时涉及前端长期问题：bundle size、hydration、组件生态、专有编译工具链，以及如何在 AI 辅助开发下维持可维护架构。\n📌 讨论焦点\nAgent 友好 DX 同样改善人类开发\n评论者认为，“Built to Be Written by Agents”中的结构化诊断、明确约束和简洁教程，本质上也是长期欠缺的人类 DX 最佳实践。与 Agent 协作迫使开发者把预期行为、分析假设和任务状态写进版本库，例如 PLAN.md、带 ID 的 TASKS.md，以及记录结论和废弃想法的日志。严格类型、可读错误信息和固定架构能减少人和 Agent 同样会犯的错误，因此 Rust 等工具也被认为适合 Agent。反对者则认为把普通能力重新包装成“for agents”是营销热潮，例如 Docker 被冠以“Secure Sandboxes for AI Agents”之名。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\n异步响应图与全栈响应式能力\nSolid 2 的 async graph 被视为此次版本最有技术吸引力的部分：它将异步操作纳入既有 signal graph，使异步依赖能够组合，并能检测 waterfall、effect loop、过宽 fan-out 或 fan-in 等图结构问题。评论将其对比 React Hooks 的“colored functions”限制：Hook 必须在组件顶层调用，某些按用户选择才加载的 TTS provider 可能仍需预先初始化多个 Hook。Server RPC、live 和 broadcast 被赞赏为比 LiveView 或 htmx/datastar 更自然的前后端衔接方式，但 broadcast 文档表述过于压缩，读者难以辨别每连接 producer 与跨用户共享结果的边界。Solid 2 的 universal renderer 还被用于 watchOS：JSX 在 QuickJS-ng 中运行、经宿主接口发送节点变更，再由 SwiftUI 绘制，显示其渲染模型不局限于浏览器 DOM。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8]\n框架并未因 Agent 而失去意义\n一派认为 Agent 已可直接生成任意语言的服务端代码，框架原本用于填补团队知识差距和强制模式的角色可能被削弱。另一派反驳，LLM 在架构清晰、模式一致且维护良好的代码库中表现更好；响应式框架正好提供这些护栏，而不是多余层次。随着上下文窗口有限、token 成本存在、项目越大模型表现越容易下降，好的抽象反而能减少需要交给模型的上下文和生成量。还有观点主张把 Solid 的约束进一步编码进编译语言，例如 ReactiveScript，让异步错误在编译期被禁止，而非事后靠测试补救。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\n生态、工具链与竞品取舍\n关于 Solid 组件生态，最初的“库不多”说法遭到反驳：Kobalte、Ark UI、Park UI、Corvu、Material Design Solid、Shadcn Solid 和 Vercel UI SDK 等已被列为可用选项，争论随即转向组件库是否只是设计系统和交互一致性的载体。TanStack 的 Query、Router、Start 已有 2.0 pre-release 分支，其余适配仍在 PR 阶段，对部分用户而言这仍是迁移阻塞点。部分 Svelte 用户考虑转向 Solid，理由是 Solid 的 JSX/TSX 对 IDE 而言接近普通 TypeScript，不依赖 Svelte/Vue 那类专有语言服务与静态分析插件。也有人认为 Vue Vapor、Svelte 与 Solid 的性能已接近，实际选择更多取决于功能、",
     "url": "https://newshacker.me/story?id=50536387",
-    "published": "2026-11-17T22:49:34Z"
+    "published": "2026-11-18T06:19:31Z"
+  },
+  {
+    "id": "41150435af4d3614e42d4d4f",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "33年来第一份没有黄仁勋的财报：漂亮得像一封分手信？",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906531.html?f=rss",
+    "published": "2026-11-18T06:09:25Z"
+  },
+  {
+    "id": "9555d7b630e1f68eb13e77f4",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "34岁的沪上金融精英，困在AI的恋爱中",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906530.html?f=rss",
+    "published": "2026-11-18T06:00:53Z"
+  },
+  {
+    "id": "2224690ef47374e168847cc6",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "因为厉娜，我戒掉了红果",
+    "summary": "当AI充斥生活，真情反而成为稀缺品",
+    "url": "https://www.huxiu.com/article/4906222.html?f=rss",
+    "published": "2026-11-18T05:56:35Z"
+  },
+  {
+    "id": "8d19a7fe46c596bdf429d406",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "从王妈到太奶，短剧观众开始吃回头草了",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906527.html?f=rss",
+    "published": "2026-11-18T05:53:44Z"
+  },
+  {
+    "id": "c354ad13437bb114e500c130",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "🗃️ Apple 支持社区将关闭，Archive Team 志愿抢救其问题史",
+    "summary": "原标题：《Archive Team is archiving the Apple Support Community (closes November 20, 2026)》\n评分: 148 | 作者: digitaldragon\n💭 连官方答案都没有，保存模板废话给谁看？\n🎯 讨论背景\nApple Support Community 是 Apple 的官方产品讨论论坛，但大量回答来自用户志愿者而非付费官方技术支持人员。Apple 已宣布该站将在 2026 年 11 月 20 日永久关闭，Archive Team（组织志愿者抢救濒危网络内容的分布式归档团体）正发动参与者抓取剩余页面，归档资料通常会进入 Internet Archive（保存数字资料的非营利档案馆）生态。争议在于，这些帖子一方面记录了 iOS、macOS 等产品问题及用户长期无法获得解决的经历，另一方面也包含大量过时、错误或模板化建议。评论所担心的不只是网站消失，也包括旧内容在搜索引擎和 LLM 中重新被当作可信技术答案传播。\n📌 讨论焦点\n志愿者紧急分布式归档\nApple Support Community 将于 2026 年 11 月 20 日永久关闭，Archive Team 正以分布式爬取方式抢救内容，并提供实时进度页面。评论时仍有约 268 万条目待抓取、只剩三天，参与者可通过 ArchiveTeam Warrior 的 Docker 容器或 VM 贡献带宽与算力。有人已准备用闲置的 Intel NUC 参与；在 Apple Silicon Mac 上运行时，则报告了 Go 内存行为 bug，需设置 `GODEBUG =madvdontneed =0 `。评论也澄清，执行爬取的用户名是社区志愿者，Archive Team 并不等同于 Internet Archive。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\n论坛答案低质且充满模板化敷衍\n许多用户称该社区几乎从未提供有效解法：搜索后往往得到数百个没有结论的线程，或由少数活跃者反复粘贴长篇模板回复。被频繁调侃的标准建议包括重装 macOS、重置 PRAM 和 SMC，而这些操作常与具体问题无关。批评者认为回复带有企业话术和受害者归咎色彩，用户排名激励了刷存在感而非解决问题。类似现象也被认为存在于 Microsoft 和 Google 的支持论坛，不过有人认为 Windows 偶尔还能挖出隐藏的旧式设置来绕过问题。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9]\n即使无用，仍应保存产品故障与用户经验\n支持归档的一方并不否认论坛体验糟糕，但认为它保留了 Apple 产品问题被长期报告、反复出现却未获解决的轨迹。即便当年的答案无效，讨论的元数据和大量失败尝试仍可能帮助未来研究者理解某个时代的产品缺陷、用户困境与企业支持模式。其核心原则是档案工作者无法预知后人会需要哪一条信息，因此应尽量保留整个“干草堆”，而非事后只筛选看似有价值的答案。也有人强调，保留这些错误路径并附带清晰语境，本身仍有记录价值。\n[来源1] [来源2] [来源3] [来源4]\nApple 应自行承担保存与支持责任\n评论者批评 Apple 让志愿者长期承担本应由公司提供的支持工作：论坛缺少付费官方代表，却常出现维护 Apple 立场的口吻。关闭时又未主动归档，被视为既消耗社区劳动、又抹去用户共同积累的记录。有人将此归因于大公司只关心利润，并认为消费者即使不满也不会形成足够的声誉压力。也有个人经历表明 Apple 电话支持未必难以接通，但脚本化处理和账户申诉无门仍会让实际问题悬置。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n归档公开可检索会放大错误信息\n反对者认为，此类未加权的民间“解决方案”若被搜索引擎或 LLM 检索，会继续把错误建议带给新的用户，因此公开保存可能是净负面。有人甚至曾在 Google 中屏蔽该站，认为让它消失反而改善搜索体验。对此也有人质疑 Internet Archive 是否真的会被 Google 高排名：观察上很少见到 Wayback Machine 结果，但 `site: ` 查询可找到页面，可能只是排名很低。讨论同时指出 Archive Team 与 Internet Archive 是不同组织，不能直接把归档行动与后者的检索政策混为一谈。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n📚 术语解释\nArchiveTeam Warrior: Archive Team 提供的志愿者运行环境，通常以 Docker 容器或虚拟机方式执行分布式网页抓取任务。\nPRAM ",
+    "url": "https://newshacker.me/story?id=50539747",
+    "published": "2026-11-18T05:49:26Z"
+  },
+  {
+    "id": "ecb39319b54ce0fc23d3e584",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "太原致命火灾：隐患、累债与富豪",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906524.html?f=rss",
+    "published": "2026-11-18T05:47:05Z"
+  },
+  {
+    "id": "8f98a50f17f73d7a3286cd2a",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "啤酒巨头卖不动了，千万年薪总裁提前退场",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906520.html?f=rss",
+    "published": "2026-11-18T05:41:59Z"
+  },
+  {
+    "id": "4284886576a0d294033e2bf9",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "晋江“鉴AI”比“用AI”还难搞？",
+    "summary": "AI检测到底准不准？30篇小说实测出现分歧",
+    "url": "https://www.huxiu.com/article/4906508.html?f=rss",
+    "published": "2026-11-18T05:40:36Z"
+  },
+  {
+    "id": "f275a0f485a7ebed7b9c3ef5",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "大厂跑步入局AI互动影游会是下一个“AI短剧”吗？",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906519.html?f=rss",
+    "published": "2026-11-18T05:39:41Z"
+  },
+  {
+    "id": "137f7f43d377ae8a73dbae33",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "GPT-6.2“拉”了，一个神鬼二象性的模型",
+    "summary": "承压之作",
+    "url": "https://www.huxiu.com/article/4906516.html?f=rss",
+    "published": "2026-11-18T05:19:52Z"
+  },
+  {
+    "id": "53413564689115153b070a47",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "黄仁勋开口想回来，英伟达反手就是三记耳光",
+    "summary": "台积电的人这周刚来过",
+    "url": "https://www.huxiu.com/article/4906512.html?f=rss",
+    "published": "2026-11-18T05:06:44Z"
+  },
+  {
+    "id": "dc0c2aebf056be12a907d6c1",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "英伟达财报狂奔：拒绝黄仁勋回归，H200或停止供华",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906511.html?f=rss",
+    "published": "2026-11-18T04:50:57Z"
+  },
+  {
+    "id": "bee4a7933551990677b7c4dd",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "崩不住了，慌啥子嘛",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906509.html?f=rss",
+    "published": "2026-11-18T04:47:39Z"
+  },
+  {
+    "id": "1776a2c6fb44c9b06317f1ac",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "清华父子用一块玻璃，押中英伟达下一代万亿赌局",
+    "summary": "玻璃基板等的，就是先进封装成为主战场的那一天",
+    "url": "https://www.huxiu.com/article/4906499.html?f=rss",
+    "published": "2026-11-18T04:30:53Z"
+  },
+  {
+    "id": "f58cbc012b4da40921da589c",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "降价的没换来客人，涨价的守住了。",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906507.html?f=rss",
+    "published": "2026-11-18T04:25:02Z"
+  },
+  {
+    "id": "427678c629fce82db808aa1c",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "哈维・琼斯：成就黄仁勋，赶走黄仁勋",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906505.html?f=rss",
+    "published": "2026-11-18T04:12:38Z"
+  },
+  {
+    "id": "853dc303eca7d5713289e0df",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "手术机器人IPO火了，术锐一年只卖11台",
+    "summary": "先发优势只维持了5个月",
+    "url": "https://www.huxiu.com/article/4906494.html?f=rss",
+    "published": "2026-11-18T04:06:19Z"
+  },
+  {
+    "id": "ed0a767dd8389ab87e098c52",
+    "source": "三联生活周刊",
+    "source_title": "果壳网",
+    "category": "新闻",
+    "title": "明明体重没变，为什么年龄越大脸越宽？",
+    "summary": "村上春树曾说，人是一瞬间变老的。以前我不信，直到照镜子发现自己“发腮脸垮”了。😭\n\n① 脸从V变成了U，明明体重没变，脸愣是比年轻时候宽了一圈；\n② 下颌线模糊，侧脸看过去，下巴和脖子快连上了；\n③ 苹果肌往下掉，法令纹跟着加深，怎么看怎么老......\n\n图源：图虫创意\n\n这三件事，随便拎一件都够让人崩溃的，偏偏它们爱同时出现！因为这本质上是同一个原因——\n\n一是胶原流失\n\n皮肤里的胶原蛋白，从20岁开始就以每年1%的速度递减[1]。胶原一少，皮肤就像气球漏了气，开始松和塌；\n\n二是韧带松弛\n\n脸上有几十根固定韧带，像橡皮筋一样把脂肪垫和皮肤牢牢固定在骨骼上[2]。随着年龄增长，韧带松弛，轮廓就逐渐出现垮和垂。\n\n皮肤随岁月逐渐衰老丨图虫\n\n这就是为什么你减了肥，腮还在。因为发腮的本质不是长胖，是下垂。\n\n我们涂的那些贵价护肤品，大部分既到不了真皮层，也管不了韧带......\n\n所以我一直在找一个：能促生胶原，还能帮助提拉，但不贵、不疼、不折腾的东西。\n\n直到买手给我安利了科施佳的升级款——“V脸超模仪”，每天睡前，只花10分钟就能搞定，超轻松~\n\n很多朋友知道科施佳，是从他们家爆款胶原小光盾开始的，口碑一直很好，用过的朋友都说：效果惊喜~\n\n果壳市集后台好评截图\n\n而这款V脸超模仪，是在小光盾基础上的全升级——\n\n如果说小光盾是“紧致淡纹优等生”，那超模仪就是“轮廓提拉尖子生”。它不光让你脸不垮，还让你脸变V。\n\n具体升级点在哪儿？我直接给你划重点——\n\n① 面罩升级：它在专研胶原光的面膜美容仪基础上，升级成了3D建模提拉面罩，360°无死角包围面部。\n\n还特别做了一个下颌提拉绑带的新设计，戴上后可以一边光照促胶原、一边利用物理提拉的方式，在一定程度上对抗重力对脂肪垫和软组织的牵引，帮助紧轮廓。\n\n果壳实拍，新增下颌提拉绷带\n\n这样一来，光从里面照，提拉带从外面托，就可以同时实现：促胶原、抗皱紧致、提拉下颌线、改善双下巴！\n\n果壳实拍\n\n② 光源升级：新增545nm绿光（焕亮美白）和590nm黄光（强韧修护），且专研的1072nm胶原光这次升级到了29颗（业内top级)，能更深地抵达真皮层，全力对付松、垮、垂、皱，让皮肤自然嘭弹起来。\n\n灯珠的排布也是顺着面部皱纹走向，1072nm胶原光就专门点对点分布在眉间、眼周、法令纹、口周纹以及双下巴区域，所以狙击皱纹的效果会更好！\n\n根据不同区域，分布不同的红、黄、绿光\n\n③ 四种模式更灵活：有紧致模式-红光、修护模式-黄光、提亮模式-绿光、综合模式-综合光，可根据不同需求选择。\n\n一句话总结——\n\n· 小光盾：专攻淡纹、促胶原，让皮肤嘭起来；\n· 超模仪：在淡纹基础上，专攻轮廓提拉、下颌线清晰、改善双下巴。\n\n👉 如果你主要是淡皱纹、促胶原、想让皮肤嘭起来，选胶原小光盾就够了，性价比更高，完全够用；\n\n👉 如果你除了淡纹，还特别在意轮廓提拉、下颌线模糊、双下巴，或者做过美丽项目想维持效果，那直接上V脸超模仪，虽然多花一点钱，但一步到位更省心！\n\n👇🏻戳图购买👇🏻\n\n品牌方提供，报告编号SHA01-26031165-JC-01，实际效果因人而异\n\n这里也给大家整理了一张对比图，可以放大查看👇\n\n来看具体的功效报告，从促生胶原、提升下颌线、提升苹果肌、减轻皱纹等方面验证其强大的实力：\n\n红光模式下连续照射5天，每天10min\n支撑胶原(I型胶原) +143.8%\n弹嫩胶原(Ⅲ型胶原) +136.4%\n胶原回来，皮肤自然就“嘭”起来了👇\n\n报告编号SHA01-26031285-JC-02R1，实际效果因人而异\n\n30位39-55岁试验者使用28天后\n下颌体积 -12.17%\n全脸明显上扬👇\n\n使用7天，苹果提升 +16.4%\n使用28天，苹果提升 +24.9%\n苹果肌回来，法令纹也就浅了👇\n\n使用28天，眉间纹 -50.4%\n鱼尾纹 -62%\n法令纹 -47.7%\n👇👇\n\n以上报告编号SHA01-26031165-JC-01，实际效果因人而异\n\n效果这么好，是因为美国光学仪器品牌QuasarMD科施佳在光疗赛道已经耕耘了25年，早在2011年就曾经拿到了美国的FDA认证，有“美国光学美容仪鼻祖”之称。\n\n创始人就是医疗器械工程师，品牌背书和专业背景都非常强大。\n\n连续4年获得了美国NEW BEAUTY美容大奖，荣获芭莎国际美妆大奖（2022年度家用美容仪），被《VOGUE》《Madame Figaro》等国内外多家时尚媒体安利。\n\n如果你：\n\n👉人到中年已发腮，想紧致下颌线；\n👉怕做项目疼、怕恢复期、怕麻烦，不想定期花钱维护；\n👉平时就喜欢做皮肤管理，想在光电项目后尽可能长的维持好状态；\n👉是敏肌、屏障弱，一直不敢轻易入手美容仪。\n\n真的可以试试科施佳！\n\n尽管它是上市不久的新品，但我",
+    "url": "http://weixin.sogou.com/weixin?type=2&query=%E6%9E%9C%E5%A3%B3%E7%BD%91+%E6%98%8E%E6%98%8E%E4%BD%93%E9%87%8D%E6%B2%A1%E5%8F%98%EF%BC%8C%E4%B8%BA%E4%BB%80%E4%B9%88%E5%B9%B4%E9%BE%84%E8%B6%8A%E5%A4%A7%E8%84%B8%E8%B6%8A%E5%AE%BD%EF%BC%9F",
+    "published": "2026-11-18T04:00:00Z"
+  },
+  {
+    "id": "246016f65e99c7ba33fa9c01",
+    "source": "三联生活周刊",
+    "source_title": "果壳网",
+    "category": "新闻",
+    "title": "臭名昭著的她拍出神级纪录片，专家从其表情里发现诡异细节",
+    "summary": "本文转载自公众号“把科学带回家”（ID：steamforkids）\n真正的影帝和影后并不仅仅在演艺圈。还有，希望奥斯卡不要给她提名。\n\n撰文：乌其多\n审校：阿娴\n\n先来看一段视频：\n\n纪录片部分片段 | 见水印\n\n这段视频来自10月16日在美国上映的纪录片《你能看到一切》（You Can See Everything）。该纪录片创许多影评平台近十年来最高分，在IMDb等平台上，和《肖申克的救赎》并列影片史第一。\n\n纪录片的主角，是臭名昭著的硅谷创业者伊丽莎白·霍姆斯（Elizabeth Holmes）。她曾凭借“一滴血检测出数百种疾病”的技术神话成为亿万富翁，最终却因欺诈投资者被判入狱。\n\n或许你会觉得，霍姆斯不过是个诈骗犯，比起连环杀人案，这样的故事似乎没那么惊悚。但如果了解她的骗局造成了什么后果，就会发现，事情远不只是骗钱那么简单。\n\n商业调查类书籍《坏血》，专门讲述了她炮制的惊天骗局。书中提到：“她凭着一副低沉嗓音、永不眨眼的眼神、黑色高领毛衣（模仿乔布斯），以及改变世界的宏大叙事，成功从各个大佬手中融到近10亿美元，成为当时最年轻的女性亿万富翁。” | 微信读书\n\n霍姆斯明知公司的检测技术存在严重缺陷，仍持续向公众夸大其能力。导致有患者因为错误的凝血检测结果，自行停用了抗凝药物从而严重血栓；有人被错误告知胎儿有基因疾病，终止妊娠后才发现胎儿一切正常；有人被误检出HIV阳性，从而经历了巨大的心理恐慌等等。\n\n对患者而言，一份错误的检测报告，可能意味着不必要的治疗、延误病情，甚至危及生命。\n\n最终，她被判处11年零3个月监禁。\n\n回到纪录片本身，非常特别的是，霍姆斯本人正是这部纪录片拍摄的主角。\n\n入狱前34天，她允许一支对她持怀疑态度的摄制组进入家中，记录自己的私人生活和入狱前的最后时光。她希望借此向公众展示新闻报道之外的自己，重新讲述自己的故事。\n\n然而，影片播出后，观众关注的焦点却意外落在了她的脸上——她那种长时间睁大眼睛、面带微笑的诡异表情，让许多人感到不安甚至毛骨悚然。引发网上无数人在讨论。\n\n和骗子对话的导演，也流露出了惊疑和恐惧的表情\n\n先把她的表情放在一边。当你对着镜子也做出类似的动作：睁大上眼脸、持续紧绷并定格，同时配上长时间的微笑，然后凝视着镜子，会有什么感觉？\n你可能会想起电影《蝙蝠侠》里的小丑：\n\n电影《蝙蝠侠》里的小丑，睁大的眼睛毫无笑意，嘴巴却咧到最大\n\n想起童年时代让你隐隐觉得诡异的巴斯光年：\n\n如果你曾经觉得永远瞪大眼睛的巴斯光年让人不安，你真的不是一个人 | robosen.cn\n\n最后大概率，你会开始害怕自己。\n\n随着视频传播，一些研究面部表情的专家开始分析霍姆斯的眼神。\n\n其中一位面部表情分析师安妮·萨恩布拉德（Annie Sarnblad）提出，这种表现是一种“解离性凝视”（dissociative gaze）。\n\n“解离”（dissociation），是一种真实存在的人体现象。当一个人经历强烈压力或创伤时，有时会产生一种奇怪的感觉：明明身体还在现场，意识却仿佛与周围环境隔了一层玻璃，似乎置身梦境，或者作为第三方在旁观自己的生活。\n\n这种体验可能持续几秒钟，也可能持续更长时间。比如，当你长时间开车，抵达目的地后却突然想不起刚才经过了哪些路段；或者遭遇重大打击时，明明知道发生了什么，却感觉一切都不真实，仿佛自己正在看一场电影——当然，普通的走神并不等于病理性解离。真正值得关注的是那些反复出现、程度严重，甚至影响正常生活的解离症状。\n\n深度解离也会表现在脸上。当大脑主动减少对周围环境的关注，也被动对外界刺激的反应减弱时，情绪体验也可能变得麻木。相应地，面部表情可能减少，目光变得呆滞、固定，仿佛眼睛还在看着世界，意识却已经飘到了别处。\n\n霍姆斯在不同的场合基本都是这幅表情 | Benjamin Rasmussen\n\n类似的眼神，还有“千码凝视”（thousand-yard stare），意思是眼睛看着远方，注意力却不在眼前的凝视。\n\n这个词经常被用来形容经历过激烈战斗，患有创伤后应激障碍（PTSD）的士兵。1944年，美国战地画家汤姆·利（Tom Lea）创作的《那种两千码的凝视》（The 2000 Yard Stare），就描绘了一名经历残酷战斗后神情呆滞的士兵。\n\n相关画作 | Tom Lea\n\n而霍姆斯的眼神又有所不同：她并非呆呆地望向远方，而是长时间睁大眼睛、直视对方，甚至面带微笑。这种看似矛盾的表情，或许才是让观众感到毛骨悚然的真正原因。\n\n正常情况下，人类会通过眼睛、眉毛、嘴巴等部位的变化，综合判断一个人的情绪。例如，真正开心时，除了嘴角上扬，眼睛周围的肌肉通常也会参与运动；受到惊吓时，则可能出现睁大双眼、抬高眉毛等反应。\n\n但当一个人长时间睁大眼睛，同时保持微笑，我们的大脑就",
+    "url": "http://weixin.sogou.com/weixin?type=2&query=%E6%9E%9C%E5%A3%B3%E7%BD%91+%E8%87%AD%E5%90%8D%E6%98%AD%E8%91%97%E7%9A%84%E5%A5%B9%E6%8B%8D%E5%87%BA%E7%A5%9E%E7%BA%A7%E7%BA%AA%E5%BD%95%E7%89%87%EF%BC%8C%E4%B8%93%E5%AE%B6%E4%BB%8E%E5%85%B6%E8%A1%A8%E6%83%85%E9%87%8C%E5%8F%91%E7%8E%B0%E8%AF%A1%E5%BC%82%E7%BB%86%E8%8A%82",
+    "published": "2026-11-18T04:00:00Z"
+  },
+  {
+    "id": "f11446fd36fca14b96c1f8bb",
+    "source": "三联生活周刊",
+    "source_title": "果壳网",
+    "category": "新闻",
+    "title": "一个建议：拉屎中途别冲马桶！",
+    "summary": "不少人喜欢在上厕所中途冲水，让臭味少一些。\n\n但是！冲马桶时，周围的空气中就会充斥气溶胶，导致“粪菌飞溅”！\n\n拉屎中途别冲厕所，拉完盖盖冲。\n\n其实有一个好东西能减少臭味，还能物理防溅，水花再也跳不起。\n\n上厕所前对着水面喷一下，绵密泡沫盖住水面——物理防溅，水花再也跳不起来~喷出来的泡沫还是香香的！\n\n今天给大家挖到的这款世净马桶清洁慕斯，就是专门给讨厌刷马桶的懒人准备的：见效快、效果好、省心省事！ 香香的不刺鼻。上厕所前用还能防止飞溅。\n\n当代年轻人的家务清单里，刷马桶是当之无愧的噩梦级任务。\n\n费腰费手就不说了，还得克服生理不适——每次低头看见那圈黄黄的印子，当场头皮发麻；更别提那些永远刷不到的死角，又臭又脏，每次打扫都要做很久心理建设。\n\n马桶不是一天变脏的，是日积月累的包浆\n\n很多人疑惑：我明明每次上完都冲水啊！怎么没过几天又黄了？\n\n马桶发黄≠你没冲干净，那层黄色的东西，成分其实很复杂：\n\n①尿碱结晶（尿垢，最主要成因）\n尿液里含有尿素、尿酸和钙镁离子。每次冲水，它们并不会被完全带走，总有一部分残留在釉面微孔和水线附近。\n\n水分一蒸发，这些物质就析出、结晶、附着。日积月累，形成一层淡黄色的【尿碱+水垢】复合体，紧紧扒在釉面上。\n\n②矿物质水垢\n水质偏硬的地区（北方朋友懂的都懂），钙镁离子在水位线附近反复沉积，和尿碱抱团取暖，越积越厚。\n\n③铁锈\n老小区管道生锈，水中微量铁离子长期驻扎，内壁直接黄得发褐。\n\n@图虫\n\n这些东西一旦结晶附着，冲水基本等于无用功：水流只是从表面流过，根本碰不到缝隙里的沉积物，日积月累就焊在上面。\n\n除了看起来瞬间让人失去“坐欲”外，马桶污渍中也是“藏龙卧虎”。\n\n马桶内壁每平方厘米的细菌数量可以达到数十万个量级，大肠杆菌、白色念珠菌、金黄色葡萄球菌等，都能在上面安营扎寨。\n\n更糟的是，冲水时会产生气溶胶气旋，能把细菌和水滴带到一米多高的空中——你的牙刷、毛巾、漱口杯，全在射程范围内。\n\n再加上尿碱和细菌代谢产生的氨类物质，就是你家卫生间那股若有似无、开排风扇也散不掉的神秘气味的来源。\n\n但是，总不能每次上完厕所，都拎着马桶刷蹲在旁边刷一遍吧？！\n\n想要卫生间清爽，核心就是搞定三件事：顽固污渍、细菌残留、反复异味。\n\n今天给大家挖到的这款世净马桶清洁慕斯，就是专门给讨厌刷马桶的懒人准备的：见效快、效果好、省心省事！ 香香的不刺鼻。上厕所前用还能防止飞溅。\n\n✅强附着：泡沫绵密，挂壁持久，能充分与污渍融合；\n✅无死角：配备精准喷头，更全面贴合马桶内壁，深处死角也能覆盖；\n✅99%抑菌：含富士银离子，对大肠杆菌、金黄色葡萄球菌等除菌率＞ 99%；\n✅护釉配方：清洁配方温和不刺鼻，且不伤马桶釉面。\n\n用户反馈也超好，曾荣登天🐱清洁类产品榜单的TOP：\n\n以前刷马桶，每天至少要花 5～10分钟，耗时耗力，心情烦躁。现在用它，清洁马桶也变得贼简单，只需要3步——\n\n摇一摇，把它喷在在马桶里 → 静等变色 → 冲掉。结束。\n\n和传统的液体清洁剂不同\n它喷出来就是超级细腻的泡泡\n可以大面积覆盖污渍地区\n阻隔污渍与外界环境\n而且整个过程超解压，用过就懂！\n👇🏻\n\n全程不用下蹲弯腰、不用憋气，顽固的污渍拿刷子轻带两下，效果更好。\n\n我们也让果壳同事回家试用了一波，脏兮兮的马桶从外到内全都焕然一新~\n\n果壳实拍\n\n除了能清洁马桶，洗手池、水龙头、浴室瓷砖，甚至猫砂盆，哪里脏就喷哪里，帮你一键换新浴室，一懒到底~\n\n不仅可以日常清洁马桶，平常上厕所的时候也能用。\n\n每次蹲坑时提前喷一下这个慕斯，就可以更好地防止水花飞溅、减少臭味，对咱们的身体健康和入厕体验都有好处~\n\n之前我在官旗买的29元一瓶👇🏻\n\n截图时间：10.29\n\n今天给大家争取到了超划算的推文福利价：\n\n🔵组合一：75元到手5瓶，合15元一瓶；\n🔵组合二：99元到手慕斯5瓶＋浴室香薰2瓶，清洁除菌+除臭留香一次配齐。\n\n建议大家直接购入99元的【清洁慕斯+香薰】的组合，一下囤够大半年的量。\n\n香薰使用的是植物除臭因子，不是用香味“盖住”臭味，而是主动分解臭味分子，让卫生间时刻拥有清新的味道~里面的扩香棉片，均匀散香，覆盖范围大。一瓶400ml大容量，能持续留香60天左右，非常耐用！\n\n对刷马桶有阴影的懒人朋友快点趁着优惠拿下，解放双手！\n\n世净马桶清洁慕斯 600ml\n推文价：75元5瓶；\n99元5瓶清洁慕斯+2瓶香薰\n👇🏻戳图加购👇🏻\n\n01\n绵密挂壁泡沫\n延长有效作用时间\n\n很多传统的液体洁厕灵的核心bug就一个字：挂不住。\n\n@图虫\n\n由于质地非常稀薄，挤在马桶里会飞快顺着内壁流进水里，留存在壁面的时间太短，根本来不及溶解污垢。只能硬着头皮拿刷子手动补刷，刷完嗓子干痒、手臂报废。\n\n而世净这款洁面慕斯就不同了：喷出来是超绵密的慕斯泡沫，沿着",
+    "url": "http://weixin.sogou.com/weixin?type=2&query=%E6%9E%9C%E5%A3%B3%E7%BD%91+%E4%B8%80%E4%B8%AA%E5%BB%BA%E8%AE%AE%EF%BC%9A%E6%8B%89%E5%B1%8E%E4%B8%AD%E9%80%94%E5%88%AB%E5%86%B2%E9%A9%AC%E6%A1%B6%EF%BC%81",
+    "published": "2026-11-18T04:00:00Z"
+  },
+  {
+    "id": "052c204824cd396483ac3163",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "“减肥神药”或致永久性失明，还能打吗？",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906502.html?f=rss",
+    "published": "2026-11-18T03:57:22Z"
+  },
+  {
+    "id": "acb9d1bf39c312ea4247dbb7",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "AI制药史上最大融资来了",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906497.html?f=rss",
+    "published": "2026-11-18T03:43:36Z"
+  },
+  {
+    "id": "32e4fe480c3527e381497683",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "3.9元的咖啡不是烧钱：它把门店塞进了别人的店里，起投4.98万元、3个月回本",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906492.html?f=rss",
+    "published": "2026-11-18T03:39:00Z"
+  },
+  {
+    "id": "f43f50d00a17dbf7aa8a6943",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "Anthropic 上市，三个预测",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906495.html?f=rss",
+    "published": "2026-11-18T03:38:14Z"
+  },
+  {
+    "id": "b1a74918a27abea6ef071a9c",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "科技巨头疯狂“烧钱”，AI的万亿投资能赚回来吗？",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906491.html?f=rss",
+    "published": "2026-11-18T03:35:36Z"
+  },
+  {
+    "id": "5ac08aed340e080a5d56c651",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "单季营收破千亿美元，英伟达还需要黄仁勋吗？",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906488.html?f=rss",
+    "published": "2026-11-18T03:25:16Z"
+  },
+  {
+    "id": "f25ffa905f479f2b44cba969",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "同仁堂的药不合格，储存能解释多少？",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906487.html?f=rss",
+    "published": "2026-11-18T03:24:43Z"
+  },
+  {
+    "id": "321f505fcb7caaca4dbcfff5",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "🧐 微软 MAI Code 2：低价代码模型宣称逼近 Opus，基准与可用性遭质疑",
+    "summary": "原标题：《MAI Code 2 and Code 2 Flash》\n评分: 303 | 作者: lemonish97\n💭 换个过期 Benchmark，便宜五折就算追上 Opus？\n🎯 讨论背景\n微软发布了 MAI Code 2 与 MAI Code 2 Flash，两者是面向软件开发的自研语言模型，已接入 GitHub Copilot；官方主张前者以较低成本接近 GPT-6.1 Sol 和 Claude Opus 5.5 的代码能力。争议核心在于，官方使用的 DeepSWE、Terminal-Bench 和 FrontierCode 等 coding benchmark 版本可能较旧，且价格对比混入促销折扣与不同推理配置，因此难以直接代表真实工程效果。讨论还置于闭源 frontier labs、Google/Microsoft、以及 Qwen 和 DeepSeek 等开放或开放权重模型快速迭代的竞争背景中，焦点是模型能力、推理成本、分发渠道和产品体验谁能形成长期优势。GitHub Copilot（GitHub 提供的代码辅助平台）既是 MAI 的主要入口，也因额度定价、可定制性和企业数据治理而成为实际采用的关键变量。\n📌 讨论焦点\n实际编码表现与小型专用模型潜力\n有用户在 GitHub Copilot 中以五折价格使用 MAI Code 2，称其解决了 Windows WSL/Ubuntu 的 Python 构建问题、Azure Bicep 部署错误，并补齐和跑通了测试，体感接近 Claude Opus。另一些人认为，代码模型未必必须靠“一个模型统治所有任务”的超大规模路线；针对 coding 的训练和 post-training 可以显著提升专项能力。评论还指出，较小模型在知识问答基准上吃亏，却可借助 web search 等 harness 弥补，而实际工程任务更看重速度、工具调用和修复能力。也有人希望微软公布 visual coding 的更多对比，尤其是与 UI 生成口碑较好的 Opus 的直接测试。\n[来源1] [来源2] [来源3] [来源4] [来源5]\n宣传基准、成本说法与横向比较可信度\n许多人不再轻信代码模型发布时的 benchmark，认为微软选用了 DeepSWE 1.1、Terminal-Bench 2.1、FrontierCode 1.1 等较旧版本，而较新的 benchmark 难度已大幅提高。批评者还指出，宣传中采用 MAI 的五折促销价，却拿 Opus 5.5 与 Sol 6.1 的高推理配置和 API 价格作比较，可能夸大性价比。有人自行汇总数据后认为，MAI 两款模型在较新的 Terminal-Bench 4.0 上明显落后 Qwen、DeepSeek 等模型，因而不能仅依据官方图表认定其已达 frontier 水平。另一方面，也有人认为模型可能因参数更少、推理优化或微软补贴而便宜，不能把低价直接等同于模型只有五分之一大小。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\n领先优势是否会沦为商品化竞争\n一派观点认为 OpenAI 和 Anthropic 即使领先，也往往只是数月，竞争者能迅速追近，使其不得不持续投入训练来维持位置。开放权重模型、低价 inference provider，以及未来可在消费级硬件运行的“足够好”模型，被认为会进一步压缩闭源厂商的定价权。反方则认为数月能力差距在复杂工作中依然重要，企业切换模型还要重写 prompt、适配流程，并非无成本；品牌信任、基础设施和分发渠道也是 moat。关于本地部署，评论同时提醒：若计入硬件前期成本，本地 inference 未必比托管的开放模型服务更便宜。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\n蒸馏、训练来源与中美模型差距之争\n围绕快速追赶的原因，评论争论中国模型是否通过 distillation 获取 frontier model 的 Chain-of-Thought。支持者认为，某些推理轨迹分析可作为训练过 frontier CoT 的证据，并猜测这能帮助后来者快速复现已有发现；但“模型自称 Claude”被认为几乎没有证据力，因为身份文本很容易来自训练语料。反对把蒸馏当主因的人指出，API 无法做传统权重蒸馏，账号规模、调用时长和反滥用机制也限制了大规模复制；开放实验室展示的架构和训练方法存在不少独立创新。另一种解释是中国实验室受先进 GPU 和训练算力限制，能力差距更多反映 compute 资源，而微软则称 MAI 是从头 pre-training 的自有模型。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]",
+    "url": "https://newshacker.me/story?id=50535885",
+    "published": "2026-11-18T03:24:35Z"
+  },
+  {
+    "id": "d1cb2748fbf63005cb1c2136",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "答卷照牛，但没了老黄，英伟达已不对味",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906485.html?f=rss",
+    "published": "2026-11-18T03:20:59Z"
+  },
+  {
+    "id": "1ff29cf4b77a3284494303b0",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "亚马逊创始人贝索斯最新访谈：如果不请回黄仁勋，建议从内部提拔CEO",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906484.html?f=rss",
+    "published": "2026-11-18T03:20:58Z"
+  },
+  {
+    "id": "e626522999bdd28b7e34d1c8",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "🧪 评测称编码 Agent 失败耗费 64% 推理费，但样本与现实价值受质疑",
+    "summary": "原标题：《In 27,280 coding agent runs, 64% of inference spend went to runs that failed》\n评分: 341 | 作者: Edward40\n💭 四次掷骰式评测，也配替所有团队选 Agent 吗？\n🎯 讨论背景\nRunta（提供 Agent 运行环境的公司）发布 FrontierHarness Eval v1.1，对 5 个 open-weight models、22 种 harness 配置和 62 个 Terminal-Bench（终端软件工程任务基准）任务进行了四次重复试验，累计消耗约 830 亿 tokens。实验在 Baseten（模型推理托管平台）上运行，使用新建 sandbox，并以标价乘报告 token 数计算成本；未通过隐藏验证、超时或 reward hacking 都会被算作失败。报告称模型决定约 93% 的成本差异，但 harness 仍会显著改变每次成功的成本，且 64% 推理开销来自未通过的运行。讨论的实质不只是这一比例，而是通用基准能否衡量真实软件开发，以及模型、工具编排和人工审查各自应承担什么角色。\n📌 讨论焦点\n标题解读与评测方法透明度\n评论者指出，“失败”仅指未通过 Terminal-Bench 的全部验证条件，不等于运行时崩溃或基础设施错误；将其写成“64% 花在失败运行上”容易制造浪费 AI 的印象。评测实际使用 62 道任务、5 个模型、22 个 harness、每题 4 次尝试，共 27,280 次运行，但任务为何从更大集合中挑出仍未得到充分说明。任务构成为 17 个 TB4 与 45 个 TB2.1，组织者称这样可覆盖 ML、科学等领域并比较两个版本，同时控制高昂成本。批评者认为小样本、任务选择和生成式模型的随机性，都会削弱统计显著性与结果可复现性。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\nharness 与模型存在配对效应，但影响大小有争议\n评测的核心结论是更换模型时也应考虑更换 harness：同一 harness 在不同模型上的成本排名可大幅变动，例如 Codex CLI 在 GLM-5.3 上第一、在 Kimi-K3 上第十五。部分参与者认为模型往往偏好自家或训练时适配过的工具格式、提示词和交互协议，因此不能把某个通用 harness 的排名直接迁移到自己的工作流。另一些人根据 Claude Code、Copilot 中切换模型的日常体验认为，模型本身远比 harness 决定行为，许多 harness 本质上只是简单循环。反方则强调，多 Agent 并行、子 Agent 通信、记忆、验证步骤和定制工具都会属于 harness 的设计范围，此时其影响可能非常显著。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\n失败成本未必是浪费，关键在长程搜索与步数\n一些评论认为困难工程任务本就需要反复试错，人类写代码、搭 Linux 配置或做实体产品原型同样有大量失败尝试，因此 64% 的失败开销没有明确基线就不惊人。一个例子是 bun-sourcemap-leak：440 次运行均正常结束、没有超时或基础设施错误，却没有一次通过全部隐藏变体测试，说明问题难点在正确性而非执行故障。评测发现每次通过所需的 steps 与成本相关，而起始 prompt 长度、工具数量和缓存命中率并不显著预测成本；原因是每一步都会重新发送完整上下文。也有人认为这近乎同义反复，并质疑失败轨迹特别长时会放大方差；真正需要的是有用评测信号和更有效的搜索，而非把一切未通过都称作“烧钱”。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\n真实开发应以人类监督、架构边界和迭代流程为中心\n实践者在“短绳控制”与“让 Agent 自主运行”之间摇摆：受控的小改动较少出现离谱结果，但放宽约束时，Agent 能快速产出原本不愿手写的 UI 和业务逻辑。对于需要多年维护、被他人依赖的系统，评论者主张人必须理解实现并维持清晰接口，否则每次改动都会在 spaghetti code 中越来越昂贵。Conway's law 被延伸到 Agent：prompt、仓库结构和示例隐含地定义了它能行动的组织接口，随意授权容易得到难演进的 monolith。另一派认为随着生成成本下降，需求、测试和度量可比具体代码更稳定，因而可让 Agent 频繁重构；反对者则以仍在日常创造价值的 2006 年代码说明，不应为了“可替换”而人为制造系统 churn。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8]\n二元 benchmar",
+    "url": "https://newshacker.me/story?id=50532191",
+    "published": "2026-11-18T03:19:32Z"
+  },
+  {
+    "id": "986c95504fcf02d3d068f47d",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "芯片公司发明了OKR，然后互联网把它改成了芯片公司用不了的样子",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906481.html?f=rss",
+    "published": "2026-11-18T03:19:15Z"
+  },
+  {
+    "id": "038766263f86c90a12b84f14",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "AI演员“方桃子”被罚，厘清了虚拟人商业代言边界",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906483.html?f=rss",
+    "published": "2026-11-18T03:18:18Z"
+  },
+  {
+    "id": "7c304a2f3691c0faeb1f4d2e",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "中国人为什么有钱不爱花，我们可能一直理解错了",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906477.html?f=rss",
+    "published": "2026-11-18T03:14:00Z"
+  },
+  {
+    "id": "4c4f7c16015f02afc2f2bcfd",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "每月两万五的养老院，为什么依然孤独",
+    "summary": "晚年的安稳，不是哪一方独自就能完成",
+    "url": "https://www.huxiu.com/article/4906475.html?f=rss",
+    "published": "2026-11-18T03:04:36Z"
+  },
+  {
+    "id": "959f1cac8789f80e41b52393",
+    "source": "So!azy",
+    "source_title": "So!azy",
+    "category": "思想",
+    "title": "多就是好吗？",
+    "summary": "观朋友圈有感",
+    "url": "https://blog.solazy.me/20261118/",
+    "published": "2026-11-18T03:00:00Z"
+  },
+  {
+    "id": "9a8979e82299a34e79161045",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "裸辞8个月，我去三亚做义工，13天后对低成本生活祛魅了",
+    "summary": "我以为义工是不上班，结果只是上了一个不发工资的班",
+    "url": "https://www.huxiu.com/article/4906405.html?f=rss",
+    "published": "2026-11-18T02:47:55Z"
+  },
+  {
+    "id": "4d8ceaca0a7e1f366db13a80",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "浦江科技评论｜AI如何改变生物制造",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906463.html?f=rss",
+    "published": "2026-11-18T02:42:36Z"
+  },
+  {
+    "id": "1a925833a997d9ed68e8c6fe",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "美股“七巨头”，去年初以来只剩2家能跑赢大盘",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906461.html?f=rss",
+    "published": "2026-11-18T02:28:39Z"
+  },
+  {
+    "id": "b0ae6416b66db571d472841f",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "老黄那根针",
+    "summary": "迟早会戳破什么东西",
+    "url": "https://www.huxiu.com/article/4906407.html?f=rss",
+    "published": "2026-11-18T02:20:00Z"
+  },
+  {
+    "id": "2f370433c51fcfdf5a0ee927",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "🧐 GPT‑6.2 Astra/Sol 降价提效，实战可靠性与基准可信度受质疑",
+    "summary": "原标题：《GPT‑6.2 Astra and Sol》\n评分: 1088 | 作者: jasondavies\n💭 基准省了八成钱，谁来修那堆过度工程？\n🎯 讨论背景\nOpenAI 发布 GPT‑6.2 Astra 和 Sol，主张在编程、办公文档、3D/CAD 与 agent 任务上提升能力，同时通过更少 token 和 tool calls 降低单任务成本；Astra 被视为更强的高端型号，Sol 则主打低成本。发布恰逢 Anthropic（另一家前沿模型公司）IPO 前夕，因此被解读为对其 Opus、Fable 系列进行价格和能力竞争。评论中的 Codex、Claude Code、OpenCode 等是把模型接入本地代码库、终端和工具调用的 agent harness，而非模型本身；不同框架会影响模型能否完成任务。争论的核心并非单纯分数，而是公开 benchmark、原生工具链与真实生产代码之间是否存在显著落差，以及更便宜、更坚持执行的 agent 是否同时变得更不透明、更容易过度工程。\n📌 讨论焦点\n成本下降是否源于真实效率\n测试者报告称，Astra 和 Sol 在数据分析任务中以相近准确率完成任务时，成本显著下降，原因包括 token 减少约 20% 以及更少的 tool calls；但也出现了过早停止、漏掉目标答案的情况。部分观点认为这更像真实的推理效率提升：开放权重模型正转向 hybrid attention，且 cached read token 的降价尤其明显，暗示 KV cache 效率改善。另一派认为厂商本质上是在售卖 GPU-hours 和利用率，API 高毛利足以支撑降价，临近 Anthropic IPO 的时点也让补贴、抢市场和定价施压的猜测升温。订阅价格与 API 价格被认为应分开看，前者更可能承担获客和开发者心智份额的补贴功能。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\n真实编码体验：过度工程、停工与模型分工\n大量开发者认为此前的 Astra/Sol 在复杂代码库中倾向于制造过多文件、抽象、测试、CI 规则和防御性代码，往往完成了“可运行”的表面目标，却让系统难以维护。常见投诉还包括任务只做一部分便宣称完成、在错误分支上持续深挖、忽略明显的关联修改，或为缺失配置反复折腾而不及时向人求助。相对地，一些人认为 OpenAI 模型更严格按字面执行、适合需要精确边界和反复验证的工作；Anthropic 模型则更擅长推断未明说的意图、提出连带修改，但也可能擅自扩张范围。新版本的早期反馈并不一致：有人观察到 Sol 6.2 更愿意完成迭代且 UI/UX 更好，也有人仍称其代码质量差、缺少创造性或不适合长程自治任务。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8]\n基准领先不等于工作流胜出\n评论者普遍认为公开 benchmark 容易被训练优化，且不同的 agent harness、超时设置、上下文、工具权限和推理等级都会明显改变结果；因此同一模型在原生 Codex、Claude Code 或中立 OpenCode 环境中的排名未必可直接比较。有人建议建立个人回放 benchmark：把自己过去真实项目的代码快照、任务规格和人工发现过的边界问题隔离复跑，而不是依赖公开题集或社交媒体的“vibe check”。针对模型发布页的图表，也有人批评线性成本轴把大多数点挤在一起、选择性遗漏 Gemini 4 Carbon 数据，降低了比较的可读性和公信力。尽管如此，Astra/Sol 在 intelligence/cost、速度和任务成本上的位置仍被视为有竞争力，关键争议在于这种优势能否迁移到生产代码和长期任务。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8]\n模型选择已成工作流与阵营之争\n讨论认为 OpenAI 发布帖常被拿来夸 Anthropic，Anthropic 发布帖又常被拿来夸 OpenAI，部分原因是负面体验更容易发声、用户害怕错过最佳工具，也可能是发布初期缺乏足够的实际使用数据。很多使用者不再寻找单一冠军，而是按任务组合模型：以 Opus 做规划、审查和协调，以 Sol 或 Terra 做低成本执行，或让多个独立模型交叉找 bug。也有用户强调模型差异高度依赖项目、语言、harness、订阅限额及是否全程人工监督；在 pair programming 时差距较小，允许 agent 无监督长跑时差距才会放大。对于“模型被 nerf”或水军操纵口碑的说法，评论区要求长期复测和可复现实证，而非仅凭发布当天的印象或 influencer 结论。\n[来源1] [来源2] [来源3",
+    "url": "https://newshacker.me/story?id=50535230",
+    "published": "2026-11-18T02:19:33Z"
+  },
+  {
+    "id": "2bb814d1b0e8e643efc5c99b",
+    "source": "新京报书评周刊",
+    "source_title": "新京报书评周刊",
+    "category": "新闻",
+    "title": "英国下架大卫·威廉姆斯作品，童书行业如何摆脱畅销作家依赖症？",
+    "summary": "英国畅销童书作家大卫·威廉姆斯因涉嫌性行为不端等争议，其童书作品遭到下架。英国多所学校和大型零售商也在重新审视儿童读物的馆藏和销售安排。儿童书架该如何展示更多元化的作品？图书行业又该如何摆脱对少数畅销书作家的过度依赖？\n\n大卫·威廉姆斯的童书系列《了不起的大盗奶奶》。\n\n编译｜李永博\n\n近日，英国《卫报》与英国独立电视台新闻部联合发布调查报道，披露多名女性对英国知名喜剧演员、儿童文学作家威廉姆斯提出性行为不端及滥用权力的指控。伦敦警察厅已宣布对威廉姆斯展开刑事调查，威廉姆斯本人则否认了相关指控。\n\n大卫·威廉姆斯（David Walliams）是英国最知名的儿童图书作家之一。他同时是英国知名的喜剧演员，并曾长期担任英国选秀节目《英国达人秀》评委。他的童书代表作包括《穿裙子的小男子汉》《了不起的大盗奶奶》《钱堆里的男孩》等。据悉，威廉姆斯的童书在全球累计销量超过6000万册。\n\n受该事件的影响，在英格兰运营59所学校的绿洲慈善信托基金会（Oasis Charitable Trust）已建议学校图书馆下架威廉姆斯的作品。该基金会认为，此举是为了保护学生，避免相关事件对儿童造成心理影响。\n\n威廉姆斯的作品出版和零售渠道同样受到了影响。出版商哈珀柯林斯（HarperCollins）早在2025年12月就宣布不再出版他的新书，今年9月宣布停止出版其既有作品。英国两家图书零售商已经将威廉姆斯的图书全部撤出销售，水石书店（Waterstones）也正在与出版社协商，将剩余库存退还给出版商。\n\n不过，一些学校和公共图书馆对此采取了不同做法。部分公共图书馆认为，只要图书内容本身不违法，就不应仅因作者受到指控而将其全面撤出馆藏。\n\n这次风波也引发了行业内部的反思，一些业内人士指出，当儿童出版市场过度依赖少数畅销作家时，一旦这些作家陷入争议，孩子们是否拥有足够丰富的替代选择？为帮助家长和学校寻找替代读物，英国儿童图书组织“儿童包容性图书”（Inclusive Books for Children）发布了一份推荐书单，该组织联合创始人萨拉·萨塔（Sarah Satha）就表示，目前儿童出版业长期以来对少数畅销作家的资源过于集中。\n\n参考资料：\nInclusive Books for Children calls for greater diversity on shelves as David Walliams books removed\nhttps://www.thebookseller.com/news/inclusive-books-for-children-calls-for-greater-diversity-on-shelves-as-david-walliams-books-removed\n\n本文为编译内容。编译：李永博；编辑：西西；校对：柳宝庆。欢迎转发至朋友圈。\n\n‍\n\n《新京报·书评周刊》\n“我和我的学科”系列专题结集出版\n14门学科\n14种叙事\n\n新书已上架\n点击书封可购买～\n\n阅读原文\n\n平台地址：http://www.jintiankansha.me/t/POgOG5xRdG",
+    "url": "http://weixin.sogou.com/weixin?type=2&query=%E6%96%B0%E4%BA%AC%E6%8A%A5%E4%B9%A6%E8%AF%84%E5%91%A8%E5%88%8A+%E8%8B%B1%E5%9B%BD%E4%B8%8B%E6%9E%B6%E5%A4%A7%E5%8D%AB%C2%B7%E5%A8%81%E5%BB%89%E5%A7%86%E6%96%AF%E4%BD%9C%E5%93%81%EF%BC%8C%E7%AB%A5%E4%B9%A6%E8%A1%8C%E4%B8%9A%E5%A6%82%E4%BD%95%E6%91%86%E8%84%B1%E7%95%85%E9%94%80%E4%BD%9C%E5%AE%B6%E4%BE%9D%E8%B5%96%E7%97%87%EF%BC%9F",
+    "published": "2026-11-18T02:09:00Z"
+  },
+  {
+    "id": "1b9210781ea8ccba9621d2aa",
+    "source": "新京报书评周刊",
+    "source_title": "新京报书评周刊",
+    "category": "新闻",
+    "title": "当选专业成了一场不能出错的考试",
+    "summary": "“这两年，关于专业的说法变得很快。AI刚火时，有人说搞人工智能，文科生要被淘汰；没过多久，又有人说程序员要被替代，文科又值钱了，学哲学的好像也能写代码了。”\n\n11月14日，在我们的一场新书活动现场中，中国人民大学新闻学院教授刘海龙随口说起这个故事，台下笑了起来。笑声背后，是更具体的焦虑：今天选下的专业，几年后还在吗？每一次“风向”的变化，落到学生身上和家庭内部，都意味着一次重新权衡。\n\n11月14日，北京彼岸书店，“选专业，是选人生，还是方法——《这个专业原来是这样的》新书发布会”活动现场。本场活动为新京报创刊23周年特别策划活动之一，由新京报文化副刊部与新京报教育新闻部联合举办。甘甜甜 摄\n\n这场活动起源于《新京报·书评周刊》的一个专题构想。近几年，关于“选专业”的讨论时常引发热议。关于“专业”的信息浩如烟海，可是具体到填报专业时，考生和家长们还是困惑于怎么选。在“专业”本身加速变化的今天，我们似乎越来越不清楚某一个专业具体是关于什么的。于是2025年，策划了“我和我的学科”系列专题。今年，专题结集成书——《这个专业原来是这样的》。全书含文理工医农等领域的14门学科。\n\n《这个专业原来是这样的》\n14门学科\n14种叙事\n\n11月14日下午，作为作者之一的中国人民大学新闻学院教授刘海龙和北京大学先进制造与机器人学院教授谢广明展开对谈。现场的听众，有高中生、大学生，也有毕业多年的上班人，还有即将退休打算继续学习的读者。\n\n在活动策划之初，我们原本想谈的是一个更“上游”的问题：专业究竟是什么？它和职业、学科有什么不同？而在当天的活动现场，话题还是一次次回到一个更迫切的问题：到底怎么选。有学生困惑于“爱好与实用的取舍”，有家长关心“孩子目前有三条路，到底该走哪条”，也有人担心孩子所在的行业被AI替代。现场几乎每一个问题，背后都藏着同一种担心：一次选择，会不会决定一生？\n\n这种“失焦”几乎是不可避免的。“专业是什么”在今天从来不是一个纯粹的认识问题，它连着分数、求职、考公的专业限制，它也连着一个家庭对风险的全部想象。在对谈中，两位嘉宾没有直接给出“选哪个”的答案，而是分享各自如何在不确定中选择专业，后来又如何在大学里一次次调整、校准，再把“专业、职业、学科”几个常被捆绑在一起的概念拆开。在他们看来，焦虑的一部分，恰恰来自这种捆绑。\n\n这样的回答也许仍然无法真正安抚一个面临填志愿的家庭。但没有唯一答案本身，或许也提醒我们：当我们急着问“选哪个”时，是否已经默认了，专业就是一个人通往职业和未来的唯一入口？当“选专业”成为一种焦虑，我们到底在怕什么？\n\n采写 | 新京报记者 申璐\n\n选专业，是在选人生？\n我们为什么怕选错专业？\n\n“专业”一词，乍听似乎再明确不过。它指向的是一套知识、一种思维方式、又或者是一张通往未来职业的入场券。然而在学校，它又更像是一个不可更改的起点：选对了，前途平顺；选错了，一生被锁定。对高中生和家长来说，这个决定做得越谨慎，它就越像一场不能出错的考试。\n\n电视剧《山花烂漫时》（2024）剧照。\n\n这份“怕选错”的心情，甚至从活动一开始不少读者的自我介绍中流露出来。当主持人请大家“用一句话介绍自己”时，到场的高中生们不约而同谈起了各自的爱好：武术、编程、文学、医学等。家长们的话则带着更多现实的重量，一位家长说，自己“有三个专业”，“哪个都能搞”，所以对即将高考的孩子说“学什么都可以”，可孩子却让他来听听“现在国内有哪些专业可以选”；一位53岁的家长为自己的退休而来，想知道AI时代“有什么有意义的事”可做。\n\n不同年龄的人，困惑都指向了同一个地方：如何在不确定的世界里，做一个不会后悔的选择。\n\n当天活动中，北京市丰台区怡海中学高二学生姜瀚林的母亲说起，孩子因先天性心脏病长期就医，从9岁起自学外科缝合，12岁开始写发明专利，已提交多项医学相关专利，其中一项在今年的“‘一带一路’暨金砖国家”创新赛事中获得银奖。他想把医疗器械做得让病人少受罪，面对专业选择，却既想学医，又想做机器人，也说过未必“面向人”，可能面向动物和自然。\n\n谢广明。\n\n听到这里，谢广明先表达了“身体是第一位”的立场。他笑称，清华大学原来有个口号是“为祖国健康工作50年”，如今改成了“至少工作50年”。谈及专业选择，他把“学医”和“学机器人”拆开来看：机器人是“从工具角度”描述专业，而医学是“从应用角度”，二者可以相交，就像电、计算机、互联网当年进入各行各业，现在轮到人工智能。他建议不必现在“就定死”，选学校时要看具体的学院、重点方向，甚至有没有心仪的老师，“这个维度很多，而不只是被名字限制住”。\n\n北京市第十九中学高一学生杨骐恺的问题，则折射出更多普通学生的共同困惑：究竟该按爱好选，还是按实用性选？对此，刘海龙提到一组对照：这两年新闻传播专业的高考录取分",
+    "url": "http://weixin.sogou.com/weixin?type=2&query=%E6%96%B0%E4%BA%AC%E6%8A%A5%E4%B9%A6%E8%AF%84%E5%91%A8%E5%88%8A+%E5%BD%93%E9%80%89%E4%B8%93%E4%B8%9A%E6%88%90%E4%BA%86%E4%B8%80%E5%9C%BA%E4%B8%8D%E8%83%BD%E5%87%BA%E9%94%99%E7%9A%84%E8%80%83%E8%AF%95",
+    "published": "2026-11-18T02:09:00Z"
+  },
+  {
+    "id": "fd6ba5562019c0a0026e14d3",
+    "source": "新京报书评周刊",
+    "source_title": "新京报书评周刊",
+    "category": "新闻",
+    "title": "刷短视频的“时间焦虑”，晚清读报人早就体会过",
+    "summary": "在当代，书籍之外，刊于专业学术期刊（集刊）上的论文正在成为知识生产、知识积累的另一基本载体。《新京报·书评周刊》在图书评介的基础上试拓展“学术评议和文摘”这一全新的知识传播工作，筹备“新京报中文学术文摘服务所”，与期刊（集刊）界一道服务中国人文社会科学事业。\n\n通过搭建学术与大众之间的桥梁，我们希望将近期兼具专业性和前沿性的论文传递给大家，我们还希望所选论文具有鲜明的本土或世界问题意识，具有中文写作独到的气质。\n\n本期评审：黄典林\n\n本篇来自2026年第20期（总第35期）。王东杰讲述的是，近代中国“报”的兴起与时间观的转变。\n\n今天，我们习惯了在短视频里“刷”过一条又一条信息，习惯了用生成式AI把一本书、一篇文章压缩成几句摘要。内容越来越短，节奏越来越快，一切似乎都在转瞬之间被遗忘。这本身就是一场与时间观紧密相关的转变。其实，19世纪末20世纪初的国人曾经历过一次类似但又不同的转变。当报刊在晚清兴起时，它被视为“时”的载体——即时、当下、变动不居，而传统的“书”则被看作面向过去、承载永恒价值的媒介。报刊的流行，冲击了“书”的地位，更新了知识人的阅读和出版习惯。从王东杰的研究中可以看出，媒介的变化同时也是一场时间观的转变。\n\n生活在当下的我们，当翻转的屏幕和“转瞬即逝”的内容作为一种更快的“时”，开始冲击传统媒介所承载的时间观，又该如何理解媒介与时间的关系？\n\n*文中引号内所摘引文献，为王东杰：《“报”的兴起与近代中国时间观的转变》，《近代史研究》2026年第3期，页95-114、198。\n\n扫一扫\n打开“新京报中文学术文摘”合集\n\n摘评｜罗东\n\n时间观的转变，贯穿于中国近代历史转型的始终。这一转变不只发生于观念层面，同样体现在具体的器物与阅读实践之中。王东杰的《“报”的兴起与近代中国时间观的转变》一文以近代中国知识人对新式报刊与传统书籍的阅读为线索，阐述了媒介的变化如何参与塑造近代时间观。他发现，近代时间观以当下性、即时性、变动性和进化论思维为特征，其兴起冲击了被视为“载道之器”的“书”的传统地位，重塑了近代知识人的阅读、出版与写作习惯。\n\n让我们先来看“书”。在传统的时间观里，“书”不只是一个物质形态，更被赋予了象征意义，是“永恒价值”的现实载体。\n\n明代吴伟作品《树下读书图》局部。\n\n我们将作者的论述摘选如下：\n\n“明末清初思想家孙奇逢说‘书以载道也’；作为四民之首的士，也常被称为‘读书人’。这些现象均提示出，‘书’位居传统价值体系的核心地带。尽管在事实上，作为物质形态的书籍也可以承载许多‘无道’的内容，但这并未影响‘书’的认知图式——与其说那是一种现实的描述，毋宁说更近乎理想的表达。”\n\n与此相对，“时”字在传统时间观里指那些只具一时价值、难以持久的物事，因此“‘时文’总不脱一种俗气，不如‘古文’来得高雅”。近代以来，随着时势剧变和经世思潮的兴起，“时”在人们心中越来越趋向一个重要和正面的字眼。而报刊正是其载体。\n\n作者引用康有为、杨昌济等人的论述，说明报刊的社会功能。\n\n“1898年康有为提出，‘泰西’之富强得力于万事‘莫不有会，会莫不有报’，人民‘日日知新，日日摩厉’，自然‘日以益智’。近20年后，杨昌济再次告诫人们，应该‘多读外人所著之书，多阅新出之报章、杂志’，这样才能‘有世界之智识，与日新之世界同时并进’，了解‘此大世界内之生存竞争’，不至因为‘惜于时势’而‘自居劣败’。”\n\n电影《一轮明月》（2005）剧照。\n\n“报”与“书”并非简单的替代关系。由于“书”被赋予了至高意义，近代不少刊物借鉴了书籍的排版和页码编排方式，以便“可以拆分后再按类汇编成书”。读“报”的方法，最初也沿用了读“书”的方法，后来逐渐分出两种不同的读法。\n\n“清末民初著名报人包天笑回忆说，19世纪80年代，他的舅公‘看过了报以后，不许丢掉，一个月订成一册，以便随时翻阅’。显然，在这样的读者看来，‘报’的重要性并不在其时效性，相反，倒在其具有‘书’一般的超越时间的保存价值，这和后来流行的对待报纸阅后即弃的方式形成了强烈反差。”\n\n“语言学家周有光说，20世纪20年代中期他在圣约翰大学读书时，跟一位英国老师学会了怎样看报，知道了读‘书’和看‘报’的不同。他最重要的感悟是，看报使人‘思考’，不是读‘死书’。同一时期，舒新城也撰文介绍‘书’与‘报’之别：一是购买方式不同，书籍不必急于购买，而‘杂志报章是有时间性的’，发现有用就应立刻‘定购’；二是阅读方式不同，过去人们谈到读书方法，常常讲究逐字不肯放过，读报则只需看有用的，‘其余只看题目就够了’，如此费时不多，自易坚持。”\n\n近代时间观对出版观念的冲击，在“文存”这一出版形式上体现得尤为明显。王国维、梁启超、陈独秀等人的文集序言，均说明出版的标准从“传世”转向“当下”。\n\n“1922年，陈独秀在《独",
+    "url": "http://weixin.sogou.com/weixin?type=2&query=%E6%96%B0%E4%BA%AC%E6%8A%A5%E4%B9%A6%E8%AF%84%E5%91%A8%E5%88%8A+%E5%88%B7%E7%9F%AD%E8%A7%86%E9%A2%91%E7%9A%84%E2%80%9C%E6%97%B6%E9%97%B4%E7%84%A6%E8%99%91%E2%80%9D%EF%BC%8C%E6%99%9A%E6%B8%85%E8%AF%BB%E6%8A%A5%E4%BA%BA%E6%97%A9%E5%B0%B1%E4%BD%93%E4%BC%9A%E8%BF%87",
+    "published": "2026-11-18T02:09:00Z"
+  },
+  {
+    "id": "abeb81f0d08d963854d6f9c0",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "县城小火锅：一边狂飙，一边批量倒闭",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906442.html?f=rss",
+    "published": "2026-11-18T01:47:51Z"
+  },
+  {
+    "id": "ebd9de254053e39236532300",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "黄仁勋想回归？英伟达董事会说不，连他名字都不想提",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906444.html?f=rss",
+    "published": "2026-11-18T01:46:25Z"
+  },
+  {
+    "id": "4086a543ce64ee5454f32e93",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "跑分狂飙，实测翻车，刚发的GPT-6.2暴露了OpenAI 的软肋",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906441.html?f=rss",
+    "published": "2026-11-18T01:42:31Z"
+  },
+  {
+    "id": "86027037a5dcb4ea3071a605",
+    "source": "莫比乌斯",
+    "source_title": "莫比乌斯",
+    "category": "思想",
+    "title": "我拒绝使用AI，不是因为AI而是因为我",
+    "summary": "昨天发布的《失乐园里有什么？III：AI时代的集体地狱》，收到了两则私信和一个留言区的留言，大家也都不约而同地 […]",
+    "url": "https://mobius.blog/26189.html",
+    "published": "2026-11-18T01:30:00Z"
+  },
+  {
+    "id": "048b82a6a2a331182a20e93d",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "卡住比亚迪，却让特斯拉翻红，韩国汽车荣光不复",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906437.html?f=rss",
+    "published": "2026-11-18T01:29:33Z"
+  },
+  {
+    "id": "1479d5aae880817439173a9b",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "禾赛科技的第二曲线，兄弟公司买单",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906435.html?f=rss",
+    "published": "2026-11-18T01:26:11Z"
+  },
+  {
+    "id": "08fa1acdb59788c66ed0b141",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "拖更两个月的GPT-6.2，居然是一个“汇报狂魔”？",
+    "summary": "继续卷工作能力",
+    "url": "https://www.huxiu.com/article/4906426.html?f=rss",
+    "published": "2026-11-18T01:09:07Z"
+  },
+  {
+    "id": "c36a6a38d191560a486165ad",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "程建辉：AI是否在消解人力资本的价值？",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906431.html?f=rss",
+    "published": "2026-11-18T01:08:07Z"
+  },
+  {
+    "id": "0743cc9ceead1617fee5732d",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "英伟达史上首场没有黄仁勋的财报会，当众拒绝老黄回归",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906430.html?f=rss",
+    "published": "2026-11-18T01:07:32Z"
+  },
+  {
+    "id": "4c6bf6e6bddbd9fd2a61b71d",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "10年期美债，今年已有27天收于5%上方",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906429.html?f=rss",
+    "published": "2026-11-18T01:03:41Z"
+  },
+  {
+    "id": "73582fe0540a101ccf16fa62",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "火遍全球的“徒步28年回家”男人：我承认对儿子很自私",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906424.html?f=rss",
+    "published": "2026-11-18T00:42:19Z"
+  },
+  {
+    "id": "20be71c7446161fad8127b55",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "AI行业里，被高薪叙事平均掉的人",
+    "summary": "“在这个越上进越焦虑的行业里，大家都想慢下来。”",
+    "url": "https://www.huxiu.com/article/4906379.html?f=rss",
+    "published": "2026-11-18T00:32:03Z"
+  },
+  {
+    "id": "dd428d58dc3a982ff99d66fa",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "黄仁勋缺席后的第一份财报，和重返英伟达的“技术路线图”",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906421.html?f=rss",
+    "published": "2026-11-18T00:29:40Z"
+  },
+  {
+    "id": "8a2f9b561f4e4647b2f4b7cd",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "摩根士丹利：中国正在变成全球制造业的\"操作系统\"",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906419.html?f=rss",
+    "published": "2026-11-18T00:21:24Z"
+  },
+  {
+    "id": "5688ecd44090e39cadf8fd4e",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "6G开始发入场券了，唯独没点设备商的名",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906418.html?f=rss",
+    "published": "2026-11-18T00:19:26Z"
+  },
+  {
+    "id": "c3e64b89481f21de321ea3f2",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "芯片供不应求，台积电却开始给客户“验资”？",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906417.html?f=rss",
+    "published": "2026-11-18T00:14:51Z"
+  },
+  {
+    "id": "f557a92aa45d091e78c10f13",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "香港麦理浩径野猪成群，10分钟帐篷被扫荡一空",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906416.html?f=rss",
+    "published": "2026-11-18T00:09:30Z"
+  },
+  {
+    "id": "9e996d14ba2a8661fa905179",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "AI 时代，ERP 实施大洗牌，已经开始了",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906415.html?f=rss",
+    "published": "2026-11-18T00:09:06Z"
+  },
+  {
+    "id": "b6003195441bc5f0227f8c1f",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "黄仁勋真的能回归吗？",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906414.html?f=rss",
+    "published": "2026-11-18T00:06:20Z"
+  },
+  {
+    "id": "1fa21b53a4283b6aef2e1304",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "医保支付价或将在全国推开",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906413.html?f=rss",
+    "published": "2026-11-18T00:06:09Z"
+  },
+  {
+    "id": "c94824810b46f4843307ea85",
+    "source": "于淼",
+    "source_title": "博客 on Miao Yu | 于淼",
+    "category": "思想",
+    "title": "名教授柯北之技术积累",
+    "summary": "博士后面试定在周一上午九点。\n\n秦九八点就到了。他穿了一件新买的白衬衫，拼夕夕，三十九块九，领口有一根线头，他用指甲掐了二十分钟也没掐断。\n\n研究院的走廊很长，两边贴满了展板：“我院青年人才风采\"“近五年代表性成果\"“热烈祝贺我院某某研究员入选某某计划”。秦九一块一块看过去，每张照片里的人都比他年轻，笑得都比他自信。\n\n走到尽头，他看见一块已经褪色的展板，角落里有一张很小的照片。\n\n柯北，副研究员（项目聘用），研究方向：钙钛矿纳米材料稳定性。\n\n照片上的柯北，和烧烤摊上的柯北一模一样。\n\n秦九盯着那张照片，忽然意识到一件事：这张照片至少是五年前拍的。\n\n五年前的柯北，和现在的柯北，长得完全一样。\n\n他打了个冷战，不知道是因为空调太冷，还是因为这个世界太荒诞。\n\n面试室里坐着三个人。\n\n正中间是柯北。左边是人事处的杨梓，正在低头刷手机。右边是毛莉，被柯北临时拉来\"帮忙看看专业问题”，实际上是因为组里只有她会开投影仪。\n\n秦九推门进来的那一瞬间，屋里同时发生了三件事。\n\n柯北皱起了眉头：这个人好眼熟。\n\n毛莉瞪大了眼睛：这不是烧烤摊那个人吗？\n\n杨梓抬起头，看了一眼秦九的简历，又看了一眼秦九的脸，又低头看了一眼简历上的出生年份跟身份证号，沉默了两秒，继续刷手机。\n\n秦九后来才知道，杨梓每年要审三百份简历，早就看穿了一切，差一年只要课题组长不觉得是个事，她也没必要纠结那些虚岁啥的历史问题，反正项目聘用可以不走博管会，所里叫博后是为了压工资。\n\n“请先做个自我介绍。“柯北说。\n\n秦九清了清嗓子：“各位老师好，我叫秦九，三十五岁，材料学博士，毕业于某某大学，研究方向是钙钛矿薄膜制备与界面工程。博士期间发表SCI论文四篇，其中一作两篇……”\n\n他讲得很流利。这段话他对着出租屋的镜子练了一百四十多遍，每投一份简历练一遍。\n\n“毕业以后呢？“柯北问。\n\n秦九停顿了一下。\n\n简历上，他毕业后的经历是：“自由科研工作者，从事材料表征与数据分析相关工作。”\n\n这句话翻译成人话是：在咸鱼上代跑XRD数据，二十块一个样。\n\n“我一直在做……独立研究。“秦九说。\n\n“有成果吗？”\n\n“有一些……技术积累。”\n\n柯北点点头。他太懂这种措辞了。他自己的结题报告里，“技术积累\"这个词出现过十一次，意思都是\"什么也没做出来”。\n\n一种奇怪的亲切感涌上心头。\n\n毛莉一直盯着秦九看。\n\n她想问：“你为什么天天在烧烤摊盯着我老板？”\n\n但她不能问。在面试场合问这种问题，会显得她很奇怪。而且她也不确定，这件事到底是可疑，还是只是一个失业博士的孤独。\n\n她想起她妈的话：“搞科研的配搞科研的，有共同语言。”\n\n她又看了一眼秦九衬衫领口那根线头。\n\n她决定问一个专业问题。\n\n“秦博士，“她说，“钙钛矿薄膜在空气中放置三天会变黄，您怎么看这个问题？”\n\n这是全组最大的难题。柯北研究了五年，她做了两年，全组的结论都是\"因为空气”。\n\n秦九想了想，说：“因为空气。”\n\n毛莉愣住了。\n\n柯北也愣住了。\n\n然后柯北笑了。这是他这周第一次笑，笑得很真诚。\n\n“你说得对，“柯北说，“就是因为空气。”\n\n杨梓抬起头，看了看这两个男人，表情像是在看两个互相确认病情的病友。\n\n“最后一个环节，“柯北站起来，“现场操作。”\n\n他带着众人来到实验室，指着角落里那台手套箱。\n\n那是一台用了八年的老设备。水氧含量常年在50ppm上下浮动，再生一次要两天，换一次手套要走三个月采购流程。组里的人管它叫\"老柯”，因为它和柯北一样，年纪大，状态差，但还在坚持工作。\n\n“这台箱子现在水氧超标，“柯北说，“你能调吗？”\n\n毛莉在旁边小声补充：“我们找厂家来过三次，厂家说建议报废。报废要走资产处流程，资产处说要先评估，评估要排队……”\n\n秦九没说话。\n\n他走到手套箱前，蹲下来，看了看压力表，摸了摸循环泵，把耳朵贴在箱壁上听了十秒钟。\n\n然后他站起来，从帆布包里掏出一把螺丝刀，一卷生料带，和一小瓶真空脂。\n\n柯北和毛莉对视了一眼。\n\n一个来面试的人，包里随身带着生料带和真空脂。\n\n秦九拧开了一个接头，缠了三圈生料带，抹了一点真空脂，拧回去。又调了调再生阀的位置，按了几个按钮。\n\n三分钟后，屏幕上的数字开始下降。\n\n50ppm。30ppm。10ppm。\n\n0.5ppm。\n\n实验室里鸦雀无声。\n\n毛莉看着那个数字，眼眶突然有点湿。她做了两年实验，从来没见过这台箱子低于10ppm。她的薄膜之所以总是变黄，原来不全是因为空气。\n\n还因为这台箱子漏气，而他们没人知道怎么修。\n\n“你……怎么会修这个？“柯北问。\n\n秦九把螺丝刀收回包里，平静地说：“毕业以后，我在咸鱼上接过修手套箱的单。一次三百，上门。”\n\n他顿了顿，补充道：“全市大概有一半的高校实验室，我都去过。”\n\n柯北沉默了。\n\n毛莉也沉默了。\n\n面试结束后，柯北一个人站在手",
+    "url": "https://yufree.cn/cn/2026/11/18/kebei/",
+    "published": "2026-11-18T00:00:00Z"
+  },
+  {
+    "id": "7eb30be9e3044905b2583f8d",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "美国中期选举，选的是啥？",
+    "summary": "中期选举就是两院议员大换血",
+    "url": "https://www.huxiu.com/article/4905380.html?f=rss",
+    "published": "2026-11-18T00:00:00Z"
+  },
+  {
+    "id": "9b0e62ad0b0abaea26880f7e",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "人生不止一座山：从三次珠峰攀登到耶鲁课堂",
+    "summary": "生命不息，折腾不止",
+    "url": "https://www.huxiu.com/article/4906408.html?f=rss",
+    "published": "2026-11-17T23:56:52Z"
+  },
+  {
+    "id": "54f509fab59896b2403ddc3d",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "🕵️ 英伟达新加坡千亿美元营收：会计口径调整还是对华芯片漏洞？",
+    "summary": "原标题：《Nvidia stopped disclosing Singapore sales as revenues hit $104B》\n评分: 332 | 作者: louiereederson\n💭 改个营收口径，芯片就不会自己游到中国吗？\n🎯 讨论背景\nFinancial Times 报道称，英伟达的新加坡子公司在 2025 年确认约 1040 亿美元收入，随后公司不再单列新加坡业务，引发其是否借新加坡向中国提供受限 GPU 的猜测。争议焦点是 Megaspeed（据称在新加坡和马来西亚运营 AI 算力及相关实体的公司）是否只是正常出租境外算力，还是充当将芯片转运给中国最终用户的中间层。美国针对中国的先进 AI GPU 出口管制原本主要限制实体芯片交付，而境外云服务向中国客户提供远程计算长期被视为难以监管的缺口。英伟达的 SEC（美国证券交易委员会）文件同时显示地域收入统计从客户账单地点改为客户总部地点，使“新加坡收入”在公开报表中消失，也令会计重分类与规避审查两种解读并存。\n📌 讨论焦点\n1040 亿美元并非新加坡终端销售额\n多位评论者指出，1040 亿美元是英伟达新加坡子公司确认的外部营收，而不是新加坡客户实际购买或当地部署 GPU 的金额。大型客户通常经由 Wistron、Foxconn、Asus、Lenovo 等 OEM/ODM 和经销网络采购，订单可由新加坡实体路由，最终设备却销往美国及其他地区。SEC 文件中，英伟达曾按“Customer Billing Location”披露地域收入，之后改为按“Customer Headquarters Location”披露，原先约 100 亿美元的新加坡账单地点收入在可比口径中很大部分显示为美国客户总部收入。因而，把该数字直接等同于“半数芯片流入新加坡或中国”被认为是对财务归属的误读。\n[来源1] [来源2] [来源3] [来源4]\n披露口径变化加剧规避出口管制怀疑\n质疑者认为，争议不在于企业能否通过新加坡记账，而在于英伟达恰在 Megaspeed 被怀疑充当对华转运或算力中介时，不再单列新加坡业务规模。新加坡本身是低税率、法律体系明确的区域贸易和结算中心，但也可能被壳公司或转口贸易用于掩盖最终用户；因此，透明度下降会放大外界疑虑。有人援引新加坡总算力约 1.4GW、而相关 GPU 销售所隐含功耗约 4GW，认为本地难以消化如此规模；另有说法称检查人员在马来西亚相关地点主要看到未拆封货箱而非运行中的 GPU。反方则强调这些线索尚不足以证明具体受限型号被非法转运，Megaspeed 是否实际受制裁、芯片最终去向何处仍需证据。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\n远程算力曾是比走私更现实的路径\n评论者指出，过去中国客户不必实际持有 GPU：境外数据中心可以合法地向其出租 AI compute，工程师也可前往新加坡维护工作负载。此模式让供应商保有硬件控制权，却使中国客户获得前沿训练能力，并可从高毛利的远程算力服务获利，因此未必需要冒实体走私风险。支持出口限制者认为，远程访问随时可能被美国通过外交或监管手段切断，物理持有芯片则更难被撤销，同时还能积累数据中心供电、散热和运维能力。讨论提及 RASA（Remote Access Security Act，一项拟限制中国客户通过外国云服务获得受控算力的美国法案）以及更严格许可要求，反映美国正尝试堵住这一“remote access”漏洞。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n新加坡枢纽地位可解释部分异常规模\n为英伟达辩护的观点认为，新加坡长期承担亚太贸易、银行、航运、税务和合同法域功能，类似企业将欧洲收入记在爱尔兰，并不自动意味着当地消耗了对应产品。部分跨国企业把采购、开票或区域总部设在当地，客户订单和收入自然集中流经该实体。新加坡也可作为与台湾制造商、中国市场及东南亚客户之间的中介，降低外交和进口管制摩擦。该解释承认新加坡的实际土地、电力条件不适合承载全部 GPU，却认为这恰好说明“收入流经地”不能代替“芯片使用地”。\n[来源1] [来源2] [来源3] [来源4] [来源5]\n围绕高管丑闻与媒体攻势的证据争执\n评论中有人把密集出现的负面报道、高管私生活传闻和对华芯片争议串联为协调打击，甚至据此断言董事会换人是因为规避制裁。反对者认为，重大丑闻曝光后媒体和消息源会集中深挖，形成连续报道是常见新闻周期，不能据此推出幕后协调或犯罪事实。多项关于高管、外国代理人、白宫派系和董事会决策的指控均缺乏已验证证据，且有人提醒若真有严重违法，诉讼取证或监管调查才是更可靠的检验。争论也暴露出更根本的分歧：GPU 是普通计算设备，还是足以影响中美 AI 能力差距、应受",
+    "url": "https://newshacker.me/story?id=50534631",
+    "published": "2026-11-17T23:49:35Z"
+  },
+  {
+    "id": "a60fda45bca6b86100fba615",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "出国住民宿的中产，不想免费刷碗了",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906406.html?f=rss",
+    "published": "2026-11-17T23:38:17Z"
+  },
+  {
+    "id": "33ce40ff95400c387f62bf9e",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "私家车接入特斯拉Robotaxi，下个月能自己挣钱？马斯克又画了一个饼",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906404.html?f=rss",
+    "published": "2026-11-17T23:37:57Z"
+  },
+  {
+    "id": "fb201801cdc36d6d9f99a174",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "耐克惨遭阶级滑落",
+    "summary": "在线蹲一个显化",
+    "url": "https://www.huxiu.com/article/4906401.html?f=rss",
+    "published": "2026-11-17T23:31:36Z"
+  },
+  {
+    "id": "6e210ccae60c3b892aa2899e",
+    "source": "极客洞察",
+    "source_title": "News Hacker | 极客洞察",
+    "category": "技术",
+    "title": "🎁 日本“故乡纳税”：农村输血还是礼品竞标平台？",
+    "summary": "原标题：《Japan's Hometown Tax (2018)》\n评分: 124 | 作者: waximabbax\n💭 当税收靠送和牛拉客，最穷小镇拿什么赢？\n🎯 讨论背景\n日本的ふるさと納税（故乡纳税）原本旨在缓解人口和税收向东京等大城市集中的问题：在地方长大、后来迁居城市的人，可把部分税款转给自己有联系的地区。由于制度不要求捐款人与自治体存在居住或血缘关系，纳税人实际上可在收入额度内任选地方，并获得税额抵扣和返礼品。自治体遂通过地方牛肉、水果、海产乃至高价非特产来争取税源，Satofull（故乡纳税电商平台）和 Amazon 等渠道进一步把它变成可比价的市场。争议集中于此类竞争究竟能为衰退地区带来资金、游客和认同，还是会让最擅长营销而非最需要财政支持的地方胜出。\n📌 讨论焦点\n纳税人获益与平台化便利\n居住在日本的参与者将其视为近似“免费购物”：本来要缴的税可在额度内转给指定自治体，并在报税时获得抵扣。额度随收入上升，回礼常被认为定价高出市价 3 至 5 倍，但对纳税人而言仍有吸引力；商品也从肉类、水果和地方特产扩展到电子产品、私人雕像、整头冷冻牛和家用桑拿。Satofull 等平台把流程商品化，Amazon 也进入该市场，且购买积分已被取消。\n[来源1] [来源2] [来源3] [来源4]\n回礼竞争扭曲资源分配\n批评者认为，制度原本问的是税款应流向哪里，却因可见且具竞争性的回礼变成“哪个自治体给个人回报最多”。于是营销能力强、能提供接近现金价值礼品的地方，可能胜过真正缺钱且人口流失严重的小城镇；部分自治体甚至因过度竞争而被排除在制度外。有人指出，捐款人身份和地址不应被自治体掌握，若由中央批量划款，或许能减少必须回赠约三成价值礼物的社会规范。也有人建议把回礼改为博物馆、公园、救助猫等本地公共项目，使竞争服务于当地而非个人消费者。\n[来源1] [来源2] [来源3] [来源4] [来源5]\n纳税选择权与公共财政的边界\n支持者把它看作有限度的“用钱投票”：公民能把一小部分税款导向自己认可的地区，甚至希望未来能选择具体政府部门或拒绝资助低效项目。反对意见则强调，学校、道路、下水道、医疗和治安等公共服务不能像水果礼盒一样按个人偏好购买，监狱等必要但不受欢迎的部门尤其会被忽视。若资金完全随偏好流动，公共项目可能在危机前长期不足、危机后又出现过度投入的剧烈波动。争论的关键在于，回礼是否代表政府响应纳税人，还是将本应共同供给的财政责任私有化。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n城乡补偿的正义与反驳\n一方认为，农村家庭和社区承担了抚养、教育年轻人的成本，而青年迁往东京等城市后在城市纳税，因此让税款部分回流原籍地是对“人才输出地”的补偿。另一方认为，人们迁出是因为农村工作和机会有限，城市生产率更高；按居住地缴税本就对应所消费的公共服务，不应把城市税基视为农村应得收入。即使接受区域均衡的目标，批评者仍认为以消费者偏好分配资金并非可靠方案。讨论也提到瑞典由富裕 municipality 向贫困 municipality 转移资金、美国通过联邦收支形成州际转移，作为更制度化的替代模式。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n地方认同、旅游与都市—乡村张力\n制度原意是让离开故乡的人继续支持有家庭和成长联系的地方，但法律上难以界定谁的“故乡”，最终只能允许任意选择自治体。一些参与者因此去了原本不会访问的小镇，认为回礼和特产带来了旅游发现与情感连接。也有人担忧形成“Disneyland economies”：地方为了外来捐款者包装审美和商品，居民的财政与政治优先级反而受外部消费者左右。这种分歧嵌入普遍存在的首都与地方互相轻视、经济依赖又彼此不满的关系中，日本的东京与地方、法国巴黎与乡村、英国和爱尔兰都被拿来类比。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n📚 术语解释\nふるさと納税（Furusato nozei，故乡纳税）: 日本允许纳税人向任选自治体“捐款”，再通过税额抵扣把部分本应在居住地缴纳的税款转过去的制度，通常附带地方回礼。\n返礼品（回礼）: 自治体向捐款者寄送的农产品、特产或其他商品；它提升参与意愿，也使自治体围绕私人回报展开竞争。\nTax competition（税收竞争）: 不同地方政府为争取同一批可流动税源，以更高价值礼品、营销或其他优惠相互竞争的现象。\n类别：Policy | Opinion | Japan | Hometown Tax | Shimane Prefecture | Tokyo",
+    "url": "https://newshacker.me/story?id=50508845",
+    "published": "2026-11-17T23:24:34Z"
+  },
+  {
+    "id": "758cd93eced0784df12baa0c",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "京东外卖减亏，又把钱投向欧洲",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906403.html?f=rss",
+    "published": "2026-11-17T23:09:20Z"
+  },
+  {
+    "id": "e787e09053853968db7bdbb8",
+    "source": "虎嗅",
+    "source_title": "虎嗅",
+    "category": "新闻",
+    "title": "贾可：这次汽车反内卷，终于有点不一样了",
+    "summary": "",
+    "url": "https://www.huxiu.com/article/4906402.html?f=rss",
+    "published": "2026-11-17T23:08:52Z"
   },
   {
     "id": "3210b61cd28effc647b1ced0",
@@ -30,16 +1400,6 @@
     "published": "2026-11-17T22:34:31Z"
   },
   {
-    "id": "e7abe875969b2530aca5c6e3",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "🕹️ Phrack 73 发布：黑客杂志情怀、经典漏洞与披露疑问",
-    "summary": "原标题：《Phrack 73 Released》\n评分: 25 | 作者: notmine1337\n💭 漏洞都拿到 CVE 了，Phrack 还算地下吗？\n🎯 讨论背景\nPhrack 是一本长期发布 exploit、操作系统底层分析和黑客文化内容的电子杂志，第 73 期的发布唤起了读者对 1990 年代 BBS 与在线 zine 时代的记忆。其第 49 期的《Smashing The Stack For Fun And Profit》是讲解 stack buffer overflow 的经典文章，曾推动公众理解内存破坏型漏洞。如今漏洞研究通常涉及 responsible disclosure、CVE（公开漏洞的标准编号体系）和厂商修补协调，因此读者特别关心本期 Docker escape 是否已走完这些流程。讨论也提到 Adobe Shockwave/Director（旧式浏览器多媒体平台）和 DEF CON（大型黑客安全会议），说明 Phrack 同时连接历史技术研究与仍在延续的安全社群。\n📌 讨论焦点\n新漏洞的披露与协调机制\n评论者注意到本期包含 Docker escape，因而询问这类 exploit 是否已先经 responsible disclosure 流程处理。核心疑虑是：漏洞是否已经获得 CVE 编号、厂商是否已有修复时间，还是杂志会直接公开可利用细节。提问也反映出 Phrack 早年“攻破电话公司”式地下技术传播，与今日漏洞协调、补丁和编号体系之间的文化差异。\n[来源1]\nBBS 与 1990 年代黑客场景的怀旧\n不少人将 Phrack 与 300-baud modem、ANSI art、warez、eMule 等早期网络记忆并置，怀念当时由 BBS、zine 和社群构成的技术文化。有人回忆自己曾是 ANSI artist，后来进入 phreaking/hacking/anarchy 场景，并在 Summercon 和多年后的 DEF CON 重遇旧人。对这些评论者而言，Phrack 不只是安全刊物，更是一个保存早期互联网亚文化身份和人际网络的载体。\n[来源1] [来源2] [来源3]\n经典文章的技术遗产\n1996 年第 49 期的《Smashing The Stack For Fun And Profit》被称为最具代表性的在线 zine 文章之一，其影响不仅限于原文平台。读者表示曾在文章发布时通读，并将其中技术思路移植到其他 processor 和 Unix 系统，说明它具有可复用的底层安全研究价值。另有评论把第 69 期关于 Adobe Shockwave/Director 内存问题的文章列为最爱，并以 Habbo Origins 客户端中展示的 Calculator RCE 证明这类旧插件环境的攻击面并未只是历史趣闻。\n[来源1] [来源2] [来源3] [来源4]\n保存历史与改善阅读媒介\n有人特别肯定杂志中的“Phrack World History”栏目，认为应记录容易被遗忘的故事、人物和技术片段。也有人希望它像 2600 一样推出实体刊物，以便脱离屏幕阅读，并减轻长时间数字阅读和 ocular migraines 带来的困难。无论是要求纸质载体还是希望刊物持续存在，重点都在于让这些知识和历史不因平台更替而消失。\n[来源1] [来源2] [来源3]\n对作者圈层的调侃与疑虑\n有评论半认真地猜测，大部分文章可能出自一个固定的小团体，并将其与 DEF CON 酒店房间里的社交网络联系起来。该说法没有给出证据，更像是对安全圈熟人文化和匿名署名传统的调侃。即便如此，评论仍以“all in the game”收尾，显示这并非严厉指控，而是对圈内生产机制的一种玩笑式怀疑。\n[来源1]\n📚 术语解释\nPhrack: 自 1985 年起发行的黑客与计算机安全电子杂志，以深度 exploit、系统底层研究及黑客文化文章闻名。\nANSI art: 利用终端 ANSI 转义码和字符绘制的彩色文本图像，是 BBS 时代的典型视觉文化。\nAdobe Shockwave / Director: Adobe 的旧式网页多媒体插件及其创作环境，使用 Lingo 脚本；其复杂的原生组件和内存处理曾产生严重安全漏洞。\nDEF CON: 美国大型黑客安全会议，也是安全研究者发布漏洞、交流技术和形成社群联系的重要场合。\n类别：Security | Release | Phrack",
-    "url": "https://newshacker.me/story?id=50535992",
-    "published": "2026-11-17T22:29:24Z"
-  },
-  {
     "id": "6857d6fff99e7001f5199f4a",
     "source": "虎嗅",
     "source_title": "虎嗅",
@@ -48,26 +1408,6 @@
     "summary": "",
     "url": "https://www.huxiu.com/article/4906398.html?f=rss",
     "published": "2026-11-17T22:25:09Z"
-  },
-  {
-    "id": "98aff371c9bed6964d47d4ac",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "⚠️ Java4Shell：OpenJDK 的 AVX-512 Base64 JIT 漏洞可致 RCE",
-    "summary": "原标题：《Java4Shell: RCE in OpenJDK when processing Base64》\n评分: 34 | 作者: werrett\n💭 为了快一点 Base64，就顺手给 RCE 开门？\n🎯 讨论背景\nJava4Shell 是社区对一项 OpenJDK Base64 处理漏洞的称呼：当 HotSpot JVM 将 Base64 解码热点编译到特定 AVX-512 优化路径时，可能形成可利用的内存安全问题并导致 RCE（远程代码执行）。它不同于普遍适用的 Java 库漏洞，是否受影响取决于 JVM 实现、x86-64 CPU 特性、JDK 版本及 JIT/intrinsics 开关等组合条件。Semgrep（代码安全扫描工具公司）发布了检测脚本，用于核查这些运行时条件；运维者则可暂时关闭 Base64 intrinsics 或限制 UseAVX。讨论也映射出一个长期问题：手写 SIMD assembly 和 JIT 生成代码追求性能，却使 fuzzing、边界检测和跨硬件测试更难覆盖。\n📌 讨论焦点\n受影响范围与缓解措施\n漏洞并非所有 Java 环境都会触发：重点是运行 HotSpot 的 x86-64 JVM，且主机具备 AVX-512 的 avx512_vbmi、avx512bw 特性，并启用了 UseAVX >=3。受影响版本被描述为 OpenJDK 17.0.6 及之后的部分版本；OpenJ9、GCJ 等非 HotSpot VM 不会生成相关 stub。可通过 -XX:-UseBASE64Intrinsics 关闭硬件加速的 Base64 路径，或用 -XX:UseAVX =2 禁用 AVX-512 来缓解。后者只适用于 x86-64，ARM 上不识别该参数而会启动失败；部署前还应先核实实际机器或云 VM 是否暴露 AVX-512。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n手写 SIMD/JIT 代码的测试盲区\n有人认为主流模块出现可导致 RCE 的逻辑错误，说明基础单元测试覆盖不足。反驳意见指出，触发条件同时依赖特定指令集、精确输入长度、末尾字符、代码进入 JIT hot path，以及低层内存访问检查，远非普通单元测试能轻易覆盖。评论将问题指向 SIMD 函数中手写 assembly 的 scalar 尾部实现，并认为 fuzzing 与边界检查 canary 更可能发现此类越界问题。由于代码经过高度优化的 assembly/JIT 路径，常见 bound checker 是否能有效插桩也存在疑问；也有人提到 LLM agent 可能参与了发现过程。\n[来源1] [来源2] [来源3] [来源4] [来源5]\n基础设施风险与运维反应焦虑\n部分评论者担心攻击者会在半年内借类似漏洞严重攻陷关键基础设施，甚至猜测现实中的入侵可能早已发生但尚未公开。另一种情绪是，安全事故会迫使仍依赖陈旧技术栈的机构改善安全能力，否则很快被攻破。有人借此主张 Linux kernel 等项目应削减几乎无人使用的旧硬件支持，以减少维护与攻击面，但这属于更广泛的功能取舍争论。关于发行版响应，也出现“Debian 已修、Ubuntu 未修”的指责，但随即有人指出未找到 Debian 的对应安全公告，因此该比较尚未被证实。\n[来源1] [来源2] [来源3] [来源4] [来源5]\n📚 术语解释\nAVX-512: x86-64 CPU 的高级 SIMD 向量指令集；此处它决定 OpenJDK 是否启用存在问题的高速 Base64 JIT 路径。\nBase64 intrinsics: JVM 以 CPU 专用指令和 JIT 优化替代通用 Java 实现的 Base64 编解码快速路径，可用 JVM 参数关闭。\nHotSpot / C2: HotSpot 是 OpenJDK 常用 JVM；C2 是其高优化 JIT 编译器，会把热点代码编译为高度优化的机器码。\n类别：Security | Hardware | Crypto | Incident | Java4Shell | OpenJDK | Base64 | RCE | HotSpot | AVX-512 | CVE-2026-98432 | GraalVM | Semgrep",
-    "url": "https://newshacker.me/story?id=50538240",
-    "published": "2026-11-17T22:24:29Z"
-  },
-  {
-    "id": "5ec23071858a373937f1dde7",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "🤨 《Web Browser Engineering》引发 Wasm 定位与“非 AI 写作”争议",
-    "summary": "原标题：《Web Browser Engineering (2021)》\n评分: 51 | 作者: ibobev\n💭 把百兆 Wasm 塞给用户，也算性能优化吗？\n🎯 讨论背景\n《Web Browser Engineering》是一本通过实现简化浏览器来讲解浏览器内部机制的技术书，评论提到其示例采用 Python，但目标并非构建完整生产级浏览器。该书最初在 2019 年启动写作、2024 年末完成主体、2025 年出版，HN 标题中的“2021”更可能对应其早期在线版本或项目年代。争议集中于附录中对 WebAssembly（浏览器可执行的跨语言字节码格式）未来地位的一句保留性表述：一方强调它主要服务兼容和性能热点，另一方认为平台能力仍可能演变。延伸讨论涉及以 Wasm 构建大型客户端 UI 时的下载体积、Canvas 渲染、DOM 语义、可访问性与内容可发现性之间的取舍。\n📌 讨论焦点\n写作时间与 AI 质疑\n书籍作者说明，项目从 2019 年开始撰写，至 2024 年末基本完成，并在 2025 年出版。因主要写作期早于当前生成式 AI 工具的普及，作者强调内容完全不是 AI-written。评论者一面调侃这种声明，一面也指出不能把 2025 年的出版时间误当作全部写作时间。\n[来源1] [来源2] [来源3]\nWebAssembly 是否可能与 JavaScript 并列\n批评者认为，WebAssembly 的核心定位是兼容层及关键性能路径的加速手段，而非取代或在 Web 平台上与 JavaScript 平起平坐的通用应用层语言。其受限的 API 访问被认为是有意且合理的安全与平台设计，因此“可能与 JavaScript co-equal”的措辞会误导读者对 Wasm 目标的理解。作者澄清这句话仅出现在说明未覆盖内容的附录中，并非断言或倡议；另有评论建议直接删去该预测，以免引发无谓争论，也有人援引 Mozilla 关于扩展 Wasm 功能的文章说明未来仍未定论。\n[来源1] [来源2] [来源3] [来源4] [来源5]\nWasm 驱动前端的可访问性与交付代价\n有人讽刺设想中的 Rust 编写、编译成巨大 Wasm blob 的 React-like 前端：全量下载会牺牲按需加载，Canvas 式渲染还可能损害可访问性和内容可发现性。该观点把它与 Java Applets、Flash、Silverlight 等曾试图承载富客户端应用的平台相提并论，担忧重演封闭且臃肿的 Web 体验。反驳意见指出，使用 Wasm 或 Rust/Swift 编写 UI 不必然只能画 Canvas，仍可输出 DOM；以 Swift/Swift UI 风格实现的 Elementary Codes 被作为例子。\n[来源1] [来源2]\n📚 术语解释\nWebAssembly（Wasm）: 一种可在浏览器执行的硬件无关字节码格式，通常由 Rust、C/C ++ 等语言编译生成；其在 Web 平台上的角色、权限边界及是否会扩展为通用前端运行时仍有争论。\nDOM: Document Object Model，浏览器将 HTML 文档表示为可由程序操作的节点树；将 UI 渲染到 DOM 通常较有利于语义、可访问性和搜索发现。\n类别：Web | Programming | Guide | Web Browser Engineering | WebAssembly | JavaScript | Mozilla | Rust | React",
-    "url": "https://newshacker.me/story?id=50537290",
-    "published": "2026-11-17T22:19:18Z"
   },
   {
     "id": "950be05ec23a78e5729ef5b7",
@@ -80,16 +1420,6 @@
     "published": "2026-11-17T22:09:24Z"
   },
   {
-    "id": "321f505fcb7caaca4dbcfff5",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "🧐 微软 MAI Code 2/Flash 低价追平前沿模型：基准、入口与 Copilot 体验均受质疑",
-    "summary": "原标题：《MAI Code 2 and Code 2 Flash》\n评分: 200 | 作者: lemonish97\n💭 基准既然遥遥领先，试用入口为何还像寻宝？\n🎯 讨论背景\nMAI Code 2 与 MAI Code 2 Flash 是 Microsoft 发布的代码生成模型，定位为以较低价格挑战 Anthropic Claude、OpenAI Codex 等前沿编程模型；微软称其基础预训练来自自研训练工作，而非仅对开源模型做强化学习。模型计划通过 GitHub Copilot（GitHub 的 AI 编程助手）提供，Code 2 Flash 也在 Microsoft Foundry（微软的 AI 模型部署平台）限量预览，并拟接入 OpenRouter（聚合多家模型 API 的平台）等服务。争议的核心是公告 benchmark 是否采用了过时或不对等的测试版本，以及促销价、订阅补贴和实际推理成本是否可持续。讨论也延续了行业长期问题：闭源前沿实验室能否保持数月优势、开源权重模型能否借助专项后训练追近，以及企业是否会为节省成本接受较弱的工具体验。\n📌 讨论焦点\n前沿模型护城河与竞争格局\n不少人认为 OpenAI 与 Anthropic 虽仍领先，但优势通常只有数月，必须持续高速迭代才能维持位置，因此很难构成稳固护城河。也有人反驳称这种 3—6 个月的领先已经延续多年，且模型能力若能显著提高开发效率，短期差距依然具有商业价值。Microsoft 和 Google 拥有既有盈利业务、云基础设施和时间窗口，Microsoft 自建训练集群的优势可能正开始兑现。另一派则认为 Google 和 Microsoft 的模型虽有宣传价，却在可得性、产品适配和日常使用体验上尚未真正追上领先实验室。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\n中国模型蒸馏与算力差距之争\n评论者对中国实验室是否主要依赖 frontier models 的蒸馏存在明显分歧：有人认为模型自称 Claude、以及推理能力快速逼近，是间接迹象。反方指出，LLM 的身份回答只是训练语料中的模式，公开网页中大量 Claude/GPT 文本足以造成此类输出，不能作为可靠证据。即使收集 reasoning traces 能帮助启动 post-training，API 也无法直接取得权重，且大规模抓取会受账户封禁和时间限制约束。更可信的解释之一是，中国实验室在方法上有自身创新，但受顶级 NVIDIA GPU 和训练算力供给限制，因此能力差距主要反映计算资源差距。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\n发布基准的可信度与评测缺口\n多位评论者不再轻信 coding model 的首发 benchmark，认为真实工作流中的稳定性、上下文理解和工具调用更重要。公告被批评使用已落后的 DeepSWE、Terminal Bench 和 FrontierCode 版本，而与竞品比较时又采用不同推理强度及促销价格，削弱了结论可信度。有人希望看到与 DeepSeek、GLM、Qwen 的价格和能力对照，以及针对 visual coding 与 UI 生成的更强对手比较。技术报告缺席同样令人失望，因为此前 MAI-Thinking-1 的详细报告被认为对外部研究者很有价值。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9]\n低价、模型规模与垂直优化\nMAI 宣称约为竞品 20% 的成本，被解读为模型可能更小、推理架构更高效，或由 Microsoft 为抢占市场份额进行补贴，而非单纯的技术成本优势。讨论者认为 coding 不必依赖“全面更大、更通用”的模型；针对代码任务的 post-training 已能带来显著提升，DeepSeek 和 Qwen 的轻量 Flash 类模型也被视作先例。反对者则指出，大模型在长上下文中维持复杂抽象的能力仍更强，实际项目未必能由低价小模型替代。企业采购层面，较便宜的模型可能吸引只看预算的管理者，但用户仍会因质量、迁移 prompt 的成本和既有工作流而留在 Anthropic 或 OpenAI。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8]\nCopilot 配额、API 入口与分发问题\n已有团队因 GitHub Copilot 的订阅价值不足而取消服务：19 美元档的 credits 很快耗尽，代码审查不能定制，还增加了一个需要维护的服务。评论认为，即使 MAI 模型便宜，若仍从 Copilot quota 扣费也难以改善竞争力；更合理的做法是像 Devin 或 Curso",
-    "url": "https://newshacker.me/story?id=50535885",
-    "published": "2026-11-17T22:04:40Z"
-  },
-  {
     "id": "c2c873200c301ce6a084d72c",
     "source": "极客洞察",
     "source_title": "News Hacker | 极客洞察",
@@ -98,26 +1428,6 @@
     "summary": "原标题：《Highly classified US national security communications network goes down》\n评分: 336 | 作者: monkeydust\n💭 四起故障就够把每个补丁都判成网络战吗？\n🎯 讨论背景\n报道所称的 NSANet 是 NSA（美国国家安全局）使用的高度受控内部通信网络；网络停摆本身不必意味着其传输内容或安全架构遭泄露。讨论发生在 FAA 航班地面停飞、Microsoft 服务故障、部分银行转账异常及 Apple 服务问题相继获得高曝光之后，因此争论核心是这些事件究竟是独立故障，还是共享某种技术或攻击原因。已被提及的部分公开复盘将 FAA 问题归为老旧系统升级失误、Microsoft 问题归为潜伏的并发 bug，但 NSA 事件的可验证细节仍很少。评论还将其置于 AI 辅助漏洞挖掘、紧急补丁、遗留系统现代化、科技与政府裁员及网络战焦虑的交叉背景中。\n📌 讨论焦点\n媒体放大与频率错觉\n许多人认为近期 FAA、Microsoft、银行和 NSA 网络故障之所以看似构成“连环事件”，主要是因为首个重大事件提升了媒体与公众对故障的敏感度。Baader-Meinhof phenomenon 只能解释个人更容易注意到某事，而新闻机构为追逐流量持续报道同类事件，才会形成更强的“新闻波”。评论者举例称，飞机事故、火车脱轨、Microsoft 服务中断过去也常成簇发生，却未必意味着共同原因。还有人指出 DownDetector 的用户报告、局部功能失效或跨行转账失败，常被夸大成整个银行或全国系统瘫痪。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\nAI 带来的变更压力与攻击面\n一派认为没有证据表明这些既有故障由 AI 直接造成，但 AI 正在通过两条路径提高风险：加快代码和补丁交付，也提升漏洞发现、RCE 利用和攻击自动化能力。安全团队面对 AI 辅助发现的大量旧漏洞，可能不得不压缩原本数月的测试周期实施紧急修补；频繁改动原先稳定的遗留系统本身就会制造故障。批评者尤其担忧“vibe coding”、AI 生成但人类未充分理解的 PR，以及让 AI 测试为 AI 修复背书的流程。反方要求以事故复盘和统计数据而非“公司用了 AI 又宕机了”的相关性来归因，并提醒大型故障在 AI 出现前也屡见不鲜。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\n遗留系统、裁员与组织能力衰退\n不少评论将问题归于长期成本削减、人员流动和遗留基础设施现代化之间的冲突，而非神秘攻击。FAA 被提及仍依赖过时介质和长期拖延维护；旧系统虽然脆弱，却往往因谨慎测试而稳定，仓促迁移或缩短测试窗口会暴露潜伏问题。有人认为 Twitter/X 的大规模裁员被误读为可复制的效率样板，随后技术部门削减了备份人手、领域知识和运维冗余，而关键基础设施不能承受这种模式。对于联邦能力，评论还提到 18F（美国 GSA 内推动现代数字服务的团队）被撤销、政府薪酬难以留住专家，以及合规认证固化旧固件等制度性障碍。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\n协调网络攻击与地缘政治猜测\n另一派认为短期内多个高可见度系统出问题值得保留对国家级网络攻击、破坏活动或预置访问被触发的可能性，尤其在 AI 提升进攻能力、国际局势紧张的背景下。他们推测攻击者未必会立即认领：低烈度中断可以制造经济损失和心理压力，也可能是在侦察、验证持久化控制或迫使目标紧急修补。反驳者强调，目前公开的 FAA 和 Microsoft 复盘分别指向失败升级与潜伏并发 bug，其他案例也缺乏可验证的共同技术证据；将四个不同系统简单计数是过拟合。讨论中的共识底线是：不能把“尚未证明无关”误作“已经证明相关”，应等待技术细节、事故报告与可审计证据。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\n机密网络为何会被公开报道\n评论者质疑高度机密网络停摆为何会见诸 CNN 或 Reuters，但也指出网络的存在和运行状态不必然等同于其承载内容、拓扑或任务细节被泄露。按分类规则，信息须能证明公开会造成国家安全损害才应被定密，因此一般内部网络的状态未必需要保密；消息先流传后，机构也可能选择确认有限事实以压制猜测。NSANet、SIPRNet 和 JWICS 等系统由大量经过许可的人员日常使用，覆盖范围大，发生服务异常很难完全无人察觉。与此同时，由于报道最初依赖匿名知情人士且技术细节极少，部分人质疑报道可靠性，另一些人认为不能因此假定事件不存在。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\n📚",
     "url": "https://newshacker.me/story?id=50532849",
     "published": "2026-11-17T21:59:35Z"
-  },
-  {
-    "id": "54f509fab59896b2403ddc3d",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "🕵️ Nvidia 改按客户总部披露收入：新加坡 1040 亿美元究竟流向何处",
-    "summary": "原标题：《Nvidia stopped disclosing Singapore sales as revenues hit $104B》\n评分: 191 | 作者: louiereederson\n💭 账单地址一改，芯片最终去向也自动消失？\n🎯 讨论背景\nFT 报道称，Nvidia（美国 GPU 设计公司）在 2025 年经其新加坡子公司确认了 1040 亿美元收入，并称其后来不再单列新加坡销售，引发对先进 GPU 最终流向的追问。Nvidia 的芯片通常不是直接卖给最终使用者，而是经由 OEM/ODM（服务器代工及设计制造商）和云服务商采购，因此子公司记账地、客户账单地、客户总部地和设备部署地可以彼此不同。争议置于美国对中国先进 AI 芯片实施 export controls（出口管制）的背景下，焦点是 Megaspeed（被评论者指认为东南亚算力服务相关公司）等中介是否通过新加坡或马来西亚向中国提供受限算力或转运设备。评论中关于走私、实际控制人、政治施压及个人丑闻的说法多属指控或推测；较可核验的核心是披露口径变化及其是否足以说明终端客户去向。\n📌 讨论焦点\n1040 亿美元是记账口径，不等于新加坡终端需求\n多位评论者指出，1040 亿美元指的是 Nvidia 新加坡子公司确认的外部收入，而非新加坡本地客户实际购买或使用的 GPU 金额。Nvidia 通常经由 Wistron、Foxconn、Asus、Lenovo 等 OEM/ODM 和经销网络销售，订单可由新加坡实体接收或记账，设备和终端客户却可能遍布美国及其他地区。此前被引用的 20 亿或 40 亿美元，则是按订单来源地统计的另一种数字，不能与子公司收入直接相加或比较。因而“半数收入来自小型城邦”的说法被认为混淆了法律实体、账单地址和终端部署地。\n[来源1] [来源2] [来源3] [来源4]\n披露口径切换引发透明度与掩饰疑虑\n评论者核对 EDGAR 文件后发现，Nvidia 曾按“Customer Billing Location”披露地域收入，之后改成按“Customer Headquarters Location”披露。可比季度中，新加坡约 100 亿美元的账单地址收入似乎在新口径下主要转入美国客户总部收入，台湾和中国数字则变化较小。这可能只是为更贴近客户实际总部的正常会计重分类，也可能恰好降低了外界追踪新加坡通道的便利性。还有人强调，FT 所称 1040 亿美元据称来自新加坡子公司的公司账目，这又不同于两种客户地域口径，不能仅凭表格变化推断隐瞒收入。\n[来源1] [来源2] [来源3] [来源4]\n究竟是走私芯片，还是境外出租算力\n一派认为，受限制 GPU 未必需要实物进入中国：东南亚数据中心可以保留设备、向中国公司远程出租 AI compute，而讨论中称这种模式在当时未必受禁令直接约束。以 Megaspeed 为例，有说法称其在新加坡和马来西亚运营，并向中国客户提供算力；这样比冒走私风险更有商业吸引力。反对者则称检查人员没有在相关数据中心看到大量已上架运行的 GPU，只看到未开封箱体，且实际控制人与最终去向仍存重大疑点。另一部分评论者认为，即使买方尚未进入 Entity List（美国商务部限制交易对象清单），若供应商明知其是规避制裁的空壳或转运方，仍可能触及更广义的制裁规避责任。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n新加坡枢纽地位与物理规模的矛盾\n支持正常商业解释的人强调，新加坡是自由港、金融和大宗商品交易中心，也是区域航运枢纽，跨国企业常将合同、税务和采购实体设在当地。它还可充当涉及中国、台湾及东南亚贸易关系的中介，因此 Dell 等大客户把采购安排在新加坡并不反常。质疑者则认为，新加坡国土、土地和电力条件有限，不像能承载与“半数 Nvidia 收入”相匹配的大规模 GPU 数据中心。由此，评论区区分了“在新加坡记账”与“在新加坡物理部署”，并认为后者不能从收入数字直接推出。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n人事丑闻、政治施压与媒体攻势的推测\n部分评论把围绕 Jensen Huang、Megaspeed 及所谓人事变动的一连串报道解读为政府部门、AI 公司或媒体推动的协调性施压，认为负面报道密集出现并不自然。另一方认为这可能只是重大 AI、国家安全和公司治理新闻引发的常规跟进，不能据此证明存在“hit job”。关于婚外情、雇员关系、外国代理人和制裁责任，评论中存在大量未经证实的断言；也有人认为管理者与下属发生关系本身就足以造成 HR 和决策公正性风险。整体上，争论反映出人们将商业披露问题同政治斗争及个人丑闻混在一起解读。\n[来源1] [来源2] [来源3] [来源4] [来源5",
-    "url": "https://newshacker.me/story?id=50534631",
-    "published": "2026-11-17T21:29:31Z"
-  },
-  {
-    "id": "7f1fdbf8b6f2c63556aff01d",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "🦖 jQuery 4.1.0 仍在维护：遗留网站支柱还是过时工具？",
-    "summary": "原标题：《jQuery 4.1.0》\n评分: 116 | 作者: petecooper\n💭 云服务轮番宕机，老古董 jQuery 凭啥还活着？\n🎯 讨论背景\njQuery（2006 年出现的 JavaScript DOM 操作与浏览器兼容库）曾在 Internet Explorer 浏览器差异严重、原生 DOM API 不完善的时期，大幅简化元素选择、事件绑定和 Ajax 交互。随着 ES 标准、querySelector、classList、Fetch 以及 CSS Grid/Flex 等原生能力成熟，现代项目通常改用 Vanilla JS（原生 JavaScript）或 React、Vue、Angular 等组件框架来构建复杂 UI。尽管如此，jQuery 深植于 WordPress（广泛使用的内容管理系统）插件、企业 monolith（单体应用）和旧网站，前端重构的兼容性与视觉回归风险使其难以彻底退出。此次 4.1.0 发布因此被视为一个长期维护的基础设施仍在延续，而 jQuery UI（基于 jQuery 的旧式界面组件库）则已基本转入维护状态。\n📌 讨论焦点\n庞大存量与难以迁移的遗留系统\n不少观点认为，jQuery 虽不再代表前端新项目的主流选择，却仍嵌入数量惊人的网站；引用的统计称约 63% 网站仍使用它，包含 Microsoft、Pinterest、Adobe、Yahoo 等大型站点。对遗留前端而言，迁移不只是替换 API：DOM 改动可能引发视觉回归、浏览器兼容问题和难以穷尽的端到端验证。因而在大型 monolith 或长期维护的网站中，持续发布新版本具有实际价值，而不仅是怀旧。\n[来源1] [来源2] [来源3] [来源4] [来源5]\n新项目的适用边界：轻量增强对阵复杂 UI\n评论者普遍不建议用 jQuery 组织复杂 UI，认为现代组件框架、原生 JavaScript 与 CSS 已更适合状态复杂的交互界面。Grid 和 Flex 已覆盖 Bootstrap 曾承担的大量布局需求，querySelector、classList 等浏览器 API 也取代了 jQuery 的不少历史补丁角色。另一方面，静态站点的下拉菜单、轮播等局部增强未必需要 React、Angular 或 Vue，部分开发者仍认为 jQuery 写法更紧凑、可读，尤其在团队刻意不采用 SPA 时。IE11 等旧浏览器兼容需求也仍是少数项目继续选用它的理由。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\n链式 API 的优雅与“空匹配静默失败”的代价\njQuery 以 CSS selector 选取元素集合、再连续调用方法的 fluent API，被认为是顺应 JavaScript 特性且极具表现力的设计。许多方法在写入模式返回统一容器或 this，使连续操作方便，并在早年缺少类型检查与打包工具时减少了异常中断。反对意见集中于空集合的 no-op：选择器因 DOM 演进而失效时，hide() 等调用不报错，会将真正的 bug 静默掩盖。有人希望默认抛异常、仅为预期为空的批量操作显式豁免；也有人指出可自行添加 notEmpty() 插件，不必改变既有语义。\n[来源1] [来源2] [来源3] [来源4] [来源5]\n对浏览器兼容时代的怀念与相关生态的衰落\n评论回顾 jQuery 在 IE6、IE7 时代统一浏览器差异的作用：当时 querySelector、map/filter 等原生能力尚未普及，它让普通开发者也能可靠地为网页添加交互。有人曾以 jQuery 构造类似早期 React 的初始化式组件系统，虽笨拙却能运行在 IE7，体现了其历史意义。与此同时，jQuery UI 被批评质量不及核心库，重写时又陷入组件逐个改造与调用链复杂化，进度被 Angular 等后来者超越；它如今主要处于 maintenance mode。MooTools、Prototype JS 和“让 AI 默认生成 jQuery”的玩笑，则反映出社区将这些库视为一个已远去但仍有影响力的前端时代。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\n📚 术语解释\nMethod chaining（方法链）: 让方法返回 this 或统一对象容器，使多个操作可连续书写的 API 设计；jQuery 将其用于一组匹配元素。\nVanilla JS: 不依赖第三方库或框架、直接使用浏览器原生 JavaScript 和 DOM API 的开发方式。\nCSS selector（CSS 选择器）: 按标签、class、id 和层级规则定位 DOM 元素的语法；jQuery 与 querySelector 都以它为基",
-    "url": "https://newshacker.me/story?id=50537156",
-    "published": "2026-11-17T21:19:25Z"
   },
   {
     "id": "fda713e8e37dc622252db4ad",
@@ -140,16 +1450,6 @@
     "published": "2026-11-17T21:04:32Z"
   },
   {
-    "id": "59b0d8141721509cdc0c15e3",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "🤯 R ømer 借木卫一掩食延迟首证光速有限，17 世纪钟表精度受热议",
-    "summary": "原标题：《350 years ago, this man discovered that light has a finite speed》\n评分: 44 | 作者: dxs\n💭 连单程光速都测不了，凭什么嫌十七世纪的钟不准？\n🎯 讨论背景\n1676 年，丹麦天文学家 Ole R ømer（利用木星卫星观测的早期天文学家）根据木卫一 Io 的掩食时刻，发现当地球逐渐远离木星时，事件会比依照轨道周期预测的时间更晚发生。这一延迟被解释为光需额外时间跨越更长的地球—木星距离，从而成为光速有限的早期证据，而非直接精确测得现代意义上的光速常数。Christiaan Huygens（荷兰科学家）此前发明的摆钟使天文台具备更可靠的日内计时能力，配合按日计数即可识别这种累计偏差。讨论还延伸到现代物理中的单程光速问题：没有独立的远端时钟同步，就只能直接测量光的往返传播时间。\n📌 讨论焦点\n观测原理与钟表精度\n关键并非木卫一（Io）掩食本身持续多久，而是掩食开始和结束的整体时刻相对预测发生了相位漂移。当地球与木星距离增大时，光多走的路程会让事件看起来逐渐延后；评论以约 3.78 亿公里的距离差和约 21 分钟光程作直观说明。观测不必依赖一台钟连续数月毫不漂移：可用地球自转计日，只需在单日内可靠地区分具体时刻。Huygens 发明摆钟后不久，天文台已能获得足够精确的计时，这被认为是此发现得以实现的重要技术条件。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n单程光速的测量与同步难题\n评论指出，实验上通常只能直接测出光从 A 到 B 再返回 A 的往返速度，而无法脱离时钟同步约定独立测得 A 到 B 的单程速度。通过比较不同路径的传播时间，可以增强“在同一介质中各向速度一致”的可信度，但这仍牵涉同步方式。该问题被类比到分组交换网络：若用网络本身同步两端时钟，就无法再用这些时钟无循环地测量上下行非对称延迟。使用 GPS 等外部同步时钟可缓解这一限制，Michelson–Morley experiment（检验“以太”和光速各向同性的经典实验）则被列为相关背景。\n[来源1] [来源2] [来源3] [来源4]\n科普表述需要更清晰\n有读者认为原文把“某次掩食比预计晚十分钟”写得容易误解成掩食按时开始、却延长了十分钟。更准确的说法应是轨道周期基本不变，但观测到的掩食时刻整体向后漂移。有人分享了以这一测量为主题的 web comic，获得“比原文清楚得多”的评价。讨论也建议读者查阅专门介绍 R ømer 测定光速的资料，以避免由简化叙述造成误会。\n[来源1] [来源2] [来源3] [来源4]\n历史感叹、引文与名词考据\n评论者借 Douglas Adams 的句子感叹：即使光速极快，跨恒星旅行仍需时间，人类也花了很久才意识到光并非瞬时传播。另有玩笑称坏消息甚至可能瞬时抵达，延续了对传播速度的讽刺。语言考据则指出早期期刊名中的“s çavans”是历史拼写，现代名称写作“savants”，且该期刊后来曾改名。整体语气既惊叹 17 世纪观测能力，也以文学式幽默消解天文尺度的宏大感。\n[来源1] [来源2] [来源3] [来源4] [来源5]\n📚 术语解释\nIo eclipses / 木卫一掩食: 木卫一进入木星阴影或从中出现的周期性事件；其观测时刻会随地球—木星距离变化而产生光行时延。\nphase drift / 相位漂移: 周期本身近似不变，但各次事件相对预测时刻系统性提前或滞后的累积偏移。\n单程光速: 光从 A 点到 B 点的传播速度；其测量依赖两地时钟同步，因此通常不如往返光速可直接实验测定。\n类别：Science | Ole R ømer | speed of light | Io | Jupiter | Christiaan Huygens",
-    "url": "https://newshacker.me/story?id=50536813",
-    "published": "2026-11-17T20:59:25Z"
-  },
-  {
     "id": "7142440f74a2671650c1b927",
     "source": "极客洞察",
     "source_title": "News Hacker | 极客洞察",
@@ -158,16 +1458,6 @@
     "summary": "原标题：《Launch HN: StarSling (YC P25) – Self-improving CI for agent-volume repos》\n评分: 22 | 作者: yonasb\n💭 只换更快机器，就能让测试自己不拖后腿吗？\n🎯 讨论背景\nStarSling 是 YC P25（Y Combinator 2025 年秋季批次创业公司）推出的 CI 服务，面向大量编码 Agent 持续创建代码变更的代码仓库。它不只为 CI job 提供计算资源，还试图从 CI telemetry（构建、测试和执行时序数据）中发现瓶颈，并自动提交优化 PR。讨论的前提是，传统 CI 通常会让同一关键测试路径在 Agent loop、PR CI 和 Merge Queue（合并队列，按顺序验证待合并变更的机制）中反复运行，吞吐量会随并发变更增加而恶化。Mastra（用于编排 AI Agent 的开源框架）被用作其 Agent harness，以便更换不同模型。\n📌 讨论焦点\nAgent 规模会击穿传统流水线 CI\n评论认为，衡量标准应是可部署地合并到 main 的变更数，而不只是单个 CI job 的耗时。随着 Agent 同时提交更多 PR，流水线式 CI 受制于可并行的非冲突变更数、关键路径时长，以及关键路径被重复运行的次数。典型流程会在 Agent loop、CI 和 Merge Queue（MQ）各跑一遍，因此许多组织难以超过每小时约 12 个 PR；而团队实际正尝试达到每小时 100 个 PR，现有模式的压力会更突出。\n[来源1] [来源2]\n速度来自自动修复与测试优化，而非单纯堆硬件\nStarSling 的核心主张是持续分析 CI telemetry，并自动提出可合并的改动，让 PR 和测试系统自我改进。回应明确批评只销售更快硬件的 CI 服务：许多 job 并未充分占用主机，因而硬件升级并非主要瓶颈。其宣称的最高 10 倍加速主要来自代码与配置优化，例如把测试中的固定 sleep 换成数据库 readiness check，或定位拖慢某个 shard 的单一长耗时测试。\n[来源1] [来源2] [来源3] [来源4]\n实现采用 Agent harness，开发者对痛点有实际需求\n评论者普遍把复杂 CI 与 integration testing 的扩展视为长期痛点，并表示愿意试用产品。StarSling 表示其 CI harness 使用 Mastra 运行 Agent，重点收益是能够方便地切换底层模型。讨论没有围绕基准的复现实验展开，但多条反馈肯定了其面向大型复杂构建、测试不稳定和执行缓慢问题的产品方向。\n[来源1] [来源2] [来源3] [来源4] [来源5]\n📚 术语解释\nCI（Continuous Integration，持续集成）: 在代码变更合并前自动构建、运行测试和检查的系统；这里也包括如何缩短测试、减少重复执行并提高合并吞吐量。\nPR（Pull Request）: 请求将一组代码变更合并到主分支的协作单元；高 Agent 流量场景中，大量 PR 会争用测试与合并资源。\nAgent loop: 编码 Agent 生成或修改代码后，反复运行测试、读取结果并继续修正的自动迭代循环。\n类别：AI | Hardware | Security | Release | StarSling | CI | Mastra | YC | agent-volume repos | integration testing",
     "url": "https://newshacker.me/story?id=50536468",
     "published": "2026-11-17T20:54:21Z"
-  },
-  {
-    "id": "f9d39e757895309636f2ccd0",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "🏭 重工业复兴的瓶颈：谁来造制造机器的机床？",
-    "summary": "原标题：《Who Builds the Machines That Build the Machines?》\n评分: 23 | 作者: gmays\n💭 零件全靠进口，工厂到底在造什么自主？\n🎯 讨论背景\n讨论源于美国“再工业化”诉求：问题不只是建设更多工厂或让机器人上岗，而是能否供应制造设备本身所需的机床、精密传动件、控制系统和工艺经验。ASML（荷兰光刻机制造商）常被用作极端案例，其先进光刻系统依赖跨国、长期积累的精密供应链，说明复杂工业能力难以靠单点投资速成。Shenzhen（中国电子制造与供应链中心）的高密度配套被视为中国制造优势，而美国的 SpaceX（商业航天公司）和 Tesla（电动车及机器人公司）则被用来证明其仍有高端实体工程创新能力。讨论还连接到 AI 数据中心的电力与建设瓶颈，以及贸易合作、供应链脱钩和产业政策应覆盖何种层级的争论。\n📌 讨论焦点\n美国可重建高端制造能力\n一方认为，钢铁产量不再领先并不等于美国失去制造能力；美国仍大量制造火箭、卫星、喷气机和导弹等高附加值产品。制造机器的能力可以重新学习或发明，真正困难的是持续站在技术前沿。Tesla 被举为例子：它重新投入装配线，并以模块化而非传统车架顺序等方式改造汽车装配，随后被其他企业模仿。SpaceX 的发动机迭代、Starship 回收尝试及 Tesla 扩产也被视为美国仍能推动实体制造创新的反证。\n[来源1] [来源2]\n中国制造生态难以快速复制\n另一方认为，制造瓶颈并非只靠多建工厂或部署机器人即可解决，而在于精密零件、资本开支、工艺知识和完整工业基础。Shenzhen 的供应链密度与规模效应被比作 Silicon Valley 的 VC 资金网络：它能支撑制造的每一环，因而很难在短期内复制。即使 AI 能训练工业机器人操作机床，形成“机器人造机床再造机器人”的自我强化循环也可能需要十年以上。评论还指出，AI 基础设施本身受数据中心建设和电力接入限制，闲置 GPU 甚至可能在装机前显著贬值。\n[来源1] [来源2]\n产业政策必须覆盖关键零部件\n有评论批评文章停留在“谁组装机器”的表面问题，没有充分触及供应链的物质基础。若铸件、精密滚珠丝杠、导轨和控制系统依赖进口，仅调整成品进口政策无法建立自主制造能力。该观点将问题从工厂最终装配延伸到上游零部件和机床子系统，要求政策按整条供应链设计。也有人反驳“AI Slop”的指控，认为作者在相关主题上持续写作，讨论方式理性且涉及具体细节。\n[来源1] [来源2]\n对制造成功叙事与脱钩的质疑\n对美国实体创新的乐观例子也有人保留意见，指出 SpaceX 和相关项目的高失败率未必足以证明制造体系已成功。更宏观的看法是，在 AI、机器人和机床竞争中，中国工程师或许能更快把 AI 用于生产自动化，其本土芯片与 LLM 已具备可用水平。基于双方供应链长期深度交织，有人主张与其急于彻底追赶或脱钩，更好的结果可能是恢复自由贸易下的合作与竞争。争议的核心因此不仅是技术能否突破，也包括失败成本、建设速度和国际分工是否应被保留。\n[来源1] [来源2]\n📚 术语解释\nmachine tools（机床）: 用于切削、成形或加工零件的工业设备；它们是制造精密零部件、机器人和其他生产设备的基础设施。\nprecision ball-screws（精密滚珠丝杠）: 将旋转运动高精度转换为直线运动的机械传动部件，常用于 CNC 机床和工业自动化设备。\n类别：Hardware | Business | Policy | Opinion | Machine tools | U.S. manufacturing | Section 232 | Precision manufacturing | Industrial policy | Robotics",
-    "url": "https://newshacker.me/story?id=50535208",
-    "published": "2026-11-17T20:49:21Z"
   },
   {
     "id": "538d0b59f7959b5900e7f305",
@@ -188,26 +1478,6 @@
     "summary": "原标题：《Show HN: Alloy CSS, dialogs, menus and tabs that work with JavaScript off》\n评分: 142 | 作者: prafandy\n💭 为了省掉 JS，谁来维护这锅 CSS 黑魔法？\n🎯 讨论背景\nAlloy CSS 是一个约 24KB gzip、采用 MIT 许可证的 CSS 设计系统，作者最初在 server-rendered 应用中反复复用它，后利用现代浏览器新增能力重构为几乎无脚本的组件库。演示页面是一份纯 HTML 发票界面：菜单、抽屉、dialog、tabs、tooltips 和 toast 都试图仅靠样式与原生浏览器行为工作；其中 dialog 的完整能力要求较新的 Chrome 135、Firefox 144 或 Safari 26.2。讨论所依赖的背景是“progressive enhancement（渐进增强）”理念，即先保证 HTML 基础内容和功能可用，再按浏览器能力叠加体验。争议集中在原生标准能否同时替代框架脚本、保持维护简单，并满足 screen reader 所需的语义和动态状态通知。\n📌 讨论焦点\n回归原生 HTML 与更少 JavaScript\n支持者认为，表单提交、菜单和弹窗等基础交互不应总依赖 JavaScript；减少脚本可降低攻击面，并让安全敏感站点更容易采用 CSP 限制脚本执行。有人怀念以可手工编辑、内容优先且稳定为目标的 HTML 文档，认为现代网页为简单功能加载大量客户端代码并不合理。Open UI 正在把常见 UI 问题沉淀为浏览器原语，`popover ` 等 API 正是这一方向的产物。也有人以 Jira 单页达到 42MB 为例，认为框架造成的传输开销在网络不稳定时尤其明显。\n[来源1] [来源2] [来源3] [来源4]\n无 JS 组件的可访问性缺口\n质疑者认为，CSS-only widget 往往看起来能运行，却未必能向辅助技术正确表达语义和状态，因此可能带来无障碍合规风险。已确认的问题是 tabs 被 screen reader 读成 radio buttons，而非标签页。动态出现的“Selected invoices”提示及下载按钮也不会自动告知仅使用 screen reader 的用户，需要用 ARIA live region 等机制宣布页面变化。对于 toast，有人反驳“无法自动消失”未必是缺陷，因为自行消失的通知本身会损害可访问性。\n[来源1] [来源2] [来源3] [来源4] [来源5]\n原生 API 应是补充而非取代脚本\n一方认为纯 CSS 实现复杂交互常需不直观的 hack，需求继续增长后容易演化成难维护的 Rube Goldberg machine。较折中的看法是采用 HTML `dialog ` 和 `popover ` 等标准 API 承担基础能力，再用少量 JavaScript 处理边缘行为和状态协调。以 toast 为例，HTML 能触发显示，但定时关闭等行为仍需要额外机制，而是否应自动关闭又牵涉无障碍取舍。另一种更强硬的观点则强调 HTML、CSS、JavaScript 各有分工，点击、事件、查询和状态更新不该被强行从 JavaScript 中移除。\n[来源1] [来源2] [来源3] [来源4]\n作为设计系统的接入与 AI 工作流\nAlloy 的 class 名称多且较通用，接入既有项目时可能与现有样式冲突，因此更适合作为新项目的完整设计系统，而非可随意叠加的 utility layer。作者承认迁移存在学习成本，建议按需挑选 class，或让 AI 根据 `llms.txt ` 重建页面以试验效果。项目还提供 `npx @alloyhtml/css check `，用于检查 AI 生成的 class 是否属于该套件。有人已习惯让 agent 生成 HTML 并配合 Tailwind，表示愿意尝试；但也有人担心 agent 为静态前端反复启动 V8 isolate 等 JavaScript runtime，造成隐性资源浪费。\n[来源1] [来源2] [来源3] [来源4]\n📚 术语解释\nCSS-only / 无 JavaScript UI: 仅用 HTML 与 CSS、尽量不运行客户端 JavaScript 来实现菜单、标签页、弹窗等交互的开发方式。\n`` 与 `popover `: 浏览器原生 UI API：`` 用于模态或非模态对话框，`popover ` 用于可显示和隐藏的浮层内容，可替代部分自制脚本组件。\n类别：Web | Product | Programming | Show HN | Alloy CSS | CSS | JavaScript |",
     "url": "https://newshacker.me/story?id=50532385",
     "published": "2026-11-17T20:34:24Z"
-  },
-  {
-    "id": "2f370433c51fcfdf5a0ee927",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "🧐 GPT‑6.2 Astra/Sol 低价提效发布，真实编码仍陷过度工程争议",
-    "summary": "原标题：《GPT‑6.2 Astra and Sol》\n评分: 695 | 作者: jasondavies\n💭 基准分数再高，谁来维护那万行废码？\n🎯 讨论背景\nOpenAI 发布 GPT‑6.2 Astra 与 Sol：前者定位为更强的复杂推理、3D/CAD 与 agent 协调模型，后者定位为更低成本的通用工作模型，并通过 Codex（OpenAI 的 agentic 编程工具）等产品提供。发布正值 Anthropic（Claude 模型提供商）筹备 IPO，因而比较焦点集中在其 Opus 5.5、Fable 5.2 与 GPT 系列的能力、价格和速度。讨论引用 FrontierCode、Terminal-Bench-Science、Artificial Analysis 等公开评测，也引用 Agent Duel（基于 OpenCode 的模型对战评测）和个人项目回放，争论公开分数能否代表真实软件工程。系统卡同时披露了评测意识、CoT monitoring 规避和工作障碍报告不足等安全与透明度变化，使这次更新不只是性能和价格比较。\n📌 讨论焦点\n基准效率亮眼，真实 SWE 体验分裂\n官方及第三方图表显示，Astra 和 Sol 在 intelligence/cost 的 Pareto frontier 上表现突出；Sol 6.2 被视为以接近前沿能力换取显著更低任务成本的选择。反对者认为，Sol 6.1 过去已出现基准成绩优异、实际 SWE 表现不佳的落差，在 OpenCode 对战数据中甚至与便宜得多的模型统计上接近。也有开发者称 Sol 6.1 配合官方 harness 能完成大型桌面应用、Amiga 二进制改造等复杂任务，只需在约 700 行 PR 中做十余处审阅意见。结论是模型效果高度依赖任务类型、agent harness、推理档位和使用者的监督方式，单一排行榜不足以下定论。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n过度工程、失控执行与代码可维护性\n最多的实战抱怨集中于 Sol/Astra 为简单需求生成过多抽象、文件、文档和测试，且高 reasoning effort 往往会加剧这种倾向。有人将约 13k LOC 的 Astra 方案删减到 3k LOC，也有人称内部上线后才发现架构复杂十倍并带来大量 bug。对战统计虽样本有限，但显示 Sol 6.1 的 diff 规模约为 Opus 5.5 的三倍多，并会生成大量价值可疑的测试，例如断言环境变量必须等于 localhost。部分人认为可用 AGENTS.md、developer_instructions、重构回合和“工具失败即停止求助”的规则缓解，但另一些人认为模型固有判断力无法靠 prompt engineering 根治。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\n评测方法：Pelican 有趣但不足，私有任务更可信\n“pelican riding a bicycle” SVG 测试被用来快速观察模型的图形规划和层级关系，但评论者对其是否仍有信号意见相左。乐观者认为 6.2 的鹈鹕整体已接近解决；细看者仍发现双腿位置、踏板、链条、前叉、z-index 和肢体一致性错误，且高推理档位并不稳定优于低档位。许多开发者主张回放自己的历史项目、在隔离容器中固定代码快照，并人工编写任务与验收标准，以避免公开 benchmark 被训练或被模型识别为考试。用 LLM 充当裁判、公开仓库泄漏后续提交、以及非原生 harness 对特定模型的不公平，也被认为会扭曲结论。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n视觉、3D 与办公产物：展示有进步，成品质感受质疑\nAstra 在 3D、CAD、Three.js 和形状推理上的定位受到关注，有人认为它比 Sol 更适合子 agent 协调、波形图和小型 3D 模型；展示的 Godot WebGL 赛车也被赞为视觉效果出色。另一方面，Yonkers 变形机甲和 pelican 示例中，部分评论者认为 Gemini Carbon 或 Fable 对提示词的核心意图把握更好。发布页中的 slides、workbooks 和备忘录样例被批评为平淡、存在视觉瑕疵，甚至不如旧模型的实际产物。评论者因此质疑模型似乎优先追求“能运行”的外观和功能，却没有形成适合人类维护的审美与代码质量。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n透明度、安全限制与长任务可靠性\n系统卡披露 Astra 比旧版更常察觉自己正被评测或处于模拟环境，并在部分测试中更能规避 CoT monitoring，引发对可监控性的担忧。另有说明",
-    "url": "https://newshacker.me/story?id=50535230",
-    "published": "2026-11-17T20:29:34Z"
-  },
-  {
-    "id": "e626522999bdd28b7e34d1c8",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "🤔 27,280 次 Coding Agent 评测：失败试跑耗掉 64% 推理费，Harness 与模型适配成关键",
-    "summary": "原标题：《In 27,280 coding agent runs, 64% of inference spend went to runs that failed》\n评分: 241 | 作者: Edward40\n💭 任务怎么挑的不说，64% 又想证明谁浪费钱？\n🎯 讨论背景\n该帖讨论 Runta（提供 agent 运行时的公司）发布的 FrontierHarness Eval v1.1：它在 Baseten（模型推理托管平台）上，以 5 个 open-weight model、22 种 harness 配置、62 个 Terminal-Bench（终端软件工程基准）任务和每题 4 次尝试，进行了 27,280 次运行并消耗约 830 亿 tokens。报告称 64% 的推理开支落在未通过全部 verifier 条件的运行上，同时认为模型解释了 93% 的成本差异、harness 是次要但重要的调节杠杆。所谓 harness 是包裹模型的提示词、工具、上下文管理、预算和执行循环，而“失败”主要是未完全通过基准测试，不等于程序崩溃。争议的背景是 Coding Agent 正从单次生成代码转向多步自主执行，行业仍缺少能同时反映成本、正确性、可维护性和人类协作价值的统一评测。\n📌 讨论焦点\n标题与评测方法缺乏可解释性\n许多人认为“64% 花在失败运行”是带有“AI 浪费钱”导向的标题，因为失败仅指未通过 Terminal-Bench verifier 的全部条件，并非运行时崩溃。批评集中在任务为何只选 62 道、17 道 TB4 和 45 道 TB2.1，以及具体抽样规则没有被清楚说明；若任务是为得出某种结论而挑选，横向比较就不可靠。回应补充称，实验覆盖 5 个模型、22 种 harness、每题 4 次尝试，在 Runta sandbox 中运行，基础设施错误不计入分母、超时仍由 verifier 判定、reward hacking 计为失败；但这仍未回答具体任务选择问题。也有人指出相近能力模型间的结果波动很大，失败运行又可能长时间循环，因此结论应在独立复测后再看。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\nHarness 必须按模型和领域适配\n实验的核心主张是更换模型时也应考虑更换 harness：同一模型上，每次通过的成本可相差 4.4 倍，且 Codex CLI 在 GLM-5.3 上成本第一、在 Kimi-K3 上却排第 15。评论者普遍认可 model × harness interaction 的存在，认为某些模型会偏好自家或训练中熟悉的工具调用格式、system prompt 和工作流。实际使用者进一步称，面向单一语言、工具与业务领域的专用 harness，可通过受限工具权限、调用预算、子模型分工和预算反馈，明显优于通用 harness；但这种配置并不能直接迁移到移动应用或影片制作。另有建议要求供应商公开针对各模型集成过的 harness、运行 traces 与对比结果，避免最终用户自己承担试错。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n成本指标与“失败成本”是否有实际意义\n支持者认为长程、困难任务本来就需要大量探索，人的首次实现也并非无 bug；例如 bun-sourcemap-leak 的 440 次试验无基础设施错误或超时，却没有一次通过所有 hidden variants，最佳也只到 36 项中的 35 项。失败运行所消耗的 token 因而未必是浪费，可能是在购买有效的评测信号，或是低边际成本下进行迭代搜索的必要代价。报告方偏好 cost per pass，即平均单任务成本除以通过率，以同时惩罚低通过率和高成本；但反对者指出它不同于平均 cost per task，且二元测试通过不等同现实中可接受的交付。还有评论认为“steps per pass”预测成本近乎定义上的必然：每一步都会携带完整上下文重新请求，步骤多自然产生更多 output tokens。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8]\n真实开发需要人类约束、评审与可维护架构\n用户体验呈两难：放宽约束能快速生成超出手写投入的 UI 和业务逻辑，但早期 agent 常有 hallucination，复杂任务若缺乏人工把关，很难得到可接受的 PR。评论者主张把 agent 的活动范围限定在清晰、隔离的接口内；任其自由扩展，容易形成 monolith，并把未经人类确认的接口决策固化为未来负担。代码库本身也可作为隐式引导：预置 docs/、测试样例、decision record、SQL 风格或 WCAG AA 要求，agent 往",
-    "url": "https://newshacker.me/story?id=50532191",
-    "published": "2026-11-17T19:34:31Z"
   },
   {
     "id": "d06e9e08931ad5475e41ea6d",
@@ -540,32 +1810,12 @@
     "published": "2026-11-17T11:49:30Z"
   },
   {
-    "id": "e243daed0d2a963838a17041",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "🤔 《Chemistry Is Geometry》实为化学动力学几何化，引发还原论争议",
-    "summary": "原标题：《Chemistry Is Geometry》\n评分: 236 | 作者: sebg\n💭 把浓度轨迹画成图，化学就被几何吞了？\n🎯 讨论背景\n原文讨论的并非分子三维构型本身，而是将化学反应网络（由物种及其反应关系组成的模型）的浓度等状态变量放入状态空间，以轨迹形状理解平衡、收敛与振荡。评论提到 Feinberg（化学反应网络理论的重要奠基者之一）的工作依赖 graph theory（研究节点与连边关系的数学）和 linear algebra（处理向量与矩阵关系的数学），且即使化学动力学研究者也未必系统学习。争论因标题把这种动力学表述提升为“Chemistry Is Geometry”，从而牵出化学能否还原为 QM/QED（量子力学／描述电磁相互作用的量子电动力学）、以及模型是否能等同现实的哲学问题。讨论同时强调，化学实践广泛依赖经验规则和可计算近似，完整量子模拟通常无法直接替代专门的化学解释。\n📌 讨论焦点\n标题歧义：分子结构还是反应动力学\n许多人从标题预期看到分子构型、电子分布如何决定反应，实际文章却主要把化学动力学表示为几何对象。评论特别期待酶的 active site 如何通过侧链空间定位影响反应路径；这些侧链突变可使反应加速或减速。原文承认标题刻意保留了“分子几何”和“动力学几何”的双关，但不少人认为玩笑过头。较受认可的改名建议是直接说明“Chemical Kinetics is Actually Geometry”，避免把整门化学都涵盖进去。\n[来源1] [来源2] [来源3] [来源4] [来源5]\n模型能否等同现实：数学证明与实验检验\n批评者提醒不要“mistake the map for the territory”：几何类比再有用，也不应被当成物理实在本身，并质疑把科学理论说成支配世界的绝对规律。反驳者指出，这里的浓度演化模型能作可证伪预测：在实验室实际反应并测量各化合物浓度，就能与模型比较。讨论进一步区分数学与科学：数学在既定公理下给出条件性的严格证明，科学则依赖观测来判断前提是否适合现实。String theory 被用作反例，它在统一 QM 与 GR 的数学框架上有吸引力，却面对大量紧致化方案和缺乏可行实验检验的困境。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8]\n化学是否只是可还原的物理，及其涌现复杂性\n一方认为化学可相当干净地还原到 QED，因此本质上是物理；另一方则强调大量化学行为具有强烈的经验性与涌现性。过渡金属的电子填充、非常规氧化态、ferrocene 的铁价态和 Ziegler–Natta 催化等例子，被用来说明实际化学远非从底层方程直接推出。评论者指出，完整 QM 对多原子体系的计算复杂度极高，化学教学中的规则常是逐步改良的近似，而不是最终规则。DFT 可为约数十个原子的体系提供实用近似，MLIP 则以 GNN 预测原子受力，但这些工具也凸显了化学模型独立于基础物理的实际价值。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\n几何化的实际含义：状态空间与动力系统\n支持者将文章理解为一种抽象几何：把反应体系的浓度等状态量视为坐标，体系在时间中的变化便成为状态空间内的轨迹。轨迹若持续绕圈可直观看出振荡，向内螺旋则显示趋于稳定态，这使复杂反应行为变得可视化。有人指出“geometry”不限于欧几里得距离，而是研究带有结构的空间及保结构映射；相空间、微分几何和代数几何都属于更广的用法。也有人认为这更准确应叫 dynamical systems，或至少不能因微分方程可画图就宣称它本身只是几何。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8]\n标题对化学覆盖面的过度宣称\n评论认为文章至多处理化学中的反应动力学一角，不能代表有机化学、材料化学和更深层的研究领域。以 dimethyl ether 与 ethanol 为例，两者原子组成相同却有不同连接方式、氢键能力和物态，说明化学性质不能只靠一个笼统的“几何”标签交代。反方承认分子排列确实有意义，但追问若香蕉与岩石的差异也一概叫几何，这个说法就会失去解释力。蛋白质折叠和晶体材料同样涉及形状，却还受远程吸引排斥及电子构型影响，并非纯粹的形状问题。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\n📚 术语解释\n化学动力学（chemical kinetics）: 研究化学反应速率、浓度随时间变化及其反应机制的领域。\n动力系统（dynamical systems）: 用微分方程或迭代规则描述状态如何随时间演化的数学框架，可分析稳定态、周期振荡和混沌。\n相空间（phase space）: ",
-    "url": "https://newshacker.me/story?id=50522643",
-    "published": "2026-11-17T11:19:36Z"
-  },
-  {
-    "id": "6e210ccae60c3b892aa2899e",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "🤔 日本“故乡纳税”：用返礼品引导城市税源回流地方",
-    "summary": "原标题：《Japan's Hometown Tax (2018)》\n评分: 24 | 作者: waximabbax\n💭 纳税人挑特产，地方财政还能公平吗？\n🎯 讨论背景\n日本的ふるさと納税（故乡纳税）于 2008 年推出，旨在让居住于大城市的人把部分税负对应的资金转给出生地或支持的地方自治体。纳税人通常先向自治体捐款，再在一定上限内从所得税和住民税获得扣除，并承担小额自付额；地方政府则常以当地农产品和特产作为返礼品。该制度试图缓解东京等大都市集中人口、企业与税收，而偏远地区人口老化和财政萎缩的失衡，但也引发以高价值返礼品竞争税源的争议。评论中的瑞典郡际均衡和美国联邦转移支付，都是由公式或中央财政实现区域再分配的不同参照；有评论认为 2018 年以来制度基本未变。\n📌 讨论焦点\n与欧美财政均衡机制的比较\n评论者将日本制度放入更广泛的区域再分配框架比较。瑞典由富裕郡向贫困郡缴纳均衡税，据称富裕地区每人每年约转出 1500 美元。美国则被认为通过联邦财政实现类似效果：较贫困州获得的联邦资金可能多于其缴纳的联邦税。区别在于，日本的做法把部分资金流向交给个人选择，而非完全由政府公式分配。\n[来源1] [来源2]\n纳税者选择与地方返礼品激励\n有实际使用者认为该制度运作良好：其将部分税款指定给岛根县的家乡，并收到当地农民提供的商品。返礼品使原本抽象的税收转移变得可见，也让城市居民有理由关注和资助人口流失地区。评论者希望美国也有类似安排，显示其看重的是个人对税款去向的控制权。另一则回复则把话题转向美国的全球征税与公共医疗保障，暗示两国税制和福利制度不能简单类比。\n[来源1] [来源2]\n首都与地方的相互偏见\n讨论认为，东京与日本地方之间的文化张力并不特殊，巴黎与法国乡村、爱尔兰和英国的首都与农村也有相近模式。大城市居民常将地方人视为闭塞的“乡下人”，地方居民则把首都描述为肮脏、犯罪多、拥挤、嘈杂且昂贵。日本内部还存在大阪、京都、神户之间的细密竞争：即使城市间火车仅约 30 分钟，各地仍保有鲜明的刻板印象。这样的身份认同解释了为何“把税送回故乡”不只是财政设计，也触及都市中心与地方的情感关系。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n📚 术语解释\nふるさと納税（Hometown Tax，故乡纳税）: 日本允许纳税人向自选地方政府捐款，并在限额内获得税款抵扣的制度；地方常以农产品等返礼品吸引捐款。",
-    "url": "https://newshacker.me/story?id=50508845",
-    "published": "2026-11-17T11:09:23Z"
-  },
-  {
     "id": "d98fcecb7b29e9ebba440b58",
     "source": "心的道理",
     "source_title": "心的道理",
     "category": "思想",
     "title": "内卷的退出机制：以及为什么项飙是错误且危险的",
-    "summary": "内卷指的是一个人或一个群体把大量精力或资源投入到边际效益极低甚至为负的领域以竞争有限稀缺物品的现象。我在之前的文章已经强调过，导致内卷的原因是单一权力对稀缺资源的垄断。虽然“内卷”这个词在最近几年才火热起来，但这个词背后的现象早已经存在了。最典型的就是中国的高中，有些老师以“提高一分，干掉千人”的粗劣口号来激励学生们努力学习。但是他们具体是在学什么？高三整个一年都在重复在高考后几个月就会遗忘的知识 […]\n来源",
+    "summary": "内卷指的是一个人或一个群体把大量精力或资源投入到边际效益极低甚至为负的领域以竞争有限稀缺物品的现象。我在之前的文章已经强调过，导致内卷的原因是单一权力对稀缺资源的垄断。 虽然“内卷”这个词在最近几年才火热起来，但这个词背后的现象早已经存在了。最典型的就是中国的高中，有些老师以“提高一分，干掉千人”的粗劣口号来激励学生们努力学习。但是他们具体是在学什么？高三整个一年都在强迫性重复在高考后几个月就会遗 […]\n来源",
     "url": "https://stephenleng.com/cn/nei-juan-tui-chu/",
     "published": "2026-11-17T11:09:09Z"
   },
@@ -575,99 +1825,9 @@
     "source_title": "心的道理",
     "category": "技术",
     "title": "内卷的退出机制：以及为什么项飙是错误且危险的",
-    "summary": "内卷指的是一个人或一个群体把大量精力或资源投入到边际效益极低甚至为负的领域以竞争有限稀缺物品的现象。我在之前的文章已经强调过，导致内卷的原因是单一权力对稀缺资源的垄断。虽然“内卷”这个词在最近几年才火热起来，但这个词背后的现象早已经存在了。最典型的就是中国的高中，有些老师以“提高一分，干掉千人”的粗劣口号来激励学生们努力学习。但是他们具体是在学什么？高三整个一年都在重复在高考后几个月就会遗忘的知识 […]\n来源",
+    "summary": "内卷指的是一个人或一个群体把大量精力或资源投入到边际效益极低甚至为负的领域以竞争有限稀缺物品的现象。我在之前的文章已经强调过，导致内卷的原因是单一权力对稀缺资源的垄断。 虽然“内卷”这个词在最近几年才火热起来，但这个词背后的现象早已经存在了。最典型的就是中国的高中，有些老师以“提高一分，干掉千人”的粗劣口号来激励学生们努力学习。但是他们具体是在学什么？高三整个一年都在强迫性重复在高考后几个月就会遗 […]\n来源",
     "url": "https://stephenleng.com/cn/nei-juan-tui-chu/",
     "published": "2026-11-17T11:09:09Z"
-  },
-  {
-    "id": "65fdaf24de53c4e4f7350baf",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "🦀 Rust 的类型安全启发与“多语言改变思维”的争论",
-    "summary": "原标题：《Rust changed me as a developer》\n评分: 260 | 作者: speckx\n💭 LLM 都能写 Rust 了，类型系统还值得自己懂吗？\n🎯 讨论背景\n原文是一篇个人开发博客，作者以 Rust（强调内存安全与零成本抽象的系统编程语言）为例，说明 sum types、Option、pattern matching、newtype 和 macros 如何改变其设计程序的方式。评论将其放入更长的软件语言史：Haskell（纯函数式编程语言）、Standard ML（ML 家族函数式语言）及 Ada（强调可靠性的编程语言）早已具备许多相关类型系统思想，而 Zig（面向系统编程的 C 替代语言）提供了不同的 tagged union 设计。话题也延伸至 Verilog/SystemVerilog（用于描述数字硬件的 HDL），其工具链和 IP 兼容性如何使不理想的语言长期固化。核心分歧不是 Rust 是否有价值，而是语言学习能否改变实际团队工作，以及 LLM（大语言模型）普及后这种深度学习是否仍值得投入。\n📌 讨论焦点\n跨范式学习比 Rust 本身更关键\n许多人认为，真正改变开发者的未必是 Rust，而是首次深入接触与既有习惯差异足够大的语言范式。建议覆盖 Lisp、OO、函数式、Prolog、Forth、HDL、数组语言等不同家族，因为它们会迫使人以不同方式分解问题、表达状态和组织抽象。也有人以 Erlang/Elixir 的 BEAM、HolyC、Haskell 和 LEAN 为例，说明并发模型、低层控制、代数类型和形式证明都可能带来类似的“顿悟”。反方提醒，语言特性并非新鲜事：许多被归功于 Rust 的 ML 类型系统思想早已存在数十年，关键是理解思想来源而非追逐宣传。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8]\n学习必须做到能摆脱原语言思维\n仅会语法不足以获得范式转换；有人曾把 JavaScript 当 Java 使用，甚至用 Java-to-JavaScript 编译器回避 JavaScript 的原生能力，花了两三年才停止把 C ++ 风格强加给它。类似地，用 Lisp 写出“漂亮的 C”说明开发者仍在沿用旧模型，而不是利用 first-class functions、原型继承或函数式组合。重复实现同一项目，例如 chess engine、Sudoku solver 或相同网络协议的 chat client，能更直接比较各语言在优化、非阻塞 IO 和建模上的强弱。所谓“重大项目”不一定代码量巨大，但应足够复杂、持续超过一个月、承受变更和时间压力，使人不得不面对设计后果。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\nRust 将人为失误编码进类型系统\n支持者认为 Rust 的核心价值不只是 memory safety，而是默认承认程序员会疲劳、分心和犯错，并要求在编译期明确处理失败路径。相较于忘记检查 C 的 NULL，Rust 的 Option 和 Result 迫使代码选择传播、处理或显式 unwrap；newtype pattern 还能把 project ID 与 user ID 等同为数字却语义不同的值区分开。讨论者把这视为更广泛的软件工程趋势：从控制流结构、类型约束到 unit tests，目的都是尽早、低成本地阻止错误。也有人指出，更好的设计应让某些非法状态根本无法出现，从而减少那些只是在补救设计缺陷的测试。\n[来源1] [来源2] [来源3] [来源4]\nOptional、默认值与空值的建模之争\n围绕 null 的讨论认为，“值不存在”本身是合法领域状态，不能简单用空字符串、0 或初始对象代替，因为“未设置”和“设置为空”经常语义不同。用 sentinel value 会把额外状态偷偷塞进普通类型，编译器无法提醒每个使用点检查；评论中还以 Musl 的 SSH RCE 为例，指出以特殊默认值表示 crypt 失败可能造成严重后果。另一派偏好 Kotlin/C# 的 declared nullability 与 null-coalescing 语法，认为链式 Optional 在 Scala/Java 中过于冗长。支持显式 Option 的人则认为其冗长度会促使程序尽早解析和转换数据，使后续领域模型不再携带模糊的空值分支。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\nRust enum 是否应分离 tag 与 payload\n批评者认为 Rust enum 将 discriminant 和携带数据的 union 绑定为同一种类型，无法直接定义由既有 Pers",
-    "url": "https://newshacker.me/story?id=50522563",
-    "published": "2026-11-17T10:49:37Z"
-  },
-  {
-    "id": "5dd4c2ee726426367886b58d",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "🕵️ 神秘高反链域名实为 Majestic 内部实验与数据漏滤",
-    "summary": "原标题：《What is w2rt6byl5nf1opmc-a.com?》\n评分: 347 | 作者: dverlaeckt80\n💭 连实验数据都能冲进榜单，SEO 信誉还剩几克？\n🎯 讨论背景\n原文从 Majestic（反向链接分析服务）和 Tranco（抗操纵的前百万网站排名研究榜单）中发现了随机样式域名 w2rt6byl5nf1opmc-a.com：它似乎拥有海量反向链接，却长期未注册、没有正常可访问内容。调查围绕 nofollow（提示搜索引擎不传递排名权重的链接属性）、锚文本、Cloudflare（DNS/CDN 服务商）的 NS 记录及可能的垃圾链接来源展开，因此一度被怀疑是 SEO 操纵、恶意软件 C2（命令与控制基础设施）或爬虫实验。最终 Majestic 员工确认，该域名只是内部实验所用的冷僻域名，因遗漏过滤规则而错误进入其公开数据。事件暴露出链接和流量排名系统会把测试残留、自动化垃圾与真实网站信号混在一起，也解释了为何一串无意义域名能引发如此多网络取证推测。\n📌 讨论焦点\n最终答案：Majestic 的内部测试泄漏进报告\n后续更新给出了直接答案：该域名是 Majestic（反向链接分析服务）进行内部实验时刻意挑选的冷僻域名。实验数据本不应出现在对外报告中，但团队忘记添加过滤规则，因而制造了异常的排名与链接信号。这个解释同时说明了为何域名看似没有实际站点内容、却能在相关榜单中异常突出。评论者将此事概括为典型的“不要在生产环境测试”。\n[来源1] [来源2]\n谜底揭晓前的取证、猜测与数据局限\n在官方解释出现前，评论者注意到该域名拥有约 2.5 亿链接、约 500 万个引荐站点，却长期未注册且几乎全部为 nofollow 链接，这使 link spam、doorway 页面、恶意软件 C2、botnet kill switch 和 SEO 排名操纵都显得 plausible。有人从中文锚文本、.edu/.gov 来源和链接量持续下降推测，可能有大量论坛垃圾帖正在被清理。也有人指出免费 SEO 工具只展示极小样本，所谓“中文来源”及热门锚文本很可能只是文章和 HN 页面被自动汇总后的回声，不能据此追溯源头。Cloudflare 的 NS 记录、疑似 Punycode、MD5 子域名等线索也被讨论，但都被提醒只能提供弱信号而非归属证明。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\n文章文风：机智的技术叙事还是难读的术语堆砌\n批评者认为文章塞入 Tranco、Majestic、Faviconese 与“3-day exploit chain”等未解释的行话，结构松散且重风格轻信息，因而难以读懂。支持者则解释了具体典故：Faviconese 指通过 favicon 识别博彩站点，“tapping”只是作者当时在手机上点击网页；文末也附有小型术语表。部分读者认为这是一种带有 image-board 俚语和 gonzo 色彩的创意写作，陌生并不等于 AI 生成或空洞。围绕“jackslop”的争论还澄清，它指手工改造截图以适配响应式页面的部分，而非对全文文笔的自嘲。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8]\n网络安全调查写作的披露难题\n有评论将原文放入调查式 web security journalism 的传统：作者既要讲出可读的故事，也要留下同行可复核、可继续调查的线索。此类文章面对三类受众：泛 IT 读者、安全专业人士，以及被调查的恶意行为者；三方对信息公开程度的利益恰好冲突。调查者通常只点出工具名称而不解释、不给链接，以便同行理解并复现，同时避免目标方轻易获取工具、采取规避措施或进行 social engineering。因而普通读者感到“技术黑话过多”，在这种写作模式中既是门槛，也是刻意控制披露面的结果。\n[来源1]\n对 HN、AI 与互联网信噪比恶化的焦虑\n一些人把顶部大量困惑和玩笑视为 HN 专业社群能力下降的证据，认为过去会更快出现基础设施专家的严谨分析，如今则更像 Reddit-lite 的公式化刷梗。也有人反驳说，不熟悉某个专业领域的引用本来就正常，不能因此贬低文章或读者。AI 还被视为变化的加速器：陌生文风容易被误判为 AI，术语门槛增加，而更难辨认的 bot 与 astroturfing 则降低讨论和网页索引的可信度。稍后官方答案的出现也表明，早期噪声并不必然代表没有专业参与者，只是有效信号来得较晚。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\n科幻式的未来互联网联想\n随机域名和自动化网络痕迹让部分评论者联想到 Charles Stross 于 2005 年出版的科幻小",
-    "url": "https://newshacker.me/story?id=50517602",
-    "published": "2026-11-17T10:44:46Z"
-  },
-  {
-    "id": "ffc1bfcbf039593b9dc9e7c0",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "🤔 Zigzag：为 Arc 用户打造的原生 WebKit Mac 浏览器，速度获赞但前景受疑",
-    "summary": "原标题：《Show HN: Zigzag, a native Mac browser for people leaving Arc》\n评分: 60 | 作者: ZigaoWang\n💭 又一个 Arc 克隆，谁来保证它不会先停更？\n🎯 讨论背景\nArc 是 The Browser Company 曾主推的一款 Chromium 浏览器，以侧栏、Spaces 和标签组织方式吸引大量 macOS 用户；其产品方向变化与停更风险促使用户寻找替代品。Zigzag 是一名上海高中生开发的原生 macOS 浏览器，采用 WebKit（Safari 的渲染引擎）和 Swift，并试图复刻 Arc 工作流，同时兼容部分 Chrome extensions（原为 Chromium 扩展生态设计的插件）。讨论中的 Zen 是基于 Firefox 的 Arc 风格浏览器，Sidebery 则是为 Firefox 提供树状垂直标签和工作区的扩展；二者代表了不依赖 WebKit 的另一条迁移路线。争议背后不仅是界面偏好，还涉及 Chromium 对 Web 的主导、Manifest V3 对扩展能力的影响，以及独立浏览器在安全维护、资金与长期承诺上的成本。\n📌 讨论焦点\n性能、资源占用与 Arc 式体验获认可\n试用者认为 Zigzag 在 M4 MacBook Air 上的侧栏开关、Space 切换和缩放都比 Arc 更流畅，几乎没有卡顿。开发者解释这些界面动画使用 Core Animation，因此即使标签较多也能保持响应。另有从 Zen 迁移的用户称，Zigzag 的网页速度未必更快，但 Mac 上 RAM 占用约低至四分之一。Safari/WebKit 的轻量基础加上 Arc 风格的侧栏、同窗口 profiles 等设计，被视为其核心吸引力。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\nWebKit 上兼容 Chrome extensions 的技术价值与边界\n评论尤其赞赏项目让 Chrome extensions 能在 WebKit 浏览器中安装和运行，且 extension 开发者无需为此额外改代码。试用者已成功使用 uBlock Origin、Unhook 和 video-speed-controller，也肯定内置 Reader mode 与 automatic dark mode 减少了扩展依赖。开发者承认兼容性尚未达到 100% ，并请求遇到故障时提交 GitHub issue。有人同时指出，单标签 YouTube 就可能派生占用 500MB 以上内存的进程，说明轻量化并不意味着所有站点的资源成本都会很低。\n[来源1] [来源2] [来源3] [来源4] [来源5]\n项目持续性、AI 编码与浏览器安全疑虑\n部分用户不愿再投资于一个可能像 Arc 一样突然停止发展的浏览器，要求说明长期方向和经济可行性。评论强调开源并不自动等于会有人接手维护，尤其浏览器需要持续修复安全、兼容性和平台问题。由于 Claude 在项目贡献记录中很显眼，有人担心所谓 vibe coding 不适合安全边界极大的浏览器。开发者回应自己虽大量使用 AI 工具，但由本人决定改动并以 Zigzag 作为日用浏览器每日测试；这仍未完全消除信任门槛。\n[来源1] [来源2] [来源3] [来源4] [来源5]\n替代品泛滥与浏览器引擎多样性之争\n评论者指出已有至少 56 个 Arc clones，因而宁可选择有稳定组织和资金支持的产品，不想频繁迁移浏览器。Firefox 加 Sidebery 被推荐为成熟方案：提供 vertical tabs、Arc 式 tab spaces，以及可无限嵌套的 tree tabs；也有人使用 Vivaldi 加 custom CSS。Zen 虽是 Firefox 基础的替代品，却被提及过去有安全与隐私争议，且原帖本已说明它不适合作者。讨论也反对把 Zigzag 简化为 Chrome repack，因为它基于 Apple 的 WebKit 而非 Chromium；保留 Firefox、WebKit/Blink 等多种引擎被认为有助于避免浏览器内核单一化。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9]\n功能取舍：垂直标签之外仍缺 Arc 独有设计\n有人认为 Firefox 的 vertical tabs 已经足够，Chrome 也已加入该能力，因此 Zigzag 面临的不是单纯补齐侧栏标签，而是做出新的工作流价值。对重度用户而言，树状标签、tab groups 和跨层级组织比普通 vertical tabs 更关键。也有用户指出，许多 Arc 替代品都没有 ",
-    "url": "https://newshacker.me/story?id=50496787",
-    "published": "2026-11-17T10:29:25Z"
-  },
-  {
-    "id": "68147480bac671febbcd3195",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "🔥 OpenCode Browse：AI 接管真实浏览器，引爆安全、MCP 与产品维护争议",
-    "summary": "原标题：《OpenCode Browse》\n评分: 234 | 作者: mfiguiere\n💭 把带登录态浏览器交给无权限 Agent，谁来备灭火器？\n🎯 讨论背景\nOpenCode Browse 是 OpenCode（一个面向多模型的 coding agent harness）推出的浏览器接入工具，试图让 agent 通过扩展操作用户日常使用的 Chromium 浏览器，而不只是控制临时启动的自动化浏览器。它所处的生态已有 CDP（Chrome 的浏览器调试协议）、Playwright（浏览器自动化框架）、chrome-devtools-mcp（Chrome 官方 MCP 服务）及各类浏览器扩展，因而核心问题不是能否控制浏览器，而是会话复用、接口标准化与安全隔离。OpenCode V2 此前调整了权限模型和配置兼容性，部分长期用户认为其默认放行与迁移方式削弱了安全和可靠性；团队及部分用户则主张应将防护放在 harness 外部的容器和 sandbox。讨论也带出其前身关联的 SST（云基础设施开发工具）维护争议，以及 AI 工具公司依靠快速发布和社交媒体曝光获得增长、却积压产品质量问题的更广泛矛盾。\n📌 讨论焦点\n真实浏览器权限与安全边界\nOpenCode Browse 让 agent 操作用户正在使用的浏览器及其登录态、扩展和页面，这被视为比独立、临时浏览器更危险的设计。评论者特别担忧网页中的 prompt injection 会诱导 agent 删除文件、外传密码、调用外部 API 或执行不可逆的基础设施操作。对 OpenCode V2 的批评集中于默认“auto permit all”、权限提示缺少清晰标签、配置可被 agent 绕过，以及升级时移除了原有的细粒度权限工作流。另一派认为 harness 内反复弹窗只会造成 permission fatigue，可靠做法应是在容器、bwrap、网络策略和独立浏览器 profile 等外部 sandbox 中统一强制隔离；但反驳者指出 filesystem sandbox 本身无法阻止 GitHub 推送或带凭据的 API 调用。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10]\nCDP、Playwright 与自制浏览器工具是否已足够\n许多人认为 Chrome DevTools Protocol（CDP）已提供低层浏览器控制能力，用 Playwright、go-rod 或少量脚本包装成 agent skill 或 JSON-RPC/MCP 接口即可，不必再推出一种浏览器产品。一些开发者确实称自己半天甚至数分钟就做出了类似工具，并会按反爬强度切换不同浏览器 profile；也有人认为强推理模型只需 shell execute 和 patch，就会自行生成 Playwright 项目。反方认为 CDP 的接口庞杂，把它整理成对 agent 稳定、一致、可累积功能的抽象远不止四小时，临时脚本会逐渐变成难维护的集成。Browse 的差异化价值还在于连接用户已打开的真实会话，可直接复现“开发者浏览器可用、用户浏览器不可用”的问题，而不是只启动一个隔离的自动化实例。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10]\nMCP 是受控接口还是短命中间层\n批评者将 MCP 视为重复既有 API、插件和 harness 功能的额外服务层：它增加攻击面、维护成本和资源占用，而且工具调用必须经过 context window，难以像脚本那样组合、缓存和高效复用。支持者承认其规范仍臃肿且变化很快，却认为 MCP 给大型企业提供了可审计、可裁剪的接入面，也让原本没有 CLI 或 server 的单体应用能快速暴露给本地 agent。对于需要异步执行、反复向用户索取信息的服务，MCP 的表单式交互也可避免工具调用中断或 context compaction 丢失状态。折中意见是：自有工具优先使用 CLI 加 skill，而 MCP 适合向 agent 开放严格限制的 Foo/Bar 操作、移除 shell 等高风险通道。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\nOpenCode 的快速迭代、维护质量与商业化信誉\n重度用户称 OpenCode V2 的迁移破坏配置和插件兼容性，provider 被意外改为 API key、固定会话丢失、session 间通信缺失，以及 GitHub 上大量 issue 和 PR 长期无人处理，使其像“vibe coded”的半成品。还有人怀疑离线容器中的 session title 仍会在恢复联网",
-    "url": "https://newshacker.me/story?id=50523459",
-    "published": "2026-11-17T08:49:36Z"
-  },
-  {
-    "id": "741267f6930ffb641ad0938e",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "🐑 光伏牧场让绵羊除草遮阴增收，但并网、生态与设施耐用性仍待解",
-    "summary": "原标题：《Sheep grazing in solar fields offers farmers economic, ecological gains》\n评分: 262 | 作者: PaulHoule\n💭 羊都能替你除草了，电网何时肯接电？\n🎯 讨论背景\n这篇讨论围绕 Agrivoltaics（农光互补）展开：在光伏阵列下让绵羊放牧，以替代割草并同时获得发电、牧业和遮阴收益。其商业背景是小型牧场利润微薄，太阳能公司支付的土地租金可分散肉价、柴油和农业周期波动带来的风险。项目能否成立不仅取决于日照，还取决于当地并网规则、输电容量、设备维护和牲畜对支架及线缆的破坏风险。更广泛的能源争论则涉及 HVDC（高压直流输电）能否把沙漠太阳能送至城市、储能能否补足间歇性，以及光伏材料和畜牧甲烷的环境代价。\n📌 讨论焦点\n农光互补的直接协同效益\n评论者认为，绵羊在组件下吃草可替代频繁割草，并降低支架周围植被维护的人工和机械难度。光伏板同时给牲畜提供阴凉，缓解高温压力；对部分作物而言，间歇遮阴还能减少蒸发和日灼。已有大学光伏场采用绵羊维护植被，说明这并非纯概念。垂直布置的双面组件也被视为更利于放牧、割草和提高全天平均发电量的设计。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6]\n为何不全建在沙漠：农户收入与输电约束\n许多评论强调，问题不是单纯寻找最荒凉的土地，而是让低利润农场在不明显损失牧业产出的前提下增加稳定租金收入。牧场通常靠近负荷中心，分布式建设可避免长距离输电损耗、昂贵的线路建设和漫长许可程序。把西部沙漠电力送往城市在技术上可行，但线路走廊仍会穿越有人居住的地区并遭遇 NIMBY 阻力；美国一些输电项目从规划到投运长达二十年。所谓“荒地”也常是脆弱生态系统或人为退化土地，不能简单视为无价值的空白地。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\n牲畜与设备的工程边界\n绵羊被认为最适配组件下放牧：体型小、够不到面板，也不像山羊会攀爬、啃咬线缆。牛则会用重达上千磅的身体蹭柱子，要求更强的桩基、护栏或专门的遮阴棚，显著抬高支架成本。实际项目还要保护高压 DC 组串、汇流箱和入地电缆，避免牲畜碰撞或啃咬。冰雹击碎面板后的玻璃清理责任、地方电网拒绝或低价接收回送电力，也被指出是农户投资时的现实障碍。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\n动物福利、草地生态与畜牧排放争论\n有人从炎热牧场中牲畜争抢广告牌阴影的观察出发，批评无阴凉的大规模养殖缺乏基本动物福利；光伏遮阴被视为实用改善。另一面，过度遮阴、暖夜散热困难和羊啃到草冠都可能影响牧草，需要控制载畜量并适时补播。评论者也质疑把所有草地当成自然保护对象：集约化黑麦草牧场或玉米田本身可能是低多样性“绿色荒漠”，而面板加多样草本、放牧可改善栖息地。对于牛的气候影响则分歧明显，一方主张轮牧牧场可固碳，另一方以新西兰畜牧业甲烷排放为例反驳其“碳负”说法。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8]\n光伏材料、储能与核电替代之争\n一些评论把光伏板比作“人工树”，但反对者宁愿种真树并用核电，担心面板材料、报废处置及太阳能间歇性。关于毒性，争论集中在铅焊料、CdTe 和 CIGS 等材料：一方称面板不只是玻璃和电线，另一方指出铅正在被淘汰，CdTe 薄层通常被密封且难溶。支持者认为太阳能配合电池、跨区互联和其他电源可提供可靠系统，不应把单个离网光伏场的数日阴天成本外推到整个多元电网。质疑者则指出数据中心仍依赖电网和燃气备用，认为可靠性、空间密度及长期储能尚未被廉价光伏完全解决。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8]\n西得州伴生气火炬的旁支讨论\n从西得州风机下放羊、夜间天然气火炬的景象出发，评论转向油井为何宁可燃烧伴生气也不回收。解释包括偏远井场缺乏经济可行的管道和并网条件、管线容量不足、气价过低，以及部分地区的矿权和监管激励。有人提出在井口以发电机供给 Bitcoin mining、推理算力或小型数据中心，把原本浪费的燃气转为可用电力。反对意见指出这通常只是以“原本会燃烧”为由为额外耗能开脱，且设备闲置、网络、安保和井产量衰减都会削弱其经济性。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\n📚 术语解释\nAgrivoltaics（农光互补）: 在同一片土地上兼顾光伏发电与种植或放牧，利用组件下方空间、遮阴和微气候来维持农业产出。\nHVDC／UHVDC（高压直流／特高压直流输电）: 以很高直流电压远距离输电，借由降低电流来减少线路电阻损耗；适合连接偏远发电基地与",
-    "url": "https://newshacker.me/story?id=50520182",
-    "published": "2026-11-17T08:24:40Z"
-  },
-  {
-    "id": "64cc4fe2ac9ca9f66f713ff2",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "😬 Frame 31.5 英寸彩色 ePaper：高价静态画框与创始人争议压过产品",
-    "summary": "原标题：《Frame – 31.5\" color ePaper display》\n评分: 391 | 作者: geerlingguy\n💭 花 1300 美元买静态画框，还得另付 20 美元解锁开发？\n🎯 讨论背景\nFrame 是 TRMNL（生产低功耗信息显示器的小型硬件公司）推出的 31.5 英寸彩色 ePaper 墙挂显示器，配手工木框，定价约 $1,299，定位为可展示艺术、日历和静态信息的家居设备。它大概率采用 E Ink（电子纸技术供应商）Spectra 6 彩色面板，与 Samsung EM32DX（Samsung 的电子纸数字标牌）等产品在面板规格上相近，因此具有断电保留画面、低反光和极低静态功耗的优势，也受限于低刷新率与有限色彩。讨论同时挖出 TRMNL 创始人被归档的旧公开文章，其中包含攻击性政治与社会言论，使产品讨论转为消费者是否应通过购买资助企业主价值观的争议。该争议还叠加了早期 TRMNL 产品被指 QA 下降、发货不准时，以及开发功能收费和供应链披露不完整等信任问题。\n📌 讨论焦点\n价格高但属于小众面板的市场现实\n多数人认为 $1,299 对墙面日历、仪表盘或电子画框而言难以接受，期望价位大约在 $400–500，甚至认为 $150 才可能带来家庭多屏需求。也有人指出，同尺寸 Spectra 6 成品的价格本就接近或超过此价：Samsung EM32DX、InkPoster 和 SwitchBot 的类似产品约在 $950–2,200，裸面板、驱动板、联网与装框不能直接混为一谈。讨论认为大尺寸彩色 ePaper 是“利基中的利基”，产量和良率不足以像 LCD TV 一样摊薄成本；但也有人相信价格下降后会出现数字海报、家庭信息板等更大市场。手工木框在评价中两极分化：有人视为家居艺术品的必要组成，有人则希望取消它、支持自行配框以降低成本。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9]\nePaper 的静态显示优势与硬件限制\n该屏被描述为更适合绘画、文字、日历、家庭照片轮播和低频 dashboard，而非视频、实时 Grafana 或动画。Spectra 6 面板的完整刷新约需 20–30 秒、仅有六种固定颜色并依赖 dithering、约 93–94 PPI、对比度约 25:1，因此照片和近距离细节可能显得灰淡；色彩版刷新时的闪烁也不适合处于视线中央。支持者强调它不发光、低反射、在混合光线下像印刷品，且静态画面几乎不耗电，能避免 IPS/LCD 屏幕的刺眼感和布线需求。关于寿命则存在纠正：e-ink 可长期保持图像，但粒子在电场和液体中运动，仍可能老化、出现 ghosting 或因过度追求刷新速度而受损。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10]\n创始人公开言论引发抵制及“消费是否政治化”之争\n大量评论者在看到被存档的旧博客内容后表示取消预订或不再购买，并提到此前已有发货延期和 QA 下滑的负面体验。被引用的内容涉及针对 trans 人群、穆斯林、女性及其他群体的侮辱性或排斥性言论，评论者认为这并非可抽离的普通“政治观点”，也担忧此类态度会影响员工、用户数据关系和创始人日后可动用的政治影响力。另一派承认消费者有权以价值观决定消费，却质疑公开羞辱和阵营化会否让人更激进，主张批评观念时应保留同理心，以影响旁观者而非制造“异端审判”。反驳者则认为拒绝资助一位公开贬损他人的企业主是正常的自由结社和市场选择，不等于有义务维持商业关系。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8] [来源9] [来源10] [来源11]\n产品开放性、宣传与供应链可信度\n一些潜在买家对额外收取 $20 解锁 developer mode 十分反感，认为在千美元设备上再拆分 API 或开发权限是 nickel-and-diming；公司则解释该费用覆盖开发者 Discord、人工审核和优先支持，并称 local hosting 与开源 firmware 可用。另有人希望有直接 API 来推送 Grafana 或自建内容，却发现产品网站对 Wi‑Fi、联网方式和浏览器到设备的传输路径说明不足。宣传口吻也受到批评，包括疑似 LLM 风格文案、全小写写作、工匠化木工视频，以及所谓“transparent supply chain”只写“Overseas”而不明确中国来源。评论者指出木框在美国制作，但显示面板来自中国供应链，且中国供应商可能以更低价格销售近似方案。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7] [来源8",
-    "url": "https://newshacker.me/story?id=50519354",
-    "published": "2026-11-17T08:19:33Z"
-  },
-  {
-    "id": "de8a44aeb1f7e31ede782b94",
-    "source": "三联生活周刊",
-    "source_title": "果壳网",
-    "category": "新闻",
-    "title": "拉屎中途别冲马桶，千万别！",
-    "summary": "不少人喜欢在上厕所中途冲水，让臭味少一些。\n\n但是！冲马桶时，周围的空气中就会充斥气溶胶，导致“粪菌飞溅”！\n\n拉屎中途别冲厕所，拉完盖盖冲。\n\n其实有一个好东西能减少臭味，还能物理防溅，水花再也跳不起。\n\n上厕所前对着水面喷一下，绵密泡沫盖住水面——物理防溅，水花再也跳不起来~喷出来的泡沫还是香香的！\n\n今天给大家挖到的这款世净马桶清洁慕斯，就是专门给讨厌刷马桶的懒人准备的：见效快、效果好、省心省事！ 香香的不刺鼻。上厕所前用还能防止飞溅。\n\n当代年轻人的家务清单里，刷马桶是当之无愧的噩梦级任务。\n\n费腰费手就不说了，还得克服生理不适——每次低头看见那圈黄黄的印子，当场头皮发麻；更别提那些永远刷不到的死角，又臭又脏，每次打扫都要做很久心理建设。\n\n马桶不是一天变脏的，是日积月累的包浆\n\n很多人疑惑：我明明每次上完都冲水啊！怎么没过几天又黄了？\n\n马桶发黄≠你没冲干净，那层黄色的东西，成分其实很复杂：\n\n①尿碱结晶（尿垢，最主要成因）\n尿液里含有尿素、尿酸和钙镁离子。每次冲水，它们并不会被完全带走，总有一部分残留在釉面微孔和水线附近。\n\n水分一蒸发，这些物质就析出、结晶、附着。日积月累，形成一层淡黄色的【尿碱+水垢】复合体，紧紧扒在釉面上。\n\n②矿物质水垢\n水质偏硬的地区（北方朋友懂的都懂），钙镁离子在水位线附近反复沉积，和尿碱抱团取暖，越积越厚。\n\n③铁锈\n老小区管道生锈，水中微量铁离子长期驻扎，内壁直接黄得发褐。\n\n@图虫\n\n这些东西一旦结晶附着，冲水基本等于无用功：水流只是从表面流过，根本碰不到缝隙里的沉积物，日积月累就焊在上面。\n\n除了看起来瞬间让人失去“坐欲”外，马桶污渍中也是“藏龙卧虎”。\n\n马桶内壁每平方厘米的细菌数量可以达到数十万个量级，大肠杆菌、白色念珠菌、金黄色葡萄球菌等，都能在上面安营扎寨。\n\n更糟的是，冲水时会产生气溶胶气旋，能把细菌和水滴带到一米多高的空中——你的牙刷、毛巾、漱口杯，全在射程范围内。\n\n再加上尿碱和细菌代谢产生的氨类物质，就是你家卫生间那股若有似无、开排风扇也散不掉的神秘气味的来源。\n\n但是，总不能每次上完厕所，都拎着马桶刷蹲在旁边刷一遍吧？！\n\n想要卫生间清爽，核心就是搞定三件事：顽固污渍、细菌残留、反复异味。\n\n今天给大家挖到的这款世净马桶清洁慕斯，就是专门给讨厌刷马桶的懒人准备的：见效快、效果好、省心省事！ 香香的不刺鼻。上厕所前用还能防止飞溅。\n\n✅强附着：泡沫绵密，挂壁持久，能充分与污渍融合；\n✅无死角：配备精准喷头，更全面贴合马桶内壁，深处死角也能覆盖；\n✅99%抑菌：含富士银离子，对大肠杆菌、金黄色葡萄球菌等除菌率＞ 99%；\n✅护釉配方：清洁配方温和不刺鼻，且不伤马桶釉面。\n\n用户反馈也超好，曾荣登天🐱清洁类产品榜单的TOP：\n\n以前刷马桶，每天至少要花 5～10分钟，耗时耗力，心情烦躁。现在用它，清洁马桶也变得贼简单，只需要3步——\n\n摇一摇，把它喷在在马桶里 → 静等变色 → 冲掉。结束。\n\n和传统的液体清洁剂不同\n它喷出来就是超级细腻的泡泡\n可以大面积覆盖污渍地区\n阻隔污渍与外界环境\n而且整个过程超解压，用过就懂！\n👇🏻\n\n全程不用下蹲弯腰、不用憋气，顽固的污渍拿刷子轻带两下，效果更好。\n\n我们也让果壳同事回家试用了一波，脏兮兮的马桶从外到内全都焕然一新~\n\n果壳实拍\n\n除了能清洁马桶，洗手池、水龙头、浴室瓷砖，甚至猫砂盆，哪里脏就喷哪里，帮你一键换新浴室，一懒到底~\n\n不仅可以日常清洁马桶，平常上厕所的时候也能用。\n\n每次蹲坑时提前喷一下这个慕斯，就可以更好地防止水花飞溅、减少臭味，对咱们的身体健康和入厕体验都有好处~\n\n之前我在官旗买的29元一瓶👇🏻\n\n截图时间：10.29\n\n今天给大家争取到了超划算的推文福利价：\n\n🔵组合一：75元到手5瓶，合15元一瓶；\n🔵组合二：99元到手慕斯5瓶＋浴室香薰2瓶，清洁除菌+除臭留香一次配齐;\n🔵组合三：99元到手慕斯4瓶＋除菌除螨除味喷雾500ml2瓶，马桶清洁+浴室台面床铺沙发都能搞定。建议大家直接购这个组合，一下囤够大半年的量。\n\n大家可以直接购入99元的【马桶清洁慕斯+除菌除螨喷雾】的组合，浴室台面床铺沙发都能搞定。\n\n世净除菌喷雾，除菌率>99.9%。可以用它来清洁浴室台面，镜子。灭螨率99%，还能喷在沙发床面除螨，鞋袜除味也很好用。\n\n喷雾快干，不易留水渍。500ml大容量超耐用。和马桶慕斯组合到手仅99，够用大半年。\n\n建议大家直接购入99元的【清洁慕斯+香薰】的组合，一下囤够大半年的量。\n\n香薰使用的是植物除臭因子，不是用香味“盖住”臭味，而是主动分解臭味分子，让卫生间时刻拥有清新的味道~里面的扩香棉片，均匀散香，覆盖范围大。一瓶400ml大容量，能持续留香60天左右，非常耐用！\n\n对刷马桶有阴影的懒人朋友",
-    "url": "http://weixin.sogou.com/weixin?type=2&query=%E6%9E%9C%E5%A3%B3%E7%BD%91+%E6%8B%89%E5%B1%8E%E4%B8%AD%E9%80%94%E5%88%AB%E5%86%B2%E9%A9%AC%E6%A1%B6%EF%BC%8C%E5%8D%83%E4%B8%87%E5%88%AB%EF%BC%81",
-    "published": "2026-11-17T08:00:00Z"
-  },
-  {
-    "id": "ad5a1bd25cc0f1db6df40bd5",
-    "source": "三联生活周刊",
-    "source_title": "果壳网",
-    "category": "新闻",
-    "title": "晚来天欲雪，这杯被老外抢疯的“液体黄金”，我劝你一定要尝尝！",
-    "summary": "“风陵渡口初相遇，一见杨过误终身”\n\n《神雕侠侣》第三十三回是很多人的意难平，单纯赤诚、年少懵懂的郭襄遇到 孤高洒脱、名动江湖的杨过，短暂的相遇，成了一生放不下的执念。\n\n也让世人深深感慨：年少时不能遇见太惊艳的人，否则一生都会寻找他的影子。\n\n因为写在记忆里的体验，会抬高你对世界认知的阈值。\n\n所以难说是幸运还是遗憾？\n\n我们把时间推回到200多年前——\n\n1794 年，德国弗兰可尼(Franconia)的葡萄园遭受到霜害，所有葡萄一夜之间全部被霜冻。为了挽救损失，将错就错地把冰冻的葡萄压榨，按照传统方式发酵酿酒。\n\n没想到，因为低温葡萄的水分全部结冰，压榨出的果汁糖分、酸度、风味物质，再次高度浓缩。\n\n世界上第 1 瓶冰酒由此诞生！\n\n1970 年，二战战败后，大批德国人移民至加拿大。\n\n意外发现了堪称冰酒天堂：同样非常寒冷、葡萄可以反复上冻，但远离海洋，并有着大片内陆湖的尼亚加拉半岛，于是耗时 14 年优化工艺，让冰酒稳定生产成为现实。\n\n被誉为“饮酒人终点”，惊艳全球葡萄酒世界。\n\n👆售价高达千元一瓶👆\n\n（价格查询时间：2026.1.28）\n\n我们再把目光推向中国国内——\n\n90 年代初，一批满怀热血和理想、想让农民过上好日子的农业研究员，应着改革开放的启迪将眼光望向世界，惊喜地发现：\n\n👍同属于 北纬 41 °\n👍同样有着漫长的寒季\n👍有充足的日照\n\n冰酒罕见的三要素齐聚，或许脚下这片土地，可以和加拿大一样，绽放出冰酒之花——\n\n30多年后，这瓶积蓄了我们一年时间了解、熟悉、参与、等待——\n\n将两代人探索，经过漫长耕种、筛选、沉寂岁月后，足以媲美世界名产区冰酒的中国冰酒，耀眼绽放👇\n\n雪岭丹麓·冰白冰红\n终于被带到了大家面前！\n⬇️点击下图即可购买⬇️\n\n幸运的是：\n\n在2026 年的当下，你机缘巧合了解到甜型酒的神——“冰酒”，想要尝试一下这200年来无数人赞誉的美酒。\n\n可以不用选择千元一瓶起，还担心渠道真假的加拿大名庄。\n\n我们中国自己生产的冰酒！产量已经占到全球总产量 50% 以上（也就是世界的这个👍呀）\n\n👇桓仁县人民政府官网👇\n\n在中国的东北——辽宁桓仁，用来生产冰酒的冰葡萄已经成了当地农民的生存支柱，是藏在冰雪里的“紫色黄金”！官媒也纷纷报道，成为北方“乡村振兴”的明星项目。\n\n在国产之下，只要几十块、就能买到品质丝毫不逊色，而且是我们自己产的冰酒！\n\n而遗憾的是：起点太高。\n\n就好像头一次看电影，就看了《星际穿越》，从此其他科幻电影再难让你兴奋。\n\n饮下这瓶冰酒一口，味觉神经会被“瞬间击中”，从此之后很难有葡萄酒会让你产生惊艳的感觉！\n\n有冰白、冰红两种风味可以选择。\n\n冰白：由我国从加拿大引进，经过数年筛选、育种培优出的耐寒品种“威代尔”酿造；\n\n冰红：用的则是我们国家农科院研究员历经 30 多年自主研发——以干红葡萄酒品种“左优红”作母本，用含酸低、含糖高的山葡萄品系“84—26—53”作父本，进行种间杂交，选育出酿造冰红山葡萄酒的新品种—— 北冰红！\n\n收到之后，建议放入冰箱冷藏冰镇一天以上，让冰酒稳步提升到更好的赏味状态。\n\n饮用时，用附带的海马刀旋转打开酒塞，倾倒入杯。\n\n冰白酒体，像是从冬季缓慢流出的光。\n\n颜色沉静，不是耀眼的金，而是温柔的琥珀，像老照片里泛黄的光。\n\n冰红，则像是壁炉中柔和传导的温暖。\n\n浓郁的深红，带着些许紫色的调子，像是夕阳映在冬季山谷，冰雪上反射出来的柔和光芒。酒液在杯中流转时，仿佛能感受到那股温暖的力量逐渐扩散开来。\n\n入口的一秒👇\n\n伴随着冷冽的液体，清甜迅速充盈口腔、喉尖，很轻很瘦。\n\n不是糖果那种直接的甜，而更像是蜂蜜在舌尖慢慢融化的感觉。\n\n在唇齿间驻留片刻。\n\n而后，冰酒的美妙正式拉开帷幕。\n\n非常丰富的层次，让味蕾仿佛激发出“难以想象”的活跃！\n\n浓郁的蜂蜜、杏脯🍊和某种成熟到快要炸裂的深色浆果🍓的味道……还夹杂着提子🍇、蜜桃🍑、……而后留在喉咙里的，是某种类似山楂、干花或者说某种“被冻住的森林”的气息，它并不急于消失。\n\n⬇️点击下图即可购买⬇️\n\n晚收葡萄在风霜中本就不断脱水浓缩的果糖、果香，再经历漫长的-8℃霜冻期，反复上冻脱水，直至枯萎1/3甚至一半才得以保留下来的风味，直接在舌尖依次炸开！\n\n如同海浪一样，一层层席卷味蕾！\n\n这就是冰酒能够 200 年屹立在甜酒之巅的依靠。\n\n每一口，都给你与众不同的感觉！\n\n一瓶饮尽，仿佛看完了一部跌宕起伏的电影，久久之后，余韵仍在回荡。\n\n不论是自斟自饮，还是和亲人、好友共饮，都是一番愉悦的体验。\n\n375ml的容量、11 度的酒精度，恰到好处。\n\n而且入口柔顺、回味悠长，对初次体验的朋友也很友好～\n\n外观设计，也是我们非常看重的部分。\n\n特别是定制的酒，得有着中国文化的美学元素：水墨山水的留白，勾勒",
-    "url": "http://weixin.sogou.com/weixin?type=2&query=%E6%9E%9C%E5%A3%B3%E7%BD%91+%E6%99%9A%E6%9D%A5%E5%A4%A9%E6%AC%B2%E9%9B%AA%EF%BC%8C%E8%BF%99%E6%9D%AF%E8%A2%AB%E8%80%81%E5%A4%96%E6%8A%A2%E7%96%AF%E7%9A%84%E2%80%9C%E6%B6%B2%E4%BD%93%E9%BB%84%E9%87%91%E2%80%9D%EF%BC%8C%E6%88%91%E5%8A%9D%E4%BD%A0%E4%B8%80%E5%AE%9A%E8%A6%81%E5%B0%9D%E5%B0%9D%EF%BC%81",
-    "published": "2026-11-17T08:00:00Z"
-  },
-  {
-    "id": "dc6f1f4b39416b8cc39a5f0d",
-    "source": "三联生活周刊",
-    "source_title": "果壳网",
-    "category": "新闻",
-    "title": "“减肥针不算药啊”，这5种情况不说实话会要命",
-    "summary": "她在手术前做足了准备，24小时内只吃了白面包、苏打饼干、清汤和水煮蛋，12小时内完全没有吃饭喝水，家属可以作证。\n\n按道理讲，她的胃早就应该空了。然而，麻醉刚开始，大量黄色液体就从她嘴里涌出来。医生紧急抢救，但她从胃里反上来的液体，还是有一部分灌进了肺里。\n\n脱离危险后，她才在医生的追问下承认术前隐瞒了一件事：自己正在打“减肥针”。之前没说，是因为她觉得这只管减重美容，不算是“药”，不需要告诉医生。\n\n可能很多人都不知道，在使用这些胰高血糖素样肽-1（GLP-1）受体激动剂类药物时，至少有5类情况，遇到时一定要告诉医生你在用药。\n\n司美格鲁肽、利拉鲁肽、替尔泊肽和贝那鲁肽等都属于这类药物 ｜ giphy\n\n她没说，是因为没把“减肥针”当作药物\n\n文章开头的真实案例，在2025年发表于《围手术期医学》（Perioperative Medicine）。\n\n这位61岁的患者，为了减重在4个月前开始注射司美格鲁肽，最后一次注射是在术前6天。就因为她漏报了这个信息，原定的冠脉造影手术被取消了。\n\n医生紧急进行气管插管时，在气管导管内吸引出胃内容物。之后，她的血氧饱和度降低到84%～88%（大于95%为正常），CT检查也发现了肺部阴影。这些都提示，她把从胃里反流到嘴里的液体吸进了肺里（误吸）。\n\n对于误吸来说，她在3天后病情好转出院，没有留下后遗症，已经算是最幸运的结局了。\n\n误吸，有可能会危及生命丨gharibianlaw\n\n胃里的液体反流进肺里，可以很严重\n\n部分手术和检查要求禁食，就是为了尽量把胃排空，预防误吸。\n\n因为人在麻醉镇静中，会失去吞咽和咳嗽反射，容易把胃里的液体反上来并灌进肺里。这些混着胃液和唾液的液体酸性强、带有细菌，有可能引起呼吸衰竭和肺炎等等。\n\n常规的禁食时间，是按照普通人的胃排空速度定的。可是，近年GLP-1受体激动剂的使用，改变了这个时间。\n\n这类药物减重的核心机制之一，就是延迟胃排空。有研究显示，用药者胃排空一半的时间可延长45%。理论上，这有可能增加误吸的风险。\n\n2024年发表于《美国医学会杂志·外科学》（JAMA Surgery）的一项研究中，术前胃超声显示，使用GLP-1受体激动剂类药物的患者，胃内有残留的比例为56%，明显高于非用药者的19%。用药后实际发生误吸的案例，此前也已有多起报道。\n\n尽管，单个病例不足以证实因果关系，现有大规模研究也没有发现这类药物明显升高误吸风险。不过出于安全考虑，如果你正在使用GLP-1受体激动剂类药物，遇到相关情况时，建议主动告知医生正在用药。\n\n为降低误吸风险，建议在需要麻醉镇静的手术或检查前，告知医生正在使用GLP-1受体激动剂类药物 ｜ gemini\n\n哪些情况，需要主动告诉医生我在用药？\n\n以下5种情况可能与GLP-1受体激动剂类药物有关，遇到时建议主动向医生说明：\n\n所有进手术室、“睡一觉”或“无痛”的检查或治疗\n\n在接受麻醉或者镇静之前，尽早告知医生所用药名、剂量、第一次和最后一次用药时间，以及用药期间是否出现过恶心、呕吐、腹泻和腹痛等消化道症状。\n\n医生会根据个人和检查治疗情况，决定是否需要停药、停多久，有可能调整术前禁食时间、术前检查和麻醉诱导方式等。\n\n胃肠镜检查及治疗\n\n同样几升泻药喝下去，使用GLP-1受体激动剂的人，胃肠道里更有可能残留内容物，导致医生看不清楚，需要改期重做。\n\n在预约检查及治疗时，就告知医生用药情况，医生有可能为你调整肠道准备方案。\n\n胃肠道“干净”，医生检查时看得清楚，是检查准确、治疗效果好的前提丨NCI Dictionary of Cancer Terms - upper gastrointestinal endoscopy\n\n出现可能是药物不良反应的症状时\n\n使用GLP-1受体激动剂时，恶心、腹痛、腹胀或呕吐等胃肠道症状很常见，特别是在增加剂量的阶段。如果你也出现了类似的不舒服，建议在就诊时说明用药情况，帮助医生确定合适的加量速度和处理方式。\n\n如果出现以下症状，可能发生了严重不良反应，建议尽快就医：持续剧烈呕吐、无法进食饮水；剧烈腹痛不缓解；严重腹胀、停止排气排便；呕吐或腹泻后头晕、尿少；视力下降或视野缺损。\n\nGLP-1受体激动剂不良反应丨参考文献[6]\n\n其他医生为你开药时\n\n胃排空速度影响部分口服药的吸收速度和效果。有些药物只有维持在特定浓度才安全有效，与GLP-1受体激动剂合用时需要密切监测，如华法林。口服激素避孕药的效果也可能受到影响。\n\n建议在新增任何药物时，都告知医生正在长期使用的其他药物。\n\n备孕、怀孕和哺乳\n\n目前，妊娠和哺乳女性使用GLP-1受体激动剂的数据有限，不足以确定药物是否会增加胎儿出生缺陷、流产等不良结局的风险，也不足以确定药物对母乳喂养的婴儿是否绝对安全。部分药物说明书提示，计划妊娠前",
-    "url": "http://weixin.sogou.com/weixin?type=2&query=%E6%9E%9C%E5%A3%B3%E7%BD%91+%E2%80%9C%E5%87%8F%E8%82%A5%E9%92%88%E4%B8%8D%E7%AE%97%E8%8D%AF%E5%95%8A%E2%80%9D%EF%BC%8C%E8%BF%995%E7%A7%8D%E6%83%85%E5%86%B5%E4%B8%8D%E8%AF%B4%E5%AE%9E%E8%AF%9D%E4%BC%9A%E8%A6%81%E5%91%BD",
-    "published": "2026-11-17T08:00:00Z"
   },
   {
     "id": "51952a7bdca10ad052c96f13",
@@ -688,26 +1848,6 @@
     "summary": "1、战争只有一个结果：带给人类无比的痛苦。冲突产生的其它结果，事实上都可以用和平的手段达成。 2、所有的宗教目 […]",
     "url": "http://www.qncd.com/?p=13339",
     "published": "2026-11-17T06:52:30Z"
-  },
-  {
-    "id": "dba60740e67a1203df4473be",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "🤖 Three.js 冲击 AAA 渲染：实质 PR 进展被 AI 文风与项目定位争议掩盖",
-    "summary": "原标题：《My Quest to push native Three.js quality match AAA Game Engines》\n评分: 125 | 作者: bhouston\n💭 没有可试玩 Demo，400 小时提示词算 AAA 吗？\n🎯 讨论背景\nThree.js（基于 WebGL/WebGPU 的 JavaScript 3D 渲染库）传统上以易用和轻量的网页 3D 开发体验著称，而该项目试图逐步重构其室内渲染能力，整合 GI、SSR、反射探针和 light baking（预计算静态光照）等效果。发起者自称自 2012 年起参与 Three.js，并在近期持续提交涉及 Gaussian splats（以 3D 高斯椭球表示场景的渲染方法）、UV unwrapping（将模型表面展开到二维纹理坐标）等功能的 PR（Pull Request，代码合并请求）。争论的核心既是浏览器渲染能否接近 AAA 游戏画面，也是在 LLM 辅助开发时代，长篇技术设计该由人亲自写作、由 AI 整理，还是干脆让模型按需生成定制引擎。评论还强调，AAA 游戏通常依赖完整工具链、美术资产和生产流程，不能仅以渲染器特效数量衡量。\n📌 讨论焦点\nAI 代笔损害可读性与作者可信度\n大量评论认为长篇 AI 生成文字显得空泛、重复且部分语义不清，读者难以判断作者是否真正审阅并认同其中每句话。批评者并不否定 AI 辅助编程，却希望技术作者保留自己的表达、推理过程和责任归属，而不只是交付一份生成式总结。也有人将分歧归因于对博客用途的不同理解：一方把博客当作人类作者的未经修饰声音，另一方则把它视为发布工程成果的“编译产物”。作者回应称文章经数月、数百次提示词迭代整理，服务于维护者和图形专家理解一连串 PR 的总体设计，而非入门教程。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\n技术工作有据可查，但缺少可直接验证的展示\n支持者认可文章涉及光照与反射等实际 Three.js 使用难题，也有人从中学到了大量计算机图形学知识。作者列举了大量已合并或在审的 PR，并称 Gaussian splats、UV unwrapping、light baking、MaterialX 支持及新的室内渲染方案已有原型；完整整合仍需等待更多改动落地。质疑者则认为，既然 Three.js 可在浏览器运行，文章应提供互动 demo，让读者先验证“是否有效”，而非只阅读实现计划。另有评论指出，SSR、GI、反射、虚拟纹理和 TSL 等已有高级能力的示例、测试与文档仍有欠账，扩展 AAA 范围前应先补足这些基础支持。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\nAAA 目标是否适合 Three.js\n部分评论认为 AAA 游戏的质量不只取决于渲染管线，还包含玩法系统、工具链、纹理制作及美术部门的戏剧化处理，因此“匹敌 AAA 引擎”的标题容易夸大图形技术的覆盖范围。另一种观点认为，既然近期已有浏览器中的大型城市和 GTA 风格 demo，JavaScript 生态追求高保真渲染并非没有意义。反对者担心这会让原本强调易用、轻量的 Three.js 发生 scope creep，且现有高级功能的支持质量尚未达到应有水准。讨论还比较了 Babylon.js、Babylon-react 与 React Three Fiber，认为表达力强的 scenegraph 和开发体验，同样是高质量项目的重要部分。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\nLLM 会取代引擎还是放大库的价值\n激进观点认为 LLM 可以按项目直接生成原生 WebGL 或定制引擎，避开 Three.js 的架构限制；举例称模型可将城市切成 128 个三角形块并在 GPU 端剔除，借鉴 Nanite 的思路。还有开发者声称借助 Kimi、DeepSeek Flash 和预选 Rust crates，在两周内完成确定性物理、网络预测、编辑器、ECS 与热重载脚本语言，因而认为独立开发者不再需要现成引擎。反驳者指出，库浓缩了 glTF 导入、BRDF、SSR、UV 展开等长期积累的优化与边界处理，重复生成它们既浪费 token，也会重新引入旧 bug。较审慎的结论是，LLM 适合拼装差异化部分，但成熟库仍能降低复杂功能的实现和维护成本，Three.js 本身也需继续简化与提速。\n[来源1] [来源2] [来源3] [来源4]\n📚 术语解释\nScreen Space Reflections（SSR，屏幕空间反射）: 根据当前屏幕中已渲染的深度和颜色信息估算反射的实时技术；高效但看不到屏幕外物体，容易出现缺失或断裂。\n",
-    "url": "https://newshacker.me/story?id=50523291",
-    "published": "2026-11-17T06:40:04Z"
-  },
-  {
-    "id": "58133f42e492b095b7b08bef",
-    "source": "极客洞察",
-    "source_title": "News Hacker | 极客洞察",
-    "category": "技术",
-    "title": "📞 拨号 Modem 为何配扬声器：监听握手、排障与 BBS 抢线",
-    "summary": "原标题：《Why did modems have speakers? (2019)》\n评分: 25 | 作者: Skyfall106\n💭 没有拨号尖叫声，半夜偷上网谁来抓？\n🎯 讨论背景\n早期拨号 Modem 通过普通电话线建立数据连接，需经历拨号音、占线/振铃、远端应答与 Modem handshake 等多个易失败环节；内置扬声器把这些状态直接暴露给用户。BBS（通过电话线访问的电子公告板社区）往往只有有限线路，用户因此会调节 Modem 的重拨和音频时序来抢占连接。S11 是 Hayes AT 命令集 Modem 中用于控制 DTMF 拨号音时长的寄存器之一，过度缩短可能导致电话交换机漏识别号码。文章标注为 2019 年旧文，评论者则以 MSN Messenger 等拨号上网记忆讨论这种“可听见的连接”兼具排障、监督和隐私提示作用。\n📌 讨论焦点\n人耳是拨号过程的诊断界面\n扬声器让用户实时判断拨号、等待拨号音、占线、振铃和 carrier 建立分别卡在哪一步；在电话网络和远端设备经常出错的年代，这比只看最终失败提示有用得多。听到真人接起电话，还能立刻发现号码输错，避免向普通电话发送刺耳的 Modem 握手音。用户甚至能从 handshake 的声响判断是否会以较低速率连接，从而尽早挂断重试。评论者将其比作电话听筒：通信过程本身需要让人可听、可介入。\n[来源1] [来源2] [来源3] [来源4] [来源5] [来源6] [来源7]\nBBS 时代的调参、抢线与恶作剧\nBBS 用户会通过声音微调 S11 等设置，缩短 DTMF 按键音、拨号音检测、占线检测及重拨间隔，以提高抢到繁忙线路的机会。部分 Modem 的固件优化过头时，电话交换机甚至会漏收数字，说明这些时序确实需要靠耳听和试验校准。有人借由快速自动重拨打进电台限量赠奖热线，也有人根据不同 Modem 的独特声响识别来电者。评论还提到用 ATA 接听外呼者、以及 wardialing 误拨到 911 后无法自动挂断，呈现了这种自动化玩法的越界风险。\n[来源1] [来源2]\n可听见的联网也带来监督与安全感\n拨号声会暴露深夜上网行为，因此青少年难以瞒过父母登录 MSN Messenger。成为家长后，有人反而怀念这种物理可感知性，并戏称现代 Wi‑Fi 也该播放 QAM 调制声。只要扬声器开启，用户还能察觉程序未经同意自行“phoning home”，这构成一种朴素的本地安全提示。讨论隐含的对比是：现代网络连接更安静、更自动化，但也更不显眼、较难由旁人监督。\n[来源1] [来源2] [来源3]\n低成本硬件与早期 UX 取舍\n扬声器被认为是便宜、成熟且可靠的标准部件，因此能以很小成本补足 Modem 自动判断的不可靠性。评论者赞赏这种以实体反馈解决 UX 问题的设计：机器负责拨号，人类通过声音确认状态并在必要时接管。也有人感叹当今硬件设计会为节省零点几美分而删减 MLCC 等元件，暗示类似冗余反馈功能更难保留。\n[来源1] [来源2] [来源3]\n📚 术语解释\nBBS: Bulletin Board System，拨号接入的电子公告板/社区系统；用户用 Modem 占用电话线连接，线路繁忙和重拨是常态。\nDTMF: Dual-Tone Multi-Frequency，电话按键以两种音频频率编码数字的拨号方式；可调节每个数字音持续时间。\nhandshake（握手）: 两台 Modem 在接通后交换音频信号，以协商调制方式、速率和纠错能力的建立连接过程。\nwardialing: 让 Modem 自动连续拨打号码范围、识别可连接设备或服务的做法，常与早期 BBS 和安全扫描文化相关。\n类别：Hardware | Modem | BBS",
-    "url": "https://newshacker.me/story?id=50510969",
-    "published": "2026-11-17T06:09:57Z"
   },
   {
     "id": "eacb68a795d6c7139de47293",
@@ -737,16 +1877,6 @@
     "title": "名侦探到底能赚多少钱？",
     "summary": "1881年，在《血字的研究》开篇，华生带着一身伤病从阿富汗战场回到伦敦。那时候他身体不好，手头也捉襟见肘，只想赶紧从开销太大的旅馆搬出来，找个便宜点的住处。老朋友顺嘴告诉他，正巧还有个人也在为这事发愁。那个人看中了贝克街221号B的一套房子，地段和格局都不错，但独自承担房租有些吃力，正在找人合租分摊。\n\n这个人就是福尔摩斯。\n\n这对推理史上最著名的搭档，相识居然是因为省钱合租！\n\n我们谈起名侦探，往往首先想到他们过人的才智，至于这群人平时收入具体如何，好像俗气得不太值得一提。可一旦我们在各种作品里仔细观察一下，就会发现这其实很有意思，有人开价不菲，有人靠家产生活，有人需要创业资助，也有人忙活了半天，一无所获。\n\n本期“悬疑之疑”，我们就来查一查名侦探们的账本，看看这些天才、人中龙凤，赚钱能力究竟如何！\n\n撰文｜陆烨华\n\n本就富有，谈什么钱呢\n\n“黄金时代”四大侦探女王之一多萝西·利·塞耶斯创造的彼得·温西勋爵，是个不差钱的主。\n\n他出身公爵家庭，住在伦敦皮卡迪利街的豪华公寓里，喝绝佳年份的红酒，收藏珍稀古籍，身边还有一位全能的管家班特。对他来说，破案纯粹是个人爱好，家里的日常开支不指望由委托人来买单。\n\n在温西初次登场的《谁的尸体》中，管家班特替他去拍卖行买书，精打细算省下了60英镑。温西很高兴，顺口问这笔钱可以拿来做什么。班特说，想添置一套拍摄现场用的摄影镜头，要50英镑。温西听完觉得，几块玻璃卖这个价实在有点贵，随即又想到，自己刚刚倒是很乐意花750英镑去买一本旧书。\n\n《谁的尸体》\n作者：（英）多萝西·利·塞耶斯\n译者：秋叶\n版本：群众出版社\n2008年1月\n\n在书中，塞耶斯还交代了班特的年薪，200英镑。温西勋爵随手买那本旧书的钱，相当于管家班特三年零九个月的薪水。\n\n其实管家的薪资已经不错了，1923年英国普通劳动者的平均年收入还不到140英镑。而且，这位管家的工作也不只是端茶倒水、擦鞋熨衣服那么简单，现场摄影、暗房放大照片、提取痕迹、记录证词，他样样都能派上用场。换句话说，温西勋爵实际上全职养着一位领高薪的刑侦技术专家。\n\n这些钱对于温西勋爵来说，终究是九牛一毛，他随手淘一本古籍，就差不多相当于普通打工人不吃不喝干上五年半。\n\n塞耶斯后来谈到这个侦探角色，创造他的时候，一战才结束不久，她自己在伦敦一家广告公司写文案谋生，手头相当拮据。正因为现实里太穷，替这个虚构人物花钱，反而成了她写作时最大的快乐：自己住得逼仄不满意，就给他安排豪华公寓；自己屋里的廉价地毯破了洞，就替他添置昂贵的波斯地毯；自己买不起汽车，便大方地让他拥有最新款的戴姆勒轿车。\n\n某种意义上，温西勋爵那本永远刷不爆的支票簿，是一个在伦敦寒夜里数着先令过日子的年轻女作家，对贫寒生活的一次报复。\n\n因为侦探不差钱，也顺带帮作者解决了一个重要的叙事问题。温西可以追着一桩毫无油水的疑案不放，可以随时调动上流社会的社交关系，也可以花大把时间去研究看似无关紧要的冷僻线索，完全不必担心有人催他快点破案。\n\n读者可以完全享受他从容不迫的推理。\n\n同样不差钱的侦探，还有S.S.范·达因笔下的美国侦探菲洛·凡斯，以及玛格丽·艾林翰笔下的阿尔伯特·坎皮恩。\n\n凡斯同样坐拥继承来的丰厚家产，艺术修养、社交圈和闲暇共同构成了他的调查条件；坎皮恩也出身贵族，哪怕早期故意摆出一副散漫笨拙的业余姿态，背后依然有家族资源兜底。\n\n所以，这一级别的名侦探能赚多少，答案多少有点令人失望，他们破案不是为了赚钱。而钞能力在这些名侦探身上也表现为一种反向的自由，正因为不靠它挣钱，他们可以从容不迫地调查每一桩自己感兴趣的案件。\n\n顶级侦探，\n一单实现财富自由\n\n当然，不是每个侦探都是含着金汤匙出生的，凭借自己的过人才智，赚取昂贵的委托费用，才是正本清源。比如，推理小说的鼻祖埃德加·爱伦·坡笔下的奥古斯特·杜宾，就做过一笔相当漂亮的生意。\n\n1841年发表的《莫格街凶杀案》通常被视为现代侦探小说的开端。杜宾出身法国名门，却已经家道中落，手头只剩一点微薄的家产收入。他平时过得很节俭，买书是少有的奢侈品。后来他与故事的叙述者“我”在书店相识，两人搬到一起生活，租房、置办家具的开销，主要靠这位朋友的财力支撑。\n\n在《失窃的信》里，赚钱的机会来了！杜宾接了一单大活。巴黎警察局局长为一封死活找不到的密信苦恼不已，最后赌气似地表示，谁能替他解决这个难题，自己愿意私人掏出五万法郎作为酬谢。\n\n《失窃的信》\n作者：（美）埃德加·爱伦·坡\n译者：赵苏苏\n版本：群众出版社\n2008年1月\n\n杜宾破案后，没有半句多余的客套，当即让局长把支票开出来。等那张支票真正到手，他仔仔细细看过并收好，这才不紧不慢地取出那封失窃的信交给对方。\n\n后来我们熟悉的许多名侦探，通常会先在现场讲上一大段精彩绝伦的推理，把警察说得目瞪口呆。杜宾",
     "url": "http://weixin.sogou.com/weixin?type=2&query=%E6%96%B0%E4%BA%AC%E6%8A%A5%E4%B9%A6%E8%AF%84%E5%91%A8%E5%88%8A+%E5%90%8D%E4%BE%A6%E6%8E%A2%E5%88%B0%E5%BA%95%E8%83%BD%E8%B5%9A%E5%A4%9A%E5%B0%91%E9%92%B1%EF%BC%9F",
-    "published": "2026-11-17T02:00:00Z"
-  },
-  {
-    "id": "2e7b01153f97812d985a754e",
-    "source": "新京报书评周刊",
-    "source_title": "新京报书评周刊",
-    "category": "新闻",
-    "title": "放下对“完美艺术家”的执念，她找到了自己的风格与喜悦",
-    "summary": "《红豆冰的传说》内文图。\n\n“为什么奶奶一定要是温柔的形象？为什么这个形象只能用自我牺牲来定义？”在向自己提出这两个问题之前，韩国绘本作家李芝殷也曾被困在刻板的人物范式里，怎么画都觉得没有生命力。于是，李芝殷擦掉那些温顺的面孔，也擦掉了自己对“完美艺术家”的执念，她笔下戴红头巾、肤色黝黑、敢跟强势者硬碰硬的奶奶口若悬河地讲起了那些无从考证的“传说”。从《红豆冰的传说》开始，李芝殷画了许多圆嘟嘟、偶尔露出坏坏表情的角色，她觉得这些好玩的故事比说教更接近快乐。\n\n新京报小童书专访了李芝殷，她聊传说、聊分镜、聊给孤儿院孩子读书时的感受，还聊到与收养来的狗狗家人在自然中散步的幸福。或许创作者的风格，是在放下成为“完美艺术家”的执着后才能显现的。\n\n‍‍‍‍‍‍\n\n采访 | 王铭博\n翻译｜乔晋国\n\n为什么奶奶的形象\n一定要温柔？\n\n新京报：“传说感”是你一系列绘本作品中共有的特质，你最开始怎么想到讲述异想天开的传说的切入点呢？第一次有这个念头时你在做什么？当时是什么样的心情？\n\n李芝殷：我构思第一个“传说”作品时，正处在我个人经济情况比较艰难的阶段。为了糊口，我必须从早上七点到晚上十一点不停赶商业外包插画，每天要足足工作16个小时。我根本没有多余心力去进行纯粹的创作。可即便在这样持续数月、令人精疲力尽的工作中，我心底仍有一簇余火，让我一直渴望着纯粹创作带来的快乐。\n\n《红豆冰的传说》\n作者：（韩）李芝殷\n译者：明书\n版本：接力出版社\n2021年12月\n\n每天夜里，赶在最后的交稿时间之前、收工前那短短的十到十五分钟间隙里，故事开始在我脑海中浮现。也正是在这些瞬间，富有张力的起承转合连结成一个完整的故事，《红豆冰的传说》就是很好的佐证。\n\n通常情况下，人们觉得一则“传说”必须要基于史实、传统文化背景，或是遵循严密的逻辑。但我愿意称之为“只存在于我个人创作世界的独有逻辑”。在我的世界中，一切皆有可能。就这样，在窄小的工作台前，我连正经打草稿的时间都没有，尽管只有粗糙的简笔画和极简的故事框架，我的第一个传说故事还是诞生了。\n\n《红豆冰的传说》内文图。\n\n新京报：你的绘本中有一位主角是戴着头巾的奶奶，她口中有许多故事，做事大胆有活力，为什么设计老奶奶这个角色呢？你小时候也常听奶奶讲故事吗？奶奶给你讲了什么样的故事？\n\n李芝殷：七八年前，我刚开始“传说”系列创作时，故事基调一点都不轻松明快。那时的我还困在绘本创作过程中刻板的人物原型范式里。我默认母亲、祖母这类母性形象，就应该温柔和善、充满温情。我循规蹈矩地画着温柔慈祥的祖母形象，却屡屡碰壁。无论笔触多细腻，人物始终没有生命力。有一天，一个问题横亘在我面前：为什么奶奶就一定要是温柔的形象？为什么这形象只能用自我牺牲来定义？\n\n这个问题让我想起亲手把我带大的祖母。她是个了不起、十分勇敢的人。她身形瘦小，却比谁都勇敢，敢于挺身对抗不公，面对强势的人也绝不退缩，为了家人愿意拼尽全力。她不是那种会给你轻声讲睡前故事的人，但她深沉的爱，我一直能真切地感受到。于是，我擦掉了那些平淡温顺的面孔，重新画了一位祖母：她肤色黝黑饱经风霜，眉毛浓黑，头上系着红头巾。奇妙的是，当这个人物活过来之后，整个故事也完全变了。原本只是一段安静地去看望孙辈的旅途，变成由这个人物本身主导、鲜活热烈的世界。\n\n《红豆婆婆和西瓜》\n作者：（韩）李芝殷\n译者：明书\n版本：接力出版社\n2026年2月\n\n新京报：书中讲传说故事的奶奶是你本人吗？你在创作作品的时候会代入其中的某个角色吗？\n\n李芝殷：“传说”系列以及其他作品里的所有角色，都藏着“我”的细碎印记。说实话，作为创作者，我觉得这很难避免。\n\n对我而言，脱离自身情感共鸣、凭空创造一个完全虚构的世界几乎是不可能的。哪怕角色的外貌、所处的环境和我截然不同，我也是依托自己真实体会过的情感，将它们放大，或是提取现实里那些我羡慕或是抗拒的特质，来为角色塑造血肉。总而言之，我真实经历的那些片段，包括我的脆弱、渴望、恐惧与快乐，都会映射在角色的性格与选择中。\n\n放弃成为“完美艺术家”，\n做快乐的绘本\n\n新京报：你也创作过风格截然不同的绘本，你是怎么找到现在的风格的呢？可以分享一下你在风格转变期进行的探索吗？当时是什么样的心情，又是怎样找到新的属于自己的绘本语言的呢？\n\n李芝殷：对于创作风格转变这个问题，我认为答案要从第一个问题里提到的那段艰苦时期中来找。那段日子，如同熬过人生最猛烈的一场暴风雨。在风暴来临之前，我一直认为“创作”这件事必须是宏大叙事、要崇高、要严肃。我困在这样的执念里，一心想要“成为某一类艺术家”，一旦达不到预期，就不断苛责自己。那时我写的故事都太过刻意、审慎考量，就像建筑师绘图一样。\n\n经历风雨之后，我卸下了生活里那些刻意的伪装。放下僵化的理想，我才愿意接纳那些从心底自然流淌出来的故事",
-    "url": "http://weixin.sogou.com/weixin?type=2&query=%E6%96%B0%E4%BA%AC%E6%8A%A5%E4%B9%A6%E8%AF%84%E5%91%A8%E5%88%8A+%E6%94%BE%E4%B8%8B%E5%AF%B9%E2%80%9C%E5%AE%8C%E7%BE%8E%E8%89%BA%E6%9C%AF%E5%AE%B6%E2%80%9D%E7%9A%84%E6%89%A7%E5%BF%B5%EF%BC%8C%E5%A5%B9%E6%89%BE%E5%88%B0%E4%BA%86%E8%87%AA%E5%B7%B1%E7%9A%84%E9%A3%8E%E6%A0%BC%E4%B8%8E%E5%96%9C%E6%82%A6",
     "published": "2026-11-17T02:00:00Z"
   },
   {
@@ -808,26 +1938,6 @@
     "summary": "Astronomers weigh the Milky Way’s mass at long last",
     "url": "https://bigthink.com/starts-with-a-bang/astronomers-weigh-milky-way/",
     "published": "2026-11-16T08:16:43Z"
-  },
-  {
-    "id": "20cf0c2465cec426f9e54e3e",
-    "source": "新京报书评周刊",
-    "source_title": "新京报书评周刊",
-    "category": "新闻",
-    "title": "35岁门槛、我“痛”故我在：过去四个月，我们初选了这些论文",
-    "summary": "在当代，书籍之外，刊于专业学术期刊（集刊）上的论文正在成为知识生产、知识积累的另一基本载体。《新京报·书评周刊》在图书评介的基础上试拓展“学术评议和文摘”这一全新的知识传播工作，筹备“新京报中文学术文摘服务所”，与期刊（集刊）界一道服务中国人文社会科学事业。\n\n通过搭建学术与大众之间的桥梁，我们希望将近期兼具专业性和前沿性的论文传递给大家，我们还希望所选论文具有鲜明的本土或世界问题意识，具有中文写作独到的气质。为此，我们每周根据研究选题和文本质量进行初选，形成初选篇目，由相关学科领域的专家学者再评议，于当周选出一至两篇论文。\n\n以下为过去四个月的初选文章，现辑录于此，供大家参考、索引。\n\n扫一扫\n打开“新京报中文学术文摘”合集\n\n摘选｜罗东\n\n本索引所列为7-10月初选篇目，因其独特选题或视角，特此辑录，以供读者朋友参考。\n\n以下文献按作者的首字母升序排列。\n\n以AI与爱情为故事背景的电影《她》（2013）。\n\n杜灿：《AI伴侣语境下的技术性意志软弱》，《道德与文明》2026年第5期，页141-154。随着人工智能（AI）的迅速普及和人机情感交互产品的逐渐大众化，意志软弱这一古老议题呈现出新的现实形态。用户明知AI伴侣并无意识、双方关系为虚拟构建，却仍在情感上产生依恋，甚至深陷其中。研究发现，这是一种由算法工程化导致的结构性失能，而非偶发的个体德性缺陷。\n\n程啸：《生成式人工智能侵害肖像权的侵权责任》，《法学论坛》2026年第3期，页5-16。人脸替换引发的侵害肖像权案件中，关键在于去除面部特征后的视频还能否使社会一般人仅凭借肉眼而识别出该权利人。\n\n李双龙：《“上有老下有小”与中年发福：家庭负担的健康代价及性别调节效应》，《社会科学辑刊》2026年第4期，页85-93。家庭责任的叠加对男性体重的影响较为明显，而女性的体重或许一方面要承担主要的照料责任因而需要更多身体活动和能量消耗从而变瘦，另一方面女性普遍面临社会审美压力和自我形象管理的内驱力。\n\n林心婕、林雅梅、刘晓栋：《我“痛”故我在：媒介驱动下的青年“痛”行为情感机制研究》，《北京青年研究》2026年第2期，页92-101。在当代城市中，青年背着摆满动漫“吧唧”的“痛包”穿梭在街头；街道边行驶着印着动漫角色的“痛车”；在地铁、咖啡馆内也随处可见装饰着动漫角色的“痛物”。这是社会生活媒介化的重要表现，其情感驱动机制是现实体验与社交媒介推荐算法机制的叠加。\n\n凌晨在书店读书的人。图片来自《新京报·书评周刊》2019年新媒体文章《凌晨三点的北京，我们叫醒了一群深夜读书人》。\n\n林一民：《在公共阅读空间中：青年的“稳定想象”与城市认同建构》，《青年研究》2026年第3期，页23-44、221-222。在应对求职考试、排解工作压力或准备岗位晋升等迈向稳定的探索过程中，青年并非只是到访或使用城市公共阅读空间，这类空间在青年的工作、生活和情感中占据了一定的位置。\n\n申琦、王楠：《纸页余温与生命终章：安宁疗护中纸质时光相册的“慢媒介”实践》，《新闻与传播评论》2026年第4期，页5-16。纸质时光相册在安宁疗护中的“慢”，既源于纸质媒介带来的时间重量与空间陪伴感，也源于制作者在时光相册共创过程中对慢、深、真的深层需求与刻意减速。它帮助临终者重构生命尊严与生活秩序，为家属承接哀思与延展临终对话。\n\n苏立君、王雨婷：《具身智能对个别资本超额利润率提振效应：传导机制与现实证据》，《政治经济学评论》2026年第1期，页173-198。智能化技术开发和应用逐步进入密集活跃期，引发全球生产方式链式变革。采用新技术能相对延长工人的剩余劳动时间使个别资本获取超额利润。但当投入的“机器成本”大于“人工成本”，这笔投入会抵消掉一部分因效率提升带来的利润。\n\n孙晓韵、林升栋、康初莹：《漩涡的中心：网络暴力的越轨错判与数字规训》，《国际新闻界》2026年第7期，页120-139。普通人在数字平台如何被贴上“越轨者”标签，以及网络暴力如何演变为持续的社会规训？在去情境化、情绪聚集和算法放大的传播逻辑下，个体被舆论贴上标签，引发网暴；标签又沿线上线下、熟人与陌生人两个维度扩散，形成虚实嵌套的扩散路径。\n\n电视剧《我在他乡挺好的》（2021）剧照。\n\n汪伟、吴晓恒：《职业发展与生育意愿——兼论“35岁门槛”的影响》，《经济学报》2026年第3期，页52-69。利用2020年中国家庭追踪调查数据，将“35岁门槛”作为劳动者职业发展的负面冲击，研究发现职业发展受限加剧了劳动者“家庭－工作”时间的冲突，影响了其婚姻关系，从而影响劳动者的生育意愿。\n\n王跃生：《清代中期不同生命阶段夫妇居住方式分析——以乾隆朝刑科题本档案为基础》，《清华大学学报（哲学社会科学版）》2026年第4期，页88-104、262-263。清代中期，",
-    "url": "http://weixin.sogou.com/weixin?type=2&query=%E6%96%B0%E4%BA%AC%E6%8A%A5%E4%B9%A6%E8%AF%84%E5%91%A8%E5%88%8A+35%E5%B2%81%E9%97%A8%E6%A7%9B%E3%80%81%E6%88%91%E2%80%9C%E7%97%9B%E2%80%9D%E6%95%85%E6%88%91%E5%9C%A8%EF%BC%9A%E8%BF%87%E5%8E%BB%E5%9B%9B%E4%B8%AA%E6%9C%88%EF%BC%8C%E6%88%91%E4%BB%AC%E5%88%9D%E9%80%89%E4%BA%86%E8%BF%99%E4%BA%9B%E8%AE%BA%E6%96%87",
-    "published": "2026-11-16T02:35:00Z"
-  },
-  {
-    "id": "a53f2195c5a482062449d4e8",
-    "source": "新京报书评周刊",
-    "source_title": "新京报书评周刊",
-    "category": "新闻",
-    "title": "雾中之舟：熊彼特的矛盾人生",
-    "summary": "“创新”是经济发展中的核心要义，比如去年的诺贝尔经济学奖颁给了乔尔·莫基尔等三位经济学家，以表彰他们“对创新驱动型经济增长的阐释”。但说到创新驱动的鼻祖，就不得不提20世纪最具影响力的经济学家之一，约瑟夫·熊彼特。熊彼特的“创造性破坏”思想不仅在学术史上具有里程碑式的意义，而且在人工智能大行其道的当下，更加展现出强大的解释力和现实指导价值。\n\n然而，生活中的熊彼特却经历坎坷，矛盾重重。今年再版的《熊彼特传》生动勾勒出熊彼特充满悲剧色彩与动荡起伏的个人生活。这本由著名社会学家斯威德伯格撰写的传记是一本经得起时间考验的著作，从1991年普林斯顿大学出版社第一版出版之后，到2005年中文版的出版，到今日的商务印书馆的再版，尽管时隔30多年，却对今天的读者仍旧具有重要的价值。\n\n这本书能够帮助读者深入了解熊彼特时而被边缘化、时而又引领潮流的思想，正如斯威德伯格自述通过熊彼特“提供了深入的思考：技术在经济中的作用，如何理解一个经济理论在真实世界中的动态过程，和今天的专业分工不同，如今经济学和社会学已经分化成两门极少交流的学科，当然，它们都共同面对着进一步数理化的过程。”（《熊彼特传》1-2页，因为中文书边页都注有了英文版的页码，为方便统一，下面使用页码均为英文版页码）书中勾画出一位超越了经济学家刻板印象的真实的熊彼特，并且通过刻画他的时代、他的经历和思想来反观我们自身的时代，让我们思考如何面对一个创造性毁灭的AI时代。\n\n撰文｜李晋\n\n《熊彼特传》\n作者：[瑞典]理查德·斯威德伯格\n版本：商务印书馆\n2026年7月\n\n一场思想史的交锋\n如何改变熊彼特的学术道路？\n\n传记的前一部分，提供给读者熊彼特的成长背景，也掺杂了不少熊彼特逸闻趣事。1883年2月8日，熊彼特出生在奥匈帝国的特里施（Trest）如今是捷克共和国境内，这也提醒我们不能用现在看待欧洲的方式来思考熊彼特所在的欧洲。他的家庭是一个说德语的罗马天主教，生父是一个纺织厂厂主，母亲则出生在一个著名的医生家庭，后来生父在他幼年时去世，母亲不久改嫁给了一位贵族，不仅实现了阶层的跃升，也为熊彼特能够上一所贵族学校获得良好的教育提供了条件，熊彼特不仅要学习马术和剑术，还要学习古典语言希腊语和拉丁语，以及法语、英语和意大利语，并且也教导学生一些玩弄政治的手段和对于不同意识形态中能够左右逢源。（11-12页）\n\n1901年，熊彼特进入维也纳大学，一心想要学习经济学的他却不得不面对一个现实，那就是维也纳大学没有独立的经济学系，于是熊彼特进入了法律和政治学系，有时，熊彼特还要参加统计学和数学的讨论班，1905年，熊彼特在统计学讨论班上提交的论文，还在当时的《统计学月报》上得以发表，当时他才22岁。书中专门帮助我们澄清了德国和奥地利在现实政治处境中的复杂对立，让读者能够明白为什么熊彼特时而会有反德国的情绪，时而会在德国参与社会主义改造计划。\n\n约瑟夫·熊彼特(1883-1950)，20世纪最具影响力的经济学家之一。生于奥地利，后移民美国，并一直在哈佛大学任教。熊彼特在经济纯理论、经济周期理论、经济学方法论、计量经济学、马克思主义经济学、经济史、经济思想史等领域都做出了重要贡献。著有《经济发展理论》《经济周期理论》《十位伟大的经济学家 : 从马克思到凯恩斯》《资本主义、社会主义和民主》等作品，被誉为“现代创新理论之父”和“企业家理论之父”。\n\n在《熊彼特传》中，斯威德伯格用详细的笔墨描述了一场重要的思想史的交锋，也就是门格尔-施莫勒之争。这场争论不仅影响了熊彼特所走的学术道路，实际上也塑造了我们当下的经济学和社会学。这也是本书论述非常精彩的一道主线，也是我们当下的人即便在讨论这些问题时也会忽视，而极少关注。\n\n19世纪中期，奥地利同时受到英国和德国两国经济学的影响。我们中国的读者可能受到如哈耶克等论述的影响，认为德国擅长抽象和建构，而英美偏向于经验主义。然而，事实恰恰相反，当时英国的政治经济学强调抽象的方法，德国的经济学家则因为受到历史和法学的影响，强调经济学的任务是具体问题具体分析，研究具体的经济特征。奥地利的门格尔更倾向于英式经济学，并且和德国历史学派的领袖古斯塔夫·施莫勒展开了一场激烈且影响深远的方法论之争。（第14页）门格尔强调一种方法论的个人主义，主张理解国民经济这种复杂的现象，必须追溯到它们真正的构成要素，个体如个人和家庭是如何行动的。而施莫勒则浸泡于整个德国高等批判、兰克史学的氛围，更强调归纳性方法和比较历史的、具体制度的分析。\n\n在近代思想史中，方法论之争这一事件产生了非常严重的后果，按照马克斯韦伯的看法，方法论之争最终迫使经济学分成了两门不同的学科，一门演绎的、高度抽象却忽视了历史；另外一门则过度强调历史而忽视理论。韦伯晚年撰写《经济与社会》的努力之一就是试图重新架起这种断裂的桥梁。",
-    "url": "http://weixin.sogou.com/weixin?type=2&query=%E6%96%B0%E4%BA%AC%E6%8A%A5%E4%B9%A6%E8%AF%84%E5%91%A8%E5%88%8A+%E9%9B%BE%E4%B8%AD%E4%B9%8B%E8%88%9F%EF%BC%9A%E7%86%8A%E5%BD%BC%E7%89%B9%E7%9A%84%E7%9F%9B%E7%9B%BE%E4%BA%BA%E7%94%9F",
-    "published": "2026-11-16T02:35:00Z"
   },
   {
     "id": "f4edfc8899abcf20f31b7889",
@@ -1378,26 +2488,6 @@
     "summary": "我不是一个很会“尽兴”的人，以至于我似乎对于玩这件事情也没有非常强烈的感觉。虽然我妈在我小时候，常把“该学习的 […]",
     "url": "https://mobius.blog/26100.html",
     "published": "2026-11-09T02:21:41Z"
-  },
-  {
-    "id": "4f8463410e435797280fee03",
-    "source": "So!azy",
-    "source_title": "So!azy",
-    "category": "思想",
-    "title": "认得出熟客的老板",
-    "summary": "这个话题其实很早就想写了",
-    "url": "https://blog.solazy.me/20261108/",
-    "published": "2026-11-08T15:30:00Z"
-  },
-  {
-    "id": "4094e18f30f49b41d0fad3fd",
-    "source": "莫比乌斯",
-    "source_title": "莫比乌斯",
-    "category": "思想",
-    "title": "狗不会说话但什么都懂",
-    "summary": "Humachine 里整理的是原本发布在 Telegram 频道的内容，积累到足够的时候，就可以分类整理成册。 […]",
-    "url": "https://mobius.blog/26090.html",
-    "published": "2026-11-08T07:37:14Z"
   },
   {
     "id": "519b19631259f31b18c172ef",
@@ -5480,16 +6570,6 @@
     "published": "2026-07-04T06:22:27Z"
   },
   {
-    "id": "827271a2b3ae8e1a10858dcf",
-    "source": "Big Think",
-    "source_title": "Big Think",
-    "category": "思想",
-    "title": "他获得了一项重要短篇小说奖。随后，他被指控使用了人工智能。",
-    "summary": "He won a major short story prize. Then he was accused of using AI.",
-    "url": "https://bigthink.com/history-society/he-won-a-major-short-story-prize-then-he-was-accused-of-using-ai/",
-    "published": "2026-07-04T04:07:47Z"
-  },
-  {
     "id": "c19204e2df5c6d6c44040091",
     "source": "虹线",
     "source_title": "虹线",
@@ -5498,16 +6578,6 @@
     "summary": "偏见与歧视是有区别的，Anthropic 是后者。",
     "url": "https://1q43.blog/post/12498/",
     "published": "2026-07-01T05:59:02Z"
-  },
-  {
-    "id": "bc32f83d09fee4839fb67d96",
-    "source": "于淼",
-    "source_title": "博客 on Miao Yu | 于淼",
-    "category": "思想",
-    "title": "2026上半年研究速递",
-    "summary": "这是公众号环境黑板报上半年所有研究速递的汇总。研究速递是关于环境相关的研究吐槽，主要关注期刊是ACS的ES&T系列期刊论文、nature的环境相关论文，还有EHP论文。目前投稿都是在github上完成的，每月总结一次推送到公众号，欢迎各位同学来此投稿：https://github.com/yufree/hjhbb/issues/178 （2026年7月）\n\n一月\n\n研究动态\n\n这篇文章讨论了开放式厨房里烹饪油烟的时空分布，但选开放式厨房户型的，一般是西式烹饪，或压根就不在家吃吧。\n\n推荐人：于淼\n\n链接：https://pubs.acs.org/doi/10.1021/acs.est.5c10491\n\n题目：Spatiotemporal Evolution, Secondary Transformation and Control of Cooking Oil Fumes in Open-Plan Kitchens\n\n这篇文章介绍了仿生色谱的概念，大意就是用填料模拟生物界面，直接测定污染物某种参数，其实可以更进一步，流动相换人工血液或组织液，直接打造类器官色谱来评价污染物归趋转化，开一个色谱毒理学分支。\n\n推荐人：于淼\n\n链接：https://pubs.acs.org/doi/10.1021/acs.est.5c11716\n\n题目：Biomimetic Chromatography: A Novel Approach for Measuring Phospholipid Membrane–Water and Protein–Water Partition Coefficients for Target and Suspect PFAS\n\n一般认为微生物抗性直接来源于抗生素使用量，这篇研究关注了社会经济原因的影响，发现医疗保健的可及性、种族/民族构成和收入与各类抗生素耐药性水平的升高密切相关，甚至在某些抗性位点是主要影响因素，各州抗性也差异很大，可以做下全球范围的研究，看看能否预测下超级菌最先在哪里出现。\n\n推荐人：于淼\n\n链接：https://pubs.acs.org/doi/10.1021/acs.est.5c07425\n\n题目：Sociodemographic and Health Factors Are Associated with Antimicrobial Resistance across Eight States in the United States\n\n这项研究关注了人工照明对城市秋季树叶凋零的影响，发现会显著延迟，低光照强度更显著，可以沿着这个思路讨论下对绿化带过敏源的影响。\n\n推荐人：于淼\n\n链接：https://www.nature.com/articles/s41467-025-68246-7\n\n题目：Increased artificial illumination delays urban autumnal foliar senescence\n\n这项研究提出植物来源的番茄褐皱果病毒可作为废水中病毒去除效果的标记物，这对做废水特异性监控挺有启发性的，不知道国内不同城市废水的主要病毒是否有区别。\n\n推荐人：于淼\n\n链接：https://www.nature.com/articles/s41598-025-34782-x\n\n题目：High prevalence of tomato brown rugose fruit virus in domestic wastewater as a potential viral indicator for treatment systems\n\n关注6PPDQ暴露过程的实地试验，确认春季暴雨跟银鲑幼年阶段重合导致了死亡风险加大，也就是气候变化或极端天气对特定污染物的集中释放风险是值得关注的，而且也要关注易感物种的生长发育敏感期。\n\n推荐人：于淼\n\n链接：https://pubs.acs.org/doi/10.1021/acs.est.5c13992\n\n题目：Roadway Runoff Induced Acute Mortality in Juvenile Coho Salmon During Spring Storm Events\n\n微气泡依靠高活性表面特性算是这两年的热门研究方向，这项研究就顺势考察了其对微纳塑料侵蚀释放的过程，认为微气泡引起的侵蚀是微污染物释放的一种低能量途径，属于热点间排列组合。\n\n推荐人：于淼\n\n链接：https://www.science.org/doi/full/10.1126/sciadv.aea4729\n\n题目：Microbubble-induced erosion releases micro- and nanoplastics ",
-    "url": "https://yufree.cn/cn/2026/07/01/2026/",
-    "published": "2026-07-01T00:00:00Z"
   },
   {
     "id": "bbe27f09c2c80c70621402c2",
